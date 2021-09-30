@@ -51,14 +51,16 @@ img{
   font-family: 'Alata', sans-serif;  
 }
 
-.card 
 
 h2{
     color: black;
 }
 
 /*about*/
-#para {
+
+
+#about{
+  background-color: #fff3b0;
   text-align: center;
   font-size: 20px;
   color: black;
