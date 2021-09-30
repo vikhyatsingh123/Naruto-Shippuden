@@ -28,7 +28,7 @@ Not everyone is aware of every tool present in the world no matter how easy or c
 
 Code - 
 
-               <!-- first card end-->
+               <!-- card end-->
                <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                   <div class="row no-gutters">
                       <div class="col-md-4">
@@ -43,7 +43,7 @@ Code -
                  </div>
                </div>
              </div>
-           <!--second card end-->
+           <!--card end-->
 
 Copy this code and paste it in the index.html file to make your changes. Try and test it on your own system and then create a Pull request. You can adjust height of image of character so that it will fit in card.
 
