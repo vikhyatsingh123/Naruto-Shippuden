@@ -16,7 +16,7 @@ There is always something to contribute to a project whether you are a novice or
 
 # How can you contribute
 To contribute in Hactoberfest2020 , checkout the given link and win hactoberfest t-shirt ...
-![Hacktoberfest2021](https://hacktoberfest.digitalocean.com/)
+https://hacktoberfest.digitalocean.com/
 
 
 And That's It!
