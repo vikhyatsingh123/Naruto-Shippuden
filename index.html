@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,32 +9,57 @@
     <link rel="stylesheet" href="./style.css" type="text/css">
     <title>Naruto</title>
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light nav1">
-        <a class="navbar-brand brand1 ml-4" href="#" style="color: beige;">Naruto</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto" style="margin-left: 78%;">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand nav1 d-flex justify-content-around sticky-top">
+        <a class="navbar-brand brand1 ml-4" href="./index.html">
+            <img src="./Images/nav.png" alt="Naruto">
+        </a>
+
+        <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav d-flex justify-content-end">
                 <li class="nav-item active mx-4">
-                    <a class="nav-link" href="./index.html" style="color: beige;">Home</a>
+                    <a class="nav-link fw-bolder" href="./index.html">Home</a>
                 </li>
                 <li class="nav-item mx-4">
-                    <a class="nav-link" href="./about.html" style="color: beige;">About</a>
+                    <a class="nav-link fw-bolder" href="./about.html">About</a>
                 </li>
-            </div>
+        </div>
     </nav>
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+    <!-- CAROUSEL -->
+    <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
+
+            
             <div class="carousel-item active">
+                <img src="./Images/bg.png" class="d-block w-100" alt="...">
+            </div>
+
+            <div class="carousel-item">
+                <img src="./Images/itachi-uchiha-naruto-black-background-minimal-art-amoled-3840x2160-4942.png"
+                    class="d-block w-100" alt="...">
+            </div>
+
+            <div class="carousel-item">
+                <img src="./Images/4683871.jpg" class="d-block w-100" alt="...">
+            </div>
+           
+            <div class="carousel-item">
+                <img src="./Images/bh2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./Images/bg3.jpg" class="d-block w-100" alt="...">
+            </div>
+
+            <div class="carousel-item">
                 <img src="./Images/229954.jpg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
@@ -41,7 +67,9 @@
             </div>
             <div class="carousel-item">
                 <img src="./Images/377922.jpg" class="d-block w-100" alt="...">
+
             </div>
+
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -52,58 +80,136 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
-    <h1 class="topic my-5">Characters</h1>
+
+
+    <!-- HEADING -->
+    <h1 class="topic m-5 py-4">Characters.</h1>
+
+
     <!--Card section start-->
     <div class="container">
-    <!--First card-->
-   
-    <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
-        <div class="row no-gutters">
-            <div class="col-md-4">
-                <img src="./Images/naruto.png" alt="naruto" height="330px" width="300px">
-            </div>
-            <div class="col-md-8">
-                <div class="card-body">
-                    <h2 class="card-title">Naruto Uzumaki</h2>
-                    <p class="card-text">Naruto Uzumaki is the main protagonist in the popular manga and anime series Naruto. He is a cheerful, hyperactive,
-                    strong-willed, and occasionally simple-minded young shinobi from the village of Konoha (or Leaf Village).</p>
-                    <p>Since Naruto has the Nine Tails Fox sealed inside him, he is able to use the Fox's chakra, which is much greater than
-                    the average human. Initially Naruto and the Fox hated each other, and would rarely grant Naruto his power unless they
-                    were going to die. Eventually, they become friends, and Naruto then refers to the fox by his name, Kurama. At this
-                    point, Naruto can use Kurama's chakra at will.</p>
+        <!--First card-->
+
+        <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <img src="./Images/naruto.png" alt="naruto" height="330px" width="300px">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h2 class="card-title">Naruto Uzumaki</h2>
+                        <p class="card-text">Naruto Uzumaki is the main protagonist in the popular manga and anime
+                            series Naruto. He is a cheerful, hyperactive,
+                            strong-willed, and occasionally simple-minded young shinobi from the village of Konoha (or
+                            Leaf Village).</p>
+                        <p>Since Naruto has the Nine Tails Fox sealed inside him, he is able to use the Fox's chakra,
+                            which is much greater than
+                            the average human. Initially Naruto and the Fox hated each other, and would rarely grant
+                            Naruto his power unless they
+                            were going to die. Eventually, they become friends, and Naruto then refers to the fox by his
+                            name, Kurama. At this
+                            point, Naruto can use Kurama's chakra at will.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-<!-- first card end-->
-<div class="card mb-3 card-bg my-4" style="max-width: 100%;">
-    <div class="row no-gutters">
-        <div class="col-md-4">
-            <img src="./Images/kakashi.jpg" alt="naruto" height="390px" width="300px">
-        </div>
-        <div class="col-md-8">
-            <div class="card-body">
-                <h2 class="card-title">Kakashi Hatake</h2>
-                <p class="card-text">Kakashi Hatake is one of the higher level Ninjas in the hiddenleaf village. He is the teacher (sensei) of Uzumaki
-                Naruto, Haruno Sakura and Uchiha Sasuke. His teacher was the fourth hokage, Minato Namikaze and his teammates were Obito
-                Uchiha and Rin Nohara. His rival is Might Guy.</p>
-                <p>He's worked and thrived at all levels, including among the ANBU. He has a summoning ability with a pack of Ninja Dogs,
-                one of which speaks and all of which are excellent trackers. He's never been shown without his masks on. He wears at
-                least two of them, and even his close friends don't know what he looks like.  
-                Shortly after the ninja war, Kakashi becomes the Sixth Hokage of the Hidden Leaf Village, after heading Obito's advice.</p>
+        <!-- first card end-->
+        <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <img src="./Images/kakashi.jpg" alt="naruto" height="390px" width="300px">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h2 class="card-title">Kakashi Hatake</h2>
+                        <p class="card-text">Kakashi Hatake is one of the higher level Ninjas in the hiddenleaf village.
+                            He is the teacher (sensei) of Uzumaki
+                            Naruto, Haruno Sakura and Uchiha Sasuke. His teacher was the fourth hokage, Minato Namikaze
+                            and his teammates were Obito
+                            Uchiha and Rin Nohara. His rival is Might Guy.</p>
+                        <p>He's worked and thrived at all levels, including among the ANBU. He has a summoning ability
+                            with a pack of Ninja Dogs,
+                            one of which speaks and all of which are excellent trackers. He's never been shown without
+                            his masks on. He wears at
+                            least two of them, and even his close friends don't know what he looks like.
+                            Shortly after the ninja war, Kakashi becomes the Sixth Hokage of the Hidden Leaf Village,
+                            after heading Obito's advice.</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
-<!--second card end-->
+        <!--second card end-->
+
+
+        <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <img src="https://qph.fs.quoracdn.net/main-qimg-d0b96fb8a795393df61d7e8f0aff5be7" alt="naruto"
+                        height="390px" width="300px">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h2 class="card-title">Madara Uchiha
+                        </h2>
+                        <p class="card-text">Madara Uchiha (うちはマダラ, Uchiha Madara) was the legendary leader of the
+                            Uchiha clan. He founded Konohagakure alongside his childhood friend and rival, Hashirama
+                            Senju, with the intention of beginning an era of peace. When the two couldn't agree on how
+                            to achieve that peace, they fought for control of the village, a conflict which ended in
+                            Madara's death.</p>
+                        <p>Madara, however, rewrote his death and went into hiding to work on his own plans. Unable to
+                            complete it in his natural life, he entrusted his knowledge and plans to Obito shortly
+                            before his actual death. Years later, Madara would be revived, only to see his plans foiled
+                            and ultimately, and finally, realising the error of his ways and making amends with
+                            Hashirama before his final death.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <img src="https://qph.fs.quoracdn.net/main-qimg-b2511298ccfaf51f25086738fbe82b3a" alt="naruto"
+                        height="390px" width="300px">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h2 class="card-title">Hashirama Senju
+                        </h2>
+                        <p class="card-text">Hashirama Senju (千手柱間, Senju Hashirama) was a member of the famed Senju
+                            clan. He himself was hailed as the "God of Shinobi" for his unmatched ninja prowess.
+                            Hashirama sought peace for the shinobi world, and to that end founded Konohagakure with his
+                            clan, his childhood friend and rival: Madara Uchiha and the Uchiha clan.</p>
+                        <p>He would later become the First Hokage (初代火影, Shodai Hokage, literally meaning: First or
+                            Founding Fire Shadow) of Konohagakure. Although he was not able to achieve peace during his
+                            lifetime, his legacy and vision for the world would continue to shape the village and the
+                            entire shinobi world even after his death.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <img src="https://cdn.shopify.com/s/files/1/0405/1927/0554/products/image_a2f07ae4-f138-405b-810e-f4a016a72a28_1125x.jpg?v=1617882025" alt="naruto"
+                        height="390px" width="300px">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h2 class="card-title">Itachi Uchiha
+                        </h2>
+                        <p class="card-text">Itachi Uchiha (うちはイタチ, Uchiha Itachi) was a shinobi of Konohagakure's Uchiha clan who served as an Anbu Captain. He later became an international criminal after murdering his entire clan, sparing only his younger brother, Sasuke. He afterwards joined the international criminal organisation known as Akatsuki, whose activity brought him into frequent conflict with Konoha and its ninja — including Sasuke who sought to avenge their clan by killing Itachi. </p>
+                        <p>Following his death, Itachi's motives were revealed to be more complicated than they seemed and that his actions were only ever in the interest of his brother and village, making him remain a loyal shinobi of Konohagakure to the very end.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
 
-
-
-
-
-<!--complete card end-->
+        <!--complete card end-->
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -112,5 +218,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
+
+
+
 </body>
+
 </html>
