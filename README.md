@@ -1,6 +1,6 @@
 # Naruto-Shippuden
 
-There's no doubt that most  of our childhood was spent watching anime especially Naruto, we have seen it all and experienced it all. With Hacktoberfest 2021 coming up and being one of the people who would participate for the very first time, I decided to create this repository that's actually a very basic web-page that lets the user view and add their favourite characters.
+There is no doubt that most  of our childhood was spent watching anime especially Naruto, we have seen and experienced it all. With Hacktoberfest 2021 coming up and being one of the people who would participate for the very first time, I decided to create this repository that's actually a very basic web-page that let the user view and add their favourite characters.
 
 You can find all types characters on https://www.giantbomb.com/naruto-uzumaki/3005-790/friends/ and on https://www.giantbomb.com/naruto-uzumaki/3005-790/enemies/
 
