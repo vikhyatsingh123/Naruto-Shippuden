@@ -14,7 +14,7 @@ You can find all types characters on https://www.giantbomb.com/naruto-uzumaki/30
 
 There is always something to contribute to a project whether you are a novice or a veteran. In this project, you can add your favourite character as a card to the website! Or maybe you didn't like the line that you are reading right now and want to change that.Sure! Why not?
 
-# How can you contribute
+# How can you contribute?
 To contribute in Hactoberfest2020 , checkout the given link and win hactoberfest t-shirt ...
 https://hacktoberfest.digitalocean.com/
 
@@ -51,3 +51,4 @@ Copy this code and paste it in the index.html file to make your changes. Try and
 # Congratulations!
 
 Congratulation! You just made your first pull request and if it gets merged, you can view it using the Link provided above!
+Enjoy Hactoberfest 2021 :)
