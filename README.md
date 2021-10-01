@@ -45,8 +45,7 @@ Code -
              </div>
            <!--card end-->
 
-Copy this code and paste it in the index.html file to make your changes. Try and test it on your own system and then create a Pull request. You can adjust height of image of character so that it will fit in card.
-
+Copy this code, search for either: "Hero cards end" or "Villain cards end" and paste it on the line before that comment in the index.html file to make your changes. Try and test it on your own system and then create a Pull request. You can adjust height of image of character so that it will fit in card.
 
 # Congratulations!
 
