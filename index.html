@@ -55,8 +55,17 @@
     <h1 class="topic my-5">Characters</h1>
     <!--Card section start-->
     <div class="container">
-    <!--First card-->
+        <div class="accordion" id="characters-accordion">
+            <div id="heroes-accordion">
+                <div class="card-header" id="heroes-heading">
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse-heroes"
+                        aria-expanded="true" aria-controls="collapse-heroes">
+                        Heroes
+                    </button>
+                </div>
 
+                <div class="collapse show" id="collapse-heroes" data-parent="#characters-accordion">
+                    <!-- Hero cards start -->
     <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
         <div class="row no-gutters">
             <div class="col-md-4">
@@ -202,8 +211,23 @@
             </div>
         </div>
     </div>
-</div>
+                    </div>
+                    <!-- card end-->
 
+                    <!-- Hero cards end -->
+                </div>
+            </div>
+            <div id="villains-accordion">
+                <div class="card-header" id="villains-heading">
+                    <button class="btn btn-primary" type="button" data-toggle="collapse"
+                        data-target="#collapse-villains" aria-expanded="false" aria-controls="collapse-villains">
+                        Villains
+                    </button>
+                </div>
+
+                <div class="collapse" id="collapse-villains" data-parent="#characters-accordion">
+
+                    <!-- Villain cards start -->
 <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
     <div class="row no-gutters">
         <div class="col-md-4">
@@ -257,8 +281,11 @@
             </div>
         </div>
 
-        <!-- card end -->
-        
+                    <!-- Villain cards end -->
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
