@@ -71,12 +71,13 @@ h1 {
   padding-top: 2%;
 }
 .card{
-    overflow: hidden;
+    overflow: clip;
 }
 
 
 .card img:hover{
     transform:scale(1.1);
+    transition-duration:0.3s;
 }
 
 @media only screen and (max-width: 600px) {
