@@ -71,6 +71,10 @@ h1 {
   padding-top: 2%;
 }
 
+.card img:hover{
+    transform:scale(1.1);
+}
+
 @media only screen and (max-width: 600px) {
   .display-3 {
     font-size: 4rem;
