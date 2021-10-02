@@ -1,15 +1,18 @@
-body{
+body {
     background-image: radial-gradient(blue,violet);
 }
-.brand1{
+
+.brand1 {
     font-size:40px;
     font-weight: bolder;
     text-shadow:1px blue;
 }
-.nav1{
+
+.nav1 {
     background-color: black;
 }
-.topic{
+
+.topic {
     text-align: center;
     font-weight: 900;
     font-size: 60px;
@@ -17,26 +20,32 @@ body{
     text-shadow:2px 4px 4px yellow;
     text-decoration: underline;
 }
-img{
+
+img {
    object-fit: contain;
 }
-.card-bg{
+
+.card-bg {
     background-color: rgb(174, 184, 86);
 }
-h2{
+
+h2 {
     color: black;
 }
+
 /*about*/
 #para {
   text-align: center;
   font-size: 20px;
   color: black;
 }
+
 body {
   background-color: white;
   font-family: "Righteous", cursive;
   font-weight: bold;
 }
+
 h1 {
   color: black;
   text-align: center;
@@ -44,6 +53,7 @@ h1 {
   margin-bottom: 40px;
   line-height: 14pt;
 }
+
 #one {
   background-color: rgb(40, 103, 178);
 }
@@ -53,20 +63,25 @@ h1 {
 #three {
   background-color: rgb(225, 48, 108);
 }
+
 #buttons {
   margin-bottom: 10px;
 }
+
 .navTitle {
   color: #ffffff;
   padding-left: 50px;
   size: 50px;
 }
-.row1{
+
+.row1 {
     margin-top: 6%;
 }
+
 .itemNav {
   padding: 15px;
 }
+
 .about-title {
   padding-top: 2%;
 }

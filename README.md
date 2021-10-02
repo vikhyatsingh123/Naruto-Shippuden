@@ -29,10 +29,10 @@ Not everyone is aware of every tool present in the world no matter how easy or c
 Code - 
 
                <!-- card end-->
-               <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+               <div class="card mb-3 card-bg my-4">
                   <div class="row no-gutters">
                       <div class="col-md-4">
-                         <img src=[image-link] alt=[name of character] height="390px" width="300px">  
+                         <img src=[image-link] alt=[name of character] class="card-img-top img-fluid">  
                       </div>
                   <div class="col-md-8">
                      <div class="card-body">
