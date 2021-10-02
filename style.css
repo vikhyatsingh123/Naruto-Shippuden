@@ -1,5 +1,5 @@
 body{
-    background-image: radial-gradient(blue,violet);
+    background-image: radial-gradient(blue,red);
 }
 .brand1{
     font-size:40px;
@@ -22,6 +22,7 @@ img{
 }
 .card-bg{
     background-color: rgb(174, 184, 86);
+    border-radius: 5%;
 }
 h2{
     color: black;
@@ -74,7 +75,11 @@ h1 {
     overflow: clip;
 }
 
+.card :hover{
+  transform:scale(1.01);
+    transition:all 1s ease-in-out;
 
+}
 .card img:hover{
     transform:scale(1.1);
     transition:all 0.3s ease-out;
