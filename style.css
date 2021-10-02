@@ -69,6 +69,8 @@ h1 {
 }
 .about-title {
   padding-top: 2%;
+  color:white;
+  font-weight:normal;
 }
 
 @media only screen and (max-width: 600px) {
@@ -84,4 +86,7 @@ h1 {
   .navTitle {
     padding-left: 3px;
   }
+}
+.card h2{
+  color:#dc3545;
 }
