@@ -70,6 +70,15 @@ h1 {
 .about-title {
   padding-top: 2%;
 }
+.card{
+    overflow: clip;
+}
+
+
+.card img:hover{
+    transform:scale(1.1);
+    transition:all 0.3s ease-out;
+}
 
 @media only screen and (max-width: 600px) {
   .display-3 {
@@ -84,4 +93,3 @@ h1 {
   .navTitle {
     padding-left: 3px;
   }
-}
