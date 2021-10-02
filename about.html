@@ -2,6 +2,21 @@
 <html lang="en-US">
 
 <head>
+    <script>
+        let buttonText = document.getElementById("darkmode-button");
+    var element = document.body;
+    if (element.classList.value=== '') {
+      element.classList.add("darkmode");
+      document.getElementById("darkmode-button").innerHTML = 'Dark mode';
+      console.log(element.classList);
+    }
+    else
+    {element.classList.value="";
+    console.log(element.classList);
+      //element.classList.add("lightmode");
+      document.getElementById("darkmode-button").innerHTML = 'Light mode';
+    }
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
@@ -28,6 +43,9 @@
                 </li>
                 <li class="nav-item mx-4">
                     <a class="nav-link" href="./about.html" style="color: beige;">About</a>
+                </li>
+                <li class="nav-item mx-4">
+                    <button id="darkmode-button" onclick="changemode()">dark</button>
                 </li>
         </div>
     </nav>
