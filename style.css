@@ -77,7 +77,7 @@ h1 {
 
 .card img:hover{
     transform:scale(1.1);
-    transition-duration:0.3s;
+    transition:all 0.3s ease-out;
 }
 
 @media only screen and (max-width: 600px) {
