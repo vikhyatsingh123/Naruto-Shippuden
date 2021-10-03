@@ -42,7 +42,7 @@ Not everyone is aware of every tool present in the world no matter how easy or c
 
 Code - 
 
-               <!-- card end-->
+               <!-- card start-->
                <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                   <div class="row no-gutters">
                       <div class="col-md-4">
