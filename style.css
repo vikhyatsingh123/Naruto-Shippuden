@@ -30,10 +30,11 @@ body.lightmode{
 .topic{
     text-align: center;
     font-weight: 900;
-    font-size: 60px;
-    color: red;
-    text-shadow:2px 4px 4px yellow;
+    font-size: 5rem;
+    color: rgb(179, 4, 4);
+    text-shadow:3px 3px 10px rgb(228, 225, 225);
     text-decoration: underline;
+    margin:1rem 0;
 }
 img{
    object-fit: contain;
@@ -96,6 +97,15 @@ h1 {
 .card img:hover{
     transform:scale(1.1);
     transition:all 0.3s ease-out;
+}
+
+#darkmode-button{
+  border:none;
+  background-color: grey;
+  color:whitesmoke;
+  border-radius:20px;
+  width:8rem;
+  /* margin-right:150px; */
 }
 
 @media only screen and (max-width: 600px) {
