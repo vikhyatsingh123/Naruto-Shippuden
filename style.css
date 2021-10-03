@@ -9,6 +9,13 @@ body{
 body.darkmode{
   background: black;
 }
+p.aboutcolor{
+  color:white;
+}
+body.aboutdarkmode{
+  background: black;
+  color: #ffffff;
+}
 body.lightmode{
   background: radial-gradient(blue,violet);
 }

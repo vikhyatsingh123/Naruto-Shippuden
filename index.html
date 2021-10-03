@@ -2,23 +2,6 @@
 <html lang="en-US">
 
 <head>
-<script >
-function changemode() {
-    let buttonText = document.getElementById("darkmode-button");
-    var element = document.body;
-    if (element.classList.value=== '') {
-      element.classList.add("darkmode");
-      document.getElementById("darkmode-button").innerHTML = 'Dark mode';
-      console.log(element.classList);
-    }
-    else
-    {element.classList.value="";
-    console.log(element.classList);
-      //element.classList.add("lightmode");
-      document.getElementById("darkmode-button").innerHTML = 'Light mode';
-    }
-}
-</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
@@ -46,7 +29,7 @@ function changemode() {
                 <li class="nav-item mx-4">
                     <a class="nav-link" href="./about.html" style="color: beige;">About</a>
                 </li>
-               <button id="darkmode-button" onclick="changemode()">dark</button>  
+               <button id="darkmode-button">dark</button>  
             </div>
     </nav>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -1310,7 +1293,38 @@ He’s really only still around for nostalgic reasons-- as both readers and Nar
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
     </script>
-    
+    <script src="indexdarkmode.js">
+        //     let buttonText = document.getElementById("darkmode-button");
+        // function changemode() {
+            
+        //     var element = document.body;
+        //     if (element.classList.value === '') {
+        //       element.classList.add("darkmode");
+        //       localStorage.setItem('theme','darkmode');
+        //       document.getElementById("darkmode-button").innerHTML = 'Dark mode';
+        //       console.log(element.classList);
+        //     }
+        //     let val=localStorage.getItem('theme');
+        //     if(val==='darkmode')
+        //     {
+        //         element.classList.add(val);
+        //     }
+        //     else
+        //     {  val=
+        //         element.classList.value="";
+        //     }
+            // else
+            // {element.classList.value="";
+            // console.log(element.classList);
+            //   //element.classList.add("lightmode");
+            //   localStorage.setItem('theme','');  
+            //   document.getElementById("darkmode-button").innerHTML = 'Light mode';
+            // }
+            
+        //}
+        
+        </script>
+        
 </body>
 
 </html>
