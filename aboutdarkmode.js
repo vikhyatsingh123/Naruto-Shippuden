@@ -6,6 +6,7 @@ let h1=document.querySelector('h1');
 console.log(para.innerText);
 
 var bodyelem=document.body;
+
 function darkmode(){
 localStorage.setItem('theme','darkmode');
 let val=localStorage.getItem('theme');
@@ -14,11 +15,14 @@ bodyelem.classList.add(val);
 para.style.color="white";
 h1.style.color="white";
 }
+
 function lightmode(){
 //let bodyelem=document.body;
 localStorage.setItem('theme','');
 let val=localStorage.getItem('theme');
 bodyelem.classList.value=val;
+para.style.color="black";
+h1.style.color="black";
 // localStorage.setItem('theme','');
 }
 if(theme=='darkmode')
