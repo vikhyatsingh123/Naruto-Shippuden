@@ -34,7 +34,7 @@ https://hacktoberfest.digitalocean.com/
 
 
 And That's It!
-Follow these steps to make your very first Pull request.
+You can follow the steps mentioned below to make your very first pull request.
 
 # But what if i don't know how to add cards :(
 
