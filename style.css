@@ -1,6 +1,24 @@
 body{
     background-image: radial-gradient(blue,violet);
 }
+/* Light mode */
+/* body {
+  background: #fff;
+  color: #000;
+} */
+body.darkmode{
+  background: black;
+}
+p.aboutcolor{
+  color:white;
+}
+body.aboutdarkmode{
+  background: black;
+  color: #ffffff;
+}
+body.lightmode{
+  background: radial-gradient(blue,violet);
+}
 .brand1{
     font-size:40px;
     font-weight: bolder;
@@ -93,3 +111,4 @@ h1 {
   .navTitle {
     padding-left: 3px;
   }
+}
