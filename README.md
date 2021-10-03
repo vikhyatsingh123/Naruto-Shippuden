@@ -36,6 +36,28 @@ https://hacktoberfest.digitalocean.com/
 And That's It!
 Follow these steps to make your very first Pull request.
 
+# How does it work?
+Hacktoberfest is open to everyone in our global community!
+
+•Maintainers determine if their open-source projects participate by adding the ‘hacktoberfest’ topic.
+
+•Quality pull requests submitted on GitHub and GitLab are rewarded.
+
+•Engaged maintenance of Hacktoberfest tagged repositories are rewarded.
+
+# What are the Rules?
+Pull requests can be made in any participating GitHub or GitLab hosted repository/projects. Look for the 'hacktoberfest' topic to know if a project is participating in Hacktoberfest.
+
+•You can sign up anytime between October 1 and October 31. Just be sure to sign up on the official Hacktoberfest website for your pull requests to count.
+
+•The pull request must contain commits you made yourself.
+
+•If a maintainer reports your pull request as spam, it will not be counted toward your participation in Hacktoberfest.
+
+•If a maintainer reports behavior that’s not in line with the project’s code of conduct, you will be ineligible to participate.
+
+•A pull request is considered approved once it has an overall approving review from maintainers, or has been merged by maintainers, or has been given the 'hacktoberfest-accepted' label.
+
 # But what if i don't know how to add cards :(
 
 Not everyone is aware of every tool present in the world no matter how easy or complex it is. It's also not necessary to know each and every tool out there. Use the code below to add the your own card!
