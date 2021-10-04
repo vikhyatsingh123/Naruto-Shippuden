@@ -75,8 +75,21 @@ h1 {
 .card{
     overflow: clip;
 }
+.card-title{
+  text-align: center;
+}
 
+.card-text{
+  text-align: right;
+  font-size: smaller;
+  font-style: normal;
 
+}
+
+.col-md-4{
+  width:10px ;
+  height: 10px;
+}
 .card img:hover{
     transform:scale(1.1);
     transition:all 0.3s ease-out;
