@@ -215,3 +215,9 @@ h1 {
   }
 }
 
+.darkmode-btn{
+  border: none;
+  border-radius: 12px;
+  background-color: #f65c00;
+  color: #200e14;
+}
