@@ -64,4 +64,5 @@ Copy this code and paste it in the index.html file to make your changes. Try and
 
 # Congratulations!
 
-Congratulation! You just made your first pull request and if it gets merged, you can view it using the Link provided above!
+Congratulation! You just made your first pull request and this is the start of your journey towards open source! There are millions of open source projects to contribute to!!.
+If your pull request gets merged, you can view it using the Link provided above!
