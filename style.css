@@ -1,3 +1,9 @@
+:root {
+  color1: #000; /* black */
+  color2: #fff; /* white */
+}
+
+
 body{
     background-image: radial-gradient(blue,violet);
 }
@@ -7,7 +13,7 @@ body{
     text-shadow:1px blue;
 }
 .nav1{
-    background-color: black;
+    background-color: var(color1);
 }
 .topic{
     text-align: center;
@@ -24,21 +30,21 @@ img{
     background-color: rgb(174, 184, 86);
 }
 h2{
-    color: black;
+    color: var(color1);
 }
 /*about*/
 #para {
   text-align: center;
   font-size: 20px;
-  color: black;
+  color: var(color1);
 }
 body {
-  background-color: white;
+  background-color: var(color2);
   font-family: "Righteous", cursive;
   font-weight: bold;
 }
 h1 {
-  color: black;
+  color: var(color1);
   text-align: center;
   margin-top: 90px;
   margin-bottom: 40px;
@@ -69,7 +75,7 @@ h1 {
 }
 .about-title {
   padding-top: 2%;
-  color:white;
+  color:var(color2);
   font-weight:normal;
 }
 .card{
@@ -109,13 +115,13 @@ body{
   color: #000;
 } */
 body.darkmode{
-  background: black;
+  background: var(color1);
 }
 p.aboutcolor{
-  color:white;
+  color:var(color2);
 }
 body.aboutdarkmode{
-  background: black;
+  background: var(color1);
   color: #ffffff;
 }
 body.lightmode{
@@ -127,7 +133,7 @@ body.lightmode{
     text-shadow:1px blue;
 }
 .nav1{
-    background-color: black;
+    background-color: var(color1);
 }
 .topic{
     text-align: center;
@@ -144,21 +150,21 @@ img{
     background-color: rgb(174, 184, 86);
 }
 h2{
-    color: black;
+    color: var(color1);
 }
 /*about*/
 #para {
   text-align: center;
   font-size: 20px;
-  color: black;
+  color: var(color1);
 }
 body {
-  background-color: white;
+  background-color: var(color2);
   font-family: "Righteous", cursive;
   font-weight: bold;
 }
 h1 {
-  color: black;
+  color: var(color1);
   text-align: center;
   margin-top: 90px;
   margin-bottom: 40px;
