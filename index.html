@@ -16,9 +16,8 @@
 
 <body>
 
-
     <header>
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light nav1">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light nav1" id="toggle-navbar">
             <a class="navbar-brand brand1 ml-4" href="#" style="color: beige;">Naruto</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,10 +37,9 @@
 
     </header>
 
-
     <main>
 
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light nav1">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark nav1" id="toggle-navbar">
         <a class="navbar-brand brand1 ml-4" href="#" style="color: beige;">Naruto</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,15 +47,15 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto" style="margin-left: 78%;">
+            <ul class="navbar-nav mr-auto" style="margin-left: 64%;">
                 <li class="nav-item active mx-4">
                     <a class="nav-link" href="./index.html" style="color: beige;">Home</a>
                 </li>
                 <li class="nav-item mx-4">
-                    <a class="nav-link" href="./about.html" style="color: beige;">About</a>
+                    <span class="nav-link" href="./about.html" style="color: beige;">About</span>
                 </li>
-               <button id="darkmode-button">dark Mode</button>  
-            </div>
+               <button id="togglemode-button", style="background-color:transparent; text-decoration:none; outline:none; border: none !important;">Toggle</button>  
+        </div>
     </nav>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -2096,7 +2094,6 @@ Yet, the warriors couldn’t stop Sasuke from intervening at the Summit. The mod
                     </div>
                 </div>
 
-
                 <!-- card end-->
                 <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                     <div class="row no-gutters">
@@ -2196,7 +2193,7 @@ Yet, the warriors couldn’t stop Sasuke from intervening at the Summit. The mod
     <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
         <div class="row no-gutters">
             <div class="col-md-4">
-                <img src="./Images/zabuza.jpg" alt=KillerBee height="390px" width="300px">  
+                <img src="./Images/zabuza.jpg" alt="Zabuza" height="390px" width="300px">  
             </div>
         <div class="col-md-8">
              <div class="card-body">
@@ -2219,8 +2216,7 @@ Yet, the warriors couldn’t stop Sasuke from intervening at the Summit. The mod
             </div>
         <div class="col-md-8">
            <div class="card-body">
-              <h2 class="card-title">Gengetsu Hozuki
-            </h2>
+              <h2 class="card-title">Gengetsu Hozuki</h2>
               <p>Gengetsu Hozuki (鬼灯 幻月, Hōzuki Gengetsu) was the Second Mizukage (二代目水影, Nidaime Mizukage) of Kirigakure. A very tall mustached man with large poofy hair, curious way of dressing and with no eyebrows, he was laid back and very charismatic leader concerned with the welfare of his village.[ch. 546] He loathed the Second Tsuchikage and their final confrontation with each other resulted in their mutual deaths.[ch. 525] Gengetsu is brought back to life by Kabuto's resurrection technique to face the Shinobi Alliance in the Fourth Ninja War. Like other members of the Hozuki clan, he mastered hydrification technique, which manifests itself as an oily, water like substance.[ch. 548] He is voiced by Hideyuki Umezu in the Japanese anime, while Jamieson Price voices him in the English adaptation.
             </p>
           </div>
@@ -2307,6 +2303,10 @@ Yet, the warriors couldn’t stop Sasuke from intervening at the Summit. The mod
                   <h2 class="card-title">Shin Uchiha</h2>
                   <p class="card-text">Shin Uchiha (うちはシン, Uchiha Shin) was a former test subject of Orochimaru. After developing a fixation on the Uchiha clan, more specifically Itachi, he took the Uchiha name for himself and severed ties with Orochimaru, taking his "sons" with him. Believing that peace was detrimental to human evolution, Shin began a plot to revive the Akatsuki so that the ensuing conflict would be a catalyst to further his beliefs.</p>
                   <p>Shin was a tall and fit man with a pale complexion and no hair, as well as a horizontal scar that ran from his right temple to the bridge of his nose. He also lacked any teeth, having used them all for his cloning experiments, and his right arm had been amputated above the elbow. His most striking features, however, were the numerous Sharingan implanted on his head and torso.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
      <!-- card end-->
      <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
@@ -2367,10 +2367,6 @@ Yet, the warriors couldn’t stop Sasuke from intervening at the Summit. The mod
     </script>
     <script src="indexdarkmode.js">
         </script>
-
-        
+ 
 </body>
-
-
 </html>
-
