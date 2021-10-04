@@ -88,10 +88,11 @@ h1 {
 .about-title {
   padding-top: 2%;
 }
+/*
 .card{
     overflow:scroll;
 }
-
+*/
 
 .card img:hover{
     transform:scale(1.1);
