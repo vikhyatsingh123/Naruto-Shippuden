@@ -77,11 +77,11 @@ h1 {
 
 .card :hover{
   transform:scale(1.01);
-    transition:all 1s ease-in-out;
+  transition:all 1s ease-in-out;
 
 }
 .card img:hover{
-    transform:scale(1.1);
+    transform:scale(5.1);
     transition:all 0.3s ease-out;
 }
 
