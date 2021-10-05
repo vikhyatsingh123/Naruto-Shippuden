@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 body{
     background-image: radial-gradient(blue,red);
 }
@@ -99,7 +98,7 @@ h1 {
   .navTitle {
     padding-left: 3px;
   }
-=======
+    
 body{
     background-image: radial-gradient(blue,violet);
 }
@@ -423,4 +422,4 @@ h1 {
   background-color: #f65c00;
   color: #200e14;
 }
->>>>>>> upstream/main
+
