@@ -1,3 +1,8 @@
+/* pointing to web font */
+@font-face {
+  font-family: naruto;
+  src: url(fonts/njnaruto.ttf);
+}
 body{
     background-image: radial-gradient(blue,violet);
 }
@@ -52,7 +57,7 @@ h2{
 }
 body {
   background-color: white;
-  font-family: "Righteous", cursive;
+  font-family: "naruto"; /*changed font from cursive to naruto*/
   font-weight: bold;
 }
 h1 {
@@ -113,3 +118,6 @@ h1 {
     padding-left: 3px;
   }
 }
+
+/* changing font to anime font */
+
