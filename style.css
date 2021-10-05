@@ -1,10 +1,110 @@
 body{
     background-image: radial-gradient(blue,violet);
 }
+
+.search{
+  position: relative;
+  left: 200px;
+  height: 60px;
+  width: 60px;
+  background: #fff;
+  border-radius: 60px;
+  transition: 0.5s;
+  box-shadow: 0 0 0 5px black;
+  overflow: hidden;
+}
+
+ .activated{
+  width: 360px;
+}
+
+.search .icon
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.search .icon::before{
+  content: ' ';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border: 3px solid #287dfc;
+  border-radius: 50%;
+  transform: translate(-4px,-4px);
+}
+.search .icon::after{
+  content: ' ';
+  position: absolute;
+  width: 3px;
+  height: 12px;
+  background: #287dfc;
+  transform: translate(6px,6px) rotate(315deg);
+}
+
+.search .input{
+  position: relative;
+  width: 300px;
+  height: 60px;
+  left: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search .input input{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+
+.clear{
+  position: absolute;
+  top: 38%;
+  transform: translate(-50%);
+  /* border: 2px solid red; */
+  width: 15px;
+  height: 15px;
+  right: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.clear::before{
+  position: absolute;
+  content: ' ';
+  width: 1px;
+  height: 15px;
+  background:#999;
+  transform: rotate(45deg);
+}
+.clear::after{
+  position: absolute;
+  content: ' ';
+  width: 1px;
+  height: 15px;
+  background:#999;
+  transform: rotate(315deg);
+}
+
 .brand1{
     font-size:40px;
     font-weight: bolder;
     text-shadow:1px blue;
+
 }
 .nav1{
     background-color: black;
