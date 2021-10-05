@@ -13,7 +13,7 @@ search_box.addEventListener('keyup',()=>{
     
    const filter = search_box.value.toUpperCase(); 
     
-   console.log(String(filter));
+   
     let container =  document.getElementById('cont');
     let cont = container.getElementsByClassName('card mb-3 card-bg my-4')
    
@@ -22,7 +22,7 @@ search_box.addEventListener('keyup',()=>{
         const h = cont[i].getElementsByTagName('h2')[0];
 
         const textValue = h.textContent
-        console.log(textValue)
+      
 
         if(textValue.toUpperCase().indexOf(filter) > -1)
         {
