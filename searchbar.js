@@ -9,24 +9,26 @@ icon.addEventListener('click',()=>{
 
 const search_box = document.querySelector('#mysearch');
 
-search_box.addEventListener('keyup',()=>{
+search_box.addEventListener('input',()=>{
+
+    window.scrollTo(0, 1383.33);
     
    const filter = search_box.value.toUpperCase(); 
     
    
     let container =  document.getElementById('cont');
-    let cont = container.getElementsByClassName('card mb-3 card-bg my-4')
+    let cont = container.getElementsByClassName('card')
    
      for(let i=0;i<cont.length;i++)
      {
         const h = cont[i].getElementsByTagName('h2')[0];
 
-        const textValue = h.textContent
+        const textValue = h.textContent.toUpperCase()
       
 
-        if(textValue.toUpperCase().indexOf(filter) > -1)
+        if(textValue.includes(filter))
         {
-            cont[i].style.display = ''
+            cont[i].style.display = 'block'
         }
         else{
             cont[i].style.display = 'none';
