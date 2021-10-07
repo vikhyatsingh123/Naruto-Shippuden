@@ -1,6 +1,6 @@
 body {
   background-image: radial-gradient(blue, violet);
-  font-family: 'Ninja Naruto', arial;
+  font-family: "Ninja Naruto", arial;
 }
 /* Custom Scroll Bar */
 ::-webkit-scrollbar {
@@ -15,10 +15,10 @@ body {
 }
 
 .search {
-  position: relative;
-  left: 200px;
-  height: 60px;
-  width: 60px;
+  position: fixed;
+  left: 250px;
+  height: 48px;
+  width: 48px;
   background: #fff;
   border-radius: 60px;
   transition: 0.5s;
@@ -34,9 +34,9 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 60px;
-  height: 60px;
-  border-radius: 60px;
+  width: 48px;
+  height: 48px;
+  border-radius: 48px;
   background: #fff;
   display: flex;
   justify-content: center;
@@ -66,8 +66,8 @@ body {
 .search .input {
   position: relative;
   width: 300px;
-  height: 60px;
-  left: 60px;
+  height: 48px;
+  left: 48px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -209,7 +209,7 @@ h1 {
 }
 body {
   background-image: radial-gradient(blue, violet);
-  font-family: 'Ninja Naruto', arial;
+  font-family: "Ninja Naruto", arial;
 }
 /* Light mode */
 /* body {
