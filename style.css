@@ -1,3 +1,8 @@
+/* pointing to web font */
+@font-face {
+  font-family: naruto;
+  src: url(fonts/njnaruto.ttf);
+
 
 body{
     background-image: radial-gradient(blue,violet);
@@ -255,7 +260,8 @@ h2{
 }
 body {
   background-color: white;
-  font-family: "Righteous", cursive;
+  font-family: "naruto"; /*changed font from cursive to naruto*/
+
   font-weight: bold;
 }
 h1 {
@@ -291,10 +297,6 @@ h1 {
 .about-title {
   padding-top: 2%;
 }
-.card{
-    overflow: clip;
-}
-
 
 .card img:hover{
     transform:scale(1.1);
@@ -315,6 +317,7 @@ h1 {
     padding-left: 3px;
   }
 }
+
 
 .darkmode-btn{
   border: none;
