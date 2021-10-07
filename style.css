@@ -1,5 +1,6 @@
 body {
   background-image: radial-gradient(blue, violet);
+  font-family: 'Ninja Naruto', arial;
 }
 /* Custom Scroll Bar */
 ::-webkit-scrollbar {
@@ -143,7 +144,6 @@ h2 {
 }
 body {
   background-color: white;
-  font-family: "Righteous", cursive;
   font-weight: bold;
 }
 h1 {
@@ -209,6 +209,7 @@ h1 {
 }
 body {
   background-image: radial-gradient(blue, violet);
+  font-family: 'Ninja Naruto', arial;
 }
 /* Light mode */
 /* body {
