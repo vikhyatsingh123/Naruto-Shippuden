@@ -65,3 +65,9 @@ Copy this code and paste it in the index.html file to make your changes. Try and
 # Congratulations!
 
 Congratulation! You just made your first pull request and if it gets merged, you can view it using the Link provided above!
+
+
+<h1> Dark mode button styled - contributed by deadpool-developer</h1>
+<img src="ss1.png"/>
+<h1>Dark mode button removed from the Home page due to null functioning of it.</h1>
+<img src= "ss2.png"/>
