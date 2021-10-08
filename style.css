@@ -374,3 +374,19 @@ h2.card-title {
   color: white;
   text-shadow: 2px 4px 4px black;
 }
+
+.card:nth-of-type(2n+1){
+  transform: translateX(-10%);
+}
+.card:nth-of-type(2n){
+  transform: translateX(10%);
+}
+.card{
+  transition: all 550ms ease-in;
+  opacity: 0;
+}
+
+.appear{
+  transform: translateX(0) !important;
+  opacity: 1;
+}
