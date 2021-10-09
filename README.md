@@ -13,6 +13,7 @@ Hacktoberfest, in its 8th year, is a month-long celebration of open source softw
 
 
 # Naruto-Shippuden
+<img width="2295"  height="504" alt="series image" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp3170365.jpg&f=1&nofb=1">
 
 There is no doubt that most  of our childhood was spent watching anime especially Naruto, we have seen and experienced it all. With Hacktoberfest 2021 coming up and being one of the people who would participate for the very first time, I decided to create this repository that's actually a very basic web-page that let the user view and add their favourite characters.
 
@@ -28,7 +29,7 @@ You can find all types characters on https://www.giantbomb.com/naruto-uzumaki/30
 
 There is always something to contribute to a project whether you are a novice or a veteran. In this project, you can add your favourite character as a card to the website! Or maybe you didn't like the line that you are reading right now and want to change that.Sure! Why not?
 
-# How can you contribute
+# How can you contribute?
 To contribute in Hacktoberfest2021 , checkout the given link and win hactoberfest t-shirt ...
 https://hacktoberfest.digitalocean.com/
 
@@ -36,7 +37,7 @@ https://hacktoberfest.digitalocean.com/
 And That's It!
 Follow these steps to make your very first Pull request.
 
-# But what if i don't know how to add cards :(
+# But what if i don't know how to add cards? :(
 
 Not everyone is aware of every tool present in the world no matter how easy or complex it is. It's also not necessary to know each and every tool out there. Use the code below to add the your own card!
 
