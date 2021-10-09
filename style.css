@@ -372,3 +372,23 @@ h2.card-title{
   
 
 }
+.icons_container{
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: center;
+  list-style: none;
+  
+}
+/* li .ico{
+  flex-direction: row;
+} */
+.icons_container li {
+  padding:15px;
+  margin-top: 30px;
+  margin-bottom: 486px;
+}
+.navbar #bottom_footer{
+  height: 10vh;
+}
+
+
