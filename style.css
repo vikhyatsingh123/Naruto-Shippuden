@@ -390,3 +390,28 @@ h2.card-title {
   transform: translateX(0) !important;
   opacity: 1;
 }
+
+#scrolltopBtn {
+  position: fixed;
+    width: 50px;
+    height: 50px;
+    background: rgb(43, 43, 44);
+    bottom: 30px;
+    right: 40px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 28px;
+    font-weight: bolder;
+    border-radius: 50%;
+    z-index: 99;
+    border: none;
+}
+
+#scrolltopBtn:hover {
+    background: white;
+    color: black;
+    font-size: 28px;
+    font-weight: bolder;
+}
