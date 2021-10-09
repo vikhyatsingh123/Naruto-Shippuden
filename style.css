@@ -2,6 +2,13 @@ body {
   background-image: radial-gradient(blue, violet);
   font-family: "Ninja Naruto", arial;
 }
+.loader {
+  
+  filter:hue-rotate(0deg);
+  background:linear-gradient(45deg,#0f8,#08f);
+  animation:hue 10000ms infinite linear;
+ 
+}
 /* Custom Scroll Bar */
 ::-webkit-scrollbar {
   width: 5px;
