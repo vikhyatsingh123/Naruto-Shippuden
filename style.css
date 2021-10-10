@@ -14,11 +14,19 @@ body {
   border-radius: 1rem;
 }
 
+.loader {
+
+  filter:hue-rotate(0deg);
+  background:linear-gradient(45deg,#0f8,#08f);
+  animation:hue 10000ms infinite linear;
+
+}
 .search {
   position: fixed;
   left: 250px;
   height: 48px;
   width: 48px;
+
   background: #fff;
   border-radius: 60px;
   transition: 0.5s;
