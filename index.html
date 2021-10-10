@@ -8,17 +8,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css" type="text/css">
     <link href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.6qtY7eooQBTfiSVjtrLrGQHaEj%26pid%3DApi&f=1" rel="icon" type="image/jpeg">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
     <title>Naruto</title>
-
-
 </head>
 
 <body>
 
-    <button id="scrolltopBtn" title="Go to Top">&uarr;</button>
     <header>
         <nav class="navbar fixed-top navbar-expand-lg navbar-light nav1">
             <a class="navbar-brand brand1 ml-4" href="#" style="color: beige;">Naruto</a>
@@ -28,7 +23,7 @@
 
 
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent navbar">
                 <ul class="navbar-nav mr-auto" style="margin-left: 60%;">
                     <li class="nav-item active mx-4">
                         <a class="nav-link" href="./index.html" style="color: beige;">Home</a>
@@ -38,15 +33,13 @@
                     </li>
             </div>
         </nav>
-
     </header>
-
 
     <main>
         <nav class="navbar fixed-top navbar-expand-lg navbar-light nav1">
             <a class="navbar-brand brand1 ml-4" href="#" style="color: beige;">Naruto</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon" style="background-color: white !important"></span>
             </button>
 
             <div class="search">
@@ -59,18 +52,17 @@
             </div>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto" style="margin-left: 60%;">
+                <ul class="navbar-nav mr-auto">
                     <li class="nav-item active mx-4">
                         <a class="nav-link" href="./index.html" style="color: beige;">Home</a>
                     </li>
                     <li class="nav-item mx-4">
                         <a class="nav-link" href="./about.html" style="color: beige;">About</a>
                     </li>
-                    <button id="darkmode-button">dark Mode</button>
+                    <button id="darkmode-button">Dark Mode</button>
             </div>
-
-
         </nav>
+
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -97,11 +89,12 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
+
         <h1 class="topic my-5">Characters</h1>
         <!--Card section start-->
         <div class="container" id="cont">
-		
-            <!--Naruto card start-->
+            <!--First card-->
+
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -113,25 +106,10 @@
                             <p class="card-text">Naruto Uzumaki is the main protagonist in the popular manga and anime series Naruto. He is a cheerful, hyperactive, strong-willed, and occasionally simple-minded young shinobi from the village of Konoha (or Leaf Village).</p>
                             <p>Since Naruto has the Nine Tails Fox sealed inside him, he is able to use the Fox's chakra, which is much greater than the average human. Initially Naruto and the Fox hated each other, and would rarely grant Naruto his power
                                 unless they were going to die. Eventually, they become friends, and Naruto then refers to the fox by his name, Kurama. At this point, Naruto can use Kurama's chakra at will.</p>
-				
-                                <a class="Summoning-jutsu-btn" href="#popup1">Summoning Jutsu</a>
-
-                                <div id="popup1" class="Summoning-jutsu-overlay">
-					<div class="Summoning-jutsu-popup">
-					    <h2>TOAD</h2>
-					    <a class="Summoning-jutsu-close" href="#">&times;</a>
-					    <div class="Summoning-jutsu-content">
-						Toads (蝦蟇, Gama) are the most recurring summons to be seen in the series due to some of the main characters: Naruto Uzumaki, Jiraiya, and Minato Namikaze being able to summon them. They reside on Mount Myōboku.
-					    </div>
-					</div>
-                                </div>
                         </div>
                     </div>
                 </div>
             </div>
-	    <!-- Naruto card end -->
-		
-	    <!--Sasuke card start -->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -140,84 +118,38 @@
                     <div class="col-md-8">
                         <div class="card-body">
                             <h2 class="card-title">Sasuke Uchiha</h2>
-                             <p class="card-text">Sasuke Uchiha (うちはサスケ, Uchiha Sasuke) is one of the last surviving members of Konohagakure's Uchiha clan. After his older brother, Itachi, slaughtered their clan, Sasuke made it his mission in life to avenge them by killing
+                            <p class="card-text">Sasuke Uchiha (うちはサスケ, Uchiha Sasuke) is one of the last surviving members of Konohagakure's Uchiha clan. After his older brother, Itachi, slaughtered their clan, Sasuke made it his mission in life to avenge them by killing
                                 Itachi. He is added to Team 7 upon becoming a ninja and, through competition with his rival and best friend, Naruto Uzumaki, .</p>
-
-                                <a class="Summoning-jutsu-btn" href="#popup2">Summoning Jutsu</a>
-
-                                <div id="popup2" class="Summoning-jutsu-overlay">
-					<div class="Summoning-jutsu-popup">
-					    <h2>HAWK and SNAKE</h2>
-					    <a class="Summoning-jutsu-close" href="#">&times;</a>
-					    <div class="Summoning-jutsu-content">
-						Hawks (鷹, Taka) are commonly used for communication between villages. Some hawks include Takamaru and Tobimaru from Sunagakure, with the former being the village's fastest messenger hawk. Sasuke Uchiha also has a hawk named Garuda as a personal summon for flight. However, how he acquired the contract to summon hawks is unknown. <br> <br>
-						Snakes (蛇, Hebi), also known as kyodaija (巨大蛇, literally meaning: Giant Snakes), are residents of the Ryūchi Cave that are the signature summons of Orochimaru, his assistant, Kabuto Yakushi, and his students: Sasuke Uchiha and Anko Mitarashi.
-					    </div>
-					</div>
-                                </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Sasuke card end-->
+            <!-- first card end-->
 
-            <!-- Nagato card start -->
+            <!-- card start -->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
                         <img src="./Images/nagato.png" alt="Nagato Uzumaki" height="350px" width="380px">
                     </div>
-                        
-		<div class="col-md-8">
-		    <div class="card-body">
-			<h2 class="card-title">Nagato Uzumaki</h2>
-			<p class="card-text">Nagato was known primarily under the alias of Pain. Nagato is the 
-			    figurehead leader of the Akatsuki who wishes to capture the tailed beasts sealed into various
-			    people around the shinobi world. After acquiring and sealing most of the beasts within a statue, 
-			    Nagato's superior sends him to capture the Nine-Tailed Demon Fox sealed inside the series' protagonist
-			    , Naruto Uzumaki (whom he turns out to be related to). Before leaving to capture Naruto, Nagato engages
-			    in a mortal battle with his former mentor, Jiraiya. His past as a war orphan, and his loss of his best
-			    friend are explored. Due to his traumatic experiences, which stemmed from human conflict, Nagato aims
-			    to create a new world, free from the chaos of war. </p>
-
-			    <a class="Summoning-jutsu-btn" href="#popup3">Summoning Jutsu</a>
-
-			    <div id="popup3" class="Summoning-jutsu-overlay">
-				    <div class="Summoning-jutsu-popup">
-					<h2>Demonic Statue of the Outer Path and Konan</h2>
-					<a class="Summoning-jutsu-close" href="#">&times;</a>
-					<div class="Summoning-jutsu-content">
-					    The Demonic Statue of the Outer Path (外道魔像, Gedō Mazō, English TV: Gedo Statue) is the husk of the Ten-Tails that remained after its chakra was separated from its body. It was sealed in the moon by Hagoromo and Hamura Ōtsutsuki, where it remained until Madara Uchiha awakened the Rinnegan. This allowed him to break the seal and summon the statue down to Earth, where it was used as a container for the tailed beasts captured by Akatsuki. <br><br>
-					    Konan (小南, Konan) was a kunoichi from Amegakure and a founding member of the original Akatsuki. After Yahiko's death, she was partnered with Nagato, who had since taken control of Akatsuki, and was the only member to call him by his name. After Nagato's death, Konan defected from Akatsuki and became the de facto village head of Amegakure.
-
-					</div>
-				    </div>
-			    </div>
-		    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h2 class="card-title">Nagato Uzumaki</h2>
+                            <p class="card-text">Nagato was known primarily under the alias of Pain. Nagato is the figurehead leader of the Akatsuki who wishes to capture the tailed beasts sealed into various people around the shinobi world. After acquiring and sealing most
+                                of the beasts within a statue, Nagato's superior sends him to capture the Nine-Tailed Demon Fox sealed inside the series' protagonist , Naruto Uzumaki (whom he turns out to be related to). Before leaving to capture Naruto,
+                                Nagato engages in a mortal battle with his former mentor, Jiraiya. His past as a war orphan, and his loss of his best friend are explored. Due to his traumatic experiences, which stemmed from human conflict, Nagato aims
+                              to create a new world, free from the chaos of war.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!-- Nagato card end-->
-		    
-             <!-- Kakuzu card start-->
-           <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
-            <div class="row no-gutters">
-                <div class="col-md-4">
-                   <img src="./Images/Kakuzu_mugshot.png" alt="Kakuzu_mugshot" height="390px" width="300px">  
-                </div>
-            <div class="col-md-8">
-               <div class="card-body">
-                  <h2 class="card-title">Kakuzu_mugshot</h2>
-                  <p class="card-text">Akatsuki member Kakuzu partners with Hidan. Kakuzu is very focused on money, using bounty hunting to help ensure his desires are met. His bounty hunting side-trips always delay he and his partner's missions, much to Hidan's annoyance.</p>
-                  <p>Kakuzu was much older than he appeared, having been one dispatched by his village to assassinate Shodai Hokage. Unfortunately Shodai's Mokuton got the better of Kakuzu, and he returned having failed in his mission. Dispite the challenging nature of his mission, he was stigmatized and punished by his village for the failure. </p>
-              </div>
-           </div>
-         </div>
-       </div>
-     <!--Kakuzu card end-->
+
+            <!--card end-->
+            <!-- card start -->
 
 
 
-            <!-- Yahiko card start -->
+            <!-- card start -->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -233,7 +165,9 @@
                     </div>
                 </div>
             </div>
-            <!--Yahiko card end-->
+
+            <!--card end-->
+            <!-- card start -->
 
             <!-- Haku card start -->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
@@ -250,9 +184,12 @@
                     </div>
                 </div>
             </div>
+
             <!-- Haku card end-->
 
-            <!-- Sand Siblings card start  -->
+
+            <!-- first card end-->
+            <!-- card start  -->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -274,9 +211,11 @@
                     </div>
                 </div>
             </div>
-            <!-- Sand sibilings card end -->
+            <!-- card end -->
 
-            <!-- Sakon&Ukon card start  -->
+            <!-- card start  -->
+
+            <!-- card start  -->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -293,27 +232,14 @@
                                 Sakon and Ukon have the ability to when touching there opponent attach there cells to their opponents, there for, making them one and slowly killing there opponents cells in place for there own. No one had ever survived it but no one had ever been as
                                 brave as Kiba, and he stabbed himself, breaking up their 2 cells and being freed. Eventully Sakon and Ukon were defeated by Kiba and Akamaru's signiture jutsu, the "Giant 2 headed wolf Tsuuga!"
                             </p>
-
-                            <a class="Summoning-jutsu-btn" href="#popup4">Summoning Jutsu</a>
-
-                                <div id="popup4" class="Summoning-jutsu-overlay">
-                                <div class="Summoning-jutsu-popup">
-                                    <h2>Rashōmon</h2>
-                                    <a class="Summoning-jutsu-close" href="#">&times;</a>
-                                    <div class="Summoning-jutsu-content">
-                                        
-                                        Sakon and Ukon can only summon it together. The gate itself is designed to look frightening, with the gate's doors having a demonic face upon them; this is to intimidate onlookers, potentially warding them off. The gate's doors are tightly shut and solidly built, making it useful as a shield against most forms of physical attack. The stronger the attack, the more damage the attacker will do to themselves when they try and fail to break through the gate.
-
-                                    </div>
-                                </div>
-                                </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!--Sakon&Ukon card end-->
 
-            <!--Tenten card start-->
+            <!--Konan card end-->
+
+            <!--Tenten card end-->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -332,7 +258,7 @@
             </div>
             <!--Tenten card end-->
 
-            <!-- Might Guy card start-->
+            <!-- Might Guy card-->
            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
             <div class="row no-gutters">
                 <div class="col-md-4">
@@ -349,7 +275,6 @@
        </div>
      <!--Might Guy card end-->
 
-         <!-- Asuma card start-->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -363,13 +288,12 @@
                                 in the Fourth Shinobi World War.</p>
                             <p>His abilities earned him a position into the Twelve Guardian Ninja — an elite hand-picked team which served to protect the Land of Fire's daimyō — a role which later earned him a bounty of 35,000,000 ryō.[9][21] He could effortlessly
                                 take down nine Oto-nin during the Konoha Crush, noted to have been chūnin-level or above,[22] and was able compete against Hidan, a powerful member of the Akatsuki, while also protecting his team.</p>
+                            <!-- card end -->
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Asuma card end-->
-		    
-	   <!-- Hidan card start -->
+            <!-- card end-->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -386,13 +310,16 @@
                     </div>
                 </div>
             </div>
-            <!-- Hidan card end-->
+            <!--card end-->
 
-            <!-- Kakashi card start -->
+
+            <!-- card start -->
+
+
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
-                        <img src="./Images/kakashi.jpg" alt="Kakashi Hatake" height="390px" width="300px">
+                        <img src="./Images/kakashi.jpg" alt="Naruto Uzumaki" height="390px" width="300px">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
@@ -405,7 +332,6 @@
                     </div>
                 </div>
             </div>
-            <!-- Kakashi card end -->
 
             <!-- Fugaku card start-->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
@@ -492,8 +418,7 @@
                 </div>
             </div>
             <!--Mito card end-->
-		    
-	   <!-- HANZO card start-->
+	<!-- HANZO card start-->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -540,6 +465,7 @@
             <!--Konan card end-->
 
             <!-- Ebisu card start-->
+
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -557,9 +483,12 @@
                     </div>
                 </div>
             </div>
-	   <!--Ebisu card end-->
+
+
+
 
             <!-- Tobirama card start-->
+
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -578,9 +507,7 @@
                     </div>
                 </div>
             </div>
-            <!-- Tobirama card end-->
-		
-	   <!-- Hinata card start -->
+            <!-- card end-->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -597,9 +524,9 @@
                     </div>
                 </div>
             </div>
-            <!-- Hinata card end-->
-		    
-            <!-- Asuma card start-->
+            <!--card end-->
+            <!-- Konan card start-->
+
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -617,9 +544,8 @@
                     </div>
                 </div>
             </div>
-            <!--Asuma card end-->
-		    
-	   <!-- Madara card start-->
+
+            <!--second card end-->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -636,9 +562,6 @@
                     </div>
                 </div>
             </div>
-            <!-- Madara card end-->
-	    
-	    <!-- Hashirama card start-->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -654,9 +577,7 @@
                     </div>
                 </div>
             </div>
-	   <!-- Hashirama card end -->
-		
-	   <!-- Kaguya card start -->
+            <!-- card end-->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -674,9 +595,10 @@
                     </div>
                 </div>
             </div>
-            <!-- Kaguya card end-->
+            <!--card end-->
 
-            <!-- Gamabunta card start -->
+            <!-- Card Start For Gamabunta -->
+
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -692,13 +614,11 @@
                     </div>
                 </div>
             </div>
-            <!--Gamabunta card end-->
-		
-	   <!--Matatabi card start -->
+            <!-- Card End For Gamabunta-->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
-                        <img src="./Images/matatabi.png" alt="Matatabi" height="390px" width="300px">
+                        <img src="./Images/matatabi.png" alt="Gamabunta" height="390px" width="300px">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
@@ -712,7 +632,7 @@
                 </div>
             </div>
 
-            <!-- Matatabi Card End-->
+            <!-- Card End-->
 
             <!-- Yahiko card start-->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
@@ -733,7 +653,8 @@
             <!--Yahiko card end-->
 
 
-            <!-- Isobu Card Start -->
+            <!-- Card Start -->
+
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -749,9 +670,9 @@
                 </div>
             </div>
 
-            <!-- Isobu Card End-->
-         
-	    <!-- Saiken Card Start -->
+            <!-- Card End-->
+            <!-- Card Start -->
+
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -768,9 +689,9 @@
                     </div>
                 </div>
             </div>
-            <!-- Saiken Card End-->
-		    
-            <!-- Shikadai card end-->
+
+            <!-- Card End-->
+            <!-- card end-->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -786,9 +707,9 @@
                     </div>
                 </div>
             </div>
-            <!--Shikadai card end-->
+            <!--card end-->
 
-            <!-- Ino card start-->
+            <!-- card start-->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -807,9 +728,12 @@
                     </div>
                 </div>
             </div>
-            <!--Ino card end-->
+            <!--Tobirama card end-->
 
-            <!-- Rock Lee card start-->
+
+
+            <!-- card end-->
+
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -825,9 +749,6 @@
                     </div>
                 </div>
             </div>
-	   <!-- Rock lee card end -->
-	   
-	   <!-- kisame card start -->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -845,9 +766,6 @@
                     </div>
                 </div>
             </div>
-	<!-- Kisame card end-->
-		    
-	   <!-- Zabuza card start -->  
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -863,9 +781,6 @@
                     </div>
                 </div>
             </div>
-	  <!-- Zabuza card end -->
-		    
-	   <!-- Kidomaru card start -->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -881,9 +796,7 @@
                     </div>
                 </div>
             </div>
-	<!-- Kidomaru card end-->
-		    
-	    <!-- Shikadai card start -->
+
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -899,9 +812,8 @@
                     </div>
                 </div>
             </div>
-            <!-- Shikadai card end-->
-		    
-            <!--Tobirama card start-->
+            <!--card end-->
+            <!--card start-->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
 
                 <div class="row no-gutters">
@@ -918,9 +830,9 @@
                     </div>
                 </div>
             </div>
-            <!-- Tobirama card end-->
+            <!-- card end-->
 
-            <!-- Ino card start-->
+            <!-- card start-->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -939,9 +851,9 @@
                     </div>
                 </div>
             </div>
-            <!-- Ino card end-->
+            <!--card end-->
 		
-	   <!-- Sai card start-->
+		<!-- Sai card end-->
            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
               <div class="row no-gutters">
                   <div class="col-md-4">
@@ -956,9 +868,9 @@
              </div>
            </div>
          </div>
-        <!--Sai card end-->
-		    
-            <!-- Son goku Card Start -->
+       <!--Sai card end-->
+            <!-- Card Start -->
+
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -974,9 +886,9 @@
                 </div>
             </div>
 
-            <!-- Son goku Card End-->
+            <!-- Card End-->
 
-            <!-- Tsunade card start-->
+            <!-- card end-->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -992,9 +904,9 @@
                     </div>
                 </div>
             </div>
-            <!-- Tsunade card end-->
+            <!--card end-->
 
-            <!-- Hanabi card start-->
+            <!--card start-->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -1011,9 +923,8 @@
                     </div>
                 </div>
             </div>
-            <!--Hanabi card end-->
+            <!--card start-->
 
-	   <!--Minato card start-->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -1028,9 +939,8 @@
                     </div>
                 </div>
             </div>
-	   <!--Minato card end-->
 
-            <!--Orochimaru card start -->
+            <!--card start -->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -1047,9 +957,9 @@
                     </div>
                 </div>
             </div>
-            <!--Orochimaru card end-->
 
-	   <!-- Gaara card start-->
+            <!--card start-->
+
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -1065,9 +975,6 @@
                     </div>
                 </div>
             </div>
-	  <!-- Gaara card end -->
-		    
-	   <!-- Shikamaru card start-->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -1085,9 +992,8 @@
                     </div>
                 </div>
             </div>
-            <!--Shikamaru card end-->
+            <!--card end-->
 
-	   <!-- Anko card start-->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -1104,13 +1010,11 @@
                     </div>
                 </div>
             </div>
-	   <!-- Anko card end-->
-		    
-	  <!-- Sakura card start-->
+
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
-                        <img src="./Images/sakura.jpg" alt="sakura" height="350px" width="250px">
+                        <img src="./Images/sakura.jpg" alt="anko" height="350px" width="250px">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
@@ -1124,9 +1028,8 @@
                 </div>
 
             </div>
-            <!-- Sakura card end-->
-		    
-            <!-- Danzo card start-->
+            <!--card end-->
+            <!-- card end-->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -1143,9 +1046,9 @@
                     </div>
                 </div>
             </div>
-            <!--Danzo card end-->
+            <!--card end-->
 
-            <!--Tsunade card start-->
+            <!-- card end-->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -1165,9 +1068,9 @@
                     </div>
                 </div>
             </div>
-            <!-- Tsunade card end-->
+            <!-- card end-->
 
-            <!-- Animal path card start-->
+            <!-- card end-->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -1183,9 +1086,9 @@
                     </div>
                 </div>
             </div>
-            <!-- Animal path card end-->
+            <!--card end-->
 
-	   <!-- shino card start-->
+
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -1200,13 +1103,11 @@
                     </div>
                 </div>
             </div>
-            <!-- shino card end-->
-		    
-	   <!--temari card start-->
+            <!-- card end-->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
-                        <img src="./Images/Temari.png" alt="temari" height="390px" width="300px">
+                        <img src="./Images/Temari.png" alt="danzo" height="390px" width="300px">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
@@ -1220,9 +1121,7 @@
                     </div>
                 </div>
             </div>
-            <!--temari card end-->
-		    
-           <!-- Minato card start -->
+            <!--card end-->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -1238,9 +1137,7 @@
                     </div>
                 </div>
             </div>
-	    <!-- Minato card end-->
-		    
-          <!-- Ino card start-->
+
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -1255,9 +1152,9 @@
                     </div>
                 </div>
             </div>
-	   <!-- Ino card end-->
 
-            <!-- Itachi card start-->
+
+            <!-- card end-->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -1265,7 +1162,7 @@
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h2 class="card-title">Itachi Uchiha</h2>
+                            <h2 class="card-title">itachi</h2>
                             <p class="card-text">Itachi is one of the main villains in Naruto, as the murderer of the entire Uchiha Clan. He's the older brother of Sasuke Uchiha and also the reason for Sasuke's need for more power, which resulted in his defection from The
                                 Leaf in search of Orochimaru. Itachi is a member of the akatsuki organization and is partnered with Kisame Hoshigaki, a former member of the seven ninja swordsmen of the hidden mist. Before joining the Akatsuki and defecting
                                 the leaf village, Itachi was a member of the hidden leaf's Anbu</p>
@@ -1275,13 +1172,13 @@
                     </div>
                 </div>
             </div>
-            <!--Itachi card end-->
+            <!--card end-->
 
-            <!-- Shishui card start-->
+            <!-- card end-->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
-                        <img src="./Images/Shisui Uchiha.png" alt="Shisui Uchiha" height="390px" width="300px">
+                        <img src="./Images/Shisui Uchiha.png" alt=Shisui Uchiha height="390px" width="300px">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
@@ -1297,9 +1194,10 @@
                     </div>
                 </div>
             </div>
-            <!-- Shishui card end-->
 
-            <!-- Deidara card start-->
+            <!--card end-->
+
+            <!-- card start-->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -1317,9 +1215,9 @@
                     </div>
                 </div>
             </div>
-            <!--Deidara card end-->
+            <!--card end-->
 
-            <!--Hagoromo card start-->
+            <!--card start-->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -1336,9 +1234,9 @@
                     </div>
                 </div>
             </div>
-            <!--Hagoromo card end-->
-		    
-            <!--obito card start-->
+            <!--card end-->
+            <!--complete card end-->
+
 
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
@@ -1358,9 +1256,10 @@
                     </div>
                 </div>
             </div>
-            <!--obito card end-->
+            <!--card end-->
 
-            <!-- kakuzu card start -->
+            <!-- card start -->
+
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -1379,9 +1278,8 @@
                     </div>
                 </div>
             </div>
-            <!--kakuzu card end-->
+            <!--card end-->
 
-	   <!-- haku card start-->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -1399,9 +1297,7 @@
                     </div>
                 </div>
             </div>
-            <!-- haku card end-->
-		
-	   <!-- Rock card start-->
+            <!-- card end-->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -1417,9 +1313,6 @@
                     </div>
                 </div>
             </div>
-            <!-- Rock card end-->
-		  
-	    <!-- Kisame card start-->		    
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -1438,9 +1331,6 @@
                     </div>
                 </div>
             </div>
-	   <!-- Kisame card end-->
-		    
-	   <!-- Zabuza card start-->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -1456,9 +1346,6 @@
                     </div>
                 </div>
             </div>
-	   <!-- Zabuza card end -->
-		    
-	   <!-- kiddomaru card start-->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -1475,9 +1362,7 @@
                     </div>
                 </div>
             </div>
-            <!--kidomaru  card end-->
-	
-            <!--ino  card start-->
+            <!--card end-->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -1492,14 +1377,12 @@
                     </div>
                 </div>
             </div>
-            <!--ino  card end-->
 
-		 
-            <!--kaguya  card start-->
+
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
-                        <img src="./Images/Kaguya_Ōtsutsuki.png" alt="kaguya" height="390px" width="300px">
+                        <img src="./Images/Kaguya_Ōtsutsuki.png" alt="naruto" height="390px" width="300px">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
@@ -1513,9 +1396,8 @@
                     </div>
                 </div>
             </div>
-            <!-- kaguya card end-->  
-		    
-            <!--jiraya  card start-->
+
+            <!--card end-->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -1531,10 +1413,7 @@
                     </div>
                 </div>
             </div>
-            <!-- jiraya card end-->
-	
-		    
-            <!--kankuro  card start-->
+            <!--card end-->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -1549,9 +1428,7 @@
                     </div>
                 </div>
             </div>
-            <!-- kankuro card end-->
-		    
-            <!--minato  card start-->
+            <!--card end-->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -1567,9 +1444,7 @@
                     </div>
                 </div>
             </div>
-            <!--minato card end-->
-		    
-            <!--pain  card start-->
+            <!--card end-->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -1585,9 +1460,7 @@
                     </div>
                 </div>
             </div>
-            <!--pain card end-->
-		    
-            <!--kasumi  card start-->
+            <!--card end-->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -1604,9 +1477,7 @@
                     </div>
                 </div>
             </div>
-            <!--kasumi card end-->
-		    
-            <!--shino  card start-->
+            <!--card end-->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -1622,9 +1493,8 @@
                     </div>
                 </div>
             </div>
-            <!--shino card end-->
+            <!--card end-->
 		
-            	<!--minato  card start-->
 		<div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -1642,10 +1512,9 @@
                     </div>
                 </div>
             </div>
-		<!-- minato card end-->
+
 
 		
-            <!--temari  card start-->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -1663,9 +1532,10 @@
                     </div>
                 </div>
             </div>
-            <!--temari card end-->
+            <!--card end-->
            
-            <!-- sai card start-->
+            <!--card end-->
+            <!-- card start-->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -1686,9 +1556,9 @@
                     </div>
                 </div>
             </div>
-            <!-- sai card end-->
+            <!--card end-->
 
-            <!-- tsunade card start-->
+            <!-- card end-->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -1705,9 +1575,9 @@
                     </div>
                 </div>
             </div>
-            <!--tsunade card end-->
+            <!--card end-->
 
-            <!-- temari card start-->
+            <!-- card end-->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -1726,9 +1596,8 @@
                     </div>
                 </div>
             </div>
-            <!--temari card end-->
-		    
-            <!-- danzo card start-->
+            <!--card end-->
+            <!-- card end-->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -1745,9 +1614,8 @@
                     </div>
                 </div>
             </div>
-            <!--danzo card end-->
-		    
-            <!-- konan card start-->
+            <!--card end-->
+            <!-- card end-->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -1764,9 +1632,8 @@
                     </div>
                 </div>
             </div>
-            <!-- konan card end-->
-		    
-            <!-- iruka card start-->
+            <!-- card end-->
+            <!-- card end-->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -1786,9 +1653,10 @@
                     </div>
                 </div>
             </div>
-            <!-- iruka card end-->
+            <!-- card end-->
 
-            <!--shino card start-->
+            <!-- card end-->
+
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
 
                 <div class="row no-gutters">
@@ -1805,10 +1673,7 @@
                         </div>
                     </div>
                 </div>
-            </div>	    
-            <!--shino  card end-->
-		  
-            <!--samurai  card start-->
+            </div>
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -1828,9 +1693,9 @@
                     </div>
                 </div>
             </div>
-            <!--samurai card end-->
+            <!--card end-->
 
-            <!-- temari card start -->
+            <!-- card start -->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -1850,9 +1715,8 @@
                     </div>
                 </div>
             </div>
-            <!-- temari card end-->
-		    
-            <!--danzo  card start-->
+
+            <!-- card end-->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -1869,10 +1733,10 @@
                     </div>
                 </div>
             </div>
-            <!--danzo card end-->
+            <!--card end-->
 
 
-            <!--itchi card start-->
+            <!-- card end-->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
 
                 <div class="row no-gutters">
@@ -1891,9 +1755,8 @@
                     </div>
                 </div>
             </div>
-            <!-- itachi card end -->
+            <!-- card end -->
 
-            <!--iruka  card start-->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -1913,9 +1776,10 @@
                     </div>
                 </div>
             </div>
-            <!-- iruka card end-->
+            <!-- card end-->
 
-            <!-- jiraya card start-->
+            <!-- card end-->
+            <!-- card end-->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -1930,10 +1794,8 @@
                     </div>
                 </div>
             </div>
-            <!-- jiraya card end-->
-		    
-		  
-            <!--hanzo  card start-->
+
+            <!-- card end-->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -1949,14 +1811,12 @@
                         </div>
                     </div>
                 </div>
-            </div>    
-            <!--hanzo  card end-->
+            </div>
 
-            <!--denki  card start-->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
-                    <img src="./Images/denki.png" alt="denki" width="300px" height="390px">  
+                    <img src="./Images/denki.png" alt="danzo" width="300px" height="390px">  
                     </div>
                 <div class="col-md-8">
                 <div class="card-body">
@@ -1968,30 +1828,10 @@
             </div>
             </div>
             </div>
-            <!-- denki Card end -->
-		    
-            <!-- Kinshiki card start -->
-            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
-                <div class="row no-gutters">
-                    <div class="col-md-4">
-                     <img src=./Images/Kinshiki.jpg alt="Kinshiki Otsutsuki" height="390px" width="300px">
-                    </div>
-                <div class="col-md-8">
-                <div class="card-body">
-                    <h2 class="card-title">Kinshiki Otsutsuki</h2>
-                    <p class="card-text">
-                        Kinshiki Ōtsutsuki (大筒木キンシキ, Ōtsutsuki Kinshiki) was a member of the Ōtsutsuki clan's main family, who served as a guardian for his foster son Momoshiki.
-		    </p>
-                    <p>
-                        Kinshiki was very loyal and subservient to his foster son Momoshiki,[2] to the extent that he offered himself to be changed into a chakra fruit (or chakra pill in the movie) without hesitation. He also referred to his foster son using the honourific "-sama". Kinshiki also showed a vengeful side, as he was determined to kill Sasuke Uchiha for cutting his horn off from their first battle. He has no regard for anyone other than Momoshiki; this is seen when he tried to kill Sasuke as he was trying to get his daughter to safety in the middle of the chaos Momoshiki and Kinshiki brought upon their arrival to Konoha. As a result of his extreme power, Kinshiki was very noble and self-esteemed, traits Momoshiki also came to acquire. He is also adherent to his clan's tradition of gaining power through self-sacrifice, as he previously consumed his guardian's chakra and then offering himself to Momoshiki in turn.
-		    </p>
-                </div>
-            </div>
-            </div>
-            </div>		
-            <!-- kinshiki Card end -->
-		    
-            <!-- hiruzen card start -->
+
+            
+            <!-- Card Start -->
+            <!-- Kawaki -->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -2007,9 +1847,11 @@
             </div>
             </div>
             </div>
-            <!--hiruzen card end-->
 
-            <!--kinkaku Card Start -->
+            <!--card end-->
+
+            <!-- Card Start -->
+            <!-- Kawaki -->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -2024,8 +1866,7 @@
                     </div>
                 </div>
             </div>
-            <!--kinkaku  card end-->
-		    
+
             <!-- Rin Nohara Card Start -->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
@@ -2044,9 +1885,9 @@
                     </div>
                 </div>
             </div>
+
             <!-- Rin Nohara Card End -->
 
-            <!--kawaki  card start-->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -2065,9 +1906,13 @@
                 </div>
             </div>
         </div>
-        <!-- kawaki Card End -->
+        <!-- Card End -->
 
-        <!-- shino card start-->
+
+        <!-- card end-->
+
+        <!-- card end-->
+
         <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
             <div class="row no-gutters">
                 <div class="col-md-4">
@@ -2082,9 +1927,7 @@
                 </div>
             </div>
         </div>
-        <!-- shino card end-->
-		    
-        <!--temari card start-->	    
+        <!-- card end-->
         <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
             <div class="row no-gutters">
                 <div class="col-md-4">
@@ -2103,9 +1946,9 @@
                 </div>
             </div>
         </div>
-        <!--temari card end-->
+        <!--card end-->
 
-        <!-- danzo card start-->
+        <!-- card end-->
         <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
             <div class="row no-gutters">
                 <div class="col-md-4">
@@ -2122,10 +1965,10 @@
                 </div>
             </div>
         </div>
-        <!--danzo card end-->
+        <!--card end-->
 
 
-        <!-- itachi card start-->
+        <!-- card end-->
         <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
             <div class="row no-gutters">
                 <div class="col-md-4">
@@ -2143,9 +1986,10 @@
                 </div>
             </div>
         </div>
-        <!-- itachicard end-->
 
-        <!--jiraiya card start-->
+        <!--card end-->
+
+
         <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
             <div class="row no-gutters">
                 <div class="col-md-4">
@@ -2160,9 +2004,9 @@
                 </div>
             </div>
         </div>
-        <!--jiraiya card end-->
+        <!--card end-->
 
-        <!--hanzo card start-->
+        <!-- card start-->
         <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
             <div class="row no-gutters">
                 <div class="col-md-4">
@@ -2179,9 +2023,9 @@
                 </div>
             </div>
         </div>
-        <!--hanzo card end-->
+        <!--card end-->
 
-        <!--boruto card start-->
+        <!-- card end-->
         <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
             <div class="row no-gutters">
                 <div class="col-md-4">
@@ -2198,9 +2042,8 @@
                 </div>
             </div>
         </div>
-        <!--boruto card end-->
-		    
-        <!-- yamato card start-->
+        <!--card end-->
+        <!-- card end-->
         <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
             <div class="row no-gutters">
                 <div class="col-md-4">
@@ -2217,9 +2060,8 @@
                 </div>
             </div>
         </div>
-        <!--yamato card end-->
-		    
-        <!-- himawari card start-->
+        <!--card end-->
+        <!-- card end-->
         <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
             <div class="row no-gutters">
                 <div class="col-md-4">
@@ -2235,9 +2077,8 @@
                 </div>
             </div>
         </div>
-        <!-- himawari card end-->
-		    
-        <!-- shikaku card start-->
+        <!--card end-->
+        <!-- card end-->
         <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
             <div class="row no-gutters">
                 <div class="col-md-4">
@@ -2254,9 +2095,9 @@
                 </div>
             </div>
         </div>
-        <!--shikaku card end-->
+        <!--card end-->
 
-        <!-- snae card start-->
+        <!-- card end-->
         <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
             <div class="row no-gutters">
                 <div class="col-md-4">
@@ -2273,13 +2114,12 @@
                 </div>
             </div>
         </div>
-        <!--sanae card end-->
-		    
-        <!--sakumo card start-->
+        <!--card end-->
+
         <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
             <div class="row no-gutters">
                 <div class="col-md-4">
-                    <img src="./Images/SAKUMO HATAKE.png" alt="Sakumo Hatake" height="390px" width="300px">
+                    <img src="./Images/SAKUMO HATAKE.png" alt="Shikaku Nara" height="390px" width="300px">
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
@@ -2291,9 +2131,8 @@
                 </div>
             </div>
         </div>
-        <!--sakumo card end-->
-		    
-        <!--konan card start-->
+
+        <!--card end-->
         <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
             <div class="row no-gutters">
                 <div class="col-md-4">
@@ -2309,9 +2148,9 @@
                 </div>
             </div>
         </div>
-        <!--konan card end-->
+        <!--card end-->
 
-        <!-- boruto card start-->
+        <!-- card end-->
         <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
             <div class="row no-gutters">
                 <div class="col-md-4">
@@ -2328,9 +2167,8 @@
                 </div>
             </div>
         </div>
-        <!--boruto card end-->
-		    
-        <!-- asuma card start-->
+        <!--card end-->
+        <!--card start-->
         <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
             <div class="row no-gutters">
                 <div class="col-md-4">
@@ -2350,9 +2188,7 @@
                 </div>
             </div>
         </div>
-        <!-- asuma card end-->
-		    
-        <!--yamato card start-->		    
+        <!-- card end-->
         <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
             <div class="row no-gutters">
                 <div class="col-md-4">
@@ -2369,9 +2205,9 @@
                 </div>
             </div>
         </div>
-        <!--yamato card end-->
+        <!--card end-->
 
-        <!-- himawari card start-->
+        <!-- card end-->
         <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
             <div class="row no-gutters">
                 <div class="col-md-4">
@@ -2387,9 +2223,9 @@
                 </div>
             </div>
         </div>
-        <!--himawari card end-->
+        <!--card end-->
 
-        <!-- shikaku card start-->
+        <!-- card end-->
         <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
             <div class="row no-gutters">
                 <div class="col-md-4">
@@ -2408,9 +2244,9 @@
             </div>
         </div>
 
-        <!--shikaku card end-->
+        <!--card end-->
 
-        <!-- shizune card start-->
+        <!-- card end-->
         <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
             <div class="row no-gutters">
                 <div class="col-md-4">
@@ -2426,10 +2262,10 @@
                 </div>
             </div>
         </div>
-        <!--shizune card end-->
+        <!--card end-->
 
 
-        <!-- sane card start-->
+        <!-- card end-->
         <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
             <div class="row no-gutters">
                 <div class="col-md-4">
@@ -2446,10 +2282,10 @@
                 </div>
             </div>
         </div>
-        <!--sanae card end-->
+        <!--card end-->
 
 
-        <!-- sasori card start-->
+        <!-- card end-->
         <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
             <div class="row no-gutters">
                 <div class="col-md-4">
@@ -2464,9 +2300,13 @@
                 </div>
             </div>
         </div>
-        <!--sasori card end-->
+        <!--card end-->
 
-        <!-- shion card start-->
+
+
+
+
+        <!-- card end-->
         <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
             <div class="row no-gutters">
                 <div class="col-md-4">
@@ -2483,9 +2323,9 @@
                 </div>
             </div>
         </div>
-        <!--shion card end-->
+        <!--card end-->
 
-        <!-- kabuto card start-->
+        <!-- card end-->
         <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
             <div class="row no-gutters">
                 <div class="col-md-4">
@@ -2502,9 +2342,9 @@
                 </div>
             </div>
         </div>
-        <!--kabuto card end-->
+        <!--card end-->
 
-        <!-- kushina card start-->
+        <!-- card end-->
         <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
             <div class="row no-gutters">
                 <div class="col-md-4">
@@ -2521,9 +2361,9 @@
                 </div>
             </div>
         </div>
-        <!--kushina card end-->
+        <!--card end-->
 
-        <!-- shizune card start-->
+        <!-- card end-->
         <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
             <div class="row no-gutters">
                 <div class="col-md-4">
@@ -2539,9 +2379,8 @@
                 </div>
             </div>
         </div>
-        <!-- shizune card end-->
-		    
-        <!-- akamaru card start-->
+        <!--card end-->
+        <!-- card end-->
         <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
             <div class="row no-gutters">
                 <div class="col-md-4">
@@ -2556,9 +2395,9 @@
                 </div>
             </div>
         </div>
-        <!--akamaru card end-->
+        <!--card end-->
 
-        <!-- yamato card start-->
+        <!-- card end-->
         <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
             <div class="row no-gutters">
                 <div class="col-md-4">
@@ -2575,9 +2414,9 @@
                 </div>
             </div>
         </div>
-        <!-- yamato card end-->
+        <!--card end-->
 
-        <!-- tayuya card start-->
+        <!-- card end-->
         <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
             <div class="row no-gutters">
                 <div class="col-md-4">
@@ -2594,9 +2433,8 @@
                 </div>
             </div>
         </div>
-        <!-- tayuya card end-->
-		    
-        <!-- zetsu card start-->
+        <!--card end-->
+        <!-- card end-->
         <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
             <div class="row no-gutters">
                 <div class="col-md-4">
@@ -2614,9 +2452,9 @@
                 </div>
             </div>
         </div>
-        <!-- zetsu card end-->
-		    
-        <!--bee card start-->
+
+
+        <!-- card end-->
         <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
             <div class="row no-gutters">
                 <div class="col-md-4">
@@ -2632,9 +2470,12 @@
                 </div>
             </div>
         </div>
-        <!--bee card end-->
+        <!--card end-->
 
-        <!-- third hokage Card Start-->
+
+        <!--card end-->
+
+        <!-- Card Start-->
         <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
             <div class="row no-gutters">
                 <div class="col-md-4">
@@ -2651,8 +2492,9 @@
                 </div>
             </div>
         </div>
-        <!-- third hokage Card End-->
+        <!--Card End-->
     
+
         <!-- Garra Card starts here -->
         <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
             <div class="row no-gutters">
@@ -2675,7 +2517,8 @@
         </div>
         <!--Garra Card ends here-->
      
-        <!-- zabuza card start-->
+
+        <!-- card end-->
         <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
             <div class="row no-gutters">
                 <div class="col-md-4">
@@ -2694,9 +2537,9 @@
                 </div>
             </div>
         </div>
-        <!--zabuza card end-->
+        <!--card end-->
 
-        <!-- gengetsu card start-->
+        <!-- card end-->
         <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
             <div class="row no-gutters">
                 <div class="col-md-4">
@@ -2715,9 +2558,8 @@
                 </div>
             </div>
         </div>
-        <!-- gengetsu card end -->
-		    
-        <!-- tayuya card start-->
+        <!-- card end -->
+        <!-- card end-->
         <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
             <div class="row no-gutters">
                 <div class="col-md-4">
@@ -2734,9 +2576,8 @@
                 </div>
             </div>
         </div>
-        <!-- tayuya card end -->
-		    
-        <!-- mifune card start-->
+        <!-- card end -->
+        <!--card start-->
         <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
             <div class="row no-gutters">
                 <div class="col-md-4">
@@ -2751,10 +2592,11 @@
                     </div>
                 </div>
             </div>
+            <!--Card End-->
+
         </div>
-        <!-- mifune card end-->
-		    
-        <!-- deidara card start-->
+        <!--card end-->
+        <!-- card end-->
         <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
             <div class="row no-gutters">
                 <div class="col-md-4">
@@ -2774,9 +2616,8 @@
                 </div>
             </div>
         </div>
-        <!--deidara card end-->
-		    
-        <!-- shikadai card start-->
+        <!--card end-->
+        <!-- card end-->
         <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
             <div class="row no-gutters">
                 <div class="col-md-4">
@@ -2796,9 +2637,9 @@
                 </div>
             </div>
         </div>
-        <!--shikadai card end-->
+        <!--card end-->
 
-        <!-- shin card start-->
+        <!-- card end-->
         <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
             <div class="row no-gutters">
                 <div class="col-md-4">
@@ -2818,9 +2659,14 @@
                 </div>
             </div>
         </div>
-        <!--shin card end -->
 
-        <!-- hagoromo card start-->
+
+        <!--card end -->
+
+
+        <!--card end-->
+
+        <!-- card end-->
         <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
             <div class="row no-gutters">
                 <div class="col-md-4">
@@ -2839,7 +2685,7 @@
                 </div>
             </div>
         </div>
-        <!--hagoromo card end-->
+        <!--card end-->
 
         <!-- Danzo Shimura card starts-->
         <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
@@ -2858,9 +2704,9 @@
                 </div>
             </div>
         </div>
-        <!--danzo card end-->
+        <!--card end-->
 
-        <!-- shin card start-->
+        <!-- card end-->
         <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
             <div class="row no-gutters">
                 <div class="col-md-4">
@@ -2877,9 +2723,8 @@
                 </div>
             </div>
         </div>
-        <!-- shin card end-->
-		
-        <!--gengetsu card start-->
+
+        <!-- card end-->
         <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
             <div class="row no-gutters">
                 <div class="col-md-4">
@@ -2898,9 +2743,8 @@
                 </div>
             </div>
         </div>
-        <!--gengetsu  card end -->
-		
-        <!-- mifune card start-->
+        <!-- card end -->
+        <!--card start-->
         <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
             <div class="row no-gutters">
                 <div class="col-md-4">
@@ -2916,9 +2760,9 @@
                 </div>
             </div>
         </div>
-        <!-- mifune card end-->
+        <!--card end-->
 
-        <!-- kabuto card start-->
+        <!-- card end-->
         <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
             <div class="row no-gutters">
                 <div class="col-md-4">
@@ -2935,9 +2779,9 @@
                 </div>
             </div>
         </div>
-        <!-- kabuto card end-->
+        <!--card end-->
 
-        <!-- kushina card start-->
+        <!-- card end-->
         <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
             <div class="row no-gutters">
                 <div class="col-md-4">
@@ -2954,9 +2798,11 @@
                 </div>
             </div>
         </div>
-        <!-- kushina card end-->
+        <!--card end-->
 
-        <!--akamaru card start-->
+
+        <!--card end-->
+        <!-- card end-->
         <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
             <div class="row no-gutters">
                 <div class="col-md-4">
@@ -2971,9 +2817,9 @@
                 </div>
             </div>
         </div>
-        <!-- akamaru card end-->
+        <!--card end-->
 
-        <!-- kagura Card Start-->
+        <!-- Card Start-->
         <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
             <div class="row no-gutters">
                 <div class="col-md-4">
@@ -2988,9 +2834,7 @@
                 </div>
             </div>
         </div>
-        <!-- kaguracard end-->
-		
-           <!--jigen card start-->
+           <!-- card end-->
            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
             <div class="row no-gutters">
                 <div class="col-md-4">
@@ -3005,9 +2849,9 @@
            </div>
          </div>
        </div>
-     <!--jigen card end-->
+     <!--card end-->
 
-                <!--code card start-->
+                <!-- card end-->
                 <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                     <div class="row no-gutters">
                         <div class="col-md-4">
@@ -3021,9 +2865,9 @@
                    </div>
                  </div>
                </div>
-             <!--code card end-->
+             <!--card end-->
 
-        <!-- choji card start-->
+        <!-- card end-->
         <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
             <div class="row no-gutters">
                 <div class="col-md-4">
@@ -3041,14 +2885,11 @@
                     </div>
                 </div>
             </div>
-        </div>	
-        <!--choji card end-->
-		
-        <!--ada card start-->
+        </div>
         <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
             <div class="row no-gutters">
                 <div class="col-md-4">
-                    <img src="./Images/Ada.png" alt="ada" height="390px" width="300px">
+                    <img src="./Images/Ada.png" alt="gaara" height="390px" width="300px">
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
@@ -3061,10 +2902,9 @@
                     </div>
                 </div>
             </div>
-        </div>	
-        <!--ada card end-->
+        </div>
 
-        <!--kinkaku card start-->
+        <!--tabish's contribution-->
         <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
             <div class="row no-gutters">
                 <div class="col-md-4">
@@ -3080,9 +2920,10 @@
                 </div>
             </div>
         </div>
-        <!--kinkaku card end -->
-		
-        <!--minato card start-->
+
+        <!--card end -->
+        <!--card start-->
+
         <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
             <div class="row no-gutters">
                 <div class="col-md-4">
@@ -3098,9 +2939,10 @@
                 </div>
             </div>
         </div>
-        <!--minato card end -->
 
-        <!-- taka card start-->
+        <!--card start -->
+
+        <!-- card end-->
         <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
             <div class="row no-gutters">
                 <div class="col-md-4">
@@ -3116,9 +2958,8 @@
                 </div>
             </div>
         </div>
-        <!--taka card end-->
-		
-        <!--might guy card start-->
+        <!--card end-->
+        <!-- card start-->
         <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
             <div class="row no-gutters">
                 <div class="col-md-4">
@@ -3137,10 +2978,10 @@
                 </div>
             </div>
         </div>
-        <!--guy card end-->
+        <!--card end-->
 
 
-        <!-- w_zetsu card start-->
+        <!-- card end-->
         <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
             <div class="row no-gutters">
                 <div class="col-md-4">
@@ -3158,9 +2999,8 @@
                 </div>
             </div>
         </div>
-        <!--w_zetsu card end-->
+        <!--card end-->
 
-        <!--kiba card start-->
         <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
             <div class="row no-gutters">
                 <div class="col-md-4">
@@ -3175,9 +3015,10 @@
                 </div>
             </div>
         </div>
-        <!--kiba card end-->
 
-        <!--genma card starts-->
+        <!--card end-->
+
+        <!--card starts-->
         <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
             <div class="row no-gutters">
                 <div class="col-md-4">
@@ -3192,9 +3033,10 @@
                 </div>
             </div>
         </div>
-        <!-- genma card end-->
+
+        <!--card end-->
         
-        <!-- konohamaru card starts-->
+        <!--card starts-->
         <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
             <div class="row no-gutters">
                 <div class="col-md-4">
@@ -3209,10 +3051,10 @@
                 </div>
             </div>
         </div>
-        <!-- konohamaru card end-->
+        <!--card end-->
 
 
-        <!-- kurobachi card start-->
+        <!-- card start-->
         <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
             <div class="row no-gutters">
                 <div class="col-md-4">
@@ -3228,10 +3070,7 @@
                     </div>
                 </div>
             </div>
-        </div>	
-        <!--kurobachi card end-->
-		
-        <!--kurenai card start-->
+        </div>
         <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
             <div class="row no-gutters">
                 <div class="col-md-4">
@@ -3246,10 +3085,9 @@
                     </div>
                 </div>
             </div>
-        </div>	
-        <!--kurenai card end-->
+        </div>
 
-<!-- kurenai card start-->
+<!-- card end-->
 <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
     <div class="row no-gutters">
         <div class="col-md-4">
@@ -3264,9 +3102,9 @@
    </div>
  </div>
 </div>    
-<!--kurenai card ended -->
+<!--last card ended -->
 
-<!-- tajima card start-->
+<!-- card start-->
 <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
     <div class="row no-gutters">
         <div class="col-md-4">
@@ -3285,10 +3123,10 @@
  </div>
 </div>
 
-<!--tajima card ended -->
+<!--last card ended -->
 		
 		
-	  <!-- asura card start-->
+<!-- card end-->
            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
               <div class="row no-gutters">
                   <div class="col-md-4">
@@ -3303,10 +3141,12 @@
              </div>
            </div>
          </div>
-       <!--ashura card end-->
+       <!--card end-->
+        <!--last card ended -->
 
-	<!-- kimimaro card start -->
-	<div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+
+<!-- card ended -->
+<div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
                         <img src='https://www.giantbomb.com/a/uploads/scale_small/0/5756/330917-kimimaro.jpg'alt='Kimimaro Kaguya' height="390px" width="300px">
@@ -3324,9 +3164,9 @@
                     </div>
                 </div>
             </div>
-            <!--kimimaro card end-->
+            <!--card end-->
    
-<!--jugo card start-->
+
 <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
     <div class="row no-gutters">
         <div class="col-md-4">
@@ -3343,9 +3183,7 @@
    </div>
  </div>
 </div>
-<!--jugo  card end-->
-		
-          <!--onoki card start-->
+		           <!-- card end-->
            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
               <div class="row no-gutters">
                   <div class="col-md-4">
@@ -3360,9 +3198,10 @@
              </div>
            </div>
          </div>
-        <!--onoki card end-->	
-
-           <!-- tsunade card start-->
+		
+		
+   <!--last card ended -->
+           <!-- card end-->
            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
               <div class="row no-gutters">
                   <div class="col-md-4">
@@ -3382,90 +3221,10 @@
              </div>
            </div>
          </div>
-       <!--tsunade card end-->
+       <!--card end-->
 
-                  <!-- akamaru card start-->
-                  <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
-                    <div class="row no-gutters">
-                        <div class="col-md-4">
-                           <img src="./Images/319922-akamaru.jpg" alt=Akamaru height="390px" width="300px">  
-                        </div>
-                    <div class="col-md-8">
-                       <div class="card-body">
-                          <h2 class="card-title">Akamaru </h2>
-                          <p class="card-text">Faithful dog companion to Kiba Inuzuka. His proof of Kiba's kinship with the Inuzuka clan.</p>
-                          <p> Akamaru's heightened senses, such as smell and hearing, along with Kiba's ability to communicate with him, make him a powerful tool for gathering and sharing information; he can also sense chakra with his nose</p>
-                      </div>
-                   </div>
-                 </div>
-               </div>
-             <!--akamaru card end-->
 
-     <!-- kagura Card Start-->
-     <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
-        <div class="row no-gutters">
-          <div class="col-md-4">
-              <img src="./Images/2399930-kagura.png" alt="Kagura" height="390px" width="300px">  
-           </div>
-        <div class="col-md-8">
-             <div class="card-body">
-                <h2 class="card-title">Kagura</h2>
-                <p>The main villain of Clash of Ninja Revolution 2, she's an ex-ANBU member.</p>
-                <p>Kagura appears as a bonus character in Clash of Ninja Revolution 3. Thus far she has yet to appear outside of these two games, and has not yet appeared in Japan at all.</p>
-            </div>
-        </div>
-  </div>
- </div>
- <!-- kagura card end-->
-	    
-	    
-                <!-- momoshiki card start-->
-                <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
-                    <div class="row no-gutters">
-                        <div class="col-md-4">
-                            <img src="https://static.wikia.nocookie.net/goldbattles/images/e/ee/Kinshiki_Absorbed_%281%29.png/revision/latest/scale-to-width-down/600?cb=20190817062500" alt="Momoshiki" height="390px" width="300px">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h2 class="card-title"> Momoshiki Ōtsutsuki
-                                </h2>
-                                <p>Momoshiki Ōtsutsuki was a member of the Ōtsutsuki clan's main family, that converted chakra to create medicine, 
-					which granted him godlike power along with continued youth and life. In the anime, he and Kinshiki were sent to investigate the 
-					whereabouts of Kaguya and her God Tree.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-                <!--momoshiki card end -->
 
-        <!--kurama card start-->
-        <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
-            <div class="row no-gutters">
-                <div class="col-md-4">
-                    <img src="Images/kurama_.jpg" alt="Kurama" height="390px" width="300px">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h2 class="card-title">Kurama</h2>
-                        <p class="card-text">Kurama, more commonly known as the Nine-Tails, was one of the nine tailed
-                            beasts.</p>
-                        <p>At the time of the Sage of the Six Paths, Kurama was very young. The Tailed Beasts were meant
-                            to help mankind by the Sage's orders. At the time near the Sage's death, Kurama got
-                            emotional, giving hints that he was quite attached to Hagoromo.
-                            But later on, after the Sage of the Six Paths passed away, people began to use the Tailed
-                            Beasts as weapons against each other, and after Hashirama came about and started the Five
-                            Great Nations, against other nations as well. It was said that the Uchiha clan could use the
-                            Sharigan to manipulate the Tailed Beasts and control their actions. This was later proved
-                            throughout the series and Kurama so happened to be victim to this manipulation most of all.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- kurama card end-->
-		
-		
         <!--gukasaku card start-->
            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
               <div class="row no-gutters">
@@ -3500,7 +3259,7 @@
                  </div>
                </div>
              <!-- Neji card end-->
-
+          
              <!-- Juubi card start-->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
@@ -3512,11 +3271,64 @@
                       <h2 class="card-title">Juubi</h2>
                       <p class="card-text">The ten-tailed beast was created by Kaguya Otsutsuki and later had its chakra split into the nine tailed beasts</p>
                       <p>This Ten-Tails (十尾, Jūbi) is the combined form of Kaguya Ōtsutsuki and the God Tree, created to reclaim the chakra inherited by her sons, Hagoromo and Hamura. It is regarded as the progenitor of chakra, and is tied to the legend of the Sage of Six Paths and the birth of shinobi. To end the beast's rampage, the Sage became the Ten-Tails' jinchūriki and later split its chakra into the nine tailed beasts to prevent it from causing further harm. Centuries later, its revival became the objective of Madara and Obito Uchiha, who both sought to become the beast's jinchūriki in order to further their objectives.</p>
+
+              <!-- Ichiraku card start-->
+              <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                       <img src="https://static.wikia.nocookie.net/naruto/images/d/d6/Teuchi_Infobox.png" alt="Ichiraku" height="390px" width="300px">  
+                    </div>
+                <div class="col-md-8">
+                   <div class="card-body">
+                      <h2 class="card-title">Teuchi Ichiraku</h2>
+                      <p class="card-text">Teuchi Ichiraku is a citizen of Konohagakure and the owner of Ramen Ichiraku. He is a very kind and jovial man. Often seen smiling, he and Ayame have always treated Naruto Uzumaki well, considering him their best customer, sometimes even giving him free ramen on special occasions. He also cares for Naruto as he often asks Naruto what was going on if he hasn't seen him in a while.</p>
+                      <p> Ichiraku has been serving Naruto ramen since he was a young boy, back when most of the village hated and despised Naruto. He didn't care what the rest of the village thought of Naruto; Naruto loved ramen and Ichiraku loved preparing it for him. Since ramen has been the extent of their relationship all these years, Ichiraku was surprised to be invited to Naruto's wedding.</p>
+                      <p> He decides that giving Naruto free ramen for a year would be the most appropriate wedding gift. Ichiraku then realises how much ramen Naruto can eat, and starts decreasing the duration of the offer, but every span of time he considers leaves him with visions of Ichiraku Ramen going bankrupt and his daughter being put out on the street. He also has visions of Naruto's smiling face whenever he finishes a bowl of his ramen. Ichiraku settles on giving Naruto free and unlimited ramen for the rest of his life.</p>
+
                   </div>
                </div>
              </div>
            </div>
+
             <!-- Juubi card end-->
+
+         <!-- Ichiraku card end-->
+              <!-- card end-->
+           <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                   <img src="Images/sasori12.jpg" alt="Sasori" height="390px" width="300px">  
+                </div>
+            <div class="col-md-8">
+               <div class="card-body">
+                  <h2 class="card-title">Sasori</h2>
+                  <p class="card-text">A rougue ninja from The Hidden Sand Village. After defection, he joined the elite criminal organization Akatsuki.</p>
+                  <p>He is considerd the father of all current ninja puppet techniques, as he was the one who created many of the currently used techniques and puppets in The Hidden Sand Village.
+                    Sasori has a number of techniques and puppets, the first seen is his HIruko puppet Armour. Other techniques are the Kazekage puppet which he fuses with a sand technique jutsu, Sasoris most powerful technique is the Red secret technique: performance of a thousand puppets. </p>
+              </div>
+           </div>
+         </div>
+       </div>
+     <!--card end-->
+     <!--Gamakichi card end-->
+     <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+        <div class="row no-gutters">
+            <div class="col-md-4">
+               <img src="https://static.wikia.nocookie.net/naruto/images/e/e1/Gamakichi.PNG/revision/latest?cb=20150130205312" alt=Gamakichi height="390px" width="300px">  
+            </div>
+        <div class="col-md-8">
+           <div class="card-body">
+              <h2 class="card-title">Gamakichi</h2>
+              <p class="card-text">Gamakichi is a toad from Mount Myōboku. He is also the eldest son of Gamabunta and the older brother of Gamatatsu. He is the personal summon of Naruto Uzumaki.</p>
+              <p>He is rather comedic, and has the mannerisms of a smart aleck. He is also often very condescending as well as light-hearted in most situations, preferring the levity of talk to the seriousness of battle. He has formed a bond with Naruto because he saved him from Gaara in his miniature Shukaku form.</p>
+          </div>
+       </div>
+     </div>
+   </div>
+ <!--Gamakichi card end-->
+
+
+
 		
         </div>
     </main>
@@ -3536,9 +3348,10 @@
     </script>
     <script src="searchbar.js"></script>
     <script src="./scrollEffect.js"></script>
-    <script src="scrolltotop.js"></script>
+
 
 </body>
 
 
 </html>
+
