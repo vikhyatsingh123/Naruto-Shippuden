@@ -1,4 +1,4 @@
-    let buttonText = document.getElementById("darkmode-button");
+    let buttonText = document.getElementById("switch");
     let theme=localStorage.getItem('theme');
 var bodyelem=document.body;
 function darkmode(){
@@ -17,6 +17,7 @@ function lightmode(){
 if(theme=='darkmode')
 {
     darkmode();
+    buttonText.checked = true;
 }
 buttonText.addEventListener('click',()=>{
    theme=localStorage.getItem('theme');
