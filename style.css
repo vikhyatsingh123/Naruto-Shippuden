@@ -14,6 +14,56 @@ body {
   border-radius: 1rem;
 }
 
+
+/* Dark Mode Switch CSS */
+
+.switch-container{
+  position: absolute;
+  top:10%;
+}
+
+.switch-container #switch {
+  display: none;
+}
+.switch-container .switch-label {
+  position: relative;
+  cursor: pointer;
+  margin: 0;
+}
+.switch-container .switch-label .switch-rail {
+  transition: all 0.2s ease-in-out;
+  position: absolute;
+  width: 70px;
+  height: 30px;
+  background: #ff9a47;
+  border-radius: 50px;
+  overflow: hidden;
+}
+.switch-container .switch-label .switch-rail .switch-slider {
+  transition: all 0.2s ease-in-out;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #fff;
+}
+.switch-container #switch:checked + .switch-label .switch-rail {
+  transition: all 0.2s ease-in-out;
+  background: #2e4a6b;
+}
+.switch-container #switch:checked + .switch-label .switch-rail .switch-slider {
+  transition: all 0.2s ease-in-out;
+  transform: translateX(40px);
+}
+
+.search{
+  position: relative;
+  left: 200px;
+  height: 60px;
+  width: 60px;
+
 .loader {
 
   filter:hue-rotate(0deg);
@@ -26,7 +76,6 @@ body {
   left: 250px;
   height: 48px;
   width: 48px;
-
   background: #fff;
   border-radius: 60px;
   transition: 0.5s;
