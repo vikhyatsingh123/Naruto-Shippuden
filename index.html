@@ -9,15 +9,51 @@
     <link rel="stylesheet" href="./style.css" type="text/css">
     <link href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.6qtY7eooQBTfiSVjtrLrGQHaEj%26pid%3DApi&f=1" rel="icon" type="image/jpeg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+	<!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">    
+	<!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css">    
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
     <title>Naruto</title>
 </head>
 
 <body>
-
+<!--
   <div class="loader">
     <button id="scrolltopBtn" title="Go to Top">&uarr;</button>
+-->
 
-    <header>
+<!-- Start header -->
+	<header class="top-navbar">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container">
+				<a class="navbar-brand" href="#">
+					<img src="./Images/logo.png" height="70px" width="200px" alt="" />
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-rs-food" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbars-rs-food">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active"><a class="nav-link" href="./index.html">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+						
+						
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- End header -->
+   
+<!--   <header>
         <nav class="navbar fixed-top navbar-expand-lg navbar-light nav1">
             <a class="navbar-brand brand1 ml-4" href="#" style="color: beige;">Naruto</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,10 +94,54 @@
         </nav>
 
     </header>
-
-
+-->
+<!-- Start slides -->
+	<div id="slides" class="cover-slides">
+		<ul class="slides-container">
+			<li class="text-center"><img src="images/1.jpg" alt=""><img src="images/menu.png" alt="">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<h1 class="m-b-20"><strong>Welcome To <br> Naruto World</strong></h1>
+							
+							<p><a class="btn btn-lg btn-circle btn-outline-new-white" href="#">Read More</a></p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="text-center">
+				<img src="images/3.jpg" alt="">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<h1 class="m-b-20"><strong>Welcome To <br> Naruto World</strong></h1>
+							
+							<p><a class="btn btn-lg btn-circle btn-outline-new-white" href="#">Read More</a></p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="text-center">
+				<img src="images/4.jpg" alt="">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<h1 class="m-b-20"><strong>Welcome To <br> Naruto World</strong></h1>
+							
+							<p><a class="btn btn-lg btn-circle btn-outline-new-white" href="#">Read More</a></p>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+		<div class="slides-navigation">
+			<a href="#" class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+			<a href="#" class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+		</div>
+	</div>
+	<!-- End slides -->
     <main>
-
+ <!--
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -70,13 +150,13 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="./Images/229954.jpg" class="d-block w-100" alt="...">
+                    <img src="./Images/1.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="./Images/377906.jpg" class="d-block w-100" alt="...">
+                    <img src="./Images/2.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="./Images/377922.jpg" class="d-block w-100" alt="...">
+                    <img src="./Images/4.jpg" class="d-block w-100" alt="...">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -88,7 +168,7 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-
+-->
         <h1 class="topic my-5">Characters</h1>
         <!--Card section start-->
         <div class="container" id="cont">
@@ -109,6 +189,23 @@
                     </div>
                 </div>
             </div>
+			            <!-- [character name] card start-->
+            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+              <div class="row no-gutters">
+                 <div class="col-md-4">
+                    <img src="./Images/SX393aUy.JPG" alt="matatabi" height="390px" width="300px">  
+                  </div>
+                  <div class="col-md-8">
+                   <div class="card-body">
+                      <h2 class="card-title">Naruto Uzumaki</h2>
+                      <p class="card-text">Naruto Uzumaki is a fictional character in the manga and anime franchise of the same name, created by Masashi Kishimoto. </p>
+                      <p>Serving as the eponymous protagonist of the series, he is a young ninja from the fictional village of Konohagakure</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--[character name] card end-->
+
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -3421,15 +3518,69 @@
         </div>
 
     </main>
+<footer class="footer-area bg-f">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-6">
+					<h3>About Us</h3>
+					<p>Integer cursus scelerisque ipsum id efficitur. Donec a dui fringilla, gravida lorem ac, semper magna. Aenean rhoncus ac lectus a interdum. Vivamus semper posuere dui, at ornare turpis ultrices sit amet. Nulla cursus lorem ut nisi porta, ac eleifend arcu ultrices.</p>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<h3>Join US</h3>
+					<p><span class="text-color">Monday: </span>Closed</p>
+					<p><span class="text-color">Tue-Wed :</span> 9:Am - 10PM</p>
+					<p><span class="text-color">Thu-Fri :</span> 9:Am - 10PM</p>
+					<p><span class="text-color">Sat-Sun :</span> 5:PM - 10PM</p>
+				</div>
+				
+				<div class="col-lg-3 col-md-6">
+					<h3>Subscribe</h3>
+					<div class="subscribe_form">
+						<form class="subscribe_form">
+							<input name="EMAIL" id="subs-email" class="form_input" placeholder="Email Address..." type="email">
+							<button type="submit" class="submit">SUBSCRIBE</button>
+							<div class="clearfix"></div>
+						</form>
+					</div>
+					<ul class="list-inline f-social">
+						<li class="list-inline-item"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div class="copyright">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<p class="company-name">All Rights Reserved. &copy; 2021 <a href="#">Naruto World</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</footer>
+	<!-- End Footer -->
+	
+	<a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>
 
-
-    <footer>
-        <nav class="navbar navbar-expand-lg navbar-light nav1">
-            <p class="mx-auto text-light font-weight-lighter">&copy Developed By- Vikhyat Singh</p>
-        </nav>
-    </footer>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+	<!-- ALL JS FILES -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+	<script src="js/jquery.superslides.min.js"></script>
+	<script src="js/images-loded.min.js"></script>
+	<script src="js/isotope.min.js"></script>
+	<script src="js/baguetteBox.min.js"></script>
+	<script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>
+    <script src="js/custom.js"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
     </script>
@@ -3439,10 +3590,5 @@
     <script src="./scrollEffect.js"></script>
 
     <script src="scrolltotop.js"></script>
-</div>
-
 </body>
-
-
 </html>
-
