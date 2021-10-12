@@ -13,6 +13,21 @@ body {
   background: #ffb732;
   border-radius: 1rem;
 }
+nav{
+  position: fixed;
+  
+  display: flex;
+}
+.right{
+  flex: 1;
+
+}
+.left{
+   flex: 3;
+}
+main{
+  margin-top: 100px;
+}
 
 
 /* Dark Mode Switch CSS */
@@ -58,11 +73,7 @@ body {
   transform: translateX(40px);
 }
 
-.search{
-  position: relative;
-  left: 200px;
-  height: 60px;
-  width: 60px;
+
 
 .loader {
 
@@ -73,7 +84,7 @@ body {
 }
 .search {
   position: fixed;
-  left: 250px;
+  
   height: 48px;
   width: 48px;
   background: #fff;
