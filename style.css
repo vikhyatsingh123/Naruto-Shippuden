@@ -70,7 +70,8 @@ body {
 .loader {
 
   filter:hue-rotate(0deg);
-  background:linear-gradient(45deg,#0f8,#08f);
+  background-image: radial-gradient(blue, violet);
+  /* background:linear-gradient(45deg,#0f8,#08f); */
   animation:hue 10000ms infinite linear;
   /* position: sticky; */
   background-color: #dc3545;
@@ -457,6 +458,7 @@ h2.card-title {
 .card{
   transition: all 550ms ease-in;
   opacity: 0;
+  background-color: white;
 }
 
 .appear{
