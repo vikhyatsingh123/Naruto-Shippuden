@@ -38,6 +38,8 @@ body {
   background: #ff9a47;
   border-radius: 50px;
   overflow: hidden;
+  bottom: -14px;
+    right: -6rem;
 }
 .switch-container .switch-label .switch-rail .switch-slider {
   transition: all 0.2s ease-in-out;
@@ -69,25 +71,29 @@ body {
   filter:hue-rotate(0deg);
   background:linear-gradient(45deg,#0f8,#08f);
   animation:hue 10000ms infinite linear;
-
+  /* position: sticky; */
+  background-color: #dc3545;
 }
+
+
+.fixed-top{
+  /* background-color: black; */
+  position: sticky;
+}
+
+
 .search {
-  position: fixed;
-  left: 15rem;
+  /* position: fixed; */
+  left: 10px;
   height: 48px;
   width: 48px;
   background: #fff;
   border-radius: 60px;
   transition: 0.5s;
-  box-shadow: 0 0 0 5px black;
+  /* box-shadow: 0 0 0 5px black; */
   overflow: hidden;
 }
 
-@media (min-width: 768px) {
-  .search{
-    left: 80rem
-  }
-}
 .activated {
   width: 360px;
 }
@@ -178,9 +184,13 @@ body {
   font-weight: bolder;
   text-shadow: 1px blue;
 }
-.nav1 {
+
+
+/* .nav1 {
   background-color: black;
-}
+} */
+
+
 .topic {
   text-align: center;
   font-weight: 900;
@@ -304,9 +314,9 @@ body.lightmode {
   font-weight: bolder;
   text-shadow: 1px blue;
 }
-.nav1 {
+/* .nav1 {
   background-color: black;
-}
+} */
 .topic {
   text-align: center;
   font-weight: 900;
@@ -484,3 +494,24 @@ h2.card-title {
 }
 
 
+
+ul.navbar-nav.mr-auto {
+  position: absolute;
+  right: 10rem;
+}
+
+
+button#scrolltopBtn {
+  border-radius: 100%;
+  height: 40px;
+  width: 40px;
+  font-size: 25px;
+  font-weight: bold;
+  /* text-align: center; */
+  /* position: sticky; */
+  margin-top: 100px;
+    position: fixed;
+    margin-left: 89rem;
+   z-index: 2000;
+   border: none;
+} 
