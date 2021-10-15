@@ -1,0 +1,158 @@
+
+#include
+#include <bits/stdc++.h>
+
+using namespace std;
+
+class node
+{
+public:
+int data;
+node* next;
+
+};
+//////////////TO INSERT AT END/////////////////
+void insert_at_tail(node* &head,int value)
+{
+nodenew_node=new node;
+new_node->data=value;// ADDING THE VALUE TO NEW NODE
+new_node->next=NULL;// POINTING THE NEW NODE TO NULL THAT IS AFTER NEW NODE NO ELEMENT IS PRESENT
+if(head==NULL)
+{
+//CASE WHEN HEAD IS NULL THAT IS NO ELEMENT IS PRESENT SO WE HAVE TO CREATE A NODE
+//SO THAT FIRST NODE WILL ACT AS HEAD
+//SO POINTER HEAD IS POINTING TO NEW NODE OR THE FIRST NODE WE CREATED
+head=new_node;
+return;
+}
+else
+{
+//CASE WHEN LINK LIST IS NOT EMPTY TO WE ARE USING TEMP(temporary variable to traverse)
+// WE ARE MAKING TEMP TO POINT TO THAT NODE WHERE THE HEAD IS POINTING SO THAT TRAVERSAL WILL BE DONE FROM START TO END
+nodetemp=head;
+while(temp->next!=NULL)
+{
+temp=temp->next;
+// HERE WE ARE USING LOOP TILL WE GET NULL SO THAT AFTER GETTING NULL WE CAN POINT THE TEMP THAT IS LAST NODE TO THE NEWLY CREATED NODE BY US
+}
+temp->next=new_node;
+//NOW HERE WE ARE ASSIGNING THE LAST NODE POINTING TO THE NEWLY CREATED NODE
+}
+
+}
+////////////////////////COUNTS THE NODE//////////////////////////
+int count_nodes(node* &head)
+{
+    int count =0;
+    node*temp=head;
+    while(temp!=NULL)
+    {
+        count++;
+        temp=temp->next;
+    }
+    return count;
+}
+///////////////////////////FINDS THE MAXIMUM IN LINK LIST//////////
+int max_in_linklist(node* head)
+{
+    int max=INT_MIN;
+    node*temp=head;
+    while(temp!=NULL)
+    {
+        if(temp->data>max)
+        {
+            max=temp->data;
+
+        }
+        temp=temp->next;
+    }
+    return max;
+}
+//////////////////////////FINDS THE MINIMUM IN LINK LIST///////////
+int min_in_linklist(node* head)
+{
+    int min= INT_MAX;
+    node* temp=head;
+    while(temp!=NULL)
+    {
+        if(temp->data < min)
+        {
+            min=temp->data;
+
+        }
+        temp=temp->next;
+    }
+    return min;
+}
+///////////////////////////THIS HELPS IN INSERING AT FRONT/////////
+void insert_at_front(node* &head,int value)
+{
+    //HERE WE HAVE TO CHANGE HEAD POINTER THAT IS HEAD SHOULD POINT TO THE NEWLY CREATED NODE
+    node *new_node= new node;
+    new_node->data=value;
+    new_node->next=head;
+    head=new_node;
+}
+/////////////////////////INSERTS AFtER A SPECIFIC POSITION/////////
+void insert_at_specific(node* &head, int value,int pos)
+{
+    node *new_node = new node;
+    new_node->data=value;
+    node *temp=head;
+    for(int i=1;i<pos -1 ;i++)
+    {
+        temp=temp->next;
+    }
+    node*var=temp->next;
+    temp->next=new_node;
+    new_node->next=var;
+}
+///////////////////////////DELETE A NODE////////////////////////////
+void delete_node(node* & head,int value)
+{
+    //TO DELETE WE ONLY HAVE TO  CHANGE THE POINTER OF THE PREVIOUS OF THE DELETE ELEMENT AND POINT TO THE NODE WHICH COMES AFTER THE ELEMENT
+    node *temp=head;
+    while(temp->next->data!=value)
+    {
+        temp=temp->next;
+    }
+        node* to_delete=temp->next;
+    temp->next=temp->next->next;
+    delete to_delete;
+}
+//////////////DISPLAYING LINK LIST////////////////////////////
+void display(node* &head)
+{
+    node*temp=head;
+    while(temp!=NULL)
+    {
+        cout<<temp->data<<"->";
+        temp=temp->next;
+    }
+    cout<<"NULL";
+    cout<<endl;
+}
+int main()
+{
+
+node*head=NULL;
+int num;
+for(int i=0;i<10;i++)
+{
+ cin>>num;
+ insert_at_tail(head,num);
+ }
+
+display(head);
+cout<<endl;
+cout<<"Total number of nodes in Link list :"<<count_nodes(head)<<endl;
+cout<<"Max in Link List :"<<max_in_linklist(head)<<endl;
+cout<<"Minimum in Link List :"<<min_in_linklist(head)<<endl;
+insert_at_front(head,100);
+insert_at_specific(head,99,3);
+display(head);
+delete_node(head,5);
+display(head);
+return 0;
+}
+///////////////////CODE BY ADITI MAHABOLE////////////////////////////////
