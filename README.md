@@ -41,7 +41,7 @@ Follow these steps to make your very first Pull request.
 
 Not everyone is aware of every tool present in the world no matter how easy or complex it is. It's also not necessary to know each and every tool out there. Use the code below to add the your own card!
 
-Code - 
+<b>Code -</b> 
 
                 <!-- [character name] card start-->
                 <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
