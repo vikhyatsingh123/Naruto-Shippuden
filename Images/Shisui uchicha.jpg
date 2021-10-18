@@ -1,0 +1,16 @@
+            <!-- [Shisui uchicha ] card start-->
+            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+              <div class="row no-gutters">
+                 <div class="col-md-4">
+                    <img src=[https://fsb.zobj.net/crop.php?r=gKoIwlfgynctF9jNeohKyRm9ODcM8jxqrUwPbbO60DoJ0-qhbmeAKPn8_kIWqH772O9DwxAhwjRcROpMfgknKIKtQELAWWmXZ__r_OdPcjIwIdLhpJgNL91Jxh8VFH6d3zElbyv8aD7bFG7gpg5Eg5TOPZNpBPHpVZi8jDsmypbeo4X2Wf0jkr499-fR4M4meVM0n5pIwKo-eRac] alt=[name of character] height="390px" width="300px">  
+                  </div>
+                  <div class="col-md-8">
+                   <div class="card-body">
+                      <h2 class="card-title">[name of character]</h2>
+                      <p class="card-text">[Main description about character]</p>
+                      <p>[some more description about character]</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--[Shisui uchicha ] card end-->
