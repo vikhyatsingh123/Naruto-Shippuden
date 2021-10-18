@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en-US">
 
 <head>
@@ -11,11 +11,46 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
     <title>Naruto</title>
 </head>
+	
+	<style>
+		.to-top {
+ 			color: #fff;
+ 			position: fixed;
+ 			bottom: 16px;
+	    	right: 32px;
+	    	width: 50px;
+	    	height: 50px;
+	    	border-radius: 50%;
+	    	display: flex;
+	    	align-items: center;
+	    	justify-content: center;
+	    	font-size: 32px;
+	    	background: #1f1f1f;
+	    	text-decoration: none;
+	    	opacity: 0;
+	    	pointer-events: none;
+	    	transition: all 0.4s;
+ 		}
+
+ 		.to-top.active {
+ 			bottom: 32px;
+ 			pointer-events: auto;
+ 			opacity: 1;
+ 		}
+
+ 		.to-top:hover {
+ 			color: #fff;
+ 			text-decoration: none;
+ 		}
+	</style>
 
 <body>
-    <button id="scrolltopBtn" title="Go to Top">&uarr;</button>
+	
+    <a href="#" class="to-top">
+	<i class="fa fa-arrow-up"></i>
+    </a>
+	
   <div class="loader">
-    
 
     <header>
         <nav class="navbar fixed-top navbar-expand-lg navbar-light">
@@ -187,6 +222,23 @@
 
             <!-- Haku card end-->
 
+            <!-- Tonton card start -->
+            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="./Images/Tonton.png" alt="Tonton" height="350px" width="380px">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h2 class="card-title"> Tonton </h2>
+                            <p class="card-text">Tonton is Tsunade's ninja pig, often kept in the care of Shizune.</p>
+                            <p>Above all else, Tonton is a highly devoted, and dutiful pet pig. Her devotion to Tsunade was noted during her master's battle with the other Sannin, which she watched in earnest as Gamakichi and Gamatatsu bickered. This even surfaced during the Fourth Shinobi World War, where, in her earnest to aid the Logistical Support and Medical Division, Tonton carried around several large sized crates around the camp ground, eventually spraining her foot.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tonton card end-->
 
             <!-- first card end-->
             <!-- card start  -->
@@ -212,7 +264,28 @@
                 </div>
             </div>
             <!-- card end -->
+		
+  		<!-- Hidan card start-->
+            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+              <div class="row no-gutters">
+                 <div class="col-md-4">
+                    <img src="./Images/Hidan.png" alt="Hidan" height="390px" width="300px">  
+                  </div>
+                  <div class="col-md-8">
+                   <div class="card-body">
+                      <h2 class="card-title">Hidan</h2>
+                      <p class="card-text">Hidan is an S-rank missing-nin who defected from Yugakure and later joined the Akatsuki. There, he was partnered with Kakuzu, 
+			      despite the two's somewhat mutual dislike of each other.</p>
+                      <p>Hidan doesn't always seem like the most intelligent of the Akatsuki. He certainly doesn't have the knack for long-term planning that Pain or Tobi do,
+			      for example. Hidan does, however, much like Kakuzu, have a great understanding of anatomy and just how shinobi abilities work. That's how he 
+			      manages to keep himself functionally immortal. That gives him an edge in a fight even when he isn't using his head for strategy.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Hidan card end-->
 
+		
             <!-- card start  -->
 
             <!-- card start  -->
@@ -352,6 +425,25 @@
                 </div>
             </div>
             <!--Fugaku card end-->
+
+            
+            <!-- Inari card start-->
+            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="https://static.wikia.nocookie.net/naruto/images/1/14/Inari%27s_Family.png/revision/latest/scale-to-width-down/720?cb=20140621104830" alt="Fugaku" height="390px" width="300px">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h2 class="card-title">Inari</h2>
+                            <p class="card-text">Inari (イナリ, Inari) is a young citizen of the Land of Waves.                    </p>
+                            <p>Inari is the son of Tsunami, and is also Tazuna's grandson. His biological father died before he got to know him.
+                            </p>Inari first appeared to be a very tough individual, though this was just a ruse he put on to hide the loneliness he felt since the death of Kaiza. He would often spend most of his time in his room staring at a photo of his father, conflicted by the feelings he had of loss and anger towards the man for dying, though he did so protecting their small village.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Inari card end-->
 
             <!-- Mikoto card start-->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
@@ -546,6 +638,24 @@
             </div>
 
             <!--second card end-->
+
+             <!-- Choza card start-->
+
+             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="./Images/choza_akimichi.png" alt="Choza Akimichi" height="390px" width="300px">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h2 class="card-title">Choza Akimichi</h2>
+                            <p class="card-text">Choza Akimichi (秋道チョウザ, Akimichi Chōza) is a jōnin of Konohagakure and former teammate of Shikaku Nara and Inoichi Yamanaka. Together they were the previous Ino–Shika–Chō trio. He is also the fifteenth head of the Akimichi clan (秋道15代目当主, Akimichi Jūgodaime Tōshu).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Choza card end-->
+
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -554,10 +664,21 @@
                     <div class="col-md-8">
                         <div class="card-body">
                             <h2 class="card-title">Madara Uchiha</h2>
-                            <p class="card-text">Madara Uchiha (うちはマダラ, Uchiha Madara) was the legendary leader of the Uchiha clan. He founded Konohagakure alongside his childhood friend and rival, Hashirama Senju, with the intention of beginning an era of peace. When the
-                                two couldn't agree on how to achieve that peace, they fought for control of the village, a conflict which ended in Madara's death. Madara, however, rewrote his death and went into hiding to work on his own plans. Unable
-                                to complete it in his natural life, he entrusted his knowledge and plans to Obito shortly before his actual death. Years later, Madara would be revived, only to see his plans foiled and ultimately, and finally, realising
-                                the error of his ways and making amends with Hashirama before his final death. </p>
+                            <p class="card-text">Madara Uchiha (うちはマダラ, Uchiha Madara) was the legendary leader of the Uchiha clan. He founded Konohagakure alongside his childhood friend and rival, Hashirama Senju, with the intention of beginning an era of peace. When thetwo couldn't agree on how to achieve that peace, they fought for control of the village, a conflict which ended in Madara's death. Madara, however, rewrote his death and went into hiding to work on his own plans. Unableto complete it in his natural life, he entrusted his knowledge and plans to Obito shortly before his actual death. Years later, Madara would be revived, only to see his plans foiled and ultimately, and finally, realising the error of his ways and making amends with Hashirama before his final death. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Izuna Uchiha-->
+             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="./Images/Izuna_Uchiha.png" alt="Madara Uchiha" height="390px" width="300px">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h2 class="card-title">Izuna Uchiha</h2>
+                            <p class="card-text">Izuna Uchiha (うちはイズナ, Uchiha Izuna) was a shinobi of the Uchiha clan. He, along with his brother Madara, were renowned as the clan's two strongest members in their lifetime. </p>
                         </div>
                     </div>
                 </div>
@@ -877,7 +998,7 @@
            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
               <div class="row no-gutters">
                   <div class="col-md-4">
-                     <img src="https://static.wikia.nocookie.net/naruto/images/0/07/Sai_Infobox.png/revision/latest/scale-to-width-down/300?cb=20180314110836" alt="Sai Yamanaka" height="390px" width="300px">  
+                     <img src="Images/Sai_Infobox.png" alt="Sai Yamanaka" height="390px" width="300px">  
                   </div>
               <div class="col-md-8">
                  <div class="card-body">
@@ -3149,6 +3270,23 @@
 
         <!--card end-->
         
+        <!--card start-->
+        <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <img src=Images/Raido_Namiashi.png alt="Raidō Namiashi" height="390px" width="300px">  
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                    <h2 class="card-title">Raidō Namiashi</h2>
+                    <p class="card-text">Raidō Namiashi (並足ライドウ, Namiashi Raidō) is a tokubetsu jōnin of Konohagakure who serves as an elite bodyguard to the Hokage.</p>
+                    <p>During his entrance ceremony into the Academy, Raidō was present when Obito Uchiha arrived late. In the anime, during the Chūnin Exams, Raidō was placed in a team with Kurenai Yūhi and Asuma Sarutobi. Not much else is known about Raidō's background except for the fact he is regarded highly for his assassination skills. He is also an elite guard to the Hokage. During his time serving under the Fourth Hokage, he was taught the Flying Thunder Formation Technique, the seal for which they have marked on the Fifth Hokage, so that they can travel to her at any time.</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        <!--card end-->
+
         <!--card starts-->
         <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
             <div class="row no-gutters">
@@ -3216,6 +3354,7 @@
  </div>
 </div>    
 <!--last card ended -->
+
 
 <!-- card start-->
 <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
@@ -3541,6 +3680,64 @@
                  </div>
                </div>
              <!-- Princess Kasumi card end-->
+
+         <!-- Kurenal card start-->
+           <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+              <div class="row no-gutters">
+                  <div class="col-md-4">
+                     <img src="//static.wikia.nocookie.net/naruto/images/6/67/Kurenai_Part_I.png" alt="Kabuto Yakushi" height="390px" width="300px">  
+                  </div>
+              <div class="col-md-8">
+                 <div class="card-body">
+                    <h2 class="card-title">Kurenai</h2>
+                    <p class="card-text">Kurenai Yuhi is the leader of Team 8, a skilled user of genjutsu, particularly skilled with illusions involving plants. Of all her students, Kurenai is closest with Hinata, acting as a surrogate parent in the absence of Hinata's
+                            father, and helping Hinata overcome her weaknesses. Whenever Kurenai appears in the series, she is usually accompanied by her childhood friend Asuma Sarutobi, and during Part II of the series, Kurenai is revealed to be pregnant
+                            with Asuma's child. Several months after Asuma's death, Kurenai gave birth to their daughter Mirai Sarutobi, who later becomes a kunoichi by the events of the series epilogue.</p>For the most part, Konoha's most notable jonins have been through many memorable life-or-death battles. Kakashi has clashed with the likes of Zabuza and Obito, Guy nearly defeated Madara by opening all Eight Gates, and Asuma had one of the saddest deaths as a result of his intense battle with Hidan. The only jonin teacher who failed to have at least one memorable battle is Kurenai.
+                            
+                            Even in her brief encounter with Itachi, Kurenai's most redeeming factor, her genjutsu, proved to be useless against the Uchiha's Mangekyo Sharingan. Even since that one underwhelming exchange, Kurenai became pregnant and disappeared from the battlefield for the rest of the series.</p>
+                </div>
+             </div>
+           </div>
+         </div>
+       <!--Kurenal card end-->
+
+       <!-- Homura & Koharu card start-->
+           <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+              <div class="row no-gutters">
+                  <div class="col-md-4">
+                     <img src="Images/handk.jpg" alt="Kabuto Yakushi" height="390px" width="300px">  
+                  </div>
+              <div class="col-md-8">
+                 <div class="card-body">
+                    <h2 class="card-title">Homura & Koharu</h2>
+                    <p class="card-text">The position of Hokage was never as powerful as we were led to believe at the start of Naruto. When Naruto returns to Konoha after the time skip, he learns how powerful the other elders in the village are.
+                    When the truth about Itachi's past was discovered, it was revealed that the Third Hokage opposed the plan to wipe out the Uchiha clan, but the three village elders (Danzo, Homura, and Koharu) had the ability to outvote him and sanction the massacre of hundreds of villagers.
+                    It seemed as it Homura and Koharu were being planned for something big, as they were always opposing Tsunade's rule and deemed Naruto to be a threat.
+                    Sasuke also had plans to kill the two of them, as they were involved in the destruction of his clan. None of these plots came to pass and they are last seen planning for the upcoming war against Tobi.</p>
+                </div>
+             </div>
+           </div>
+         </div>
+       <!--Homura & Koharu card end-->
+                    <!--Darui card end-->
+                    <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                               <img src="https://static.wikia.nocookie.net/naruto/images/4/45/Darui.png/revision/latest/scale-to-width-down/1000?cb=20170913102716" alt=Darui height="390px" width="300px">  
+                            </div>
+                        <div class="col-md-8">
+                           <div class="card-body">
+                              <h2 class="card-title">Darui</h2>
+                              <p class="card-text">Darui (ダルイ, Darui) is a shinobi of Kumogakure and the right-hand-man of the Fourth Raikage,[4] whom he later succeeds as the Fifth Raikage (五代目雷影, Godaime Raikage, literally meaning: Fifth Lightning Shadow).</p>
+                              <p>Darui was once a student of the Third Raikage. During his training, Darui learned, among other things, the Raikage's unique black lightning technique. Along with C, he also served as the Third Raikage's support.
+
+                                In the anime, when Konohagakure and Sunagakure invited other villages to an unscheduled joint Chūnin Exams, the Fourth Raikage was furious at this, taking it as an underhanded scheme to attack Kumogakure. While A flatly told his men to reject Tsunade's offer, Darui informed A that he already informed Killer B of this. A quickly instructed Darui and C to prevent B, who was already on his way to leave for the exams, from attending.</p>
+                          </div>
+                       </div>
+                     </div>
+                   </div>
+                 <!-- Darui card end-->
+
 		
 	           <!-- Kabuto Yakushi card start-->
            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
@@ -3593,6 +3790,55 @@
      </div>
    </div>
  <!--Mei Terumi card end-->
+ <!-- Kinshiki Otsutsuki card start-->
+ <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+    <div class="row no-gutters">
+       <div class="col-md-4">
+          <img src="Images/kinshiki_otsutsuki.png" alt="Kinshiki Otsutsuki" height="390px" width="300px">  
+        </div>
+        <div class="col-md-8">
+         <div class="card-body">
+            <h2 class="card-title">Kinshiki Otsutsuki</h2>
+            <p class="card-text">Kinshiki Otsutsuki was a member of the Ōtsutsuki clan's main family, who served as a guardian for his foster son Momoshiki.</p>
+            <p>Kinshiki was an extraordinarily powerful being who, alongside Momoshiki, was deemed a threat greater than Kaguya. He was capable of restraining a perfect jinchūriki, holding his own against multiple Kage-level opponents at the same time and stalemating Sasuke Uchiha.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Kinshiki Otsutsuki card end-->
+
+ <!--Karin card end-->
+ <div class="card mb-3 card-bg my-4" style="max-width: 150%;">
+    <div class="row no-gutters">
+        <div class="col-md-4">
+           <img src="C:\Users\harsh\Desktop\hactober issue 5\Naruto-Shippuden\Images\Karin.png" alt=karin height="390px" width="300px">  
+        </div>
+    <div class="col-md-8">
+       <div class="card-body">
+          <h2 class="card-title">Karin</h2>
+          <p class="card-text">Karin (香燐, Karin) is a subordinate of Orochimaru, a former kunoichi of Kusagakure, and a member of the Uzumaki clan.</p>
+          <p>She assisted Orochimaru in his experiments, and was left in charge as warden of his Southern Hideout while he was away. She was later recruited into Sasuke Uchiha's group Taka, which was initially called "Hebi" at the time of its creation. </p>
+      </div>
+   </div>
+ </div>
+</div>
+<!--Karin card end-->
+
+ <!-- Darui Card Start -->
+ <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+    <div class="row no-gutters">
+        <div class="col-md-4">
+           <img src="https://pbs.twimg.com/media/EpIWsztXUAIejfV?format=jpg&name=900x900" alt="Darui" height="390px" width="300px">  
+        </div>
+    <div class="col-md-8">
+       <div class="card-body">
+          <h2 class="card-title">Darui</h2>
+          <p class="card-text">Darui (ダルイ) is a Kumogakure ninja who serves as one of the bodyguards for the Fourth Raikage during the Kage Summit. In contrast to his master, he is easygoing and tends to apologize, which the Raikage chastises him for. He is taught by the Third Raikage on the arts of black lightning, shaping it in the form of black panther, and also possesses the Storm Style kekkei genkai, a mixture of lightning and water elements that forms flowing lightning. During the Fourth Ninja War, Darui leads the First Division specializing in mid-range battles. Sometime between the war's end and the series epilogue, he becomes the Fifth Raikage (五代目雷影, Godaime Raikage). During Boruto: Naruto Next Generations, Darui goes to the Leaf Village to oversee the Chunnin Exams. He is voiced by Ryota Takeuchi in the Japanese anime and Catero Colbert in the English dub, though Ogie Banks replaces the latter for the Ultimate Ninja Storm series of video games.</p>
+      </div>
+   </div>
+ </div>
+</div>
+<!-- Darui Card End -->
 
         </div>
                   <!--Ugai card end-->
@@ -3609,7 +3855,25 @@
        </div>
      </div>
    </div>
+
+ <!--Ugai card end--
+ <!-- Tobi card start-->
+            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+              <div class="row no-gutters">
+                 <div class="col-md-4">
+                    <img src=https://static.wikia.nocookie.net/naruto/images/7/72/Tobi.png/revision/latest/scale-to-width-down/1000?cb=20160211005532 alt=Tobi height="390px" width="300px">  
+                  </div>
+                  <div class="col-md-8">
+                   <div class="card-body">
+                      <h2 class="card-title">Tobi</h2>
+                      <p class="card-text">Tobi (トビ, Tobi), nicknamed Guruguru (グルグル, Guruguru, English TV: Swirly) by Obito Uchiha for the swirl pattern of his face, was one of the first victims of the Infinite Tsukuyomi, and eventually was pulled from the Demonic Statue of the Outer Path by Black Zetsu.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--[character name] card end-->
  <!--Ugai card end-->
+  
 	  <!-- Ginkaku card start-->
                    <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                     <div class="row no-gutters">
@@ -3627,7 +3891,89 @@
                  </div>
                </div>
              <!-- Ginkaku card end-->
-	  
+
+             <!-- Shiba card start-->
+             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                <div class="row no-gutters">
+                   <div class="col-md-4">
+                      <img src="./Images/Shiba.JPG" alt="Shiba" height="390px" width="300px">  
+                    </div>
+                    <div class="col-md-8">
+                     <div class="card-body">
+                        <h2 class="card-title">Shiba</h2>
+                        <p class="card-text">Shiba (シバ, Shiba) is a ninken, and personal summon of Kakashi Hatake.</p>
+                        <p>Shiba possesses heightened senses with which he can use to track his target with ease. He has also demonstrated the ability to track his target underground through the use of the Summoning: Earth Release: Tracking Fang Technique as well as hold a target down, allowing Kakashi to attack them freely.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Shiba card end-->
+    
+
+	  <!-- Darui card start -->
+            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="https://static.wikia.nocookie.net/naruto/images/4/45/Darui.png/revision/latest?cb=20141108105836&path-prefix=id" alt="Haku" height="350px" width="380px">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h2 class="card-title"> Darui </h2>
+                            <p class="card-text">Darui (ダルイ, Darui) is a shinobi of Kumogakure and the right-hand-man of the Fourth Raikage, whom he later succeeds as the Fifth Raikage (五代目雷影, Godaime Raikage, literally meaning: Fifth Lightning Shadow).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+	  <!--card starts-->
+        <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <img src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2018/09/sound-four.jpg?q=50&fit=crop&w=740&h=416&dpr=1.5" alt="Sound Four" height="390px" width="300px">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h2 class="card-title">Sound Four</h2>
+                        <p class="card-text">Individually, the Sound Four were Chuunin-level villains. But together, these four students of Orochimaru were easily Jonin-level. Together, they were able to take on and defeat two powerful jonin. The caveat is that these two ninja were coming back from a mission and were visibly tired and low on chakra. On top of that, the Sound Four were clearly pushed to their limits during this battle as seen during the aftermath.</p>
+                         </div>
+                </div>
+              </div>
+            </div>
+
+ <!-- Kasumi card start-->
+ <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+    <div class="row no-gutters">
+       <div class="col-md-4">
+          <img src= "Images/Princess_kasumi.jpg" alt=Kasumi height="390px" width="300px">  
+        </div>
+        <div class="col-md-8">
+         <div class="card-body">
+            <h2 class="card-title">Kasumi</h2>
+            <p class="card-text">Princess Kasumi appears during a flashback to Ino Yamanaka and Sakura Haruno's time in the Academy, appearing alongside Ami and Fuki. In the anime, she is also seen in Naruto's flashback during shuriken training.</p>
+            <p>Kasumi had ginger hair that was done in an afro style with a shuriken-like mark on the front left side of her haircut. She wore a purple dress with mesh underneath and long light pink sleeves along with two sets of belt-like fixtures to it.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Kasumi card end-->
+        <!--Kushina card start-->
+        <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <img src="https://pbs.twimg.com/profile_images/1364611201670463490/y3h-k68c_400x400.jpg" alt=MeiTerumi height="390px" width="300px">  
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h2 class="card-title">Kushina Uzumaki</h2>
+                        <p class="card-text">Kushina Uzumaki (うずまきクシナ, Uzumaki Kushina) was a Konohagakure kunoichi who originated from Uzushiogakure's Uzumaki clan. She was the second jinchūriki of the Nine-Tails</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Kushina Uzumaki card end-->
+
     </main>
 
 
@@ -3647,6 +3993,23 @@
     <script src="./scrollEffect.js"></script>
 
     <script src="scrolltotop.js"></script>
+	
+	<script>
+
+		// ------- Scroll To Top Button -------
+ 
+		const toTop = document.querySelector(".to-top");
+		window.addEventListener("scroll", () => {
+
+			if (window.pageYOffset > 400) {
+				toTop.classList.add("active");
+			} else {
+				toTop.classList.remove("active");
+			}
+
+		});
+
+	</script>
 </div>
 
 </body>
