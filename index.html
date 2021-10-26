@@ -43,6 +43,19 @@
  			color: #fff;
  			text-decoration: none;
  		}
+		
+		
+      body {
+        padding: 25px;
+        background-color: white;
+        color: black;
+        font-size: 25px;
+      }
+      .dark-mode {
+        background-color: black;
+        color: white;
+      }
+
 	</style>
 
 <body>
@@ -80,14 +93,9 @@
                         <a class="nav-link" href="./about.html" style="color: beige;">About</a>
                     </li>
                     <li>
-                        <div class="switch-container"  id="darkmode-button">
-                            <input type="checkbox" id="switch">
-                            <label for="switch" class="switch-label">
-                                <div class="switch-rail">
-                                    <div class="switch-slider"></div>
-                                </div>
-                            </label>
-                        </div>
+                        <div>
+      <button onclick="darkMode()">Darkmode</button>
+    </div>
                     </li>
                 </ul>
 
@@ -4742,6 +4750,12 @@
 			}
 
 		});
+		
+      function darkMode() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+      }
+   
 
 	</script>
 </div>
