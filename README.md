@@ -66,3 +66,4 @@ Copy this code and paste it in the index.html file to make your changes. Try and
 # Congratulations!
 
 Congratulation! You just made your first pull request and if it gets merged, you can view it using the Link provided above!
+contribute more and learn more
