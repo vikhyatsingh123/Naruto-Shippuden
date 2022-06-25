@@ -1,6 +1,6 @@
 body {
   background-image: radial-gradient(blue, violet);
-  font-family: "Ninja Naruto", arial;
+  font-family: "Ninja Naruto", arial, sans-serif;
 }
 /* Custom Scroll Bar */
 ::-webkit-scrollbar {
@@ -70,10 +70,9 @@ body {
 .loader {
 
   filter:hue-rotate(0deg);
-  background:linear-gradient(45deg,#0f8,#08f);
   animation:hue 10000ms infinite linear;
   /* position: sticky; */
-  background-color: #dc3545;
+  background: #dc3545 linear-gradient(45deg, #0f8, #08f);
 }
 
 
@@ -183,7 +182,7 @@ body {
 .brand1 {
   font-size: 40px;
   font-weight: bolder;
-  text-shadow: 1px blue;
+  text-shadow: 1px 1px blue;
 }
 
 
@@ -290,7 +289,7 @@ h1 {
 }
 body {
   background-image: radial-gradient(blue, violet);
-  font-family: "Ninja Naruto", arial;
+  font-family: "Ninja Naruto", arial, sans-serif;
 }
 /* Light mode */
 /* body {
@@ -313,7 +312,7 @@ body.lightmode {
 .brand1 {
   font-size: 40px;
   font-weight: bolder;
-  text-shadow: 1px blue;
+  text-shadow: 1px 1px blue;
 }
 /* .nav1 {
   background-color: black;
@@ -429,7 +428,6 @@ body {
 
 .card-bg:hover {
   background: rgba(255, 255, 255, 0.4);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-radius: 40px 0 40px 0;
