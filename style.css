@@ -70,10 +70,9 @@ body {
 .loader {
 
   filter:hue-rotate(0deg);
-  background:linear-gradient(45deg,#0f8,#08f);
   animation:hue 10000ms infinite linear;
   /* position: sticky; */
-  background-color: #dc3545;
+  background: #dc3545 linear-gradient(45deg, #0f8, #08f);
 }
 
 
