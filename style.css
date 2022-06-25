@@ -182,7 +182,7 @@ body {
 .brand1 {
   font-size: 40px;
   font-weight: bolder;
-  text-shadow: 1px blue;
+  text-shadow: 1px 1px blue;
 }
 
 
@@ -312,7 +312,7 @@ body.lightmode {
 .brand1 {
   font-size: 40px;
   font-weight: bolder;
-  text-shadow: 1px blue;
+  text-shadow: 1px 1px blue;
 }
 /* .nav1 {
   background-color: black;
