@@ -35,11 +35,21 @@
         pointer-events: none;
         transition: all 0.4s;
     }
-
+    @media only screen and (max-width: 480px) {
+        .to-top.active {
+            bottom: 32px;
+            pointer-events: auto;
+            opacity: 1;
+            z-index: 1000;
+            right: 35%;
+        }
+    }
     .to-top.active {
         bottom: 32px;
         pointer-events: auto;
         opacity: 1;
+        z-index: 1000;
+        right: 5%;
     }
 
     .to-top:hover {
