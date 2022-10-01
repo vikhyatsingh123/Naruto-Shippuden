@@ -52,19 +52,19 @@
 
 <style>
 
-    .dark-mode {
-        background-color: black;
+    /* .dark-mode {
+        background-color: rgb(156, 170, 33);
         color: white;
-    }
+    } */
 </style>
 
-<body>
+<body class="lightmode">
 
 <a href="#" class="to-top">
     <i class="fa fa-arrow-up"></i>
 </a>
 
-<div class="loader">
+<div class="loader lightmode">
 
     <header>
         <nav class="navbar fixed-top navbar-expand-lg navbar-light">
@@ -94,8 +94,8 @@
                         <a class="nav-link" href="./about.html" style="color: beige;">About</a>
                     </li>
                     <li>
-                        <div>
-                            <button onclick={darkMode()}>Darkmode</button>
+                        <div >
+                            <button onclick="darkmode()" style="border-radius:4px; background-color:rgb(241, 240, 236); margin-top: 8px; padding: 1px 2px" id="toggler">Darkmode</button>
                         </div>
                     </li>
                 </ul>
@@ -8128,9 +8128,21 @@ Specializes in the private training of Ninja, and is often referred to as being 
 
 
     <script>
-        function darkMode() {
-            var element = document.body;
-            element.classList.toggle("dark-mode");
+        function darkmode() {
+            // console.log("hello");
+            var element1 = document.querySelector(".loader");
+            var element2=document.querySelector("body")
+            if(element1.classList.contains("lightmode"))
+            {element1.classList.add("dark-mode");element1.classList.remove("lightmode");
+            element2.classList.add("dark-mode");element2.classList.remove("lightmode");
+            document.querySelector("#toggler").innerHTML="LightMode" 
+           }
+            else
+            {
+                element1.classList.add("lightmode");element1.classList.remove("dark-mode");
+                element2.classList.add("lightmode");element2.classList.remove("dark-mode");
+                document.querySelector("#toggler").innerHTML="DarkMode"; 
+            }
         }
     </script>
 </div>
