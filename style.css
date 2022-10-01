@@ -387,6 +387,10 @@ h1 {
   transition: all 0.3s ease-out;
 }
 
+.card img{
+  padding: 0 1.5rem;
+}
+
 @media only screen and (max-width: 600px) {
   .display-3 {
     font-size: 4rem;
