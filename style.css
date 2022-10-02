@@ -2,13 +2,16 @@ body {
   background-image: radial-gradient(blue, violet);
   font-family: "Ninja Naruto", arial, sans-serif;
 }
+
 /* Custom Scroll Bar */
 ::-webkit-scrollbar {
   width: 5px;
 }
+
 ::-webkit-scrollbar-track {
   background: #1a1a1a;
 }
+
 ::-webkit-scrollbar-thumb {
   background: #ffb732;
   border-radius: 1rem;
@@ -17,19 +20,21 @@ body {
 
 /* Dark Mode Switch CSS */
 
-.switch-container{
+.switch-container {
   position: absolute;
-  top:10%;
+  top: 10%;
 }
 
 .switch-container #switch {
   display: none;
 }
+
 .switch-container .switch-label {
   position: relative;
   cursor: pointer;
   margin: 0;
 }
+
 .switch-container .switch-label .switch-rail {
   transition: all 0.2s ease-in-out;
   position: absolute;
@@ -39,8 +44,9 @@ body {
   border-radius: 50px;
   overflow: hidden;
   bottom: -14px;
-    right: -6rem;
+  right: -6rem;
 }
+
 .switch-container .switch-label .switch-rail .switch-slider {
   transition: all 0.2s ease-in-out;
   position: absolute;
@@ -51,16 +57,18 @@ body {
   border-radius: 50%;
   background: #fff;
 }
-.switch-container #switch:checked + .switch-label .switch-rail {
+
+.switch-container #switch:checked+.switch-label .switch-rail {
   transition: all 0.2s ease-in-out;
   background: #2e4a6b;
 }
-.switch-container #switch:checked + .switch-label .switch-rail .switch-slider {
+
+.switch-container #switch:checked+.switch-label .switch-rail .switch-slider {
   transition: all 0.2s ease-in-out;
   transform: translateX(40px);
 }
 
-.search{
+.search {
   position: relative;
   left: 200px;
   height: 60px;
@@ -69,14 +77,14 @@ body {
 
 .loader {
 
-  filter:hue-rotate(0deg);
-  animation:hue 10000ms infinite linear;
+  filter: hue-rotate(0deg);
+  animation: hue 10000ms infinite linear;
   /* position: sticky; */
   background: #dc3545 linear-gradient(45deg, #0f8, #08f);
 }
 
 
-.fixed-top{
+.fixed-top {
   /* background-color: black; */
   position: sticky;
 }
@@ -122,6 +130,7 @@ body {
   border-radius: 50%;
   transform: translate(-4px, -4px);
 }
+
 .search .icon::after {
   content: " ";
   position: absolute;
@@ -140,6 +149,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .search .input input {
   position: absolute;
   top: 0;
@@ -162,6 +172,7 @@ body {
   display: flex;
   align-items: center;
 }
+
 .clear::before {
   position: absolute;
   content: " ";
@@ -170,6 +181,7 @@ body {
   background: #999;
   transform: rotate(45deg);
 }
+
 .clear::after {
   position: absolute;
   content: " ";
@@ -199,33 +211,40 @@ body {
   text-shadow: 2px 4px 4px yellow;
   text-decoration: underline;
 }
+
 img {
   object-fit: contain;
   width: 100%;
 }
+
 .col-md-4 {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
+
 .card-bg {
   background-color: rgb(174, 184, 86);
 }
+
 h2 {
   color: black;
 }
+
 /*about*/
 #para {
   text-align: center;
   font-size: 20px;
   color: black;
 }
+
 body {
   background-color: white;
   font-weight: bold;
   text-align: justify;
 }
+
 h1 {
   color: black;
   text-align: center;
@@ -233,34 +252,49 @@ h1 {
   margin-bottom: 40px;
   line-height: 14pt;
 }
+
 #one {
   background-color: rgb(40, 103, 178);
 }
+
 #two {
   background-color: rgb(33, 31, 31);
 }
+
 #three {
   background-color: rgb(225, 48, 108);
 }
+
 #buttons {
   margin-bottom: 10px;
 }
+
 .navTitle {
   color: #ffffff;
   padding-left: 50px;
   size: 50px;
 }
+
 .row1 {
   margin-top: 6%;
 }
+
 .itemNav {
   padding: 15px;
 }
+
+.mr-auto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .about-title {
   padding-top: 2%;
   color: white;
   font-weight: normal;
 }
+
 .card {
   overflow: clip;
 }
@@ -274,23 +308,29 @@ h1 {
   .display-3 {
     font-size: 4rem;
   }
+
   .lead {
     font-size: 1.6rem;
   }
+
   .gallery-head {
     font-size: 2rem;
   }
+
   .navTitle {
     padding-left: 3px;
   }
 }
+
 .card h2 {
   color: #dc3545;
 }
+
 body {
   background-image: radial-gradient(blue, violet);
   font-family: "Ninja Naruto", arial, sans-serif;
 }
+
 /* Light mode */
 /* body {
   background: #fff;
@@ -299,21 +339,26 @@ body {
 body.darkmode {
   background: black;
 }
+
 p.aboutcolor {
   color: white;
 }
+
 body.aboutdarkmode {
   background: black;
   color: #ffffff;
 }
+
 body.lightmode {
   background: radial-gradient(blue, violet);
 }
+
 .brand1 {
   font-size: 40px;
   font-weight: bolder;
   text-shadow: 1px 1px blue;
 }
+
 /* .nav1 {
   background-color: black;
 } */
@@ -325,26 +370,32 @@ body.lightmode {
   text-shadow: 2px 4px 4px yellow;
   text-decoration: underline;
 }
+
 img {
   object-fit: contain;
 }
+
 .card-bg {
   background-color: rgb(174, 184, 86);
 }
+
 h2 {
   color: black;
 }
+
 /*about*/
 #para {
   text-align: center;
   font-size: 20px;
   color: black;
 }
+
 body {
   background-color: white;
   font-family: "Righteous", cursive;
   font-weight: bold;
 }
+
 h1 {
   color: black;
   text-align: center;
@@ -352,32 +403,41 @@ h1 {
   margin-bottom: 40px;
   line-height: 14pt;
 }
+
 #one {
   background-color: rgb(40, 103, 178);
 }
+
 #two {
   background-color: rgb(33, 31, 31);
 }
+
 #three {
   background-color: rgb(225, 48, 108);
 }
+
 #buttons {
   margin-bottom: 10px;
 }
+
 .navTitle {
   color: #ffffff;
   padding-left: 50px;
   size: 50px;
 }
+
 .row1 {
   margin-top: 6%;
 }
+
 .itemNav {
   padding: 15px;
 }
+
 .about-title {
   padding-top: 2%;
 }
+
 .card {
   overflow: clip;
 }
@@ -391,12 +451,15 @@ h1 {
   .display-3 {
     font-size: 4rem;
   }
+
   .lead {
     font-size: 1.6rem;
   }
+
   .gallery-head {
     font-size: 2rem;
   }
+
   .navTitle {
     padding-left: 3px;
   }
@@ -446,18 +509,20 @@ h2.card-title {
   text-shadow: 2px 4px 4px black;
 }
 
-.card:nth-of-type(2n+1){
+.card:nth-of-type(2n+1) {
   transform: translateX(-10%);
 }
-.card:nth-of-type(2n){
+
+.card:nth-of-type(2n) {
   transform: translateX(10%);
 }
-.card{
+
+.card {
   transition: all 550ms ease-in;
   opacity: 0;
 }
 
-.appear{
+.appear {
   transform: translateX(0) !important;
   opacity: 1;
 }
@@ -467,6 +532,7 @@ h2.card-title {
   #carouselExampleIndicators {
     margin-top: 80px;
   }
+
   .topic {
     color: white;
     text-shadow: 2px 4px 4px black;
@@ -474,19 +540,24 @@ h2.card-title {
     font-size: 40px;
     margin-top: 30px !important;
   }
+
   h2.card-title {
     text-align: center;
   }
+
   .navbar-nav button {
     margin-left: auto;
     margin-right: auto;
   }
-  .nav-link{
+
+  .nav-link {
     margin-left: 45%;
   }
+
   .search {
     left: 200px;
   }
+
   .about-title b {
     line-height: 2.5rem;
   }
@@ -509,8 +580,8 @@ button#scrolltopBtn {
   /* text-align: center; */
   /* position: sticky; */
   margin-top: 100px;
-    position: fixed;
-    margin-left: 89rem;
-   z-index: 2000;
-   border: none;
-} 
+  position: fixed;
+  margin-left: 89rem;
+  z-index: 2000;
+  border: none;
+}
