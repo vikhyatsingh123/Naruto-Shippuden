@@ -1,0 +1,17 @@
+<!-- [Konohamaru Sarutobi] card start-->
+            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+              <div class="row no-gutters">
+                 <div class="col-md-4">
+                    <img src=[https://upload.wikimedia.org/wikipedia/commons/e/e7/Konohamaru_Sarutobi.jpg] alt=[Konohamaru Sarutobi] height="390px" width="300px">  
+                  </div>
+                  <div class="col-md-8">
+                   <div class="card-body">
+                      <h2 class="card-title">[Konohamaru Sarutobi]</h2>
+                      <p class="card-text">[Konohamaru Sarutobi (猿飛木ノ葉丸, Sarutobi Konohamaru) is a shinobi of Konohagakure's Sarutobi clan. After later becoming a jōnin, he becomes the leader of his own genin team. He strives to one day become Hokage after his idol, Naruto Uzumaki.
+]</p>
+                      <p>[He was born into the Sarutobi clan and was named after Konoha by his grandfather. While being raised by his Anbu parents, Konohamaru was never referred to by his name by the villagers, only ever called "Honourable Grandson" (お孫様, Omago-sama) because of his relationship to the Hokage. Wanting to be acknowledged as a person and not simply the Hokage's grandson, Konohamaru began trying to defeat Hiruzen in order to replace him as Hokage.]</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--[Konohamaru Sarutobi] card end-->
