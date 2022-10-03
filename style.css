@@ -1,4 +1,6 @@
 body {
+  max-width: 100%;
+  overflow-x: hidden;
   background-image: radial-gradient(blue, violet);
   font-family: "Ninja Naruto", arial, sans-serif;
 }
