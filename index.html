@@ -35,11 +35,21 @@
         pointer-events: none;
         transition: all 0.4s;
     }
-
+    @media only screen and (max-width: 480px) {
+        .to-top.active {
+            bottom: 32px;
+            pointer-events: auto;
+            opacity: 1;
+            z-index: 1000;
+            right: 35%;
+        }
+    }
     .to-top.active {
         bottom: 32px;
         pointer-events: auto;
         opacity: 1;
+        z-index: 1000;
+        right: 5%;
     }
 
     .to-top:hover {
@@ -141,6 +151,64 @@
         <h1 class="topic my-5">Characters</h1>
         <!--Card section start-->
         <div class="container" id="cont">
+            <!-- [Suigetsu] card start-->
+            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="./Images/Suigetsu.jpeg" alt="Suigetsu" height="390px" width="300px">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h2 class="card-title">Suigetsu</h2>
+                            <p class="card-text">
+                                Suigetsu was a member of Sasuke's renegade group consisting of himself, Suigetsu, Karin,
+                                and Jugo. Of the quartet, Suigetsu was the self-styled comedian. He had plenty of
+                                sarcastic lines and made every effort he could to get under Karin's skin.
+
+                            </p>
+                            <p>The above line was especially funny coming from Suigetsu, as the audience got the
+                                distinct impression that he probably wasn't a true believer in Sasuke's dream. It was
+                                even funnier in the moment, as he made a decisive gesture with a spoon he was using at
+                                the time.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--[Suigetsu] card end-->
+
+
+<!-- [Sai] card start-->
+<div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+    <div class="row no-gutters">
+        <div class="col-md-4">
+            <img src="./Images/Sai_Infobox.png" alt="Sai" height="390px" width="300px">
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <h2 class="card-title">Sai Yamanaka</h2>
+                <p class="card-text">Sai Yamanaka (山中サイ, Yamanaka Sai) is the Anbu Chief of 
+                    Konohagakure's Yamanaka clan. Prior to this, he was a Root member. 
+                    As per standard Root training, Sai was conditioned to remove all emotions and as such, 
+                    had difficulty connecting with others. When he is added to Team Kakashi as a replacement 
+                    for the rogue Sasuke Uchiha, Sai begins to learn more about people's feelings and tries to develop his 
+                    personality and identity by forming genuine bonds and rediscovering the emotions he was taught to suppress..</p>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<!--[Sai] card end-->
+
+
+
+
+
+
+
+
+
+
+
             <!-- [Chiriku] card start-->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
@@ -166,6 +234,24 @@
             </div>
             <!--[Chiriku] card end-->
 
+		            <!-- [Asura] card start-->
+            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+              <div class="row no-gutters">
+                 <div class="col-md-4">
+                    <img src="./Images/Asura.png" alt="Asura" height="390px" width="300px">  
+                  </div>
+                  <div class="col-md-8">
+                   <div class="card-body">
+                      <h2 class="card-title">Asura</h2>
+                      <p class="card-text">Asura Ōtsutsuki (大筒木アシュラ, Ōtsutsuki Ashura) was the younger son of Hagoromo Ōtsutsuki. Though not the obvious choice to most, he would go on to inherit his father's teachings, and as a result, would have to clash bitterly against his elder brother Indra. Asura is also credited with being the progenitor of both the Senju and Uzumaki clans.</p>
+                      <p>With the power entrusted to him by his father, Asura gained access to the Six Paths Senjutsu, allowing him to augment himself and his various techniques. In this state, he could fly and manifest a giant three-faced, six-armed avatar, Six Paths: Kunitsukami. He could also manifest nine Truth-Seeking Balls, which could be shaped into various tools and constructs, able to battle back Indra's Susanoo with it. He could also use them in unison with his Kunitsukami, which likewise grew proportionate to the structure.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--[Asura] card end-->
+		
+		
             <!-- [Inuzuka Hana] card start-->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
@@ -281,7 +367,7 @@
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
-                        <img src="./Images/boruto.png" alt="boruto" height="350px" width="380px">
+                        <img src="./Images/boruto.jpg" alt="boruto" height="350px" width="380px">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
@@ -6639,7 +6725,7 @@ Specializes in the private training of Ninja, and is often referred to as being 
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
-                        <img src="https://static.wikia.nocookie.net/naruto/images/8/86/Ninken_summoned_to_search_Orochi.png/revision/latest?cb=20140309190444"
+                        <img src="/Images/ninken.jpg"
                              alt=Ninken height="390px" width="300px">
                     </div>
                     <div class="col-md-8">
@@ -6661,6 +6747,7 @@ Specializes in the private training of Ninja, and is often referred to as being 
             <!-- Indra Ōtsutsuki‎ card start-->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%">
                 <div class="row no-gutters">
+                    <div class="col-md-4">
                     <img
                             src="./Images/indra.png"
                             alt="Indra Ōtsutsuki"
@@ -8162,6 +8249,45 @@ Specializes in the private training of Ninja, and is often referred to as being 
                     </div>
                 </div>
                 <!-- card end-->
+
+                <!-- Zō card start-->
+                <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="./Images/zo.webp" alt="Garaga" height="390px" width="300px">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h2 class="card-title">Zō</h2>
+                                <p class="card-text">
+                                    Zō (ゾウ, Zō) is an Anbu captain of Konohagakure.
+                                </p>
+                                <p>
+                                    Zō is a dutiful shinobi who is dedicated to the village's well-being. 
+                                    Though not much has been seen of his personality, he showed anguish at not being able to 
+                                    protect Hiruzen during Orochimaru's attack on Konoha. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Zō card end-->
+
+                <!-- [Baki] card start-->
+                <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2018/03/Baki-Naruto.jpg?q=50&fit=crop&w=1500&dpr=1.5" alt="Baki" height="390px" width="300px">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h2 class="card-title">Baki</h2>
+                                <p class="card-text">Baki (バキ) is a jonin level shinobi of Sunagakure, and is also a member of it's advisory council.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--[Baki] card end-->
 
             </div>
         </div>
