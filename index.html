@@ -61,10 +61,29 @@
 </style>
 
 <style>
-
+  /*DARK MODE - BUTTON - ANIKET*/    
     .dark-mode {
-        background-color: black;
-        color: white;
+        display: inline-block;
+        background-color: none;
+        background: transparent;
+        padding: 1rem 2rem;
+        border-top: 10px solid;
+        border-right: 10px;
+        font-weight: 600;
+        transition: all ease 0.5s;
+        border-radius: 35px;
+        text-decoration: none;
+        border-color: rgb(0, 0, 0);
+        
+    }
+
+    .dark-mode:hover 
+    {
+        background: transparent;
+        color: #fff;
+        border-color: #fff;
+        transition: all ease 0.5s;
+        
     }
 </style>
 
@@ -105,7 +124,7 @@
                     </li>
                     <li>
                         <div>
-                            <button onclick={darkMode()}>Darkmode</button>
+                            <button class="dark-mode" onclick={darkMode()}>Darkmode</button>
                         </div>
                     </li>
                 </ul>
