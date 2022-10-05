@@ -221,8 +221,10 @@ body {
 }
 
 img {
+  padding: 30px; 
   object-fit: contain;
   width: 100%;
+  margin-left: 15px;
 }
 
 .col-md-4 {
