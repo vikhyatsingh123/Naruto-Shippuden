@@ -1,6 +1,5 @@
 body {
-
-  background-color: #3f3fc3;
+  background-color: #372948;
   max-width: 100%;
   overflow-x: hidden;
   background-image: radial-gradient(blue, violet);
@@ -418,7 +417,20 @@ h1 {
 #buttons {
   margin-bottom: 10px;
 }
-
+.btn_mychange{
+  text-align: center;
+  font-family:Arial, Helvetica, sans-serif;
+  border-radius:4px;
+  background-color:#fff; 
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+}
+.btn_mychange:hover{
+  padding: 0.8rem;
+  background-color: #200e14;
+  color: #fff;
+  border-radius: 0.8rem;
+}
 .navTitle {
   color: #ffffff;
   padding-left: 50px;
@@ -547,6 +559,8 @@ h2.card-title {
   .navbar-nav button {
     margin-left: auto;
     margin-right: auto;
+    padding: 1rem;
+    border: 0;
   }
 
   .nav-link {
