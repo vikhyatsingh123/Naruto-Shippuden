@@ -35,11 +35,21 @@
         pointer-events: none;
         transition: all 0.4s;
     }
-
+    @media only screen and (max-width: 480px) {
+        .to-top.active {
+            bottom: 32px;
+            pointer-events: auto;
+            opacity: 1;
+            z-index: 1000;
+            right: 35%;
+        }
+    }
     .to-top.active {
         bottom: 32px;
         pointer-events: auto;
         opacity: 1;
+        z-index: 1000;
+        right: 5%;
     }
 
     .to-top:hover {
@@ -52,19 +62,19 @@
 
 <style>
 
-    .dark-mode {
-        background-color: black;
+    /* .dark-mode {
+        background-color: rgb(156, 170, 33);
         color: white;
-    }
+    } */
 </style>
 
-<body>
+<body class="lightmode">
 
 <a href="#" class="to-top">
     <i class="fa fa-arrow-up"></i>
 </a>
 
-<div class="loader">
+<div class="loader lightmode">
 
     <header>
         <nav class="navbar fixed-top navbar-expand-lg navbar-light">
@@ -94,8 +104,8 @@
                         <a class="nav-link" href="./about.html" style="color: beige;">About</a>
                     </li>
                     <li>
-                        <div>
-                            <button onclick={darkMode()}>Darkmode</button>
+                        <div >
+                            <button onclick="darkmode()" style="border-radius:4px; background-color:rgb(241, 240, 236);margin-left: 25px; padding: 1px 2px" id="toggler">Darkmode</button>
                         </div>
                     </li>
                 </ul>
@@ -141,6 +151,30 @@
         <h1 class="topic my-5">Characters</h1>
         <!--Card section start-->
         <div class="container" id="cont">
+            <!-- [Suigetsu] card start-->
+            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="./Images/Suigetsu.jpeg" alt="Suigetsu" height="390px" width="300px">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h2 class="card-title">Suigetsu</h2>
+                            <p class="card-text">
+                                Suigetsu was a member of Sasuke's renegade group consisting of himself, Suigetsu, Karin,
+                                and Jugo. Of the quartet, Suigetsu was the self-styled comedian. He had plenty of
+                                sarcastic lines and made every effort he could to get under Karin's skin.
+
+                            </p>
+                            <p>The above line was especially funny coming from Suigetsu, as the audience got the
+                                distinct impression that he probably wasn't a true believer in Sasuke's dream. It was
+                                even funnier in the moment, as he made a decisive gesture with a spoon he was using at
+                                the time.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--[Suigetsu] card end-->
 
 
 <!-- [Sai] card start-->
@@ -199,6 +233,7 @@
                 </div>
             </div>
             <!--[Chiriku] card end-->
+
               <!-- [Nagato] card start-->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
               <div class="row no-gutters">
@@ -222,6 +257,24 @@
               </div>
             </div>
             <!--[Nagato] card end-->
+
+		            <!-- [Asura] card start-->
+            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+              <div class="row no-gutters">
+                 <div class="col-md-4">
+                    <img src="./Images/Asura.png" alt="Asura" height="390px" width="300px">  
+                  </div>
+                  <div class="col-md-8">
+                   <div class="card-body">
+                      <h2 class="card-title">Asura</h2>
+                      <p class="card-text">Asura Ōtsutsuki (大筒木アシュラ, Ōtsutsuki Ashura) was the younger son of Hagoromo Ōtsutsuki. Though not the obvious choice to most, he would go on to inherit his father's teachings, and as a result, would have to clash bitterly against his elder brother Indra. Asura is also credited with being the progenitor of both the Senju and Uzumaki clans.</p>
+                      <p>With the power entrusted to him by his father, Asura gained access to the Six Paths Senjutsu, allowing him to augment himself and his various techniques. In this state, he could fly and manifest a giant three-faced, six-armed avatar, Six Paths: Kunitsukami. He could also manifest nine Truth-Seeking Balls, which could be shaped into various tools and constructs, able to battle back Indra's Susanoo with it. He could also use them in unison with his Kunitsukami, which likewise grew proportionate to the structure.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--[Asura] card end-->
+		
             <!-- [Inuzuka Hana] card start-->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
@@ -337,7 +390,7 @@
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
-                        <img src="./Images/boruto.png" alt="boruto" height="350px" width="380px">
+                        <img src="./Images/boruto.jpg" alt="boruto" height="350px" width="380px">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
@@ -359,14 +412,14 @@
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
               <div class="row no-gutters">
                  <div class="col-md-4">
-                    <img src="https://www.giantbomb.com/a/uploads/scale_small/0/6087/1097069-ebisu.png" alt=Ebisu height="390px" width="300px">  
+                    <img src="https://www.giantbomb.com/a/uploads/scale_small/0/6087/1097069-ebisu.png" alt=Ebisu height="390px" width="300px">
                   </div>
                   <div class="col-md-8">
                    <div class="card-body">
                       <h2 class="card-title">Ebisu</h2>
                       <p class="card-text">
 Specializes in the private training of Ninja, and is often referred to as being a closet pervert. He is one of the sensei who's trained Konohamaru.</p>
-                    
+
                   </div>
                 </div>
               </div>
@@ -637,7 +690,7 @@ Specializes in the private training of Ninja, and is often referred to as being 
                         <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                             <div class="row no-gutters">
                                <div class="col-md-4">
-                                  <img src="Images/Naruto-Demon-Brothers.jpg" alt=[name of character] height="390px" width="300px">  
+                                  <img src="Images/Naruto-Demon-Brothers.jpg" alt=[name of character] height="390px" width="300px">
                                 </div>
                                 <div class="col-md-8">
                                  <div class="card-body">
@@ -646,20 +699,20 @@ Specializes in the private training of Ninja, and is often referred to as being 
                                     <p>These were two former Hidden Mist shinobi, known as the Demon Brothers, who had defected from their village in order to join Zabuza's coup.
 
                                         Kakashi and Sasuke were able to easily dispose of the Demon Brothers and keep Tazuna alive. They were then tied up next to a tree and left to be arrested.
-                                        
+
                                         We never actually see the Demon Brothers being arrested in the manga and escaping from being tied up is one of the most basic parts of ninja training. Were the Demon Brothers able to escape? If so, did they choose to abandon Zabuza? Why did they never reappear in the story afterward?</p>
                                 </div>
                               </div>
                             </div>
                           </div>
                           <!--The Demon Brothers card end-->
-              
-		
+
+
 	<!-- Madara card start-->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
               <div class="row no-gutters">
                  <div class="col-md-4">
-                    <img src="Images/madara.jpg" alt="Madara Uchiha" height="390px" width="300px">  
+                    <img src="Images/madara-uchiha.jpeg" alt="Madara Uchiha" height="390px" width="300px">
                   </div>
                   <div class="col-md-8">
                    <div class="card-body">
@@ -695,13 +748,13 @@ Specializes in the private training of Ninja, and is often referred to as being 
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
               <div class="row no-gutters">
                  <div class="col-md-4">
-                    <img src="https://www.giantbomb.com/a/uploads/scale_small/16/164924/2399930-kagura.png" alt="Kagura" height="390px" width="300px">  
+                    <img src="https://www.giantbomb.com/a/uploads/scale_small/16/164924/2399930-kagura.png" alt="Kagura" height="390px" width="300px">
                   </div>
                   <div class="col-md-8">
                    <div class="card-body">
                       <h2 class="card-title">Kagura</h2>
                       <p class="card-text">The main villain of Clash of Ninja Revolution 2, she's an ex-ANBU member.</p>
-                   
+
                   </div>
                 </div>
               </div>
@@ -734,7 +787,7 @@ Specializes in the private training of Ninja, and is often referred to as being 
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                    <div class="col-md-4">
-                      <img src= "Images/Isaribi.jpg" alt="Isaribi" height="280px" width="400px"> 
+                      <img src= "Images/Isaribi.jpg" alt="Isaribi" height="280px" width="400px">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
@@ -1020,14 +1073,14 @@ Specializes in the private training of Ninja, and is often referred to as being 
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
               <div class="row no-gutters">
                  <div class="col-md-4">
-                    <img src="https://www.giantbomb.com/a/uploads/scale_small/3/34651/3376238-zabuza.png" alt="Zabuza" height="390px" width="300px">  
+                    <img src="https://www.giantbomb.com/a/uploads/scale_small/3/34651/3376238-zabuza.png" alt="Zabuza" height="390px" width="300px">
                   </div>
                   <div class="col-md-8">
                    <div class="card-body">
                       <h2 class="card-title">Zabuza</h2>
                       <p class="card-text">Zabuza Momochi, a mercenary assassin and former member of the Seven Swordsmen of the Mist. He is a master of silent assassinations
 			      and together with his water Jutsu he is feared as The Demon of the Hidden Mist.</p>
-                    
+
                   </div>
                 </div>
               </div>
@@ -1564,12 +1617,12 @@ Specializes in the private training of Ninja, and is often referred to as being 
                 </div>
             </div>
             <!--Konan card end-->
-		
+
             <!-- Kidomaru card start-->
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                    <div class="col-md-4">
-                      <img src="https://www.giantbomb.com/a/uploads/scale_small/0/5756/330403-kidomaru.jpg" alt="Kidomaru" height="390px" width="300px">  
+                      <img src="https://www.giantbomb.com/a/uploads/scale_small/0/5756/330403-kidomaru.jpg" alt="Kidomaru" height="390px" width="300px">
                     </div>
                     <div class="col-md-8">
                      <div class="card-body">
@@ -4879,7 +4932,7 @@ Specializes in the private training of Ninja, and is often referred to as being 
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
-                        <img src="./Images/zabuza.jpg" alt=KillerBee height="390px" width="300px">
+                        <img src="./Images/zabuza.jpg" height="390" width="300"  style="padding: 300px;"  alt=KillerBee>
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
@@ -8141,6 +8194,85 @@ Specializes in the private training of Ninja, and is often referred to as being 
                     </div>
                 </div>
                 <!-- Monkey King: Enma card end-->
+                <!--card start-->
+                <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="./Images/Fire_Daimy.jpg" alt="Fire Daimyō" height="390px" width="300px">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h2 class="card-title">Fire Daimyō</h2>
+                                <p class="card-text">He is the former daimyō of the Land of Fire.</p>
+                                <p>In the anime, a meeting with Konohagakure was convened after Hiruzen Sarutobi
+                                  stepped down as the Third Hokage. Danzō strongly suggested that Orochimaru be
+                                  made Fourth Hokage. Hiruzen, however, pointed out that Orochimaru had grown
+                                  power-hungry and showed signs of sinister intent. Ultimately, Minato Namikaze
+                                  was elected as Fourth Hokage unanimously, excluding Danzō who detested the idea.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card end-->
+                <!--card start-->
+                <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="./Images/Earth_Daimyo.png" alt="Earth Daimyō" height="390px" width="300px">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h2 class="card-title">Earth Daimyō</h2>
+                                <p class="card-text">He is the former daimyō of the Land of Earth.</p>
+                                <p>He appears to have an impatient attitude, as seen when he and
+                                the other daimyō awaited the response of the uncertain Water Daimyō.
+                                He prompted him to respond quickly due to the urgency of the impending war.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card end-->
+                <!--card start-->
+                <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="./Images/Mizu_Daimyo.png" alt="Water Daimyō" height="390px" width="300px">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h2 class="card-title">Water Daimyō</h2>
+                                <p class="card-text">He is the former daimyō of the Land of Water.</p>
+                                <p>He seems to be very cautious as he was hesitant to give his
+                                approval for the Allied Shinobi Forces, fearing that it would
+                                give the shinobi too much power.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card end-->
+                <!--card start-->
+                <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="./Images/Lightning_daimyo.png" alt="Lightning Daimyō" height="390px" width="300px">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h2 class="card-title">Lightning Daimyō</h2>
+                                <p class="card-text">He is the former daimyō of the Land of Lightning.</p>
+                                <p>He is a dark-skinned man with a beard and silver framed glasses.
+                                He wears a loose fitting kimono and dark coloured cloak over it
+                                along with what seems to be the customary head-gear of the daimyō
+                                of the five great nations.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card end-->
 
                 <!-- Zō card start-->
                 <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
@@ -8164,6 +8296,22 @@ Specializes in the private training of Ninja, and is often referred to as being 
                     </div>
                 </div>
                 <!-- Zō card end-->
+
+                <!-- [Baki] card start-->
+                <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2018/03/Baki-Naruto.jpg?q=50&fit=crop&w=1500&dpr=1.5" alt="Baki" height="390px" width="300px">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h2 class="card-title">Baki</h2>
+                                <p class="card-text">Baki (バキ) is a jonin level shinobi of Sunagakure, and is also a member of it's advisory council.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--[Baki] card end-->
 
             </div>
         </div>
@@ -8209,9 +8357,21 @@ Specializes in the private training of Ninja, and is often referred to as being 
 
 
     <script>
-        function darkMode() {
-            var element = document.body;
-            element.classList.toggle("dark-mode");
+        function darkmode() {
+            // console.log("hello");
+            var element1 = document.querySelector(".loader");
+            var element2=document.querySelector("body")
+            if(element1.classList.contains("lightmode"))
+            {element1.classList.add("dark-mode");element1.classList.remove("lightmode");
+            element2.classList.add("dark-mode");element2.classList.remove("lightmode");
+            document.querySelector("#toggler").innerHTML="LightMode" 
+           }
+            else
+            {
+                element1.classList.add("lightmode");element1.classList.remove("dark-mode");
+                element2.classList.add("lightmode");element2.classList.remove("dark-mode");
+                document.querySelector("#toggler").innerHTML="DarkMode"; 
+            }
         }
     </script>
 </div>
