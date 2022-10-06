@@ -1,0 +1,14 @@
+{
+    "name": "Naruto-Shippuden",
+    "version": "1.0.0",
+    "description": "Character List",
+    "manifest_version": 3,
+    "author": "Vedant Pol",
+    "icons": { "16": "Images/naruto-logo-16.png",
+           "48": "Images/naruto-logo-48.png",
+          "128": "Images/naruto-logo-128.png" },
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "Naruto-Shippuden"
+    }
+}
