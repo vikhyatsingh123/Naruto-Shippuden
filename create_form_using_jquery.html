@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html form</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url("https://source.unsplash.com/random");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            opacity: 0.5px;
+
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(151, 5, 29);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 250%;
+            background-color: aliceblue;
+            border: 2px solid black;
+            border-radius: 4px;
+            margin-left: auto;
+            margin-right: auto;
+            width: max-content;
+
+        }
+
+        .d1 {
+            border-radius: 5px;
+            background-color: bisque;
+            border: 2px solid black;
+            padding: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            width: max-content;
+        }
+
+        label {
+            width: 250px;
+            color: #024c63;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 100%;
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+
+
+        }
+
+        input[type=text] {
+            width: 40%;
+            padding: 12px;
+            border: 1px solid black;
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        select {
+            width: 30%;
+            padding: 12px;
+            border: 1px solid black;
+
+        }
+
+        input[type=submit] {
+            background-color: #04AA6D;
+            color: white;
+            padding: 12PX 20PX;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+        }
+
+        input[type=submit]:hover {
+            background-color: pink;
+
+        }
+
+        .col-25 {
+            float: left;
+            width: 20%;
+            margin-top: 6px;
+
+        }
+
+        .col-75 {
+            float: left;
+            width: 75%;
+            margin-top: 6px;
+
+        }
+
+        .row:after {
+            content: " ";
+            display: table;
+            clear: both;
+        }
+
+        textarea {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CREATE FORM USING JQUERY</h1>
+    <div class="d1">
+        <form action="" class="" id="f1">
+            <div class="row">
+                <div class="col-25">
+                    <label for="username" id="p1"><b>FIRST NAME :</b></label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="username" name="username" placeholder="Enter your first name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname" id="p2"><b>LAST NAME:</b></label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lname" name="lname" placeholder="Enter your last name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="dob" id="p3"><b>D.O.B :</b></label>
+                </div>
+                <div class="col-75">
+                    <input type="date" id="dob" name="dob" placeholder="Enter your age">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="roll" id="p5"><b>ROLL NO :</b></label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="roll" name="roll" placeholder="Enter your roll no.">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="gender" id="p4"><b>GENDER :</b></label>
+                </div>
+                <div class="col-25">
+                    <label for="gender" id=""><b>Male :</b></label>
+                    <input type="radio" id="pm" name="gender" value="male">
+                </div>
+                <div class="col-25">
+                    <label for="gender" id=""><b>Female :</b></label>
+                    <input type="radio" id="pf" name="gender" value="female">
+                </div>
+                <div class="col-25">
+                    <label for="gender" id=""><b>Other :</b></label>
+                    <input type="radio" id="po" name="gender" value="other">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="mno" id="p7"><b>MOBILE NO :</b></label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="mno" name="mno" placeholder="Enter your mobile no">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="email" id="p9"><b>EMAIL ADD :</b></label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="email" name="email" placeholder="Enter your email ">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="add" id="p8"><b>ADDRESS :</b></label>
+                </div>
+                <div class="col-75">
+                    <textarea name="add" id="add" cols="40" rows="5" placeholder="Full Address"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="course" id="p6"><b>COURSE :</b></label>
+                </div>
+                <div class="col-75">
+                    <select name="course" id="course">
+                        <option value="None" selected disabled hidden>Select an option</option>
+                        <option value="cs">Computer Science</option>
+                        <option value="math">Mathematics</option>
+                        <option value="Physics">Physics</option>
+                        <option value="Chemistry">Chemistry</option>
+                    </select>
+                </div>
+
+            </div>
+            <p id="res"></p>
+            <div class="row">
+                <input type="submit" value="submit">
+            </div>
+        </form>
+        <script src="\jquery-3.6.1.min.js"></script>
+
+        <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
+        <!-- <script src="jqueryform.js"></script> -->
+        <script>
+            const jqueryform = document.getElementById("f1");
+            jqueryform.addEventListener("submit", async (ev) => {
+                ev.preventDefault();
+                var fname = $("#username").val();
+                var lname = $("#lname").val();
+                var dob = $("#dob").val();
+                var rolln = $("#roll").val();
+                var gender = $("#p4").val();
+                var mobile = $("#mno").val();
+                var mail = $("#email").val();
+                var address = $("#add").val();
+                var cou = $("#course").val();
+                var gender = $('input[name="gender"]:checked').val();
+
+                function obj(fn, ln, d, rol, g, mn, m, ad, c) {
+                    this.f = fn;
+                    this.l = ln;
+                    this.db = d;
+                    this.r = rol;
+                    this.gn = g;
+                    this.mob = mn;
+                    this.gm = m;
+                    this.a = ad;
+                    this.co = c;
+                }
+                var result = new obj(fname, lname, dob, rolln, gender, mobile, mail, address, cou);
+                var r = document.getElementById("res");
+                r.innerHTML = "Name:" + result.f + " " + result.l + " DOB: " + result.db + " Roll no : " + result.r + "GENDER: " + result.gn + " Mobile no: " + result.mob + " Email: " + result.gm + " Address: " + result.a + " Course: " + result.co;
+                console.log(result);
+
+
+            })
+
+        </script>
+</body>
+
+</html>
