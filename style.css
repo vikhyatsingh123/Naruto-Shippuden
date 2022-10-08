@@ -349,7 +349,7 @@ h1 {
   color: #000;
 } */
 .dark-mode {
-  background-color: black;
+  background-color: rgb(30, 28, 28);
 }
 
 p.aboutcolor {
@@ -361,7 +361,7 @@ body.aboutdarkmode {
   color: #ffffff;
 }
 .lightmode {
-  background-color: #3f3fc3;
+  background-color: #2c2ca7;
 }
 
 .brand1 {
@@ -601,10 +601,11 @@ button#scrolltopBtn {
 }
 .flip-card {
   float: left;
+  border-radius: 29px;
   background-color: transparent;
   width: 400px;
   height: 400px;
-  border: 1px solid #f1f1f1;
+  /* border: 1px solid #e1dfdf; */
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
   margin: 10px 70px;
   
@@ -612,6 +613,7 @@ button#scrolltopBtn {
 
 /* This container is needed to position the front and back side */
 .flip-card-inner {
+  
   position: relative;
   width: 100%;
   height: 100%;
@@ -628,6 +630,7 @@ button#scrolltopBtn {
 
 /* Position the front and back side */
 .flip-card-front, .flip-card-back {
+  border-radius: 29px;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -643,7 +646,7 @@ button#scrolltopBtn {
 
 /* Style the back side */
 .flip-card-back {
-  background-color: #fff;
+  background-color: rgb(171, 163, 163);
   color:#000;
   transform: rotateY(180deg);
   padding: 20px;
