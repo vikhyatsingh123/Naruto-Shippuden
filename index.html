@@ -12,6 +12,7 @@
           rel="icon" type="image/jpeg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/png" href="Images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Naruto</title>
 </head>
 
@@ -104,8 +105,8 @@
                         <a class="nav-link" href="./about.html" style="color: beige;">About</a>
                     </li>
                     <li>
-                        <div >
-                            <button onclick="darkmode()" style="border-radius:4px; background-color:rgb(241, 240, 236);margin-left: 25px; padding: 1px 2px" id="toggler">Darkmode</button>
+                        <div>
+                            <button onclick="darkmode()" class="btn btn-outline-light rounded-pill shadow-none" ><i id="toggler" class="fa-solid fa-moon"></i></button>
                         </div>
                     </li>
                 </ul>
@@ -116,7 +117,7 @@
     </header>
 
 
-    <main>
+<main>
 
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -7482,13 +7483,13 @@
             if(element1.classList.contains("lightmode"))
             {element1.classList.add("dark-mode");element1.classList.remove("lightmode");
             element2.classList.add("dark-mode");element2.classList.remove("lightmode");
-            document.querySelector("#toggler").innerHTML="LightMode" 
+            document.querySelector("#toggler").className="fa-solid fa-sun" 
            }
             else
             {
                 element1.classList.add("lightmode");element1.classList.remove("dark-mode");
                 element2.classList.add("lightmode");element2.classList.remove("dark-mode");
-                document.querySelector("#toggler").innerHTML="DarkMode"; 
+                document.querySelector("#toggler").className="fa-solid fa-moon"
             }
         }
     </script>
