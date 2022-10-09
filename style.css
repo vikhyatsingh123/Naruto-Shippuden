@@ -659,7 +659,14 @@ img
 
 footer
 {
+  background: #000;
   position: fixed;
-  left: 40%;
+  font-size:  1rem;
+text-size-adjust: 10px;
+text-align: center;
   bottom: 0;
+  height: 2rem;
+  width: 100%;
+
+  
 }
