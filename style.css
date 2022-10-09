@@ -16,6 +16,11 @@ body {
   font-family: "Ninja Naruto", arial, sans-serif;
 }
 
+main{
+  scroll-behavior: smooth;
+  overflow-y: hidden;
+}
+
 /* Custom Scroll Bar */
 ::-webkit-scrollbar {
   width: 5px;
