@@ -13,9 +13,10 @@
     <link rel="icon" type="image/png" href="Images/favicon.png">
     <title>Naruto</title>
         <link rel="shortcut icon" href="Images/favicon.ico" />
+        <script src="./about.js"></script>
 </head>
 
-<body>
+<body class="lightmode">
     <header>
 
         <nav class="navbar navbar-expand-lg navbar-light nav1">
@@ -33,23 +34,17 @@
                     <li class="nav-item mx-4">
                         <a class="nav-link" href="./about.html" style="color: beige;">About</a>
                     </li>
+                    <li>
+                        <div >
+                            <button onclick="darkmode1()" style="border-radius:4px; background-color:rgb(241, 240, 236);margin-left: 25px; padding: 1px 2px" id="toggler">Darkmode</button>
+                        </div>
+                    </li>
             </div>
         </nav>
     </header>
 
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto" style="margin-left: 78%;">
-            <li class="nav-item active mx-4">
-                <a class="nav-link" href="./index.html" style="color: beige;">Home</a>
-            </li>
-            <li class="nav-item mx-4">
-                <a class="nav-link" href="./about.html" style="color: beige;">About</a>
-            </li>
-            <li class="nav-item mx-4">
-                <button id="darkmode-button">dark mode</button>
-            </li>
-    </div>
+    
     </nav>
     <!--start-->
     <main>
@@ -133,7 +128,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
-    <script src="aboutdarkmode.js"></script>
+    <!-- <script src="aboutdarkmode.js"></script> -->
 </body>
 
 </html>

@@ -580,8 +580,9 @@ h2.card-title {
 
 
 ul.navbar-nav.mr-auto {
-  position: absolute;
+  /* position: absolute; */
   right: 10rem;
+  
 }
 
 
