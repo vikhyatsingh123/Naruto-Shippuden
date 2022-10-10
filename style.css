@@ -105,7 +105,7 @@ body {
 
 .search {
   /* position: fixed; */
-  left: 10px;
+  position: absolute;
   height: 48px;
   width: 48px;
   background: #fff;
@@ -300,6 +300,25 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.nav-link{
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: beige;
+}
+
+.toggle-mode{
+  font-size: 1.3rem;
+  background-color: beige;
+  border: none;
+  outline: none;
+  display: flex;
+  padding: 0.3rem 0.75rem;
+  border-radius: 4rem;
+  align-items: center;
+  justify-content: center;
+  color: rgb(0, 0, 0);
 }
 
 .about-title {
@@ -584,10 +603,7 @@ h2.card-title {
 
 
 
-ul.navbar-nav.mr-auto {
-  position: absolute;
-  right: 10rem;
-}
+
 
 
 button#scrolltopBtn {
@@ -670,4 +686,23 @@ footer
   position: fixed;
   left: 40%;
   bottom: 0;
+}
+
+ul.navbar-nav.mr-auto {
+  position: absolute;
+  right:10rem;
+
+}
+
+
+@media screen and (max-width:955px) {
+  ul.navbar-nav.mr-auto {
+    position: absolute;
+    right:0;
+    left: 0;
+    top: 0;
+    margin-top: 80px;
+    padding: 1rem;
+    background-color: #141a46;
+  }
 }
