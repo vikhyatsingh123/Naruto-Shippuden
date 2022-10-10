@@ -80,20 +80,20 @@
         <nav class="navbar fixed-top navbar-expand-lg navbar-light">
 
             <a class="navbar-brand brand1 ml-4" href="#" style="color: beige;">Naruto</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-
+            
+            
             <div class="search">
                 <div class="icon"></div>
                 <div class="input">
                     <input type="text" placeholder="search" id="mysearch">
                 </div>
-
+                
                 <span class="clear" onclick="document.getElementById('mysearch').value = ' '"></span>
             </div>
+            <button class="navbar-toggler" class="menu-btn" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
@@ -105,7 +105,7 @@
                     </li>
                     <li>
                         <div >
-                            <button onclick="darkmode()" style="border-radius:4px; background-color:rgb(241, 240, 236);margin-left: 25px; padding: 1px 2px" id="toggler">Darkmode</button>
+                            <button onclick="darkmode()" class="toggle-mode" id="toggler">🌙 Dark</button>
                         </div>
                     </li>
                 </ul>
@@ -7519,13 +7519,13 @@
             if(element1.classList.contains("lightmode"))
             {element1.classList.add("dark-mode");element1.classList.remove("lightmode");
             element2.classList.add("dark-mode");element2.classList.remove("lightmode");
-            document.querySelector("#toggler").innerHTML="LightMode" 
+            document.querySelector("#toggler").innerHTML="🌞 Light" 
            }
             else
             {
                 element1.classList.add("lightmode");element1.classList.remove("dark-mode");
                 element2.classList.add("lightmode");element2.classList.remove("dark-mode");
-                document.querySelector("#toggler").innerHTML="DarkMode"; 
+                document.querySelector("#toggler").innerHTML="🌙 Dark"; 
             }
         }
     </script>
