@@ -648,13 +648,13 @@ button#scrolltopBtn {
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background-color: #bbb;
+  background-color:rgb(228 212 212);
   color: black;
 }
 
 /* Style the back side */
 .flip-card-back {
-  background-color: rgb(171, 163, 163);
+  background-color: rgb(228 212 212);
   color:#000;
   transform: rotateY(180deg);
   padding: 20px;
