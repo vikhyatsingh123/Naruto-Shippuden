@@ -78,6 +78,7 @@
         <header>
             <nav class="navbar fixed-top navbar-expand-lg navbar-light">
 
+
                 <a class="navbar-brand brand1 ml-4" href="#" style="color: beige;">Naruto</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -111,6 +112,7 @@
                             </div>
                         </li>
                     </ul>
+
 
                 </div>
             </nav>
@@ -7957,6 +7959,7 @@
             <div class="flip-card-front">
                 <h2 class="card-title">Zō</h2>
 
+
                 <img src="./Images/zo.webp" alt="Garaga" height="300px" width="300px">
             </div>
             <div class="flip-card-back">
@@ -7972,6 +7975,51 @@
         </div>
     </div>
 
+                <div class="container" id="cont">
+                    <!-- [Kotetsu Hagane] card start-->
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <h2 class="card-title">Kotetsu Hagane</h2>
+                                <img src="./Images/Kotetsu_Hagane.jpg" alt="Kotetsu Hagane" height="300px" width="300px" class = "img_card">
+                                
+                            </div>
+                        <div class="flip-card-back">
+                                   
+                                    <p class="card-text">
+                                        Kotetsu is never seen without his partner and best friend Izumo, whom he trusts explicitly in and out of combat. He is characterised as being the more carefree and irresponsible of the duo, more willing to shirk his duties to hang out in the Jōnin Standby Station eating syrup, for example.[5] Similarly, Izumo admonished Kotetsu's lack of pride in his work when the latter complained that they were simply Tsunade's errand-boys.[6] He is also described as having an intrepid personality,[2] as well as being curious by nature,[1] which was seen from the time he and Izumo disguised themselves as genin in order to see what type of people the new chūnin candidates were.[7] Despite this, Kotetsu is a loyal and dutiful shinobi, with great love for his village and will carry out his missions despite complaining when they are trivial. Kotetsu was also noted to have great respect for Asuma Sarutobi who established a great record in military prowess.[2]
+        
+                                    </p>
+                                    <p>Kotetsu has long, spiky, black hair and dark eyes. He has a strip of bandage running across the bridge of his nose and a light-coloured marking on his chin,[8] although it has the same colour as his hair in the anime. He wears the standard attire of a Konoha shinobi complete with a forehead protector and a flak jacket. When deployed on missions, he usually carries a pair of bladed weapons strapped to his back.</p>
+                                        </div>
+                                </div>
+                            </div>
+                        
+                    <!--[Suigetsu] card end-->
+
+                <!-- Zō card start-->
+                <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">                                <h2 class="card-title">Zō</h2>
+
+                            <img src="./Images/zo.webp" alt="Garaga" height="300px" width="300px">
+                        </div>
+                                       <div class="flip-card-back">
+                                <p class="card-text">
+                                    Zō (ゾウ, Zō) is an Anbu captain of Konohagakure.
+                                </p>
+                                <p>
+                                    Zō is a dutiful shinobi who is dedicated to the village's well-being. 
+                                    Though not much has been seen of his personality, he showed anguish at not being able to 
+                                    protect Hiruzen during Orochimaru's attack on Konoha. 
+                                </p>
+                            </div>
+                </div>
+            </div>
+
+        
+                <!-- Zō card end-->
+
     <!-- Zō card end-->
 
     <!-- [Baki] card start-->
@@ -7986,6 +8034,19 @@
             <div class="flip-card-back">
                 <p class="card-text">Baki (バキ) is a jonin level shinobi of Sunagakure, and is also a member of it's
                     advisory council.</p>
+                
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">                                <h2 class="card-title">Tsunade</h2>
+
+                        <img src="./Images/tsuande.jfif" alt="Tsuande" height="300px" width="300px">
+                    </div>
+                                   <div class="flip-card-back">
+                            <p class="card-text">She is the most famous one.</p>
+                            <p>She is famed as the world's strongest kunoichi and its greatest medical-nin. The repeated loss of her loved ones caused Tsunade to later abandon the life of a shinobi for many years.</p>
+                        </div>
+            </div>
+        </div>
             </div>
         </div>
     </div>
@@ -8038,6 +8099,7 @@
         function darkmode() {
             // console.log("hello");
             var element1 = document.querySelector(".loader");
+
             var element2 = document.querySelector("body")
             if (element1.classList.contains("lightmode")) {
                 element1.classList.add("dark-mode"); element1.classList.remove("lightmode");
@@ -8048,6 +8110,18 @@
                 element1.classList.add("lightmode"); element1.classList.remove("dark-mode");
                 element2.classList.add("lightmode"); element2.classList.remove("dark-mode");
                 document.querySelector("#toggler").innerHTML = "DarkMode";
+
+            var element2=document.querySelector("body")
+            if(element1.classList.contains("lightmode"))
+            {element1.classList.add("dark-mode");element1.classList.remove("lightmode");
+            element2.classList.add("dark-mode");element2.classList.remove("lightmode");
+            document.querySelector("#toggler").innerHTML="🌞 Light" 
+           }
+            else
+            {
+                element1.classList.add("lightmode");element1.classList.remove("dark-mode");
+                element2.classList.add("lightmode");element2.classList.remove("dark-mode");
+                document.querySelector("#toggler").innerHTML="🌙 Dark"; 
             }
         }
     </script>
