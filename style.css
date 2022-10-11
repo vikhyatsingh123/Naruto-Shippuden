@@ -419,7 +419,25 @@ h2 {
   text-align: justify ;
   font-size: 20px;
   color: black;
-  padding: 20px;
+  border-radius: 2rem;;
+  background: beige;
+  overflow:hidden;
+  transition :all .5s ease-in;
+  z-index: 1;
+  box-shadow: border-box;
+  padding: 30px;
+  box-shadow: -10px 25px 50px rgba(0,0,0,0.3);
+  height: 50vh;
+  -webkit-font-smoothing:antialised;
+  -moz-osx-font-smoothing:grayscale;
+}
+#para:hover{
+  opacity:1;
+  background :#e2a9e5;
+  background: -moz-linear-gradient(-45deg,#e2a9e5 15%,#2b94e5 100%);
+  background: -webkit-linear-gradient(-45deg,#e2a9e5 15%,#2b94e5 100%);
+  background: linear-gradient(135deg,#e2a9e5 15%,#2b94e5 100%);
+  
 }
 /* body {
   background-color: white;
@@ -596,6 +614,10 @@ h2.card-title {
   }
 }
 
+.nav-link:hover{
+  background-color: 	#e32828;
+  border-radius: 4rem;
+}
 
 
 
