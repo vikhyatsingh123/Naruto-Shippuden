@@ -2,7 +2,8 @@ html {
   scroll-behavior: smooth;
 }
 
-html, body {
+html,
+body {
   max-width: 100%;
   overflow-x: hidden;
 }
@@ -216,35 +217,46 @@ body {
 } */
 
 /* Character text animation  */
-.chars{
-  background: linear-gradient(90deg,cyan,red,pink,green,yellow,purple);
+.chars {
+  background: linear-gradient(90deg, cyan, red, pink, green, yellow, purple);
   background-size: 400%;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   text-decoration: none;
   animation: linrclr 10s linear infinite;
 }
-h1.chars{font-weight: 1000; padding: 20px; font-size: 3.5rem; font-family: poppins; margin: 50px;}
+
+h1.chars {
+  font-weight: 1000;
+  padding: 20px;
+  font-size: 3.5rem;
+  font-family: poppins;
+  margin: 50px;
+}
 
 @keyframes linrclr {
-  0%{
-      background-position: 0%;
+  0% {
+    background-position: 0%;
   }
-  100%{
-      background-position: 400%;
+
+  100% {
+    background-position: 400%;
   }
 }
-body.lightmode #cont{
+
+body.lightmode #cont {
   display: flex;
   /* flex-direction: column; */
   flex-wrap: wrap;
-  margin: 0; padding: 0;
+  margin: 0;
+  padding: 0;
   width: 100%;
   max-width: 2000px;
   justify-content: center;
   align-items: center;
 }
-.flip-card{
+
+.flip-card {
   cursor: pointer;
   border: 1px solid lightgrey;
   box-shadow: 5px 20px 60px 15px;
@@ -261,10 +273,10 @@ body.lightmode #cont{
 }
 
 img {
-  padding: 30px; 
+  padding: 30px;
   object-fit: contain;
   width: 100%;
-  
+
 }
 
 .col-md-4 {
@@ -288,6 +300,7 @@ h2 {
   font-size: 20px;
   color: black;
 }
+
 /* body {
   background-color: white;
   font-weight: bold;
@@ -337,13 +350,13 @@ h1 {
   align-items: center;
 }
 
-.nav-link{
+.nav-link {
   font-size: 1.4rem;
   font-weight: 700;
   color: beige;
 }
 
-.toggle-mode{
+.toggle-mode {
   font-size: 1.3rem;
   background-color: beige;
   border: none;
@@ -392,6 +405,7 @@ h1 {
 .card h2 {
   color: #dc3545;
 }
+
 /* body {
   background-image: radial-gradient(blue, violet);
   font-family: "Ninja Naruto", arial, sans-serif;
@@ -414,6 +428,7 @@ body.aboutdarkmode {
   background: black;
   color: #ffffff;
 }
+
 .lightmode {
   background-color: #2c2ca7;
 }
@@ -434,7 +449,7 @@ body.aboutdarkmode {
   color: red;
   text-shadow: 2px 4px 4px yellow;
   text-decoration: underline;
-  
+
 }
 
 img {
@@ -451,29 +466,32 @@ h2 {
 
 /*about*/
 #para {
-  text-align: justify ;
+  text-align: justify;
   font-size: 20px;
   color: black;
-  border-radius: 2rem;;
+  border-radius: 2rem;
+  ;
   background: beige;
-  overflow:hidden;
-  transition :all .5s ease-in;
+  overflow: hidden;
+  transition: all .5s ease-in;
   z-index: 1;
   box-shadow: border-box;
   padding: 30px;
-  box-shadow: -10px 25px 50px rgba(0,0,0,0.3);
+  box-shadow: -10px 25px 50px rgba(0, 0, 0, 0.3);
   height: 50vh;
-  -webkit-font-smoothing:antialised;
-  -moz-osx-font-smoothing:grayscale;
+  -webkit-font-smoothing: antialised;
+  -moz-osx-font-smoothing: grayscale;
 }
-#para:hover{
-  opacity:1;
-  background :#e2a9e5;
-  background: -moz-linear-gradient(-45deg,#e2a9e5 15%,#2b94e5 100%);
-  background: -webkit-linear-gradient(-45deg,#e2a9e5 15%,#2b94e5 100%);
-  background: linear-gradient(135deg,#e2a9e5 15%,#2b94e5 100%);
-  
+
+#para:hover {
+  opacity: 1;
+  background: #e2a9e5;
+  background: -moz-linear-gradient(-45deg, #e2a9e5 15%, #2b94e5 100%);
+  background: -webkit-linear-gradient(-45deg, #e2a9e5 15%, #2b94e5 100%);
+  background: linear-gradient(135deg, #e2a9e5 15%, #2b94e5 100%);
+
 }
+
 /* body {
   background-color: white;
   font-family: "Righteous", cursive;
@@ -587,7 +605,7 @@ h2.card-title {
   font-weight: 900;
   color: #141a46;
   text-align: center;
-  padding-top: 20px;  
+  padding-top: 20px;
 }
 
 .topic {
@@ -649,8 +667,8 @@ h2.card-title {
   }
 }
 
-.nav-link:hover{
-  background-color: 	#e32828;
+.nav-link:hover {
+  background-color: #e32828;
   border-radius: 4rem;
 }
 
@@ -672,6 +690,7 @@ button#scrolltopBtn {
   z-index: 2000;
   border: none;
 }
+
 .flip-card {
   float: left;
   border-radius: 29px;
@@ -679,21 +698,22 @@ button#scrolltopBtn {
   width: 400px;
   height: 400px;
   /* border: 1px solid #e1dfdf; */
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  perspective: 1000px;
+  /* Remove this if you don't want the 3D effect */
   margin: 10px 70px;
-  
+
 }
 
 /* This container is needed to position the front and back side */
 .flip-card-inner {
-  
+
   position: relative;
   width: 100%;
   height: 100%;
   text-align: justify;
   transition: transform 0.8s;
   transform-style: preserve-3d;
-  
+
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
@@ -702,12 +722,14 @@ button#scrolltopBtn {
 }
 
 /* Position the front and back side */
-.flip-card-front, .flip-card-back {
+.flip-card-front,
+.flip-card-back {
   border-radius: 29px;
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
+  -webkit-backface-visibility: hidden;
+  /* Safari */
   backface-visibility: hidden;
 }
 
@@ -720,18 +742,17 @@ button#scrolltopBtn {
 /* Style the back side */
 .flip-card-back {
   background-color: rgb(171, 163, 163);
-  color:#000;
+  color: #000;
   transform: rotateY(180deg);
   padding: 20px;
 }
-img
-{
+
+img {
   position: relative;
   top: -20px;
 }
 
-footer
-{
+footer {
   position: fixed;
   left: 40%;
   bottom: 0;
@@ -739,7 +760,7 @@ footer
 
 ul.navbar-nav.mr-auto {
   position: absolute;
-  right:10rem;
+  right: 10rem;
 
 }
 
@@ -747,7 +768,7 @@ ul.navbar-nav.mr-auto {
 @media screen and (max-width:955px) {
   ul.navbar-nav.mr-auto {
     position: absolute;
-    right:0;
+    right: 0;
     left: 0;
     top: 0;
     margin-top: 80px;
