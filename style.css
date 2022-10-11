@@ -215,6 +215,41 @@ body {
   background-color: black;
 } */
 
+/* Character text animation  */
+.chars{
+  background: linear-gradient(90deg,cyan,red,pink,green,yellow,purple);
+  background-size: 400%;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  text-decoration: none;
+  animation: linrclr 10s linear infinite;
+}
+h1.chars{font-weight: 1000; padding: 20px; font-size: 3.5rem; font-family: poppins; margin: 50px;}
+
+@keyframes linrclr {
+  0%{
+      background-position: 0%;
+  }
+  100%{
+      background-position: 400%;
+  }
+}
+body.lightmode #cont{
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  margin: 0; padding: 0;
+  width: 100%;
+  max-width: 2000px;
+  justify-content: center;
+  align-items: center;
+}
+.flip-card{
+  cursor: pointer;
+  border: 1px solid lightgrey;
+  box-shadow: 5px 20px 60px 15px;
+}
+
 
 .topic {
   text-align: center;
