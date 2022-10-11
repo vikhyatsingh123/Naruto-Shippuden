@@ -58,6 +58,44 @@
     }
 
 
+    .toggle {
+            position : relative ;
+            display : inline-block;
+            background-color: black;
+            color:white;
+            border-radius: 30px;
+            border: 2px solid gray;
+            height: 30px;
+            width: 80px;
+            margin-top: 21px;
+            cursor: pointer;
+        }
+        .toggle:after {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: gray;
+            top: 1px;
+            left: 1px;
+            transition:  all 0.5s;
+            height: 25px;
+            width: 25px;
+        }
+        
+        .checkbox:checked + .toggle::after {
+            left : 49px;
+        }
+        .checkbox:checked + .toggle {
+            background-color: white;
+          color:black;
+        }
+        .checkbox {
+            display : none;
+        }
+
+
 </style>
 
 <style>
@@ -103,10 +141,14 @@
                     <li class="nav-item mx-4">
                         <a class="nav-link" href="./about.html" style="color: beige;">About</a>
                     </li>
-                    <li>
+                    <!-- <li>
                         <div >
                             <button onclick="darkmode()" style="border-radius:4px; background-color:rgb(241, 240, 236);margin-left: 25px; padding: 1px 2px" id="toggler">Darkmode</button>
                         </div>
+                    </li> -->
+                    <li>
+                        <input type="checkbox" id="switch" class="checkbox" onclick="darkmode()" />
+                        <label for="switch" class="toggle"></label>
                     </li>
                 </ul>
 
