@@ -10,11 +10,11 @@ body {
 
 body {
 
-  background-color: #3f3fc3;
+  background-image: linear-gradient(to right,#2193b0,#6dd5ed);
   max-width: 100%;
   overflow-x: hidden;
   /* background-image: radial-gradient(blue, violet); */
-  font-family: "Ninja Naruto", arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 /* Custom Scroll Bar */
@@ -417,7 +417,7 @@ h1 {
   color: #000;
 } */
 .dark-mode {
-  background-color: rgb(30, 28, 28);
+  background-image: linear-gradient(to right,#414141,#000000);
 }
 
 p.aboutcolor {
@@ -430,7 +430,7 @@ body.aboutdarkmode {
 }
 
 .lightmode {
-  background-color: #2c2ca7;
+  background-image: linear-gradient(to right,#2193b0,#6dd5ed);
 }
 
 .brand1 {
@@ -581,6 +581,11 @@ body {
   background-size: cover; */
 }
 
+.radius{
+  border-radius: 50px;
+  width: 90%!important;
+  margin: auto;
+}
 .card-bg {
   transition: all 0.5s;
   background: rgba(255, 255, 255, 0.25);
@@ -697,11 +702,11 @@ button#scrolltopBtn {
   background-color: transparent;
   width: 400px;
   height: 400px;
+  box-shadow: 0 5px 24px 0 rgb(0 0 0 / 80%);
   /* border: 1px solid #e1dfdf; */
   perspective: 1000px;
   /* Remove this if you don't want the 3D effect */
   margin: 10px 70px;
-
 }
 
 /* This container is needed to position the front and back side */
@@ -735,14 +740,15 @@ button#scrolltopBtn {
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background-color: #bbb;
+  background-color:rgb(228 212 212);
   color: black;
 }
 
 /* Style the back side */
 .flip-card-back {
-  background-color: rgb(171, 163, 163);
-  color: #000;
+
+  background-color: rgb(228 212 212);
+  color:#000;
   transform: rotateY(180deg);
   padding: 20px;
 }
@@ -752,11 +758,13 @@ img {
   top: -20px;
 }
 
+
 footer {
   position: fixed;
   left: 40%;
   bottom: 0;
 }
+
 
 ul.navbar-nav.mr-auto {
   position: absolute;
@@ -770,9 +778,9 @@ ul.navbar-nav.mr-auto {
     position: absolute;
     right: 0;
     left: 0;
-    top: 0;
+    top: 0; 
     margin-top: 80px;
     padding: 1rem;
     background-color: #141a46;
   }
-}
+} 
