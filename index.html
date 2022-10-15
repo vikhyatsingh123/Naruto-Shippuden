@@ -16,52 +16,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="index.css">
     <title>Naruto</title>
 </head>
-
-<style>
-    .to-top {
-        color: #fff;
-        position: fixed;
-        bottom: 16px;
-        right: 32px;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 32px;
-        background: #1f1f1f;
-        text-decoration: none;
-        opacity: 0;
-        pointer-events: none;
-        transition: all 0.4s;
-    }
-
-    @media only screen and (max-width: 480px) {
-        .to-top.active {
-            bottom: 32px;
-            pointer-events: auto;
-            opacity: 1;
-            z-index: 1000;
-            right: 35%;
-        }
-    }
-
-    .to-top.active {
-        bottom: 32px;
-        pointer-events: auto;
-        opacity: 1;
-        z-index: 1000;
-        right: 5%;
-    }
-
-    .to-top:hover {
-        color: #fff;
-        text-decoration: none;
-    }
-</style>
 
 <style>
     /* .dark-mode {
@@ -229,7 +187,6 @@
                 </div>
 
                 <!--[Anko Mitarashi] card end-->
-
 
                 <!-- [Chiriku] card start-->
                 <div class="flip-card">
@@ -1886,9 +1843,7 @@
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Juubi</h2>
-
-                            <img src="Images/juubi.jpeg"
-                                alt="Juubi" height="300px" width="300px">
+                            <img src="Images/juubi.jpeg" alt="Juubi" height="300px" width="300px">
                         </div>
                         <div class="flip-card-back">
                             <p class="card-text">The ten-tailed beast was created by Kaguya Otsutsuki and later had its
@@ -2001,7 +1956,6 @@
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
                                 <h2 class="card-title">Jiraiya</h2>
-
                                 <img src="https://www.giantbomb.com/a/uploads/scale_super/9/95613/2225257-jiraiya.jpg"
                                     alt=Jiraiya height="300px" width="300px">
                             </div>
@@ -2056,16 +2010,19 @@
                     </div>
                     <!-- Iruka Umino card end-->
 
-
-
         </main>
         <audio src="./sound/naruto.mp3"></audio>
-        <footer>
+
+        <footer class="footer">
+            Developed and Designed By <a href="https://github.com/vikhyatsingh123/"><span>Vikhyat Singh</span> </a> | © All Rights Reserved
+          </footer>
+        <!-- <footer>
             <nav class="navbar navbar-expand-lg navbar-light nav1">
                 <p class="mx-auto text-light font-weight-lighter">&copy Developed By - <a
                         href="https://github.com/vikhyatsingh123">Vikhyat Singh</a></p>
             </nav>
-        </footer>
+        </footer> -->
+
         <script src="./sound.js"></script>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
@@ -2092,11 +2049,9 @@
                 } else {
                     toTop.classList.remove("active");
                 }
-
             });
 
         </script>
-
 
         <script>
             function darkmode() {

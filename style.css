@@ -738,12 +738,6 @@ img
   top: -20px;
 }
 
-footer
-{
-  position: fixed;
-  left: 40%;
-  bottom: 0;
-}
 
 ul.navbar-nav.mr-auto {
   position: absolute;
@@ -757,9 +751,9 @@ ul.navbar-nav.mr-auto {
     position: absolute;
     right:0;
     left: 0;
-    top: 0;
+    top: 0; 
     margin-top: 80px;
     padding: 1rem;
     background-color: #141a46;
   }
-}
+} 
