@@ -2,67 +2,27 @@
 <html lang="en-US">
 
 <head>
-    <link href="https://allfont.net/allfont.css?fonts=ninja-naruto" rel="stylesheet" type="text/css"/>
+    <link href="https://allfont.net/allfont.css?fonts=ninja-naruto" rel="stylesheet" type="text/css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-          integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css" type="text/css">
-    <link href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.6qtY7eooQBTfiSVjtrLrGQHaEj%26pid%3DApi&f=1"
-          rel="icon" type="image/jpeg">
+    <link
+        href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.6qtY7eooQBTfiSVjtrLrGQHaEj%26pid%3DApi&f=1"
+        rel="icon" type="image/jpeg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/png" href="Images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="index.css">
     <title>Naruto</title>
 </head>
 
-<style>
-   
-    .to-top {
-        color: #fff;
-        position: fixed;
-        bottom: 16px;
-        right: 32px;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 32px;
-        background: #1f1f1f;
-        text-decoration: none;
-        opacity: 0;
-        pointer-events: none;
-        transition: all 0.4s;
-    }
-    @media only screen and (max-width: 480px) {
-        .to-top.active {
-            bottom: 32px;
-            pointer-events: auto;
-            opacity: 1;
-            z-index: 1000;
-            right: 35%;
-        }
-    }
-    .to-top.active {
-        bottom: 32px;
-        pointer-events: auto;
-        opacity: 1;
-        z-index: 1000;
-        right: 5%;
-    }
-
-    .to-top:hover {
-        color: #fff;
-        text-decoration: none;
-    }
-    
-   
-
-</style>
 
 <style>
-
     /* .dark-mode {
         background-color: rgb(156, 170, 33);
         color: white;
@@ -71,97 +31,102 @@
 
 <body class="lightmode">
 
-<a href="#" class="to-top">
-    <i class="fa fa-arrow-up"></i>
-</a>
+    <a href="#" class="to-top">
+        <i class="fa fa-arrow-up"></i>
+    </a>
 
-<div class="loader lightmode">
+    <div class="loader lightmode">
 
-    <header>
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+        <header>
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light">
 
-            <a class="navbar-brand brand1 ml-4" href="#" style="color: beige;">Naruto</a>
-            
-            
-            <div class="search">
-                <div class="icon"></div>
-                <div class="input">
-                    <input type="text" placeholder="search" id="mysearch">
-                </div>
-                
-                <span class="clear" onclick="document.getElementById('mysearch').value = ' '"></span>
-            </div>
-            <button class="navbar-toggler" class="menu-btn" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active mx-4">
-                        <a class="nav-link" href="./index.html" style="color: beige;">Home</a>
-                    </li>
-                    <li class="nav-item mx-4">
-                        <a class="nav-link" href="./about.html" style="color: beige;">About</a>
-                    </li>
-                    <li>
-                        <div >
-                            <button onclick="darkmode()" class="toggle-mode" id="toggler">🌙 Dark</button>
-                        </div>
-                    </li>
-                </ul>
-
-            </div>
-        </nav>
-
-    </header>
+                <a class="navbar-brand brand1 ml-4" href="#" style="color: beige;">Naruto</a>
 
 
-    <main>
-
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="./Images/229954.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./Images/377906.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./Images/377922.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./Images/123456.jpg" class="d-block w-100" alt="...">
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
-
-        <h1 class="chars">Characters</h1>
-        <!--Card section start-->
-        <div class="container" id="cont">
-            <!-- [Suigetsu] card start-->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <h2 class="card-title">Suigetsu</h2>
-                        <img src="./Images/Suigetsu.jpeg" alt="Suigetsu" height="300px" width="300px" class = "img_card">
-                        
+                <div class="search">
+                    <div class="icon"></div>
+                    <div class="input">
+                        <input type="text" placeholder="search" id="mysearch">
                     </div>
-                <div class="flip-card-back">
-                           
+
+                    <span class="clear" onclick="document.getElementById('mysearch').value = ' '"></span>
+                </div>
+                <button class="navbar-toggler" class="menu-btn" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active mx-4">
+                            <a class="nav-link" href="./index.html" style="color: beige;">Home</a>
+                        </li>
+                        <li class="nav-item mx-4">
+                            <a class="nav-link" href="./about.html" style="color: beige;">About</a>
+                        </li>
+                        <li>
+                            <div>
+                                <button onclick="darkmode()" class="toggle-mode" id="toggler">🌙 Dark</button>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+
+        </header>
+
+
+        <main>
+
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./Images/229954.jpg" class="radius d-block" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./Images/377906.jpg" class="radius d-block" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./Images/377922.jpg" class="radius d-block" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./Images/123456.jpg" class="radius d-block" alt="...">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+            <h1 class="chars">Characters</h1>
+            <!--Card section start-->
+            <div class="container" id="cont">
+
+
+
+                <!-- [Suigetsu] card start-->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Suigetsu</h2>
+                            <img src="./Images/Suigetsu.jpeg" alt="Suigetsu" height="300px" width="300px"
+                                class="img_card">
+
+                        </div>
+                        <div class="flip-card-back">
+
                             <p class="card-text">
                                 Suigetsu was a member of Sasuke's renegade group consisting of himself, Suigetsu, Karin,
                                 and Jugo. Of the quartet, Suigetsu was the self-styled comedian. He had plenty of
@@ -172,60 +137,67 @@
                                 distinct impression that he probably wasn't a true believer in Sasuke's dream. It was
                                 even funnier in the moment, as he made a decisive gesture with a spoon he was using at
                                 the time.</p>
-                                </div>
                         </div>
                     </div>
-                
-            <!--[Suigetsu] card end-->
-
-
-<!-- [Sai] card start-->
-<div class="flip-card">
-    <div class="flip-card-inner">
-      <div class="flip-card-front">
-        <h2 class="card-title">Sai Yamanaka</h2>
-            <img src="./Images/Sai_Infobox.png" alt="Sai" height="300px" width="300px">
-        </div>
-        <div class="flip-card-back">
-                <p class="card-text">Sai Yamanaka (山中サイ, Yamanaka Sai) is the Anbu Chief of 
-                    Konohagakure's Yamanaka clan. Prior to this, he was a Root member. 
-                    As per standard Root training, Sai was conditioned to remove all emotions and as such, 
-                    had difficulty connecting with others. When he is added to Team Kakashi as a replacement 
-                    for the rogue Sasuke Uchiha, Sai begins to learn more about people's feelings and tries to develop his 
-                    personality and identity by forming genuine bonds and rediscovering the emotions he was taught to suppress..</p>
-                
-            </div>
-        </div>
-    </div>
-
-<!--[Sai] card end-->
-		
-<!-- [Anko Mitarashi] card start-->
-            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
-              <div class="row no-gutters">
-                 <div class="col-md-4">
-                    <img src="./Images/Minato.png" alt="Anko Mitarashi" height="390px" width="300px">  
-                  </div>
-                  <div class="col-md-8">
-                   <div class="card-body">
-                      <h2 class="card-title">Anko Mitarashi</h2>
-                      <p class="card-text">The proctor of the survival leg of the Chuunin exams, she goes through her enemies like a blazing inferno. She was once tutored by Orochimaru, but was abandoned by him when she refused to follow his evil path.</p>
-                      <p>Anko Mitarashi is a Jonin of the Hidden Leaf Village. She was a proctor of the survival portion of the Chunin exams. She was also a former student of longtime series antagonist, Orochimaru, but did not share his vision and refused to follow him further.</p>
-                  </div>
                 </div>
-              </div>
-            </div>
- <!--[Anko Mitarashi] card end-->
-		
-		
- <!-- [Chiriku] card start-->
- <div class="flip-card">
-    <div class="flip-card-inner">
-      <div class="flip-card-front">
-                        <h2 class="card-title">Chiriku</h2>
-                        <img src="./Images/chiriku.jpg" alt="Chiriku" height="300px" width="300px">
+
+                <!--[Suigetsu] card end-->
+
+
+                <!-- [Sai] card start-->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Sai Yamanaka</h2>
+                            <img src="./Images/Sai_Infobox.png" alt="Sai" height="300px" width="300px">
+                        </div>
+                        <div class="flip-card-back">
+                            <p class="card-text">Sai Yamanaka (山中サイ, Yamanaka Sai) is the Anbu Chief of
+                                Konohagakure's Yamanaka clan. Prior to this, he was a Root member.
+                                As per standard Root training, Sai was conditioned to remove all emotions and as such,
+                                had difficulty connecting with others. When he is added to Team Kakashi as a replacement
+                                for the rogue Sasuke Uchiha, Sai begins to learn more about people's feelings and tries
+                                to develop his
+                                personality and identity by forming genuine bonds and rediscovering the emotions he was
+                                taught to suppress..</p>
+
+                        </div>
                     </div>
-                    <div class="flip-card-back">
+                </div>
+
+                <!--[Sai] card end-->
+
+                <!-- [Anko Mitarashi] card start-->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Anko Mitarashi</h2>
+                            <img src="./Images/Minato.png" alt="Anko Mitarashi" height="390px" width="300px">
+                        </div>
+                        <div class="flip-card-back">
+
+                            <p class="card-text">The proctor of the survival leg of the Chuunin exams, she goes through
+                                her enemies like a blazing inferno. She was once tutored by Orochimaru, but was
+                                abandoned by him when she refused to follow his evil path.
+                                Anko Mitarashi is a Jonin of the Hidden Leaf Village. She was a proctor of the survival
+                                portion of the Chunin exams. She was also a former student of longtime series
+                                antagonist, Orochimaru, but did not share his vision and refused to follow him further.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--[Anko Mitarashi] card end-->
+
+
+                <!-- [Chiriku] card start-->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Chiriku</h2>
+                            <img src="./Images/chiriku.jpg" alt="Chiriku" height="300px" width="300px">
+                        </div>
+                        <div class="flip-card-back">
                             <p class="card-text">Chiriku is a Fire Temple monk, formerly a member of the “12 Guardian
                                 Ninjas” of the Lord of the Fire Land. There he will meet Asuma Sarutobi, son of the
                                 third Hokage. Their mission was to escort and protect the Daimyo of the Land of
@@ -239,51 +211,65 @@
                         </div>
                     </div>
                 </div>
-        
-            <!--[Chiriku] card end-->
-<!-- [ten tails] card start-->
- <div class="flip-card">
-    <div class="flip-card-inner">
-      <div class="flip-card-front">
-                        <h2 class="card-title">ten tails</h2>
-                        <img src="./Images/ten tails.jpeg" alt="ten tails" height="300px" width="300px">
-                    </div>
-                    <div class="flip-card-back">
-                            <p class="card-text">This Ten-Tails (十尾, Jūbi) is the combined form of Kaguya Ōtsutsuki and the God Tree, created to reclaim the chakra inherited by her sons, Hagoromo and Hamura. It is regarded as the progenitor of chakra, and is tied to the legend of the Sage of Six Paths and the birth of shinobi. To end the beast's rampage, the Sage became the Ten-Tails' jinchūriki and later split its chakra into the nine tailed beasts to prevent it from causing further harm. Centuries later, its revival became the objective of Madara and Obito Uchiha, who both sought to become the beast's jinchūriki in order to further their objectives.</p>
+
+                <!--[Chiriku] card end-->
+                <!-- [ten tails] card start-->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">ten tails</h2>
+                            <img src="./Images/ten tails.jpeg" alt="ten tails" height="300px" width="300px">
+                        </div>
+                        <div class="flip-card-back">
+                            <p class="card-text">This Ten-Tails (十尾, Jūbi) is the combined form of Kaguya Ōtsutsuki and
+                                the God Tree, created to reclaim the chakra inherited by her sons, Hagoromo and Hamura.
+                                It is regarded as the progenitor of chakra, and is tied to the legend of the Sage of Six
+                                Paths and the birth of shinobi. To end the beast's rampage, the Sage became the
+                                Ten-Tails' jinchūriki and later split its chakra into the nine tailed beasts to prevent
+                                it from causing further harm. Centuries later, its revival became the objective of
+                                Madara and Obito Uchiha, who both sought to become the beast's jinchūriki in order to
+                                further their objectives.</p>
                         </div>
                     </div>
                 </div>
-        
-            <!--[ten tails] card end-->
 
-		    <!-- [Asura] card start-->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-            <h2 class="card-title">Asura</h2>
-                    <img src="./Images/Asura.png" alt="Asura" height="300px" width="300px">  
-                  </div>                    
-                      <div class="flip-card-back">
-                      <p class="card-text">Asura Ōtsutsuki (大筒木アシュラ, Ōtsutsuki Ashura) was the younger son of Hagoromo Ōtsutsuki. Though not the obvious choice to most, he would go on to inherit his father's teachings, and as a result, would have to clash bitterly against his elder brother Indra. Asura is also credited with being the progenitor of both the Senju and Uzumaki clans.</p>
-                      <p>With the power entrusted to him by his father, Asura gained access to the Six Paths Senjutsu, allowing him to augment himself and his various techniques. In this state, he could fly and manifest a giant three-faced, six-armed avatar, Six Paths: Kunitsukami. 
-                        <!-- He could also manifest nine Truth-Seeking Balls, which could be shaped into various tools and constructs, able to battle back Indra's Susanoo with it. He could also use them in unison with his Kunitsukami.
-                      --></p>
-                  </div>
-                </div>
-              </div>
-            
-            <!--[Asura] card end-->
-		
-		
-            <!-- [Inuzuka Hana] card start-->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <h2 class="card-title">Inuzuka Hana</h2>
-                        <img src="./Images/inuzuka_hana.jpg" alt="Inuzuka Hana" height="300px" width="300px">
+                <!--[ten tails] card end-->
+
+                <!-- [Asura] card start-->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Asura</h2>
+                            <img src="./Images/Asura.png" alt="Asura" height="300px" width="300px">
+                        </div>
+                        <div class="flip-card-back">
+                            <p class="card-text">Asura Ōtsutsuki (大筒木アシュラ, Ōtsutsuki Ashura) was the younger son of
+                                Hagoromo Ōtsutsuki. Though not the obvious choice to most, he would go on to inherit his
+                                father's teachings, and as a result, would have to clash bitterly against his elder
+                                brother Indra. Asura is also credited with being the progenitor of both the Senju and
+                                Uzumaki clans.</p>
+                            <p>With the power entrusted to him by his father, Asura gained access to the Six Paths
+                                Senjutsu, allowing him to augment himself and his various techniques. In this state, he
+                                could fly and manifest a giant three-faced, six-armed avatar, Six Paths: Kunitsukami.
+                                <!-- He could also manifest nine Truth-Seeking Balls, which could be shaped into various tools and constructs, able to battle back Indra's Susanoo with it. He could also use them in unison with his Kunitsukami.
+                      -->
+                            </p>
+                        </div>
                     </div>
-                    <div class="flip-card-back">
-                            
+                </div>
+
+                <!--[Asura] card end-->
+
+
+                <!-- [Inuzuka Hana] card start-->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Inuzuka Hana</h2>
+                            <img src="./Images/inuzuka_hana.jpg" alt="Inuzuka Hana" height="300px" width="300px">
+                        </div>
+                        <div class="flip-card-back">
+
                             <p class="card-text">Hana is a kunoichi from Konoha village. She is Kiba's sister and
                                 Tsume's daughter</p>
                             <p>Hana also specializes in animal medicine: she is a veterinarian. His companions are 3 dog
@@ -291,16 +277,16 @@
                         </div>
                     </div>
                 </div>
-            
-            <!-- Izumi Uchiha card start -->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <h2 class="card-title"> Izumi Uchiha </h2>
-                        <img src="./Images/Izumi_Uchiha.jpg" alt="Izumi Uchiha" height="350px" width="380px">
-                    </div>
-                    <div class="flip-card-back">
-                            
+
+                <!-- Izumi Uchiha card start -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title"> Izumi Uchiha </h2>
+                            <img src="./Images/Izumi_Uchiha.jpg" alt="Izumi Uchiha" height="350px" width="380px">
+                        </div>
+                        <div class="flip-card-back">
+
                             <p class="card-text">Izumi was the daughter of Hazuki Uchiha. Unlike her mother, Izumi's
                                 father was not an Uchiha.During the Nine-Tailed Demon Fox's Attack, her father died
                                 while protecting her.From the grief brought on by his death, as well as feelings of
@@ -316,15 +302,15 @@
                         </div>
                     </div>
                 </div>
-            <!--Fūka card start-->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <h2 class="card-title">Fūka</h2>
-                        <img src="./Images/fuka.jpg" alt="Fūka" height="300px" width="300px">
-                    </div>
-                    <div class="flip-card-back">
-                            
+                <!--Fūka card start-->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Fūka</h2>
+                            <img src="./Images/fuka.jpg" alt="Fūka" height="300px" width="300px">
+                        </div>
+                        <div class="flip-card-back">
+
                             <p class="card-text">Fūka was portrayed as a seductive vixen as a way to lure her prey in
                                 and kill them with an Execution by Kiss.</p>
                             <p>She would further speed up the process by giving her targets a choice between a French or
@@ -337,18 +323,18 @@
                         </div>
                     </div>
                 </div>
-          
-            <!--Fūka card end-->
 
-            <!-- Tayuya Card start -->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <h2 class="card-title">Rôshi</h2>
-                        <img src="./Images/roshi.jpg" alt="Rôshi" height="300px" width="300px">
-                    </div>
-                    <div class="flip-card-back">
-                           
+                <!--Fūka card end-->
+
+                <!-- Tayuya Card start -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Rôshi</h2>
+                            <img src="./Images/roshi.jpg" alt="Rôshi" height="300px" width="300px">
+                        </div>
+                        <div class="flip-card-back">
+
                             <p class="card-text">Rôshi was the last Jinchûriki of Yonbi, the 4-tailed demon. He was
                                 killed by Kisame Hoshigaki, a former member of the Akatsuki, who aimed to reunite all
                                 the Biju.</p>
@@ -357,17 +343,17 @@
                         </div>
                     </div>
                 </div>
-            
-            <!--[Rôshi] card end-->
-            <!-- [Suigetsu] card start-->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <h2 class="card-title">Suigetsu</h2>
 
-                        <img src="./Images/Suigetsu.jpeg" alt="Suigetsu" height="300px" width="300px">
-                    </div>
-                    <div class="flip-card-back">
+                <!--[Rôshi] card end-->
+                <!-- [Suigetsu] card start-->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Suigetsu</h2>
+
+                            <img src="./Images/Suigetsu.jpeg" alt="Suigetsu" height="300px" width="300px">
+                        </div>
+                        <div class="flip-card-back">
                             <p class="card-text">
                                 Suigetsu was a member of Sasuke's renegade group consisting of himself, Suigetsu, Karin,
                                 and Jugo. Of the quartet, Suigetsu was the self-styled comedian. He had plenty of
@@ -381,17 +367,17 @@
                         </div>
                     </div>
                 </div>
-            <!--[Suigetsu] card end-->
+                <!--[Suigetsu] card end-->
 
-            <!-- boruto card start -->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <h2 class="card-title"> Boruto Uzumaki</h2>
+                <!-- boruto card start -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title"> Boruto Uzumaki</h2>
 
-                        <img src="./Images/boruto.jpg" alt="boruto" height="350px" width="380px">
-                    </div>
-                    <div class="flip-card-back">
+                            <img src="./Images/boruto.jpg" alt="boruto" height="350px" width="380px">
+                        </div>
+                        <div class="flip-card-back">
                             <p class="card-text">Boruto Uzumaki (うずまきボルト, Uzumaki Boruto) is a shinobi from
                                 Konohagakure's Uzumaki Clan and a direct descendant of the Hyūga clan through his
                                 mother. Initially nonchalant in his duties as a member of Team 7 and resentful of his
@@ -403,31 +389,33 @@
                     </div>
                 </div>
 
-            <!-- boruto card end-->
- <!-- [character name] card start-->
- <div class="flip-card">
-    <div class="flip-card-inner">
-      <div class="flip-card-front">
-                    <h2 class="card-title">Ebisu</h2>
-                    <img src="https://www.giantbomb.com/a/uploads/scale_small/0/6087/1097069-ebisu.png" alt=Ebisu height="300px" width="300px">
-                  </div>
-                  <div class="flip-card-back">
-                      <p class="card-text">Specializes in the private training of Ninja, and is 
-                        often referred to as being a closet pervert. He is one of the sensei who's trained Konohamaru.</p>
-                  </div>
-                </div>
-              </div>
-            <!--[character name] card end-->
-
-            <!-- Yukimaru card start -->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <h2 class="card-title"> Yukimaru </h2>
-
-                        <img src="./Images/yukimaru.png" alt="Haku" height="350px" width="380px">
+                <!-- boruto card end-->
+                <!-- [character name] card start-->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Ebisu</h2>
+                            <img src="https://www.giantbomb.com/a/uploads/scale_small/0/6087/1097069-ebisu.png"
+                                alt=Ebisu height="300px" width="300px">
+                        </div>
+                        <div class="flip-card-back">
+                            <p class="card-text">Specializes in the private training of Ninja, and is
+                                often referred to as being a closet pervert. He is one of the sensei who's trained
+                                Konohamaru.</p>
+                        </div>
                     </div>
-                    <div class="flip-card-back">
+                </div>
+                <!--[character name] card end-->
+
+                <!-- Yukimaru card start -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title"> Yukimaru </h2>
+
+                            <img src="./Images/yukimaru.png" alt="Haku" height="350px" width="380px">
+                        </div>
+                        <div class="flip-card-back">
                             <p class="card-text">Yukimaru is a young orphan who became one of Orochimaru's test
                                 subjects, due to his ability to partially control the Three-Tails.</p>
                             <p>Yukimaru lived with his mother in a village that was attacked by Orochimaru's followers
@@ -436,18 +424,18 @@
                     </div>
                 </div>
 
-            <!-- Yukimaru card end-->
+                <!-- Yukimaru card end-->
 
 
-            <!-- Yamato card start-->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <h2 class="card-title">Yamato</h2>
-                        <img src="./Images/Yamato.png" alt=Yamato height="300px" width="300px">
+                <!-- Yamato card start-->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Yamato</h2>
+                            <img src="./Images/Yamato.png" alt=Yamato height="300px" width="300px">
 
-                    </div>
-                    <div class="flip-card-back">
+                        </div>
+                        <div class="flip-card-back">
                             <p class="card-text">Yamato is a very discreet, cautious, careful and well prepared person.
                                 He projects a calm, stoic demeanour in stressful situations. He takes his missions very
                                 seriously, even insisting on being referred to by whatever his current codename</p>
@@ -460,34 +448,34 @@
                     </div>
                 </div>
 
-            <!-- [Hanabi Hyuga] card start-->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <h2 class="card-title">Hanabi Hyuga</h2>
-                        <img src="https://www.giantbomb.com/a/uploads/scale_small/16/164924/2763708-8948056510-Hanab.jpg"
-                             alt="Hanabi Hyuga" height="350px" width="380px">
-                    </div>
-                    <div class="flip-card-back">
+                <!-- [Hanabi Hyuga] card start-->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Hanabi Hyuga</h2>
+                            <img src="https://www.giantbomb.com/a/uploads/scale_small/16/164924/2763708-8948056510-Hanab.jpg"
+                                alt="Hanabi Hyuga" height="350px" width="380px">
+                        </div>
+                        <div class="flip-card-back">
                             <p class="card-text">Hanabi is the younger sister of Hinata. She plays an important role in
                                 The Last: Naruto the Movie. Her father is Hiashi Hyuga and is auntie to Hinata's
                                 children, Boruto and Himawari. Her cousin is Neji Hyuga.
                                 Naruto Uzumaki is her brother-in-law.</p>
-                       </div>
+                        </div>
                     </div>
                 </div>
-            <!--[hanabi hyuga] card end-->
+                <!--[hanabi hyuga] card end-->
 
 
-            <!--First card-->
+                <!--First card-->
 
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <h2 class="card-title">Naruto Uzumaki</h2>
-                        <img src="./Images/naruto.png" alt="naruto" height="330px" width="300px">
-                    </div>
-                    <div class="flip-card-back">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Naruto Uzumaki</h2>
+                            <img src="./Images/naruto.png" alt="naruto" height="330px" width="300px">
+                        </div>
+                        <div class="flip-card-back">
                             <p class="card-text">Naruto Uzumaki is the main protagonist in the popular manga and anime
                                 series Naruto. He is a cheerful, hyperactive, strong-willed, and occasionally
                                 simple-minded young shinobi from the village of Konoha (or Leaf Village).</p>
@@ -496,38 +484,40 @@
                                 each other, and would rarely grant Naruto his power
                                 unless they were going to die. Eventually, they become friends, and Naruto then refers
                                 to the fox by his name, Kurama. At this point, Naruto can use Kurama's chakra at
-                                will.</p>                       </div>
+                                will.</p>
+                        </div>
                     </div>
                 </div>
-            <!--First card end(Naruto)-->
-            <!--Second card start-->
+                <!--First card end(Naruto)-->
+                <!--Second card start-->
 
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <h2 class="card-title">Sasuke Uchiha</h2>
-                        <img src="./Images/Sasuke.png" alt="Sasuke Uchiha" height="350px" width="250px">
-                    </div>
-                    <div class="flip-card-back">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Sasuke Uchiha</h2>
+                            <img src="./Images/Sasuke.png" alt="Sasuke Uchiha" height="350px" width="250px">
+                        </div>
+                        <div class="flip-card-back">
                             <p class="card-text">Sasuke Uchiha (うちはサスケ, Uchiha Sasuke) is one of the last surviving
                                 members of Konohagakure's Uchiha clan. After his older brother, Itachi, slaughtered
                                 their clan, Sasuke made it his mission in life to avenge them by killing
                                 Itachi. He is added to Team 7 upon becoming a ninja and, through competition with his
-                                rival and best friend, Naruto Uzumaki, .</p>                       </div>
+                                rival and best friend, Naruto Uzumaki, .</p>
+                        </div>
                     </div>
                 </div>
 
-            <!-- first card end-->
+                <!-- first card end-->
 
-            <!-- Tsunade card start-->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <h2 class="card-title">Tsunade</h2>
-                        <img src=https://www.giantbomb.com/a/uploads/scale_small/0/1122/557289-ygt.jpg alt=Tsunade
-                             height="300px" width="300px">
-                    </div>
-                    <div class="flip-card-back">
+                <!-- Tsunade card start-->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Tsunade</h2>
+                            <img src=https://www.giantbomb.com/a/uploads/scale_small/0/1122/557289-ygt.jpg alt=Tsunade
+                                height="300px" width="300px">
+                        </div>
+                        <div class="flip-card-back">
                             <p class="card-text">Tsunade is a kunoichi from the Hidden Leaf Village and posses
                                 Monstrous physical
                                 strength, extremely advanced healing and regenerative techniques, physician/surgeon
@@ -552,37 +542,38 @@
                                 technique shortens her life similar to the Four-Tailed
                                 transformation, however more controlled. Because of the risk associated with the
                                 technique, Tsunade has made the choice to only use
-                                Creation Rebirth in extremely desperate situations.</p>                       </div>
+                                Creation Rebirth in extremely desperate situations.</p>
+                        </div>
                     </div>
                 </div>
-            <!--Tsunade card end-->
-            <!-- Jirobo card start-->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <h2 class="card-title">Jirobo</h2>
-                        <img src="https://www.giantbomb.com/a/uploads/scale_small/0/5756/330799-jirobo.jpg" alt=Kawaki
-                             height="300px" width="300px">
-                    </div>
-                    <div class="flip-card-back">
+                <!--Tsunade card end-->
+                <!-- Jirobo card start-->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Jirobo</h2>
+                            <img src="https://www.giantbomb.com/a/uploads/scale_small/0/5756/330799-jirobo.jpg"
+                                alt=Kawaki height="300px" width="300px">
+                        </div>
+                        <div class="flip-card-back">
                             <p class="card-text">A ninja from The Hidden Sound Village and member of The Sound Five.he
                                 was the physically strongest member of the Sound Four, but the weakest overall.
                                 According to the other members of the group, nevertheless, he was a formidable opponent.
                                 Furthermore, Shikamaru stated that Jirōbō's prowess was at jōnin-level. In the anime,
                                 another testament to his prowess was him being chosen for reincarnation by Kabuto.</p>
-                       </div>
+                        </div>
                     </div>
                 </div>
-            <!-- Jirobo card end-->
-            <!-- Hanare card start-->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <h2 class="card-title">Hanare</h2>
-                        <img src="https://qph.fs.quoracdn.net/main-qimg-85fae3ac8ec01ad91d4a5304cf3a2b1a" alt="Hanare"
-                             height="300px" width="300px">
-                    </div>
-                    <div class="flip-card-back">
+                <!-- Jirobo card end-->
+                <!-- Hanare card start-->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Hanare</h2>
+                            <img src="https://qph.fs.quoracdn.net/main-qimg-85fae3ac8ec01ad91d4a5304cf3a2b1a"
+                                alt="Hanare" height="300px" width="300px">
+                        </div>
+                        <div class="flip-card-back">
                             <p class="card-text">Hanare (ハナレ, Hanare) is a kunoichi from the Jōmae Village. </p>
                             <p>As a young child, Hanare was said to be very lonely since she had never known her family
                                 or seen
@@ -603,19 +594,20 @@
                                 Jōmae Village from the Land of Keys, was summoned to infiltrate the Land of Fire and to
                                 investigate Konoha affairs. She was captured by Anbu and placed in the Honesty Room to
                                 be
-                                tortured. </p>                       </div>
+                                tortured. </p>
+                        </div>
                     </div>
                 </div>
-            <!--Hanare  card end-->
+                <!--Hanare  card end-->
 
-            <!--Fūka card start-->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <h2 class="card-title">Fūka</h2>
-                        <img src="./Images/fuka.jpg" alt="Fūka" height="300px" width="300px">
-                    </div>
-                    <div class="flip-card-back">
+                <!--Fūka card start-->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Fūka</h2>
+                            <img src="./Images/fuka.jpg" alt="Fūka" height="300px" width="300px">
+                        </div>
+                        <div class="flip-card-back">
                             <p class="card-text">Fūka was portrayed as a seductive vixen as a way to lure her prey in
                                 and kill them with an Execution by Kiss.</p>
                             <p>She would further speed up the process by giving her targets a choice between a French or
@@ -624,19 +616,20 @@
                                 harm came to her physical being, especially her hair, the very casing of her soul.
                                 During her second fight against Naruto Uzumaki, she showcased a sadistic side when she
                                 delighted in Naruto's anguish. She has shown an intelligent side as seen when she
-                                thought that Sora and Naruto were connected somehow.</p>                       </div>
+                                thought that Sora and Naruto were connected somehow.</p>
+                        </div>
                     </div>
                 </div>
-            <!--Fūka card end-->
+                <!--Fūka card end-->
 
-            <!-- Mizuki card start-->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <h2 class="card-title">Mizuki</h2>
-                        <img src="Images/Mizuki.png" alt="Mizuki" height="300px" width="300px">
-                    </div>
-                    <div class="flip-card-back">
+                <!-- Mizuki card start-->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Mizuki</h2>
+                            <img src="Images/Mizuki.png" alt="Mizuki" height="300px" width="300px">
+                        </div>
+                        <div class="flip-card-back">
                             <p class="card-text">The first-ever person whom Naruto faced in a battle in order to know
                                 his power and also get to know about his own ninja way. He thrashed him in the battle
                                 against him while saving Iruka Umino his sensei in his elementary Training Academy</p>
@@ -647,87 +640,107 @@
                                 Naruto's identity as the Nine-Tails's jinchūriki to ensure he runs off disillusioned.
                                 However, overhearing Iruka standing up for him, Naruto comes to his teacher's aid and
                                 uses the Multiple Shadow Clone Technique he had learned from the scroll to beat Mizuki
-                                unconscious for harming Iruka.</p>                       </div>
+                                unconscious for harming Iruka.</p>
+                        </div>
                     </div>
                 </div>
-            <!--Mizuki card end-->
+                <!--Mizuki card end-->
 
-                        <!-- The Demon Brothers card start-->
-                        <div class="flip-card">
-                            <div class="flip-card-inner">
-                              <div class="flip-card-front">
-                                <h2 class="card-title">The Demon Brothers</h2>
-                                  <img src="Images/Naruto-Demon-Brothers.jpg" alt=[name of character] height="300px" width="300px">
-                                </div>
-                                <div class="flip-card-back">
-                                    <p class="card-text">Naruto's first battle against non-Konoha ninja happened at the start of the Land of Waves Escort Mission arc. Two allies of Zabuza waited outside of Konoha in order to ambush Tazuna, who was being escorted by Team 7.</p>
-                                    <p>These were two former Hidden Mist shinobi, known as the Demon Brothers, who had defected from their village in order to join Zabuza's coup.
+                <!-- The Demon Brothers card start-->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">The Demon Brothers</h2>
+                            <img src="Images/Naruto-Demon-Brothers.jpg" alt=[name of character] height="300px"
+                                width="300px">
+                        </div>
+                        <div class="flip-card-back">
+                            <p class="card-text">Naruto's first battle against non-Konoha ninja happened at the start of
+                                the Land of Waves Escort Mission arc. Two allies of Zabuza waited outside of Konoha in
+                                order to ambush Tazuna, who was being escorted by Team 7.</p>
+                            <p>These were two former Hidden Mist shinobi, known as the Demon Brothers, who had defected
+                                from their village in order to join Zabuza's coup.
 
-                                        Kakashi and Sasuke were able to easily dispose of the Demon Brothers and keep Tazuna alive. They were then tied up next to a tree and left to be arrested.
+                                Kakashi and Sasuke were able to easily dispose of the Demon Brothers and keep Tazuna
+                                alive. They were then tied up next to a tree and left to be arrested.
 
-                                        We never actually see the Demon Brothers being arrested in the manga and escaping from being tied up is one of the most basic parts of ninja training. Were the Demon Brothers able to escape? If so, did they choose to abandon Zabuza? Why did they never reappear in the story afterward?</p>
-                                </div>
-                              </div>
-                            </div>
-                          
-                          <!--The Demon Brothers card end-->
-
-
-	<!-- Madara card start-->
-    <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-                          <h2 class="card-title">Madara Uchiha</h2>
-                    <img src="Images/madara-uchiha.jpeg" alt="Madara Uchiha" height="300px" width="300px">
-                  </div>
-                  <div class="flip-card-back">
-                    
-                      <p class="card-text">Madara Uchiha was the legendary leader of the Uchiha clan. He founded Konohagakure alongside his childhood friend and rival, Hashirama Senju, with the intention of beginning an era of peace.</p>
-                      <p> When the two couldn't agree on how to achieve that peace, they fought for control of the village, a conflict which ended in Madara's death. Madara, however, rewrote his death and went into hiding to work on his own plans. Unable to complete it in his natural life, he entrusted his knowledge and plans to Obito shortly before his actual death. Years later, Madara would be revived, only to see his plans foiled and ultimately, and finally, realising the error of his ways and making amends with Hashirama before his final death.</p>
-                  </div>
-                </div>
-              </div>
-         <!--Madara card end-->
-            <!-- Tayuya Card start -->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <h2 class="card-title">Tayuya</h2>
-                        <img src="./Images/tayuya.jpg" alt="Tayuya Image" height="300px" width="300px">
+                                We never actually see the Demon Brothers being arrested in the manga and escaping from
+                                being tied up is one of the most basic parts of ninja training. Were the Demon Brothers
+                                able to escape? If so, did they choose to abandon Zabuza? Why did they never reappear in
+                                the story afterward?</p>
+                        </div>
                     </div>
-                    <div class="flip-card-back">
+                </div>
+
+                <!--The Demon Brothers card end-->
+
+
+                <!-- Madara card start-->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Madara Uchiha</h2>
+                            <img src="Images/madara-uchiha.jpeg" alt="Madara Uchiha" height="300px" width="300px">
+                        </div>
+                        <div class="flip-card-back">
+
+                            <p class="card-text">Madara Uchiha was the legendary leader of the Uchiha clan. He founded
+                                Konohagakure alongside his childhood friend and rival, Hashirama Senju, with the
+                                intention of beginning an era of peace.</p>
+                            <p> When the two couldn't agree on how to achieve that peace, they fought for control of the
+                                village, a conflict which ended in Madara's death. Madara, however, rewrote his death
+                                and went into hiding to work on his own plans. Unable to complete it in his natural
+                                life, he entrusted his knowledge and plans to Obito shortly before his actual death.
+                                Years later, Madara would be revived, only to see his plans foiled and ultimately, and
+                                finally, realising the error of his ways and making amends with Hashirama before his
+                                final death.</p>
+                        </div>
+                    </div>
+                </div>
+                <!--Madara card end-->
+                <!-- Tayuya Card start -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Tayuya</h2>
+                            <img src="./Images/tayuya.jpg" alt="Tayuya Image" height="300px" width="300px">
+                        </div>
+                        <div class="flip-card-back">
                             <p class="card-text">A kunoichi from The Hidden Sound Village and a member of The Sound
                                 Five.</p>
                             <p>Tayuya is one of Orochimaru's Sound Four Ninja. She is foul mouthed and ill tempered yet
                                 very powerful. Her only weapon is a flute which she can use to summon three giant demons
                                 known as the Doki. Tayuya is also very intelligent and can think up excellent strategies
-                                and tactics.</p>                       </div>
+                                and tactics.</p>
+                        </div>
                     </div>
                 </div>
-            <!-- Tayuya Card End -->
-               <!-- [character name] card start-->
-             <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <h2 class="card-title">Kagura</h2>
-                    <img src="https://www.giantbomb.com/a/uploads/scale_small/16/164924/2399930-kagura.png" alt="Kagura" height="300px" width="300px">
-                  </div>
-                  <div class="flip-card-back">
+                <!-- Tayuya Card End -->
+                <!-- [character name] card start-->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Kagura</h2>
+                            <img src="https://www.giantbomb.com/a/uploads/scale_small/16/164924/2399930-kagura.png"
+                                alt="Kagura" height="300px" width="300px">
+                        </div>
+                        <div class="flip-card-back">
 
-                      <p class="card-text">The main villain of Clash of Ninja Revolution 2, she's an ex-ANBU member.</p>
+                            <p class="card-text">The main villain of Clash of Ninja Revolution 2, she's an ex-ANBU
+                                member.</p>
 
-                  </div>
-                </div>
-              </div>
-            <!--[character name] card end-->
-            <!-- Itachi Uchiha card start-->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <h2 class="card-title">Itachi Uchiha</h2>
-                        <img src="images/Itachi_Uchiha.png" alt="Itachi Uchiha" height="300px" width="300px">
+                        </div>
                     </div>
-                    <div class="flip-card-back">
+                </div>
+                <!--[character name] card end-->
+                <!-- Itachi Uchiha card start-->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Itachi Uchiha</h2>
+                            <img src="images/Itachi_Uchiha.png" alt="Itachi Uchiha" height="300px" width="300px">
+                        </div>
+                        <div class="flip-card-back">
                             <p class="card-text">Itachi Uchiha is a fictional character in the Naruto manga and anime
                                 series created by Masashi Kishimoto.</p>
                             <p>Itachi is the older brother of Sasuke Uchiha, and is responsible for killing all the
@@ -736,54 +749,57 @@
                                 the manga, Itachi becomes involved in attacks to ninjas possessing tailed-beast
                                 creatures until facing Sasuke in a one-on-one battle. Although Itachi perishes during
                                 the final duel, it is later revealed that Itachi had a secret reason for assassinating
-                                the Uchiha clan.</p>                       </div>
+                                the Uchiha clan.</p>
+                        </div>
                     </div>
                 </div>
-            <!--Itachi Uchiha card end-->
-            <!-- Isaribi card start-->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <h2 class="card-title">Isaribi</h2>
-                      <img src= "Images/Isaribi.jpg" alt="Isaribi" height="280px" width="400px">
-                    </div>
-                    <div class="flip-card-back">
+                <!--Itachi Uchiha card end-->
+                <!-- Isaribi card start-->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Isaribi</h2>
+                            <img src="Images/Isaribi.jpg" alt="Isaribi" height="280px" width="400px">
+                        </div>
+                        <div class="flip-card-back">
                             <p class="card-text"> Isaribi was a part sea creature whose charecter arc was similar to
                                 that of Naruto. She received a lot of hate for not being/behaving like the other members
                                 of her clan. Naruto shows her the power of friendship and fills her with hope. Amachi-
                                 the scientist to made Isaribi into the sea creature clearly exrpesses he had no
                                 intentions of killing her but only wnated to disscet her once she became worthless to
-                                him.</p>                       </div>
+                                him.</p>
+                        </div>
                     </div>
                 </div>
-            <!-- Isaribi end-->
+                <!-- Isaribi end-->
 
 
-            <!-- Kurama card start-->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">                            <h2 class="card-title">Kurama</h2>
+                <!-- Kurama card start-->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Kurama</h2>
 
-                        <img src="https://www.giantbomb.com/a/uploads/original/13/135472/2264772-narutoninjastorm3battle016.jpg"
-                             alt="Kurama" height="300px" width="300px">
-                    </div>
-                    <div class="flip-card-back">
+                            <img src="https://www.giantbomb.com/a/uploads/original/13/135472/2264772-narutoninjastorm3battle016.jpg"
+                                alt="Kurama" height="300px" width="300px">
+                        </div>
+                        <div class="flip-card-back">
                             <p class="card-text">Kurama is the Nine-Tailed Fox demon that resides within Naruto and
                                 augments his power.</p>
-                       </div>
+                        </div>
                     </div>
                 </div>
-            <!--Kurama card end-->
+                <!--Kurama card end-->
 
 
-            <!-- Hiashi Hyūga card start-->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <h2 class="card-title">Hiashi Hyūga</h2>
-                        <img src="images/Hiashi_Hyuga.png" alt="Itachi Uchiha" height="300px" width="300px">
-                    </div>
-                    <div class="flip-card-back">
+                <!-- Hiashi Hyūga card start-->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Hiashi Hyūga</h2>
+                            <img src="images/Hiashi_Hyuga.png" alt="Itachi Uchiha" height="300px" width="300px">
+                        </div>
+                        <div class="flip-card-back">
                             <p class="card-text">Hiashi Hyuga (日向ヒアシ, Hyūga Hiashi) is a shinobi from Konohagakure, as
                                 well as the current head of the Hyūga clan.</p>
                             <p>Hiashi was born only seconds before his twin brother Hizashi, making Hiashi the head of
@@ -792,52 +808,58 @@
                                 became bitter that his son would never be able to reach his full potential like a member
                                 of the main house, causing him to be openly resentful of Hiashi and his daughter. Hiashi
                                 was also responsible for branding the family's curse seal on Neji's forehead, further
-                                straining the relationship between the two brothers.</p>                       </div>
+                                straining the relationship between the two brothers.</p>
+                        </div>
                     </div>
                 </div>
-            <!-- Hiashi Hyūga card end-->
+                <!-- Hiashi Hyūga card end-->
 
-            <!-- Bansai Card start -->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">                            <h2 class="card-title">Bansai</h2>
+                <!-- Bansai Card start -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Bansai</h2>
 
-                        <img src="./Images/bansai.png" alt="Bansai" height="300px" width="300px">
-                    </div>
-                    <div class="flip-card-back">
+                            <img src="./Images/bansai.png" alt="Bansai" height="300px" width="300px">
+                        </div>
+                        <div class="flip-card-back">
                             <p class="card-text">Bansai is an elder ninja monk in the Fire Temple as well as the Head
                                 Monk of the temple.</p>
                             <p>Bansai is a very kind person who cares about his comrades deeply as seen when he said a
-                                prayer for Asuma Sarutobi before he set out for battle.</p>                       </div>
+                                prayer for Asuma Sarutobi before he set out for battle.</p>
+                        </div>
                     </div>
                 </div>
 
-            <!-- Minato card start -->
+                <!-- Minato card start -->
 
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">                            <h2 class="card-title">Minato Namikaze</h2>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Minato Namikaze</h2>
 
-                        <img src="Images/minatoNew.jpg" alt="Minato" height="300px" width="300px">
-                    </div>
-                    <div class="flip-card-back">
+                            <img src="Images/minatoNew.jpg" alt="Minato" height="300px" width="300px">
+                        </div>
+                        <div class="flip-card-back">
                             <p class="card-text">Minato Namikaze is a character in the Naruto universe. He is better
                                 known as The Fourth Hokage or as Konoha's Yellow Flash for his ability to use the Flying
                                 Thunder God Technique. He is also the father of series protagonist, Naruto. He is the
                                 teacher of Kakashi Hatake, Obito Uchiha and Rin Nohara. He is also one of Jiraiya's
-                                students.</p>                       </div>
+                                students.</p>
+                        </div>
                     </div>
                 </div>
 
 
-            <!-- rajulkoshta Card start -->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">                            <h2 class="card-title">Bansai</h2>
+                <!-- rajulkoshta Card start -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Bansai</h2>
 
-                        <img src="./Images/kawaki2.jpg" alt="kawaki" height="300px" width="300px">
-                    </div>
-                    <div class="flip-card-back">
+                            <img src="./Images/kawaki2.jpg" alt="kawaki" height="300px" width="300px">
+                        </div>
+                        <div class="flip-card-back">
                             <p class="card-text">Kawaki (カワキ, Kawaki) is a tattooed youth who became a member of Kara
                                 after being brought by Jigen from a drunkard father, bearing a tattoo of the Roman
                                 numeral IX under his left eye and bestowed a Kama mark by Jigen to be made into a living
@@ -848,19 +870,21 @@
                                 to the Hidden Leaf as he lives with the Uzumaki family. The two would end up becoming
                                 enemies as hinted in prologue of the Boruto series, an older Kawaki appearing to have
                                 perpetrated Konoha's destruction as he confronts an older Boruto while declaring the age
-                                of shinobi has come to an end. His voice actor in the Japanese anime is Yūma Uchida.</p>                       </div>
+                                of shinobi has come to an end. His voice actor in the Japanese anime is Yūma Uchida.</p>
+                        </div>
                     </div>
                 </div>
-            <!-- Rajulkoshta Card End -->
+                <!-- Rajulkoshta Card End -->
 
-            <!-- card start -->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">                            <h2 class="card-title">Nagato Uzumaki</h2>
+                <!-- card start -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Nagato Uzumaki</h2>
 
-                        <img src="./Images/nagato.png" alt="Nagato Uzumaki" height="350px" width="380px">
-                    </div>
-                    <div class="flip-card-back">
+                            <img src="./Images/nagato.png" alt="Nagato Uzumaki" height="350px" width="380px">
+                        </div>
+                        <div class="flip-card-back">
                             <p class="card-text">Nagato was known primarily under the alias of Pain. Nagato is the
                                 figurehead leader of the Akatsuki who wishes to capture the tailed beasts sealed into
                                 various people around the shinobi world. After acquiring and sealing most
@@ -870,18 +894,20 @@
                                 Nagato engages in a mortal battle with his former mentor, Jiraiya. His past as a war
                                 orphan, and his loss of his best friend are explored. Due to his traumatic experiences,
                                 which stemmed from human conflict, Nagato aims
-                                to create a new world, free from the chaos of war.</p>                       </div>
+                                to create a new world, free from the chaos of war.</p>
+                        </div>
                     </div>
                 </div>
 
-            <!--card start-->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">                            <h2 class="card-title">YAMATO</h2>
+                <!--card start-->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">YAMATO</h2>
 
-                        <img src="./Images/yamato.png" alt="Nagato Uzumaki" height="350px" width="380px">
-                    </div>
-                    <div class="flip-card-back">
+                            <img src="./Images/yamato.png" alt="Nagato Uzumaki" height="350px" width="380px">
+                        </div>
+                        <div class="flip-card-back">
                             <p class="card-text">Seeing how pivotal of a role Kakashi played as the leader of Team Seven
                                 with Naruto, Sakura, and Sasuke, there were high expectations for Yamato when he
                                 temporarily filled Kakashi's leadership position with the new Team Seven.
@@ -889,40 +915,43 @@
                                 As a former Anbu who shares the same wood-style technique as the First Hokage, Yamato
                                 had a mysterious aura about him in an attempt to spark curiosity amongst fans. However,
                                 after Kabuto captured him and Kakashi reclaimed leadership over Team Seven, Yamato
-                                disappeared into the abyss and was left as a character without any agency.</p>                       </div>
+                                disappeared into the abyss and was left as a character without any agency.</p>
+                        </div>
                     </div>
                 </div>
-            <!--card end-->
+                <!--card end-->
 
 
-            <!-- card start -->
+                <!-- card start -->
 
-            <!-- Hashirama Senju card start-->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">                            <h2 class="card-title">Hashirama Senju </h2>
+                <!-- Hashirama Senju card start-->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Hashirama Senju </h2>
 
-                        <img src=https://www.giantbomb.com/a/uploads/scale_small/3/33873/1727699-first_hokage.jpg
-                             alt="Hashirama Senju image" height="300px" width="300px">
-                    </div>
-                    <div class="flip-card-back">
+                            <img src=https://www.giantbomb.com/a/uploads/scale_small/3/33873/1727699-first_hokage.jpg
+                                alt="Hashirama Senju image" height="300px" width="300px">
+                        </div>
+                        <div class="flip-card-back">
                             <p class="card-text">The First hokage, leader of the Senju clan, one of the founders of
                                 Konohagakure. Older brother to the Second Hokage and Grandfather to the Fifth Hokage. He
                                 possesses the Wood Style and has a friend and rival called Madara Uchiha.</p>
-                       </div>
+                        </div>
                     </div>
                 </div>
-            <!--Hashirama Senju card end-->
+                <!--Hashirama Senju card end-->
 
 
-            <!-- card start -->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">                            <h2 class="card-title"> Yahiko </h2>
+                <!-- card start -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title"> Yahiko </h2>
 
-                        <img src="./Images/Yahiko.png" alt="anko" height="350px" width="380px">
-                    </div>
-                    <div class="flip-card-back">
+                            <img src="./Images/Yahiko.png" alt="anko" height="350px" width="380px">
+                        </div>
+                        <div class="flip-card-back">
                             <p class="card-text">Yahiko (弥彦, Yahiko) was a shinobi from Amegakure. Alongside his fellow
                                 war orphans, Nagato and Konan, he founded and led the Akatsuki in an attempt to bring
                                 peace. Following Yahiko's death, Nagato would turn his body into the
@@ -931,127 +960,141 @@
                             <p> Yahiko was orphaned during the Second Shinobi World War, forcing him to steal food in
                                 order to survive prior to teaming
                                 up with a fellow war orphan named Konan. Soon after they found a place to call home,
-                                Yahiko expressed his displeasure from Konan bringing another war orphan. </p>                       </div>
+                                Yahiko expressed his displeasure from Konan bringing another war orphan. </p>
+                        </div>
                     </div>
                 </div>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">                            <h2 class="card-title">Deidara</h2>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Deidara</h2>
 
-                        <img src="./Images/deidara69.jpg" alt="Deidara" height="300px" width="300px">
-                    </div>
-                    <div class="flip-card-back">
+                            <img src="./Images/deidara69.jpg" alt="Deidara" height="300px" width="300px">
+                        </div>
+                        <div class="flip-card-back">
                             <p class="card-text">Deidara is a member of the Akatsuki group, Deidara was partnered with
                                 Sasori before his death, after which he partnered Tobi.</p>
                             <p>Deidara has a very unique ability, he uses his hands where his palms posses mouths that
                                 when feed a certain clay explosive can create a flying bird or many small spiders that
                                 can be controlled or control them self after which will explode on command or when they
-                                deem suitable.</p>                       </div>
+                                deem suitable.</p>
+                        </div>
                     </div>
                 </div>
 
 
-            <!--card end-->
-            <!-- card start -->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">                            <h2 class="card-title"> Tsuande </h2>
+                <!--card end-->
+                <!-- card start -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title"> Tsuande </h2>
 
-                        <img src="./Images/Tsunadexx.png" alt="anko" height="350px" width="380px">
-                    </div>
-                    <div class="flip-card-back">
+                            <img src="./Images/Tsunadexx.png" alt="anko" height="350px" width="380px">
+                        </div>
+                        <div class="flip-card-back">
                             <p class="card-text">Tsunade (綱手, Tsunade) is a descendant of the Senju and Uzumaki Clan,
                                 and is one of Konohagakure's Sannin. She is famed as the world's strongest kunoichi and
                                 its greatest medical-nin. The repeated loss of her loved ones caused Tsunade to later
                                 abandon the life of a shinobi for many years. She is eventually persuaded to return to
                                 Konoha and take on the mantle of Fifth Hokage (五代目火影, Godaime Hokage, literally meaning:
-                                Fifth Fire Shadow), where her skills prove invaluable to the village.                       </div>
+                                Fifth Fire Shadow), where her skills prove invaluable to the village.
+                        </div>
                     </div>
                 </div>
 
-            <!--card end-->
-            <!--card start-->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">                            <h2 class="card-title">KIMIMARO</h2>
+                <!--card end-->
+                <!--card start-->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">KIMIMARO</h2>
 
-                        <img src="./Images/kimimaro.png" alt="kimimaro" height="350px" width="380px">
-                    </div>
-                    <div class="flip-card-back">
+                            <img src="./Images/kimimaro.png" alt="kimimaro" height="350px" width="380px">
+                        </div>
+                        <div class="flip-card-back">
                             <p class="card-text">
                                 Kimimaro was the sole survivor of the Kaguya clan. Upon dedicating his life to
                                 Orochimaru, he became the leader of the formerly-named Sound Five (音隠れの忍五人衆, Otogakure
                                 no Shinobi Gonin Shū, literally meaning: Hidden Sound Shinobi Five People), until he
-                                fell ill, which forced him to leave the group.</p>                       </div>
+                                fell ill, which forced him to leave the group.</p>
+                        </div>
                     </div>
                 </div>
-            <!--card end-->
-            <!-- card start -->
-  <!-- [character name] card start-->
-  <div class="flip-card">
-    <div class="flip-card-inner">
-      <div class="flip-card-front">
-                    <h2 class="card-title">Zabuza</h2>
-                    <img src="https://www.giantbomb.com/a/uploads/scale_small/3/34651/3376238-zabuza.png" alt="Zabuza" height="300px" width="300px">
-                  </div>
-                                     <div class="flip-card-back">
+                <!--card end-->
+                <!-- card start -->
+                <!-- [character name] card start-->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Zabuza</h2>
+                            <img src="https://www.giantbomb.com/a/uploads/scale_small/3/34651/3376238-zabuza.png"
+                                alt="Zabuza" height="300px" width="300px">
+                        </div>
+                        <div class="flip-card-back">
 
-                      <p class="card-text">Zabuza Momochi, a mercenary assassin and former member of the Seven Swordsmen of the Mist. He is a master of silent assassinations
-			      and together with his water Jutsu he is feared as The Demon of the Hidden Mist.</p>
+                            <p class="card-text">Zabuza Momochi, a mercenary assassin and former member of the Seven
+                                Swordsmen of the Mist. He is a master of silent assassinations
+                                and together with his water Jutsu he is feared as The Demon of the Hidden Mist.</p>
 
-                  </div>
-                </div>
-              </div>
-            <!--[character name] card end-->
-            <!-- Haku card start -->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">                            <h2 class="card-title"> Haku </h2>
-
-                        <img src="./Images/Casual_Haku.png" alt="Haku" height="350px" width="380px">
+                        </div>
                     </div>
-                    <div class="flip-card-back">
+                </div>
+                <!--[character name] card end-->
+                <!-- Haku card start -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title"> Haku </h2>
+
+                            <img src="./Images/Casual_Haku.png" alt="Haku" height="350px" width="380px">
+                        </div>
+                        <div class="flip-card-back">
                             <p class="card-text">Haku was an orphan from the Land of Water, and a descendant of the Yuki
                                 clan. He later became a shinobi under Zabuza Momochi's tutelage whom he later partnered
                                 with, ultimately becoming a Mercenary Ninja</p>
                             <p>Haku was a 15-year-old boy with an androgynous appearance and was even viewed as being
                                 beautiful by Naruto, who exclaimed that he was "prettier than Sakura", even after he
                                 informed him that he was male. He had long black hair, pale skin and large, dark-brown
-                                eyes, and a slender frame.</p>                       </div>
+                                eyes, and a slender frame.</p>
+                        </div>
                     </div>
                 </div>
 
-            <!-- Haku card end-->
+                <!-- Haku card end-->
 
-            <!-- Tonton card start -->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">                            <h2 class="card-title"> Tonton </h2>
+                <!-- Tonton card start -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title"> Tonton </h2>
 
-                        <img src="./Images/Tonton.png" alt="Tonton" height="350px" width="380px">
-                    </div>
-                    <div class="flip-card-back">
+                            <img src="./Images/Tonton.png" alt="Tonton" height="350px" width="380px">
+                        </div>
+                        <div class="flip-card-back">
                             <p class="card-text">Tonton is Tsunade's ninja pig, often kept in the care of Shizune.</p>
                             <p>Above all else, Tonton is a highly devoted, and dutiful pet pig. Her devotion to Tsunade
                                 was noted during her master's battle with the other Sannin, which she watched in earnest
                                 as Gamakichi and Gamatatsu bickered. This even surfaced during the Fourth Shinobi World
                                 War, where, in her earnest to aid the Logistical Support and Medical Division, Tonton
                                 carried around several large sized crates around the camp ground, eventually spraining
-                                her foot.</p>                       </div>
+                                her foot.</p>
+                        </div>
                     </div>
                 </div>
 
-            <!-- Tonton card end-->
+                <!-- Tonton card end-->
 
-            <!-- first card end-->
-            <!-- card start  -->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">                            <h2 class="card-title">Sand Siblings</h2>
+                <!-- first card end-->
+                <!-- card start  -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Sand Siblings</h2>
 
-                        <img src="./Images/sand siblings.jpeg" alt="Sand-Siblings" height="350px" width="250px">
-                    </div>
-                    <div class="flip-card-back">
+                            <img src="./Images/sand siblings.jpeg" alt="Sand-Siblings" height="350px" width="250px">
+                        </div>
+                        <div class="flip-card-back">
                             <p class="card-text">
                                 The Three Sand Siblings is the collective name for the children of Sunagakure's Fourth
                                 Kazekage: Temari, Kankurō and Gaara. Having undergone the gruelling training of their
@@ -1064,19 +1107,20 @@
 
                             </p>
 
-                       </div>
+                        </div>
                     </div>
                 </div>
-            <!-- card end -->
+                <!-- card end -->
 
-            <!-- Hidan card start-->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">                            <h2 class="card-title">Hidan</h2>
+                <!-- Hidan card start-->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Hidan</h2>
 
-                        <img src="./Images/Hidan.png" alt="Hidan" height="300px" width="300px">
-                    </div>
-                    <div class="flip-card-back">
+                            <img src="./Images/Hidan.png" alt="Hidan" height="300px" width="300px">
+                        </div>
+                        <div class="flip-card-back">
                             <p class="card-text">Hidan is an S-rank missing-nin who defected from Yugakure and later
                                 joined the Akatsuki. There, he was partnered with Kakuzu,
                                 despite the two's somewhat mutual dislike of each other.</p>
@@ -1085,19 +1129,21 @@
                                 for example. Hidan does, however, much like Kakuzu, have a great understanding of
                                 anatomy and just how shinobi abilities work. That's how he
                                 manages to keep himself functionally immortal. That gives him an edge in a fight even
-                                when he isn't using his head for strategy.</p>                       </div>
+                                when he isn't using his head for strategy.</p>
+                        </div>
                     </div>
                 </div>
-            <!-- Hidan card end-->
+                <!-- Hidan card end-->
 
-            <!-- card start  -->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">                            <h2 class="card-title">Sakon & Ukon</h2>
+                <!-- card start  -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Sakon & Ukon</h2>
 
-                        <img src="./Images/sakon_ukon.jpg" alt="sakon and ukon" height="350px" width="250px">
-                    </div>
-                    <div class="flip-card-back">
+                            <img src="./Images/sakon_ukon.jpg" alt="sakon and ukon" height="350px" width="250px">
+                        </div>
+                        <div class="flip-card-back">
                             <p class="card-text">
                                 They work for Orochi-Maru, an evil genius dead set on discovering and mastering every
                                 jutsu in the world. Sakon and Ukon are one his main pawns, as a member of the sound 5
@@ -1111,39 +1157,43 @@
                                 brave as Kiba, and he stabbed himself, breaking up their 2 cells and being freed.
                                 Eventully Sakon and Ukon were defeated by Kiba and Akamaru's signiture jutsu, the "Giant
                                 2 headed wolf Tsuuga!"
-                            </p>                       </div>
+                            </p>
+                        </div>
                     </div>
                 </div>
 
-            <!--Konan card end-->
-            <!-- Zabuza card start-->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">                            <h2 class="card-title">Zabuza</h2>
+                <!--Konan card end-->
+                <!-- Zabuza card start-->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Zabuza</h2>
 
-                        <img src="https://www.giantbomb.com/a/uploads/square_small/0/534/178998-zabuza.jpg" alt=Zabuza
-                             height="300px" width="300px">
-                    </div>
-                    <div class="flip-card-back">
+                            <img src="https://www.giantbomb.com/a/uploads/square_small/0/534/178998-zabuza.jpg"
+                                alt=Zabuza height="300px" width="300px">
+                        </div>
+                        <div class="flip-card-back">
                             <p class="card-text">Zabuza Momochi (桃地再不斬, Momochi Zabuza), given the moniker Demon of the
                                 Hidden Mist (霧隠れの鬼人, Kirigakure no Kijin), was a missing-nin from Kirigakure's Seven
                                 Ninja Swordsmen of the Mist.</p>
                             <p>As a Hidden Mist ninja, Zabuza's forte is using water-nature chakra to manipulate water
                                 to take in many forms as he wishes such as creating Water Clones. Among his abilities is
                                 the Water Dragon jutsu where he creates a serpentine dragon out of water to consume his
-                                target.</p>                       </div>
+                                target.</p>
+                        </div>
                     </div>
                 </div>
-            <!--[character name] card end-->
+                <!--[character name] card end-->
 
-            <!--Tenten card end-->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">                            <h2 class="card-title">Tenten</h2>
+                <!--Tenten card end-->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Tenten</h2>
 
-                        <img src="./Images/Tenten.jpg" alt="Tenten" height="300px" width="300px">
-                    </div>
-                    <div class="flip-card-back">
+                            <img src="./Images/Tenten.jpg" alt="Tenten" height="300px" width="300px">
+                        </div>
+                        <div class="flip-card-back">
                             <p class="card-text">In the Konoha 11, which consists of many of Naruto's peers in Team
                                 Seven, Team Eight, Team Ten, and Team Guy, there are ninjas like Rock Lee who excel in
                                 taijutsu as well as ninjas who are considered geniuses like Shikamaru
@@ -1153,19 +1203,21 @@
                                 there is little that we know about her clan and background. Even in her most well-known
                                 battle against Temari during the Chunin Exams, she
                                 was practically defeated before anyone had a chance to see her true fighting
-                                abilities.</p>                       </div>
+                                abilities.</p>
+                        </div>
                     </div>
                 </div>
-            <!--Tenten card end-->
+                <!--Tenten card end-->
 
-            <!-- Might Guy card-->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">                            <h2 class="card-title">Might Guy</h2>
+                <!-- Might Guy card-->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Might Guy</h2>
 
-                        <img src="./Images/GuyGawd.png" alt="Might Guy" height="300px" width="300px">
-                    </div>
-                    <div class="flip-card-back">
+                            <img src="./Images/GuyGawd.png" alt="Might Guy" height="300px" width="300px">
+                        </div>
+                        <div class="flip-card-back">
                             <p class="card-text">Might Guy (マイト・ガイ, Maito Gai) is a jōnin of Konohagakure. A master of
                                 taijutsu, Guy leads and passes his wisdom onto the members of Team Guy.</p>
                             <p>Guy is the son of Might Duy, who was known throughout Konoha as the "Eternal Genin". Duy
@@ -1173,18 +1225,21 @@
                                 to know him at all. Duy encouraged this same kind of optimism in Guy, as well as his
                                 belief that one always has youth and that they could both become taijutsu masters
                                 through diligent training. Guy did his best to embody his father's teachings, but had
-                                doubts that Duy's words were devoid of meaning.</p>                       </div>
+                                doubts that Duy's words were devoid of meaning.</p>
+                        </div>
                     </div>
                 </div>
-            <!--Might Guy card end-->
+                <!--Might Guy card end-->
 
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">                            <h2 class="card-title">Asuma Sarutobi</h2>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Asuma Sarutobi</h2>
 
-                        <img src="./Images/322897-asuma_sarutobi.jpg" alt="Asuma Sarutobi" height="300px" width="300px">
-                    </div>
-                    <div class="flip-card-back">
+                            <img src="./Images/322897-asuma_sarutobi.jpg" alt="Asuma Sarutobi" height="300px"
+                                width="300px">
+                        </div>
+                        <div class="flip-card-back">
                             <p class="card-text">A Jounin from The Hidden Leaf Village. A very calm and strong ninja,
                                 who always enjoys a good smoke. He goes out with Kurenai, a strong Genjutsu user.
                                 Revealed to be the son of Hiruzen Sarutobi, the third Hokage and is uncle
@@ -1198,17 +1253,19 @@
                                 take down nine Oto-nin during the Konoha Crush, noted to have been chūnin-level or
                                 above,[22] and was able compete against Hidan, a powerful member of the Akatsuki, while
                                 also protecting his team.</p>
-                            <!-- card end -->                       </div>
+                            <!-- card end -->
+                        </div>
                     </div>
                 </div>
-            <!-- card end-->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">                            <h2 class="card-title">Hidan</h2>
+                <!-- card end-->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Hidan</h2>
 
-                        <img src="./Images/Hidan.jpg" alt="Hidan" height="300px" width="300px">
-                    </div>
-                    <div class="flip-card-back">
+                            <img src="./Images/Hidan.jpg" alt="Hidan" height="300px" width="300px">
+                        </div>
+                        <div class="flip-card-back">
                             <p class="card-text">Hidan (飛段) is the immortal, foul-mouthed, and sadomasochistic partner
                                 of Kakuzu and a former ninja of Yugakure, the Village Hidden in Boiling Water. He is a
                                 member of the Way of Jashin (ジャシン, lit. "evil god") religion which
@@ -1218,22 +1275,24 @@
                                 Hidan's body is reflected on his opponent, allowing him to kill them by giving himself
                                 fatal injuries. Though his immortality keeps him
                                 from dying or suffer any impairment, Hidan feels his victims' suffering with an
-                                excitement bordering on arousal.</p>                       </div>
+                                excitement bordering on arousal.</p>
+                        </div>
                     </div>
                 </div>
-            <!--card end-->
+                <!--card end-->
 
 
-            <!-- card start -->
+                <!-- card start -->
 
 
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">                            <h2 class="card-title">Kakashi Hatake</h2>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Kakashi Hatake</h2>
 
-                        <img src="./Images/kakashi.jpg" alt="Naruto Uzumaki" height="300px" width="300px">
-                    </div>
-                    <div class="flip-card-back">
+                            <img src="./Images/kakashi.jpg" alt="Naruto Uzumaki" height="300px" width="300px">
+                        </div>
+                        <div class="flip-card-back">
                             <p class="card-text">Kakashi Hatake is one of the higher level Ninjas in the hiddenleaf
                                 village. He is the teacher (sensei) of Uzumaki Naruto, Haruno Sakura and Uchiha Sasuke.
                                 His teacher was the fourth hokage, Minato Namikaze and his teammates
@@ -1243,19 +1302,21 @@
                                 trackers. He's never been shown without his masks on.
                                 He wears at least two of them, and even his close friends don't know what he looks like.
                                 Shortly after the ninja war, Kakashi becomes the Sixth Hokage of the Hidden Leaf
-                                Village, after heading Obito's advice.</p>                       </div>
+                                Village, after heading Obito's advice.</p>
+                        </div>
                     </div>
                 </div>
 
-            <!-- Fugaku card start-->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">                            <h2 class="card-title">Fugaku</h2>
+                <!-- Fugaku card start-->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Fugaku</h2>
 
-                        <img src="https://comicvine.gamespot.com/a/uploads/original/11130/111301681/8146002-uchihafugaku%28naruto%29.jpg"
-                             alt="Fugaku" height="300px" width="300px">
-                    </div>
-                    <div class="flip-card-back">
+                            <img src="https://comicvine.gamespot.com/a/uploads/original/11130/111301681/8146002-uchihafugaku%28naruto%29.jpg"
+                                alt="Fugaku" height="300px" width="300px">
+                        </div>
+                        <div class="flip-card-back">
                             <p class="card-text">Fugaku Uchiha (うちはフガク, Uchiha Fugaku) was a shinobi of Konohagakure. He
                                 was the head of the Uchiha clan as well as the leader of the Konoha Military Police
                                 Force.
@@ -1265,39 +1326,43 @@
                                 jutsu. In that same war Fugaku killed countless
                                 using genjutsu alone. One of his comrades died covering him and he unlocked the Mangekyo
                                 Sharingan. During the war he earned the name “Wicked Eye" Fugaku. .
-                            </p>                       </div>
+                            </p>
+                        </div>
                     </div>
                 </div>
-            <!--Fugaku card end-->
+                <!--Fugaku card end-->
 
 
-            <!-- Inari card start-->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">                            <h2 class="card-title">Inari</h2>
+                <!-- Inari card start-->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Inari</h2>
 
-                        <img src="./Images/inari.png" alt="Fugaku" height="300px" width="300px">
-                    </div>
-                    <div class="flip-card-back">
+                            <img src="./Images/inari.png" alt="Fugaku" height="300px" width="300px">
+                        </div>
+                        <div class="flip-card-back">
                             <p class="card-text">Inari (イナリ, Inari) is a young citizen of the Land of Waves. </p>
                             <p>Inari is the son of Tsunami, and is also Tazuna's grandson. His biological father died
                                 before he got to know him.
                             </p>Inari first appeared to be a very tough individual, though this was just a ruse he put
                             on to hide the loneliness he felt since the death of Kaiza. He would often spend most of his
                             time in his room staring at a photo of his father, conflicted by the feelings he had of loss
-                            and anger towards the man for dying, though he did so protecting their small village.                       </div>
+                            and anger towards the man for dying, though he did so protecting their small village.
+                        </div>
                     </div>
                 </div>
-            <!--Inari card end-->
+                <!--Inari card end-->
 
-            <!-- Third Raikage card start-->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">                            <h2 class="card-title">Third Raikage</h2>
+                <!-- Third Raikage card start-->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Third Raikage</h2>
 
-                        <img src="Images/Raikage3.png" alt="Fugaku" height="300px" width="300px">
-                    </div>
-                    <div class="flip-card-back">
+                            <img src="Images/Raikage3.png" alt="Fugaku" height="300px" width="300px">
+                        </div>
+                        <div class="flip-card-back">
                             <p class="card-text">The Third Raikage (三代目雷影, Sandaime Raikage, literally meaning: Third
                                 Lightning Shadow) of Kumogakure, was renowned to be the greatest Raikage the village has
                                 ever had.</p>
@@ -1311,19 +1376,22 @@
                                 jinchūriki lost control, eventually making even his son become part of the group that
                                 supported him during these occurrences. He chose to seal the Eight-Tails in the Kohaku
                                 no Jōhei, resulting in his nephew's death, hoping that someone else would have more
-                                success in controlling it.</p>                       </div>
+                                success in controlling it.</p>
+                        </div>
                     </div>
                 </div>
-            <!--Inari card end-->
+                <!--Inari card end-->
 
-            <!-- Mikoto card start-->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">                            <h2 class="card-title">Mikoto Uchiha</h2>
+                <!-- Mikoto card start-->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Mikoto Uchiha</h2>
 
-                        <img src="https://wallpapercave.com/wp/wp4126361.png" alt="Mikoto" height="300px" width="300px">
-                    </div>
-                    <div class="flip-card-back">
+                            <img src="https://wallpapercave.com/wp/wp4126361.png" alt="Mikoto" height="300px"
+                                width="300px">
+                        </div>
+                        <div class="flip-card-back">
                             <p class="card-text">Mikoto Uchiha (うちはミコト, Uchiha Mikoto) was a jōnin from Konohagakure's
                                 Uchiha clan.
                             </p>
@@ -1334,20 +1402,22 @@
                                 held high respect for her husband as well and understood the importance of his position
                                 as the Uchiha clan leader and was a dutiful
                                 and loyal wife to him. .
-                            </p>                       </div>
+                            </p>
+                        </div>
                     </div>
                 </div>
-            <!--Mikoto card end-->
+                <!--Mikoto card end-->
 
-            <!-- BlackZetsu card start-->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">                            <h2 class="card-title">Black Zetsu</h2>
+                <!-- BlackZetsu card start-->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Black Zetsu</h2>
 
-                        <img src="https://wallpapercave.com/wp/wp8345725.jpg" alt="BlackZetsu" height="300px"
-                             width="300px">
-                    </div>
-                    <div class="flip-card-back">
+                            <img src="https://wallpapercave.com/wp/wp8345725.jpg" alt="BlackZetsu" height="300px"
+                                width="300px">
+                        </div>
+                        <div class="flip-card-back">
                             <p class="card-text">Black Zetsu (黒ゼツ, Kuro Zetsu) was the physical manifestation of
                                 Princess Kaguya Ōtsutsuki's will. It secretly instigated many of the events that shaped
                                 the shinobi world to secure Kaguya's revival. To further its plans, it
@@ -1365,20 +1435,22 @@
                                 history it was creating and also modified Hagoromo's
                                 tablet to claim that among other things; the Infinite Tsukuyomi would be the Uchiha's
                                 salvation.
-                            </p>                       </div>
+                            </p>
+                        </div>
                     </div>
                 </div>
-            <!--BlackZetsu card end-->
+                <!--BlackZetsu card end-->
 
-            <!-- Mito card start-->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">                            <h2 class="card-title">Mito Uzumaki</h2>
+                <!-- Mito card start-->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Mito Uzumaki</h2>
 
-                        <img src="https://s3.zerochan.net/240/22/47/1342372.jpg" alt="Mito" height="300px"
-                             width="300px">
-                    </div>
-                    <div class="flip-card-back">
+                            <img src="https://s3.zerochan.net/240/22/47/1342372.jpg" alt="Mito" height="300px"
+                                width="300px">
+                        </div>
+                        <div class="flip-card-back">
                             <p class="card-text">Mito Uzumaki (うずまきミト, Uzumaki Mito) was a kunoichi who originated from
                                 Uzushiogakure's Uzumaki clan. After migrating to Konohagakure, she married Hashirama
                                 Senju, the village's First Hokage, and later became the first jinchūriki
@@ -1391,19 +1463,21 @@
                                 sealed the tailed beast within herself, becoming its first jinchūriki. Despite the
                                 seal's strength, it almost broke when she was going through
                                 childbirth.
-                            </p>                       </div>
+                            </p>
+                        </div>
                     </div>
                 </div>
-            <!--Mito card end-->
+                <!--Mito card end-->
 
-            <!-- Guren card start-->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">                            <h2 class="card-title"> Guren</h2>
+                <!-- Guren card start-->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title"> Guren</h2>
 
-                        <img src="./Images/Guren.png" alt="Guren" height="300px" width="300px">
-                    </div>
-                    <div class="flip-card-back">
+                            <img src="./Images/Guren.png" alt="Guren" height="300px" width="300px">
+                        </div>
+                        <div class="flip-card-back">
                             <p class="card-text">Guren (紅蓮, Guren) is a kunoichi from Otogakure and the leader of a
                                 group of Orochimaru's subordinates,
                                 possessing the unique Crystal Release kekkei genkai.
@@ -1415,20 +1489,22 @@
                                 wait any longer and instead chose Gen'yūmaru. She was also told that Sasuke would be the
                                 next vessel after Gen'yūmaru. Feeling no longer of use to
                                 Orochimaru, Guren went into isolation.
-                            </p>                       </div>
+                            </p>
+                        </div>
                     </div>
                 </div>
-            <!-- Guren card end-->
+                <!-- Guren card end-->
 
-            <!-- HANZO card start-->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">                            <h2 class="card-title">Hanzō</h2>
+                <!-- HANZO card start-->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Hanzō</h2>
 
-                        <img src="https://static.zerochan.net/Hanzou.full.2329193.jpg" alt="HANZO" height="300px"
-                             width="300px">
-                    </div>
-                    <div class="flip-card-back">
+                            <img src="https://static.zerochan.net/Hanzou.full.2329193.jpg" alt="HANZO" height="300px"
+                                width="300px">
+                        </div>
+                        <div class="flip-card-back">
                             <p class="card-text">Hanzō (半蔵, Hanzō), feared as Hanzō of the Salamander (山椒魚の半蔵, Sanshōuo
                                 no Hanzō),
                                 was a legendary shinobi, and the leader of Amegakure during his lifetime.
@@ -1441,20 +1517,22 @@
                                 venom-laced breath.[4] At some point after this,
                                 Hanzō became well known and renowned throughout the shinobi world, so much that enemies
                                 have been known to flee at the very sight of him.
-                            </p>                       </div>
+                            </p>
+                        </div>
                     </div>
                 </div>
-            <!--HANZO card end-->
+                <!--HANZO card end-->
 
-            <!-- Konan card start-->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">                            <h2 class="card-title">Konan</h2>
+                <!-- Konan card start-->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Konan</h2>
 
-                        <img src="https://cdnb.artstation.com/p/assets/images/images/029/881/599/medium/lilimonada-lilimon-konan.jpg?1598920736"
-                             alt="Konan" height="300px" width="300px">
-                    </div>
-                    <div class="flip-card-back">
+                            <img src="https://cdnb.artstation.com/p/assets/images/images/029/881/599/medium/lilimonada-lilimon-konan.jpg?1598920736"
+                                alt="Konan" height="300px" width="300px">
+                        </div>
+                        <div class="flip-card-back">
                             <p class="card-text">Konan (小南, Konan) was a kunoichi from Amegakure and a founding member
                                 of the original Akatsuki. After Yahiko's death, she was partnered with Nagato, who had
                                 since taken control of Akatsuki, and was the only member to call him
@@ -1470,37 +1548,40 @@
                                 food. Konan impressed them by making an elaborate flower out of the paper wrappers left
                                 behind as a sign of gratitude. When Orochimaru suggested to kill them so they would not
                                 have to suffer the horrors of war, Jiraiya
-                                instead opted to stay and teach the three how to look after themselves.</p>                       </div>
+                                instead opted to stay and teach the three how to look after themselves.</p>
+                        </div>
                     </div>
                 </div>
-            <!--Konan card end-->
+                <!--Konan card end-->
 
-            <!-- Kidomaru card start-->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                                   <h2 class="card-title">Kidomaru</h2>
+                <!-- Kidomaru card start-->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Kidomaru</h2>
 
-                      <img src="https://www.giantbomb.com/a/uploads/scale_small/0/5756/330403-kidomaru.jpg" alt="Kidomaru" height="300px" width="300px">
+                            <img src="https://www.giantbomb.com/a/uploads/scale_small/0/5756/330403-kidomaru.jpg"
+                                alt="Kidomaru" height="300px" width="300px">
+                        </div>
+                        <div class="flip-card-back">
+
+                            <p class="card-text">A ninja from The Hidden Sound Village and member of The Sound Five.</p>
+                            <p>Kidomaru was killed fighting against Neji Hyuga</p>
+                        </div>
                     </div>
-                    <div class="flip-card-back">
-
-                        <p class="card-text">A ninja from The Hidden Sound Village and member of The Sound Five.</p>
-                        <p>Kidomaru was killed fighting against Neji Hyuga</p>
-                    </div>
-                  </div>
                 </div>
-              <!-- Kidomaru card end-->
+                <!-- Kidomaru card end-->
 
-            <!-- Ebisu card start-->
+                <!-- Ebisu card start-->
 
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">                            <h2 class="card-title">Ebisu Sensei</h2>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Ebisu Sensei</h2>
 
-                        <img src="./Images/Ebisu.png" alt="Ebisu" height="300px" width="300px">
-                    </div>
-                    <div class="flip-card-back">
+                            <img src="./Images/Ebisu.png" alt="Ebisu" height="300px" width="300px">
+                        </div>
+                        <div class="flip-card-back">
                             <p class="card-text">Ebisu (エビス, Ebisu) is a tokubetsu jōnin from Konohagakure who
                                 specialises in training elite ninja. He also served as the leader of Team Ebisu, which
                                 consisted of Konohamaru Sarutobi, Udon, and Moegi.</p>
@@ -1513,20 +1594,22 @@
                                 Naruto's location and would rather be killed. He is also rather attached to his pupils,
                                 and has shown immense pride in them, such as when Konohamaru performed the Rasengan on
                                 Pain while rescuing Ebisu.
-                            </p>                       </div>
+                            </p>
+                        </div>
                     </div>
                 </div>
 
 
-            <!-- Tobirama card start-->
+                <!-- Tobirama card start-->
 
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">                            <h2 class="card-title">Tobirama Senju</h2>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Tobirama Senju</h2>
 
-                        <img src="./Images/tobirama senju.png" alt="Ebisu" height="300px" width="300px">
-                    </div>
-                    <div class="flip-card-back">
+                            <img src="./Images/tobirama senju.png" alt="Ebisu" height="300px" width="300px">
+                        </div>
+                        <div class="flip-card-back">
                             <p class="card-text">Tobirama Senju (千手扉間, Senju Tobirama) was a member of the renowned
                                 Senju clan, who together with his elder brother and the Uchiha clan, founded the first
                                 shinobi village: Konohagakure. Throughout his lifetime, Tobirama would
@@ -1541,17 +1624,19 @@
                                 Tobirama, as well as Danzō Shimura, Torifu Akimichi, and Kagami Uchiha found themselves
                                 surrounded by Kumo's Kinkaku Force. With no way for
                                 all of them to escape, Tobirama volunteered to act as a decoy in place of Hiruzen. As he
-                                departed, he passed the title of Hokage to Hiruzen, before being killed by Kinkaku</p>                       </div>
+                                departed, he passed the title of Hokage to Hiruzen, before being killed by Kinkaku</p>
+                        </div>
                     </div>
                 </div>
-            <!-- card end-->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">                            <h2 class="card-title">Hinata Hyuga</h2>
+                <!-- card end-->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Hinata Hyuga</h2>
 
-                        <img src="./Images/hinata.jpeg" alt="Hinata" height="300px" width="300px">
-                    </div>
-                    <div class="flip-card-back">
+                            <img src="./Images/hinata.jpeg" alt="Hinata" height="300px" width="300px">
+                        </div>
+                        <div class="flip-card-back">
                             <p class="card-text">Hinata, the eldest of Hiashi Hyuga's two children, is raised as the
                                 heiress to Hyuga clan's main household due to Hiashi being the elder between him and his
                                 twin brother, Hizashi, and thereby making Hiashi head of the clan
@@ -1561,18 +1646,20 @@
                                 defends her while she is being bullied because of her eyes.[25] That event and Naruto's
                                 refusal to give up against adversity inspire
                                 Hinata to become a stronger person. However, Hinata's admiration for Naruto gradually
-                                turns into romantic feelings.</p>                       </div>
+                                turns into romantic feelings.</p>
+                        </div>
                     </div>
                 </div>
-            <!--card end-->
-            <!-- Hiashi Hyuga card start-->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">                            <h2 class="card-title">Hiashi Hyuga</h2>
+                <!--card end-->
+                <!-- Hiashi Hyuga card start-->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Hiashi Hyuga</h2>
 
-                        <img src="./Images/hiashi.jpeg" alt="Hiashi" height="300px" width="300px">
-                    </div>
-                    <div class="flip-card-back">
+                            <img src="./Images/hiashi.jpeg" alt="Hiashi" height="300px" width="300px">
+                        </div>
+                        <div class="flip-card-back">
                             <p class="card-text">Hiashi Hyūga (日向ヒアシ, Hyūga Hiashi) is a shinobi from Konohagakure, as
                                 well as the current head of the Hyūga clan.</p>
                             <p>Hiashi was born just seconds before his twin brother Hizashi, which makes Hiashi the mind
@@ -1581,20 +1668,23 @@
 
                                 As a member of this Hyūga clan, Hiashi possesses the Byakugan: a dōjutsukekkei genkai
                                 which grants him an almost 360° field of vision. Hiashi is a true master of this Hyūga
-                                clan's secret taijutsu design; the Gentle Fist.</p>                       </div>
+                                clan's secret taijutsu design; the Gentle Fist.</p>
+                        </div>
                     </div>
                 </div>
-            <!--Hiashi Hyuga card end-->
+                <!--Hiashi Hyuga card end-->
 
-            <!-- Konan card start-->
+                <!-- Konan card start-->
 
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">                            <h2 class="card-title">Asuma Sarutobi</h2>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Asuma Sarutobi</h2>
 
-                        <img src="./Images/322897-asuma_sarutobi.jpg" alt="Asuma Sarutobi" height="300px" width="300px">
-                    </div>
-                    <div class="flip-card-back">
+                            <img src="./Images/322897-asuma_sarutobi.jpg" alt="Asuma Sarutobi" height="300px"
+                                width="300px">
+                        </div>
+                        <div class="flip-card-back">
                             <p class="card-text">A Jounin from The Hidden Leaf Village. A very calm and strong ninja,
                                 who always enjoys a good smoke. He goes out with Kurenai, a strong Genjutsu user.
                                 Revealed to be the son of Hiruzen Sarutobi, the third Hokage and is uncle
@@ -1607,36 +1697,40 @@
                                 bounty of 35,000,000 ryō.[9][21] He could effortlessly
                                 take down nine Oto-nin during the Konoha Crush, noted to have been chūnin-level or
                                 above,[22] and was able compete against Hidan, a powerful member of the Akatsuki, while
-                                also protecting his team.</p>                       </div>
+                                also protecting his team.</p>
+                        </div>
                     </div>
                 </div>
 
-            <!--second card end-->
+                <!--second card end-->
 
-            <!-- Choza card start-->
+                <!-- Choza card start-->
 
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">                            <h2 class="card-title">Choza Akimichi</h2>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Choza Akimichi</h2>
 
-                        <img src="./Images/choza_akimichi.png" alt="Choza Akimichi" height="300px" width="300px">
-                    </div>
-                    <div class="flip-card-back">
+                            <img src="./Images/choza_akimichi.png" alt="Choza Akimichi" height="300px" width="300px">
+                        </div>
+                        <div class="flip-card-back">
                             <p class="card-text">Choza Akimichi (秋道チョウザ, Akimichi Chōza) is a jōnin of Konohagakure and
                                 former teammate of Shikaku Nara and Inoichi Yamanaka. Together they were the previous
                                 Ino–Shika–Chō trio. He is also the fifteenth head of the Akimichi clan (秋道15代目当主,
-                                Akimichi Jūgodaime Tōshu).</p>                       </div>
+                                Akimichi Jūgodaime Tōshu).</p>
+                        </div>
                     </div>
                 </div>
-            <!-- Choza card end-->
+                <!-- Choza card end-->
 
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">                            <h2 class="card-title">Madara Uchiha</h2>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Madara Uchiha</h2>
 
-                        <img src="./Images/madara-uchiha.jpeg" alt="Madara Uchiha" height="300px" width="300px">
-                    </div>
-                    <div class="flip-card-back">
+                            <img src="./Images/madara-uchiha.jpeg" alt="Madara Uchiha" height="300px" width="300px">
+                        </div>
+                        <div class="flip-card-back">
                             <p class="card-text">Madara Uchiha (うちはマダラ, Uchiha Madara) was the legendary leader of the
                                 Uchiha clan. He founded Konohagakure alongside his childhood friend and rival, Hashirama
                                 Senju, with the intention of beginning an era of peace. When thetwo couldn't agree on
@@ -1645,46 +1739,52 @@
                                 on his own plans. Unableto complete it in his natural life, he entrusted his knowledge
                                 and plans to Obito shortly before his actual death. Years later, Madara would be
                                 revived, only to see his plans foiled and ultimately, and finally, realising the error
-                                of his ways and making amends with Hashirama before his final death. </p>                       </div>
+                                of his ways and making amends with Hashirama before his final death. </p>
+                        </div>
                     </div>
                 </div>
-            <!--Izuna Uchiha-->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">                            <h2 class="card-title">Izuna Uchiha</h2>
+                <!--Izuna Uchiha-->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Izuna Uchiha</h2>
 
-                        <img src="./Images/Izuna_Uchiha.png" alt="Madara Uchiha" height="300px" width="300px">
-                    </div>
-                    <div class="flip-card-back">
+                            <img src="./Images/Izuna_Uchiha.png" alt="Madara Uchiha" height="300px" width="300px">
+                        </div>
+                        <div class="flip-card-back">
                             <p class="card-text">Izuna Uchiha (うちはイズナ, Uchiha Izuna) was a shinobi of the Uchiha clan.
                                 He, along with his brother Madara, were renowned as the clan's two strongest members in
-                                their lifetime. </p>                       </div>
+                                their lifetime. </p>
+                        </div>
                     </div>
                 </div>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">                            <h2 class="card-title">Hashirama Senju</h2>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Hashirama Senju</h2>
 
-                        <img src="./Images/hashirama.jpg" alt="Hashirama Senju" height="300px" width="300px">
-                    </div>
-                    <div class="flip-card-back">
+                            <img src="./Images/hashirama.jpg" alt="Hashirama Senju" height="300px" width="300px">
+                        </div>
+                        <div class="flip-card-back">
                             <p class="card-text">The First hokage, leader of the Senju clan, one of the founders of
                                 Konohagakure. Older brother to the Second Hokage and Grandfather to the Fifth Hokage. He
                                 possesses the Wood Style and has a friend and rival called Madara Uchiha.</p>
                             <p>He also showed great tactical skill and deceptive abilities, waiting until Madara became
                                 so exhausted that he couldn't maintain his Sharingan to create a wood clone for Madara
                                 to strike down so he could attack from behind without
-                                his opponent even realising it.</p>                       </div>
+                                his opponent even realising it.</p>
+                        </div>
                     </div>
                 </div>
-            <!-- card end-->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">                            <h2 class="card-title">Kaguya Otsutsuki</h2>
+                <!-- card end-->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Kaguya Otsutsuki</h2>
 
-                        <img src="./Images/Kaguya_Ōtsutsuki.png" alt=" " height="300px" width="300px">
-                    </div>
-                    <div class="flip-card-back">
+                            <img src="./Images/Kaguya_Ōtsutsuki.png" alt=" " height="300px" width="300px">
+                        </div>
+                        <div class="flip-card-back">
                             <p class="card-text">Kaguya was the originator of shinobi in the world in which Naruto takes
                                 place. She was once benevolent and respected, but became corrupted. She is the final
                                 villain to oppose Naruto's team in the manga.</p>
@@ -1695,38 +1795,61 @@
                                 that not only was this big baddie only revealed at the very last second (without any
                                 foreshadowing, for that matter), but her backstory
                                 was so over the top that even die-hard fans couldn’t defend her presence.
-                            </p>                       </div>
+                            </p>
+                        </div>
                     </div>
                 </div>
-            <!--card end-->
+                <!--card end-->
 
-            <!-- Card Start For Gamabunta -->
-
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <h2 class="card-title">Gamabunta</h2>
-
-                        <img src="./Images/Gamabunta.png" alt="Gamabunta" height="300px" width="300px">
+                <!--Killer Bee Card Start  -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Killer Bee</h2>
+                            <img src="./Images/KillerBee.png" alt="Killer Bee" height="300px" width="300px">
+                        </div>
+                        <div class="flip-card-back">
+                            <p class="card-text">Killer B is a major supporting character in the anime and manga Naruto
+                                Shippuden. He is the host of Gyuki, The Eight-tailed demon Ox. He was a shinobi who
+                                trained Naruto and is partners with him while fighting Obito Uchiha.</p>
+                            <p>Killer B (キラービー, Kirā Bī, Viz: Killer Bee) is a shinobi from Kumogakure. He is the most
+                                recent jinchūriki of the Eight-Tails, Gyūki, though, unlike his predecessors, he was
+                                able to befriend it and hone its power for Kumo's benefit. Despite being responsible for
+                                the village's protection, B aspires to be the world's greatest rapper.</p>
+                        </div>
                     </div>
-                    <div class="flip-card-back">
+                </div>
+                <!--card end-->
+
+                <!-- Card Start For Gamabunta -->
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Gamabunta</h2>
+
+                            <img src="./Images/Gamabunta.png" alt="Gamabunta" height="300px" width="300px">
+                        </div>
+                        <div class="flip-card-back">
                             <p class="card-text">Gamabunta is a grumpy, stubborn and highly apathetic toad. He was
                                 summoned by lord fourth Hokage , sensei Jiraiya and by Naruto.</p>
                             <p>Gamabunta can spew oil from his mouth and use it to enhance fire. He is one of the
                                 biggest summon animal in the series. He was firest summoned by naruto when he was
-                                Falling from potential death.</p>                       </div>
+                                Falling from potential death.</p>
+                        </div>
                     </div>
                 </div>
-            <!-- Card End For Gamabunta-->
-            <!-- [juubi-japesh] card start-->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">                            <h2 class="card-title">Juubi</h2>
+                <!-- Card End For Gamabunta-->
+                <!-- [juubi-japesh] card start-->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Juubi</h2>
 
-                        <img src="https://th.bing.com/th/id/R.b53df28c88ba9b3e33c214c9b3ef282c?rik=GewytGgahu%2bEWw&riu=http%3a%2f%2fgazzettadikonoha.files.wordpress.com%2f2012%2f12%2fnaruto-shippuden-sharingan-jinchuuriki-juubi-bijuu.jpg&ehk=ECuNzoRBNiu5w3LoYtolkjVf0SPiT4FoB7OER6mCAtI%3d&risl=&pid=ImgRaw&r=0"
-                             alt="Juubi" height="300px" width="300px">
-                    </div>
-                    <div class="flip-card-back">
+                            <img src="https://th.bing.com/th/id/R.b53df28c88ba9b3e33c214c9b3ef282c?rik=GewytGgahu%2bEWw&riu=http%3a%2f%2fgazzettadikonoha.files.wordpress.com%2f2012%2f12%2fnaruto-shippuden-sharingan-jinchuuriki-juubi-bijuu.jpg&ehk=ECuNzoRBNiu5w3LoYtolkjVf0SPiT4FoB7OER6mCAtI%3d&risl=&pid=ImgRaw&r=0"
+                                alt="Juubi" height="300px" width="300px">
+                        </div>
+                        <div class="flip-card-back">
                             <p class="card-text">The ten-tailed beast was created by Kaguya Otsutsuki and later had its
                                 chakra split into the nine tailed beasts.</p>
                             <p>The Ten-Tailed Beast (十尾, Jūbi) is the original, primordial demon of the Naruto universe.
@@ -1734,18 +1857,20 @@
                                 madara uchiha's ultimate goal, the moon's eye plan, is to capture and merge all nine of
                                 the tailed beasts back into the Ten-Tails, and become its host to cast the reflection of
                                 his Sharingan on the moon, casting a genjutsu known as the Infinite Tsukuyomi which will
-                                put the entire world under his control. </p>                       </div>
+                                put the entire world under his control. </p>
+                        </div>
                     </div>
                 </div>
-            <!--[character name] card end-->
-            <!-- Card start For Matatabi-->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">                            <h2 class="card-title">Matatabi</h2>
+                <!--[character name] card end-->
+                <!-- Card start For Matatabi-->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Matatabi</h2>
 
-                        <img src="./Images/matatabi.png" alt="Matatabi" height="300px" width="300px">
-                    </div>
-                    <div class="flip-card-back">
+                            <img src="./Images/matatabi.png" alt="Matatabi" height="300px" width="300px">
+                        </div>
+                        <div class="flip-card-back">
                             <p class="card-text">Matatabi also known as Two-Tails, is one of the nine tailed
                                 beast.Yugito Nii is the jinchūriki of her</p>
                             <p>Matatabi has shown to be respectful and polite towards others,she is completely engulfed
@@ -1756,10 +1881,8 @@
                     </div>
 
                 </div>
-            </div>
 
-            <!-- Card End-->
-            </div>
+                <!-- Card End-->
 
             <!-- [Nino Nakano] card start-->
             <div class="flip-card">
@@ -1829,53 +1952,53 @@
     <script src="./sound.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+            </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
 
-    </script>
+            </script>
 
-    <script src="searchbar.js"></script>
-    <script src="./scrollEffect.js"></script>
+        <script src="searchbar.js"></script>
+        <script src="./scrollEffect.js"></script>
 
-    <script src="scrolltotop.js"></script>
+        <script src="scrolltotop.js"></script>
 
-    <script>
+        <script>
 
-        /* ------- Scroll To Top Button -------*/
+            /* ------- Scroll To Top Button -------*/
 
-        const toTop = document.querySelector(".to-top");
-        window.addEventListener("scroll", () => {
+            const toTop = document.querySelector(".to-top");
+            window.addEventListener("scroll", () => {
 
-            if (window.pageYOffset > 400) {
-                toTop.classList.add("active");
-            } else {
-                toTop.classList.remove("active");
+                if (window.pageYOffset > 400) {
+                    toTop.classList.add("active");
+                } else {
+                    toTop.classList.remove("active");
+                }
+
+            });
+
+        </script>
+
+
+        <script>
+            function darkmode() {
+                // console.log("hello");
+                var element1 = document.querySelector(".loader");
+                var element2 = document.querySelector("body")
+                if (element1.classList.contains("lightmode")) {
+                    element1.classList.add("dark-mode"); element1.classList.remove("lightmode");
+                    element2.classList.add("dark-mode"); element2.classList.remove("lightmode");
+                    document.querySelector("#toggler").innerHTML = "🌞 Light"
+                }
+                else {
+                    element1.classList.add("lightmode"); element1.classList.remove("dark-mode");
+                    element2.classList.add("lightmode"); element2.classList.remove("dark-mode");
+                    document.querySelector("#toggler").innerHTML = "🌙 Dark";
+                }
             }
-
-        });
-
-    </script>
-
-
-    <script>
-        function darkmode() {
-            // console.log("hello");
-            var element1 = document.querySelector(".loader");
-            var element2=document.querySelector("body")
-            if(element1.classList.contains("lightmode"))
-            {element1.classList.add("dark-mode");element1.classList.remove("lightmode");
-            element2.classList.add("dark-mode");element2.classList.remove("lightmode");
-            document.querySelector("#toggler").innerHTML="🌞 Light" 
-           }
-            else
-            {
-                element1.classList.add("lightmode");element1.classList.remove("dark-mode");
-                element2.classList.add("lightmode");element2.classList.remove("dark-mode");
-                document.querySelector("#toggler").innerHTML="🌙 Dark"; 
-            }
-        }
-    </script>
-</div>
+        </script>
+    </div>
 </body>
+
 </html>
