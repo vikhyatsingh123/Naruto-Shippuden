@@ -27,10 +27,10 @@ You can find all types characters on https://www.giantbomb.com/naruto-uzumaki/30
 
 # What can you contribute?
 
-There is always something to contribute to a project whether you are a novice or a veteran. In this project, you can add your favourite character as a card to the website! Or maybe you didn't like the line that you are reading right now and want to change that.Sure! Why not?
+There is always something to contribute to a project whether you are a novice or a veteran. In this project, you can add your favourite character as a card to the website! Or maybe you didn't like the line that you are reading right now and want to change that. Sure! Why not?
 
 # How can you contribute?
-To contribute in Hacktoberfest2022 , checkout the given link and win hactoberfest t-shirt ...
+To contribute in Hacktoberfest2022, checkout the given link and win the Hacktoberfest-2022 t-shirt:tshirt:, or get a tree:deciduous_tree: planted in your name...
 https://hacktoberfest.com/
 
 
@@ -39,7 +39,7 @@ Follow these steps to make your very first Pull request.
 
 # But what if i don't know how to add cards? :(
 
-Not everyone is aware of every tool present in the world no matter how easy or complex it is. It's also not necessary to know each and every tool out there. Use the code below to add the your own card!
+No Worries:wink:. Not everyone is aware of every tool present in the world no matter how easy or complex it is. It's also not necessary to know each and every tool out there. Use the code below to add your own card!:smile:
 
 <b>Code -</b> 
 
@@ -58,12 +58,12 @@ Not everyone is aware of every tool present in the world no matter how easy or c
                 </div>
                 <!--[character name] card end-->
 
-Copy this code and paste it in the index.html file to make your changes. Try and test it on your own system and then create a Pull request. You can adjust height of image of character so that it will fit in card.
+Copy this code and paste it in the `index.html` file to make your changes. Try and test it on your own system and then create a Pull request. You can adjust height of image of character so that it will fit in card.
 
 
-# Congratulations!
+# Congratulations! :confetti_ball:
 
-Congratulation! You just made your first pull request and if it gets merged, you can view it using the Link provided above!
+Congratulations! You just made your first pull request and if it gets merged, you can view it using the Link provided above!
 
 # Our Amazing Contributors ⭐
 
