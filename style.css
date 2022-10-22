@@ -244,6 +244,16 @@ body.lightmode #cont{
   justify-content: center;
   align-items: center;
 }
+body.dark-mode #cont{
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  margin: 0; padding: 0;
+  width: 100%;
+  max-width: 2000px;
+  justify-content: center;
+  align-items: center;
+}
 .flip-card{
   cursor: pointer;
   border: 1px solid lightgrey;
