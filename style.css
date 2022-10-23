@@ -255,7 +255,7 @@ body.dark-mode #cont{
   align-items: center;
 }
 .flip-card{
-  cursor: pointer;
+  cursor: url("./Images/kunai_cursor.png"),pointer;
   border: 1px solid lightgrey;
   box-shadow: 5px 20px 60px 15px;
 }
