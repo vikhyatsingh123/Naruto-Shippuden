@@ -741,6 +741,15 @@ button#scrolltopBtn {
   color:#000;
   transform: rotateY(180deg);
   padding: 20px;
+  
+  
+  scrollbar-width: none;  
+  overflow-y: scroll;
+
+}
+
+.flip-card-back::-webkit-scrollbar{
+        display: none;
 }
 img
 {
