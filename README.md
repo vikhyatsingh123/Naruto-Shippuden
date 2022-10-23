@@ -57,6 +57,7 @@ Not everyone is aware of every tool present in the world no matter how easy or c
                     </div>
                 </div>
                 <!--[character name] card end-->
+NOTE: add image to the Images folder if not present already and then provide the src in img tag.
 
 Copy this code and paste it in the index.html file to make your changes. Try and test it on your own system and then create a Pull request. You can adjust height of image of character so that it will fit in card.
 
