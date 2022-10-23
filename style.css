@@ -13,7 +13,7 @@ body {
   max-width: 100%;
   overflow-x: hidden;
   /* background-image: radial-gradient(blue, violet); */
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif, serif;
 }
 
 /* Custom Scroll Bar */
