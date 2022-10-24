@@ -375,6 +375,10 @@ h1 {
   font-weight: normal;
 }
 
+.about-title b {
+  line-height: 2.5rem;
+}
+
 .card {
   overflow: clip;
 }
@@ -658,10 +662,6 @@ h2.card-title {
 
   .search {
     left: 200px;
-  }
-
-  .about-title b {
-    line-height: 2.5rem;
   }
 }
 
