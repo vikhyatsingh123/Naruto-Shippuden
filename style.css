@@ -329,6 +329,11 @@ h1 {
   size: 50px;
 }
 
+.row{
+  margin:  0 auto;
+  text-align: center;
+}
+
 .row1 {
   margin-top: 6%;
 }
@@ -365,7 +370,9 @@ h1 {
 .about-title {
   padding-top: 2%;
   color: white;
-  font-weight: normal;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 2.5rem;
 }
 
 .card {
@@ -525,10 +532,6 @@ h1 {
   padding: 15px;
 }
 
-.about-title {
-  padding-top: 2%;
-}
-
 .card {
   overflow: clip;
 }
@@ -617,7 +620,7 @@ h2.card-title {
 
 .card {
   transition: all 550ms ease-in;
-  opacity: 0;
+  opacity: 100;
 }
 
 .appear {
@@ -654,10 +657,6 @@ h2.card-title {
 
   .search {
     left: 200px;
-  }
-
-  .about-title b {
-    line-height: 2.5rem;
   }
 }
 
@@ -778,3 +777,13 @@ ul.navbar-nav.mr-auto {
     background-color: #141a46;
   }
 } 
+
+
+.inner-container{
+  justify-content: center;
+}
+.about_card{
+  width: 300px;
+  margin: 6px;
+  
+}
