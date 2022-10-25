@@ -726,7 +726,7 @@ button#scrolltopBtn {
   box-shadow: 0 5px 24px 0 rgb(0 0 0 / 80%);
   border-radius: 29px;
   position: absolute;
-  min-width: 250px;
+  min-width: 400px;
   height: 400px;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
