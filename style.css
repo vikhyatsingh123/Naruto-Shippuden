@@ -294,13 +294,6 @@ h2 {
   color: black;
 }
 
-/*about*/
-#para {
-
-  text-align: justify;
-  font-size: 20px;
-  color: black;
-}
 /* body {
   background-color: white;
   font-weight: bold;
@@ -487,8 +480,8 @@ h2 {
   background: -moz-linear-gradient(-45deg,#e2a9e5 15%,#2b94e5 100%);
   background: -webkit-linear-gradient(-45deg,#e2a9e5 15%,#2b94e5 100%);
   background: linear-gradient(135deg,#e2a9e5 15%,#2b94e5 100%);
-  
 }
+
 /* body {
   background-color: white;
   font-family: "Righteous", cursive;
