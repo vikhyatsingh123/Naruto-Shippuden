@@ -716,6 +716,7 @@ button#scrolltopBtn {
 
 /* Position the front and back side */
 .flip-card-front, .flip-card-back {
+  width: 100%;
   margin: 70px 0;
   box-shadow: 0 5px 24px 0 rgb(0 0 0 / 80%);
   border-radius: 29px;
