@@ -372,10 +372,8 @@ h1 {
 .about-title {
   padding-top: 2%;
   color: white;
-  font-weight: normal;
-}
-
-.about-title b {
+  font-weight: bold;
+  font-style: italic;
   line-height: 2.5rem;
 }
 
