@@ -254,13 +254,6 @@ body.dark-mode #cont{
   justify-content: center;
   align-items: center;
 }
-.flip-card{
-
-  cursor: url("./Images/kunai_cursor.png"),pointer;
-  border: 1px solid lightgrey;
-  box-shadow: 5px 20px 60px 15px;
-
-}
 
 
 .topic {
@@ -691,6 +684,9 @@ button#scrolltopBtn {
   border: none;
 }
 .flip-card {
+  cursor: url("./Images/kunai_cursor.png"),pointer;
+  border: 1px solid lightgrey;
+  box-shadow: 5px 20px 60px 15px;
   float: left;
   border-radius: 29px;
   background-color: transparent;
@@ -700,14 +696,10 @@ button#scrolltopBtn {
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
   margin: 70px;
   display: flex;
-  
-  
 }
 
 /* This container is needed to position the front and back side */
 .flip-card-inner {
-
-  
   position: relative;
   width: 100%;
   min-height: 400px;
@@ -715,7 +707,6 @@ button#scrolltopBtn {
   transition: transform 0.8s;
   transform-style: preserve-3d;
   border-radius: 29px;
-
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
@@ -758,7 +749,7 @@ button#scrolltopBtn {
 }
 
 .flip-card-back::-webkit-scrollbar{
-        display: none;
+  display: none;
 }
 
 img
