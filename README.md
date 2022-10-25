@@ -27,7 +27,7 @@ You can find all types characters on https://www.giantbomb.com/naruto-uzumaki/30
 
 # What can you contribute?
 
-There is always something to contribute to a project whether you are a novice or a veteran. In this project, you can add your favourite character as a card to the website! Or maybe you didn't like the line that you are reading right now and want to change that.Sure! Why not?
+There is always something to contribute to a project whether you are a novice or a veteran. In this project, you can add your favourite character as a card to the website! Or maybe you didn't like the line that you are reading right now and want to change that. Sure! Why not?
 
 # How can you contribute?
 To contribute in Hacktoberfest2022 , checkout the given link and win hactoberfest t-shirt ...
@@ -57,6 +57,7 @@ Not everyone is aware of every tool present in the world no matter how easy or c
                     </div>
                 </div>
                 <!--[character name] card end-->
+NOTE: add image to the Images folder if not present already and then provide the src in img tag.
 
 Copy this code and paste it in the index.html file to make your changes. Try and test it on your own system and then create a Pull request. You can adjust height of image of character so that it will fit in card.
 
