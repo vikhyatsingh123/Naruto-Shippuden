@@ -377,7 +377,9 @@ h1 {
 .about-title {
   padding-top: 2%;
   color: white;
-  font-weight: normal;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 2.5rem;
 }
 
 .card {
@@ -536,10 +538,6 @@ h1 {
   padding: 15px;
 }
 
-.about-title {
-  padding-top: 2%;
-}
-
 .card {
   overflow: clip;
 }
@@ -665,10 +663,6 @@ h2.card-title {
 
   .search {
     left: 200px;
-  }
-
-  .about-title b {
-    line-height: 2.5rem;
   }
 }
 
