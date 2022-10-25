@@ -458,7 +458,7 @@ h2 {
 }
 
 /*about*/
-#para {
+.about-content {
   text-align: justify ;
   font-size: 20px;
   color: black;
@@ -474,7 +474,7 @@ h2 {
   -webkit-font-smoothing:antialised;
   -moz-osx-font-smoothing:grayscale;
 }
-#para:hover{
+.about-content:hover {
   opacity:1;
   background :#e2a9e5;
   background: -moz-linear-gradient(-45deg,#e2a9e5 15%,#2b94e5 100%);
