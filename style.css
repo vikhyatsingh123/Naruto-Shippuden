@@ -459,10 +459,10 @@ h2 {
 
 /*about*/
 .about-content {
-  text-align: justify ;
+  text-align: justify;
   font-size: 20px;
   color: black;
-  border-radius: 2rem;;
+  border-radius: 2rem;
   background: beige;
   overflow:hidden;
   transition :all .5s ease-in;
