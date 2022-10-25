@@ -467,7 +467,6 @@ h2 {
   overflow:hidden;
   transition :all .5s ease-in;
   z-index: 1;
-  box-shadow: border-box;
   padding: 30px;
   box-shadow: -10px 25px 50px rgba(0,0,0,0.3);
   min-height: 50vh;
