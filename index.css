@@ -22,6 +22,7 @@
     pointer-events: none;
     transition: all 0.4s;
 }
+
 @media only screen and (max-width: 480px) {
     .to-top.active {
         bottom: 32px;
@@ -31,6 +32,7 @@
         right: 35%;
     }
 }
+
 .to-top.active {
     bottom: 32px;
     pointer-events: auto;
@@ -44,13 +46,13 @@
     text-decoration: none;
 }
 
-main{
+main {
     margin-bottom: 2rem;
 }
 
 .footer {
     display: block;
-    background-color:#2193b0;
+    background-color: #2193b0;
     text-align: center;
     padding: 10px 0 5px 0;
     margin-top: 30px;
@@ -59,14 +61,14 @@ main{
     font-weight: 500;
 }
 
-.footer a span{
+.footer a span {
     color: #062d9b;
 }
 
 @media screen and (max-width:500px) {
-    .footer{
+    .footer {
         font-size: 14px;
-        font-weight: 400;   
-    
+        font-weight: 400;
+
     }
-  } 
+}

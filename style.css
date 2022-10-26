@@ -2,14 +2,15 @@ html {
   scroll-behavior: smooth;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
   overflow-y: scroll;
 }
 
 body {
 
-  background-image: linear-gradient(to right,#2193b0,#6dd5ed);
+  background-image: linear-gradient(to right, #2193b0, #6dd5ed);
   width: 100vw;
   font-family: 'Open Sans', sans-serif;
 }
@@ -22,7 +23,8 @@ body {
 
 ::-webkit-scrollbar-track {
   background: #006e8a;
-  margin-block: .5em; /*margin top bottom*/
+  margin-block: .5em;
+  /*margin top bottom*/
 }
 
 ::-webkit-scrollbar-thumb {
@@ -216,47 +218,60 @@ body {
 } */
 
 /* Character text animation  */
-.chars{
-  background: linear-gradient(90deg,cyan,red,pink,green,yellow,purple);
+.chars {
+  background: linear-gradient(90deg, cyan, red, pink, green, yellow, purple);
   background-size: 400%;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   text-decoration: none;
   animation: linrclr 10s linear infinite;
 }
-h1.chars{font-weight: 1000; padding: 20px; font-size: 3.5rem; font-family: poppins; margin: 50px;}
+
+h1.chars {
+  font-weight: 1000;
+  padding: 20px;
+  font-size: 3.5rem;
+  font-family: poppins;
+  margin: 50px;
+}
 
 @keyframes linrclr {
-  0%{
-      background-position: 0%;
+  0% {
+    background-position: 0%;
   }
-  100%{
-      background-position: 400%;
-  }
-}
-body.lightmode #cont{
-  display: flex;
-  /* flex-direction: column; */
-  flex-wrap: wrap;
-  margin: 0; padding: 0;
-  width: 100%;
-  max-width: 2000px;
-  justify-content: center;
-  align-items: center;
-}
-body.dark-mode #cont{
-  display: flex;
-  /* flex-direction: column; */
-  flex-wrap: wrap;
-  margin: 0; padding: 0;
-  width: 100%;
-  max-width: 2000px;
-  justify-content: center;
-  align-items: center;
-}
-.flip-card{
 
-  cursor: url("./Images/kunai_cursor.png"),pointer;
+  100% {
+    background-position: 400%;
+  }
+}
+
+body.lightmode #cont {
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 2000px;
+  justify-content: center;
+  align-items: center;
+}
+
+body.dark-mode #cont {
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 2000px;
+  justify-content: center;
+  align-items: center;
+}
+
+.flip-card {
+
+  cursor: url("./Images/kunai_cursor.png"), pointer;
   border: 1px solid lightgrey;
   box-shadow: 5px 20px 60px 15px;
 
@@ -273,10 +288,10 @@ body.dark-mode #cont{
 }
 
 img {
-  padding: 30px; 
+  padding: 30px;
   object-fit: contain;
   width: 100%;
-  
+
 }
 
 .col-md-4 {
@@ -329,8 +344,8 @@ h1 {
   size: 50px;
 }
 
-.row{
-  margin:  0 auto;
+.row {
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -348,13 +363,13 @@ h1 {
   align-items: center;
 }
 
-.nav-link{
+.nav-link {
   font-size: 1.4rem;
   font-weight: 700;
   color: beige;
 }
 
-.toggle-mode{
+.toggle-mode {
   font-size: 1.3rem;
   background-color: beige;
   border: none;
@@ -378,9 +393,11 @@ h1 {
 .card {
   overflow: clip;
 }
-.flip-card img{
+
+.flip-card img {
   max-height: 300px;
 }
+
 .card img:hover {
   transform: scale(1.1);
   transition: all 0.3s ease-out;
@@ -407,6 +424,7 @@ h1 {
 .card h2 {
   color: #dc3545;
 }
+
 /* body {
   background-image: radial-gradient(blue, violet);
   font-family: "Ninja Naruto", arial, sans-serif;
@@ -418,7 +436,7 @@ h1 {
   color: #000;
 } */
 .dark-mode {
-  background-image: linear-gradient(to right,#414141,#000000);
+  background-image: linear-gradient(to right, #414141, #000000);
 }
 
 p.aboutcolor {
@@ -429,8 +447,9 @@ body.aboutdarkmode {
   background: black;
   color: #ffffff;
 }
+
 .lightmode {
-  background-image: linear-gradient(to right,#2193b0,#6dd5ed);
+  background-image: linear-gradient(to right, #2193b0, #6dd5ed);
 }
 
 .brand1 {
@@ -449,7 +468,7 @@ body.aboutdarkmode {
   color: red;
   text-shadow: 2px 4px 4px yellow;
   text-decoration: underline;
-  
+
 }
 
 img {
@@ -471,21 +490,22 @@ h2 {
   color: black;
   border-radius: 2rem;
   background: beige;
-  overflow:hidden;
-  transition :all .5s ease-in;
+  overflow: hidden;
+  transition: all .5s ease-in;
   z-index: 1;
   padding: 30px;
-  box-shadow: -10px 25px 50px rgba(0,0,0,0.3);
+  box-shadow: -10px 25px 50px rgba(0, 0, 0, 0.3);
   min-height: 50vh;
-  -webkit-font-smoothing:antialised;
-  -moz-osx-font-smoothing:grayscale;
+  -webkit-font-smoothing: antialised;
+  -moz-osx-font-smoothing: grayscale;
 }
+
 .about-content:hover {
-  opacity:1;
-  background :#e2a9e5;
-  background: -moz-linear-gradient(-45deg,#e2a9e5 15%,#2b94e5 100%);
-  background: -webkit-linear-gradient(-45deg,#e2a9e5 15%,#2b94e5 100%);
-  background: linear-gradient(135deg,#e2a9e5 15%,#2b94e5 100%);
+  opacity: 1;
+  background: #e2a9e5;
+  background: -moz-linear-gradient(-45deg, #e2a9e5 15%, #2b94e5 100%);
+  background: -webkit-linear-gradient(-45deg, #e2a9e5 15%, #2b94e5 100%);
+  background: linear-gradient(135deg, #e2a9e5 15%, #2b94e5 100%);
 }
 
 /* body {
@@ -573,11 +593,12 @@ body {
   background-size: cover; */
 }
 
-.radius{
+.radius {
   border-radius: 50px;
-  width: 90%!important;
+  width: 90% !important;
   margin: auto;
 }
+
 .card-bg {
   transition: all 0.5s;
   background: rgba(255, 255, 255, 0.25);
@@ -602,7 +623,7 @@ h2.card-title {
   font-weight: 900;
   color: #141a46;
   text-align: center;
-  padding-top: 20px;  
+  padding-top: 20px;
 }
 
 .topic {
@@ -660,8 +681,8 @@ h2.card-title {
   }
 }
 
-.nav-link:hover{
-  background-color: 	#e32828;
+.nav-link:hover {
+  background-color: #e32828;
   border-radius: 4rem;
 }
 
@@ -681,6 +702,7 @@ button#scrolltopBtn {
   z-index: 2000;
   border: none;
 }
+
 .flip-card {
   float: left;
   border-radius: 29px;
@@ -688,17 +710,18 @@ button#scrolltopBtn {
   width: 400px;
   /* min-height: 400px; */
   /* border: 1px solid #e1dfdf; */
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  perspective: 1000px;
+  /* Remove this if you don't want the 3D effect */
   margin: 70px;
   display: flex;
-  
-  
+
+
 }
 
 /* This container is needed to position the front and back side */
 .flip-card-inner {
 
-  
+
   position: relative;
   width: 100%;
   min-height: 400px;
@@ -715,45 +738,47 @@ button#scrolltopBtn {
 }
 
 /* Position the front and back side */
-.flip-card-front, .flip-card-back {
+.flip-card-front,
+.flip-card-back {
   margin: 70px 0;
   box-shadow: 0 5px 24px 0 rgb(0 0 0 / 80%);
   border-radius: 29px;
   position: absolute;
   min-width: 250px;
   height: 400px;
-  -webkit-backface-visibility: hidden; /* Safari */
+  -webkit-backface-visibility: hidden;
+  /* Safari */
   backface-visibility: hidden;
 }
-.flip-card-back{
+
+.flip-card-back {
   overflow-y: scroll;
 }
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
   padding: 0px 10px;
-  background-color:rgb(228 212 212);
+  background-color: rgb(228 212 212);
   color: black;
 }
 
 /* Style the back side */
 .flip-card-back {
   background-color: rgb(228 212 212);
-  color:#000;
+  color: #000;
   transform: rotateY(180deg);
   padding: 20px;
 
-  scrollbar-width: none;  
+  scrollbar-width: none;
   overflow-y: scroll;
 
 }
 
-.flip-card-back::-webkit-scrollbar{
-        display: none;
+.flip-card-back::-webkit-scrollbar {
+  display: none;
 }
 
-img
-{
+img {
   position: relative;
   top: -20px;
 }
@@ -761,7 +786,7 @@ img
 
 ul.navbar-nav.mr-auto {
   position: absolute;
-  right:10rem;
+  right: 10rem;
 
 }
 
@@ -769,21 +794,22 @@ ul.navbar-nav.mr-auto {
 @media screen and (max-width:955px) {
   ul.navbar-nav.mr-auto {
     position: absolute;
-    right:0;
+    right: 0;
     left: 0;
-    top: 0; 
+    top: 0;
     margin-top: 80px;
     padding: 1rem;
     background-color: #141a46;
   }
-} 
+}
 
 
-.inner-container{
+.inner-container {
   justify-content: center;
 }
-.about_card{
+
+.about_card {
   width: 300px;
   margin: 6px;
-  
+
 }
