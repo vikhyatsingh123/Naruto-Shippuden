@@ -503,16 +503,27 @@ h1 {
 }
 
 #one {
-  background-color: rgb(40, 103, 178);
+  background-color: #0a66c2;
 }
 
 #two {
-  background-color: rgb(33, 31, 31);
+  background-color: #333;
 }
 
 #three {
-  background-color: rgb(225, 48, 108);
+  background-color: #c32aa3;
 }
+#four {
+  background-color: #1877f2;
+}
+
+.about-card{
+  border-radius: 8px;
+}
+
+
+
+
 
 #buttons {
   margin-bottom: 10px;
