@@ -45,14 +45,20 @@ Not everyone is aware of every tool present in the world no matter how easy or c
 
                 <!-- [character name] card start-->
                 <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <h2 class="card-title">[name of character]</h2>
-                            <img class="img_card" src=[image-link] alt=[name of character] height="300px" width="300px">
+                    <div class="flip-card__inner">
+                        <div class="flip-card__front">
+                            <h2 class="flip-card__title">
+                                [name of character]
+                            </h2>
+                            <img class="flip-card__image" src=[image-link] alt=[name of character] height="300px" width="300px">
                         </div>
-                        <div class="flip-card-back">
-                            <p class="card-text card-text--main">[Main description about character]</p>
-                            <p class="card-text">[some more description about character]</p>
+                        <div class="flip-card__back">
+                            <p class="flip-card__text flip-card__text--main">
+                                [Main description about character]
+                            </p>
+                            <p class="flip-card__text">
+                                [some more description about character]
+                            </p>
                         </div>
                     </div>
                 </div>
