@@ -378,10 +378,10 @@ h1 {
 .card {
   overflow: clip;
 }
-.flip-card img{
+.flip-card__image {
   max-height: 300px;
 }
-.card img:hover {
+.card__image:hover {
   transform: scale(1.1);
   transition: all 0.3s ease-out;
 }
@@ -696,7 +696,7 @@ button#scrolltopBtn {
 }
 
 /* This container is needed to position the front and back side */
-.flip-card-inner {
+.flip-card__inner {
 
   
   position: relative;
@@ -710,12 +710,12 @@ button#scrolltopBtn {
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
+.flip-card:hover .flip-card__inner {
   transform: rotateY(180deg);
 }
 
 /* Position the front and back side */
-.flip-card-front, .flip-card-back {
+.flip-card__front, .flip-card__back {
   margin: 70px 0;
   box-shadow: 0 5px 24px 0 rgb(0 0 0 / 80%);
   border-radius: 29px;
@@ -725,19 +725,19 @@ button#scrolltopBtn {
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
 }
-.flip-card-back{
+.flip-card__back{
   overflow-y: scroll;
 }
 
 /* Style the front side (fallback if image is missing) */
-.flip-card-front {
+.flip-card__front {
   padding: 0px 10px;
   background-color:rgb(228 212 212);
   color: black;
 }
 
 /* Style the back side */
-.flip-card-back {
+.flip-card__back {
   background-color: rgb(228 212 212);
   color:#000;
   transform: rotateY(180deg);
@@ -748,7 +748,7 @@ button#scrolltopBtn {
 
 }
 
-.flip-card-back::-webkit-scrollbar{
+.flip-card__back::-webkit-scrollbar{
         display: none;
 }
 
