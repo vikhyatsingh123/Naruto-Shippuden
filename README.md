@@ -51,7 +51,7 @@ Not everyone is aware of every tool present in the world no matter how easy or c
                             <img src=[image-link] alt=[name of character] height="300px" width="300px" class="img_card">
                         </div>
                         <div class="flip-card-back">
-                            <p class="card-text">[Main description about character]</p>
+                            <p class="card-text card-text--main">[Main description about character]</p>
                             <p class="card-text">[some more description about character]</p>
                         </div>
                     </div>
