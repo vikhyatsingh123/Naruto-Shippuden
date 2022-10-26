@@ -52,7 +52,7 @@ Not everyone is aware of every tool present in the world no matter how easy or c
                         </div>
                         <div class="flip-card-back">
                             <p class="card-text">[Main description about character]</p>
-                            <p>[some more description about character]</p>
+                            <p class="card-text">[some more description about character]</p>
                         </div>
                     </div>
                 </div>
