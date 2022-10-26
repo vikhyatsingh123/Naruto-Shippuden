@@ -48,7 +48,7 @@ Not everyone is aware of every tool present in the world no matter how easy or c
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">[name of character]</h2>
-                            <img src=[image-link] alt=[name of character] height="300px" width="300px" class="img_card">
+                            <img class="img_card" src=[image-link] alt=[name of character] height="300px" width="300px">
                         </div>
                         <div class="flip-card-back">
                             <p class="card-text card-text--main">[Main description about character]</p>
