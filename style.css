@@ -797,3 +797,29 @@ ul.navbar-nav.mr-auto {
   margin: 6px;
   
 }
+/* social icons */
+.footer h5{
+  margin-top: 5px;
+}
+.footer .icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .icon .fa{
+    padding: 8px;
+    margin: 5px;
+    color: #F14A16;
+    background: #fff;
+    width: 43px;
+    /* height: 30px; */
+    font-size: 22px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.footer .icon .fa:hover{
+  color: #fff;
+  background: #4649FF;
+}
