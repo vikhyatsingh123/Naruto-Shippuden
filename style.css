@@ -294,13 +294,6 @@ h2 {
   color: black;
 }
 
-/*about*/
-#para {
-
-  text-align: justify;
-  font-size: 20px;
-  color: black;
-}
 /* body {
   background-color: white;
   font-weight: bold;
@@ -472,28 +465,29 @@ h2 {
 }
 
 /*about*/
-#para {
-  text-align: justify ;
+.about-content {
+  text-align: justify;
   font-size: 20px;
   color: black;
-  border-radius: 2rem;;
+  border-radius: 2rem;
   background: beige;
   overflow:hidden;
   transition :all .5s ease-in;
   z-index: 1;
-  box-shadow: border-box;
   padding: 30px;
   box-shadow: -10px 25px 50px rgba(0,0,0,0.3);
+  min-height: 50vh;
   -webkit-font-smoothing:antialised;
   -moz-osx-font-smoothing:grayscale;
 }
-#para:hover{
+.about-content:hover {
   opacity:1;
   background :#e2a9e5;
   background: -moz-linear-gradient(-45deg,#e2a9e5 15%,#2b94e5 100%);
   background: -webkit-linear-gradient(-45deg,#e2a9e5 15%,#2b94e5 100%);
-  background: linear-gradient(135deg,#e2a9e5 15%,#2b94e5 100%); 
+  background: linear-gradient(135deg,#e2a9e5 15%,#2b94e5 100%);
 }
+
 /* body {
   background-color: white;
   font-family: "Righteous", cursive;
@@ -509,16 +503,27 @@ h1 {
 }
 
 #one {
-  background-color: rgb(40, 103, 178);
+  background-color: #0a66c2;
 }
 
 #two {
-  background-color: rgb(33, 31, 31);
+  background-color: #333;
 }
 
 #three {
-  background-color: rgb(225, 48, 108);
+  background-color: #c32aa3;
 }
+#four {
+  background-color: #1877f2;
+}
+
+.about-card{
+  border-radius: 8px;
+}
+
+
+
+
 
 #buttons {
   margin-bottom: 10px;
@@ -722,11 +727,10 @@ button#scrolltopBtn {
 
 /* Position the front and back side */
 .flip-card-front, .flip-card-back {
-  margin: 70px 0;
   box-shadow: 0 5px 24px 0 rgb(0 0 0 / 80%);
   border-radius: 29px;
   position: absolute;
-  min-width: 250px;
+  min-width: 400px;
   height: 400px;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
@@ -792,4 +796,30 @@ ul.navbar-nav.mr-auto {
   width: 300px;
   margin: 6px;
   
+}
+/* social icons */
+.footer h5{
+  margin-top: 5px;
+}
+.footer .icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .icon .fa{
+    padding: 8px;
+    margin: 5px;
+    color: #F14A16;
+    background: #fff;
+    width: 43px;
+    /* height: 30px; */
+    font-size: 22px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.footer .icon .fa:hover{
+  color: #fff;
+  background: #4649FF;
 }
