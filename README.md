@@ -66,7 +66,7 @@ Copy this code and paste it in the index.html file to make your changes. Try and
 
 Congratulation! You just made your first pull request and if it gets merged, you can view it using the Link provided above!
 
-# Our Amazing Contributors ⭐
+# Our Amazing Contributors ⭐ 
 
 <a href="https://github.com/vikhyatsingh123/Naruto-Shippuden/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=vikhyatsingh123/Naruto-Shippuden" />
