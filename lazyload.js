@@ -1,5 +1,5 @@
 const imgs=document.querySelectorAll("[data-src]")
-let imgOptions={threshold:0,rootMargin:"0px 0px 300px 0px"}
+let imgOptions={threshold:0,rootMargin:"0px 0px 600px 0px"}
 function preloadImg(img){
         const src=img.getAttribute("data-src")
 
