@@ -3,26 +3,26 @@ html {
 }
 
 html, body {
-  max-width: 100%;
   overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 body {
 
   background-image: linear-gradient(to right,#2193b0,#6dd5ed);
-  max-width: 100%;
-  overflow-x: hidden;
-  /* background-image: radial-gradient(blue, violet); */
+  width: 100vw;
   font-family: 'Open Sans', sans-serif;
 }
 
 /* Custom Scroll Bar */
 ::-webkit-scrollbar {
+  margin: 2em 0;
   width: 5px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #1a1a1a;
+  background: #006e8a;
+  margin-block: .5em; /*margin top bottom*/
 }
 
 ::-webkit-scrollbar-thumb {
@@ -244,10 +244,22 @@ body.lightmode #cont{
   justify-content: center;
   align-items: center;
 }
+body.dark-mode #cont{
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  margin: 0; padding: 0;
+  width: 100%;
+  max-width: 2000px;
+  justify-content: center;
+  align-items: center;
+}
 .flip-card{
-  cursor: pointer;
+
+  cursor: url("./Images/kunai_cursor.png"),pointer;
   border: 1px solid lightgrey;
   box-shadow: 5px 20px 60px 15px;
+
 }
 
 
@@ -282,12 +294,6 @@ h2 {
   color: black;
 }
 
-/*about*/
-#para {
-  text-align: justify;
-  font-size: 20px;
-  color: black;
-}
 /* body {
   background-color: white;
   font-weight: bold;
@@ -321,6 +327,11 @@ h1 {
   color: #ffffff;
   padding-left: 50px;
   size: 50px;
+}
+
+.row{
+  margin:  0 auto;
+  text-align: center;
 }
 
 .row1 {
@@ -359,13 +370,17 @@ h1 {
 .about-title {
   padding-top: 2%;
   color: white;
-  font-weight: normal;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 2.5rem;
 }
 
 .card {
   overflow: clip;
 }
-
+.flip-card img{
+  max-height: 300px;
+}
 .card img:hover {
   transform: scale(1.1);
   transition: all 0.3s ease-out;
@@ -450,30 +465,29 @@ h2 {
 }
 
 /*about*/
-#para {
-  text-align: justify ;
+.about-content {
+  text-align: justify;
   font-size: 20px;
   color: black;
-  border-radius: 2rem;;
+  border-radius: 2rem;
   background: beige;
   overflow:hidden;
   transition :all .5s ease-in;
   z-index: 1;
-  box-shadow: border-box;
   padding: 30px;
   box-shadow: -10px 25px 50px rgba(0,0,0,0.3);
-  height: 50vh;
+  min-height: 50vh;
   -webkit-font-smoothing:antialised;
   -moz-osx-font-smoothing:grayscale;
 }
-#para:hover{
+.about-content:hover {
   opacity:1;
   background :#e2a9e5;
   background: -moz-linear-gradient(-45deg,#e2a9e5 15%,#2b94e5 100%);
   background: -webkit-linear-gradient(-45deg,#e2a9e5 15%,#2b94e5 100%);
   background: linear-gradient(135deg,#e2a9e5 15%,#2b94e5 100%);
-  
 }
+
 /* body {
   background-color: white;
   font-family: "Righteous", cursive;
@@ -489,16 +503,27 @@ h1 {
 }
 
 #one {
-  background-color: rgb(40, 103, 178);
+  background-color: #0a66c2;
 }
 
 #two {
-  background-color: rgb(33, 31, 31);
+  background-color: #333;
 }
 
 #three {
-  background-color: rgb(225, 48, 108);
+  background-color: #c32aa3;
 }
+#four {
+  background-color: #1877f2;
+}
+
+.about-card{
+  border-radius: 8px;
+}
+
+
+
+
 
 #buttons {
   margin-bottom: 10px;
@@ -516,10 +541,6 @@ h1 {
 
 .itemNav {
   padding: 15px;
-}
-
-.about-title {
-  padding-top: 2%;
 }
 
 .card {
@@ -610,7 +631,7 @@ h2.card-title {
 
 .card {
   transition: all 550ms ease-in;
-  opacity: 0;
+  opacity: 100;
 }
 
 .appear {
@@ -648,18 +669,12 @@ h2.card-title {
   .search {
     left: 200px;
   }
-
-  .about-title b {
-    line-height: 2.5rem;
-  }
 }
 
 .nav-link:hover{
   background-color: 	#e32828;
   border-radius: 4rem;
 }
-
-
 
 
 
@@ -682,11 +697,10 @@ button#scrolltopBtn {
   border-radius: 29px;
   background-color: transparent;
   width: 400px;
-  height: 400px;
-  box-shadow: 0 5px 24px 0 rgb(0 0 0 / 80%);
+  /* min-height: 400px; */
   /* border: 1px solid #e1dfdf; */
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
-  margin: 10px 70px;
+  margin: 70px;
   display: flex;
   
   
@@ -695,12 +709,14 @@ button#scrolltopBtn {
 /* This container is needed to position the front and back side */
 .flip-card-inner {
 
+  
   position: relative;
   width: 100%;
-  height: 100%;
+  min-height: 400px;
   text-align: justify;
   transition: transform 0.8s;
   transform-style: preserve-3d;
+  border-radius: 29px;
 
 }
 
@@ -711,16 +727,21 @@ button#scrolltopBtn {
 
 /* Position the front and back side */
 .flip-card-front, .flip-card-back {
+  box-shadow: 0 5px 24px 0 rgb(0 0 0 / 80%);
   border-radius: 29px;
   position: absolute;
-  width: 100%;
-  height: 100%;
+  min-width: 400px;
+  height: 400px;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
+}
+.flip-card-back{
+  overflow-y: scroll;
 }
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
+  padding: 0px 10px;
   background-color:rgb(228 212 212);
   color: black;
 }
@@ -731,7 +752,16 @@ button#scrolltopBtn {
   color:#000;
   transform: rotateY(180deg);
   padding: 20px;
+
+  scrollbar-width: none;  
+  overflow-y: scroll;
+
 }
+
+.flip-card-back::-webkit-scrollbar{
+        display: none;
+}
+
 img
 {
   position: relative;
@@ -757,3 +787,39 @@ ul.navbar-nav.mr-auto {
     background-color: #141a46;
   }
 } 
+
+
+.inner-container{
+  justify-content: center;
+}
+.about_card{
+  width: 300px;
+  margin: 6px;
+  
+}
+/* social icons */
+.footer h5{
+  margin-top: 5px;
+}
+.footer .icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .icon .fa{
+    padding: 8px;
+    margin: 5px;
+    color: #F14A16;
+    background: #fff;
+    width: 43px;
+    /* height: 30px; */
+    font-size: 22px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.footer .icon .fa:hover{
+  color: #fff;
+  background: #4649FF;
+}

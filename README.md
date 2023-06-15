@@ -27,7 +27,7 @@ You can find all types characters on https://www.giantbomb.com/naruto-uzumaki/30
 
 # What can you contribute?
 
-There is always something to contribute to a project whether you are a novice or a veteran. In this project, you can add your favourite character as a card to the website! Or maybe you didn't like the line that you are reading right now and want to change that.Sure! Why not?
+There is always something to contribute to a project whether you are a novice or a veteran. In this project, you can add your favourite character as a card to the website! Or maybe you didn't like the line that you are reading right now and want to change that. Sure! Why not?
 
 # How can you contribute?
 To contribute in Hacktoberfest2022 , checkout the given link and win hactoberfest t-shirt ...
@@ -44,21 +44,20 @@ Not everyone is aware of every tool present in the world no matter how easy or c
 <b>Code -</b> 
 
                 <!-- [character name] card start-->
-                <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
-                  <div class="row no-gutters">
-                     <div class="col-md-4">
-                        <img src=[image-link] alt=[name of character] height="390px" width="300px">  
-                      </div>
-                      <div class="col-md-8">
-                       <div class="card-body">
-                          <h2 class="card-title">[name of character]</h2>
-                          <p class="card-text">[Main description about character]</p>
-                          <p>[some more description about character]</p>
-                      </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">[name of character]</h2>
+                            <img data-src=[image-link] alt=[name of character] height="300px" width="300px" class="img_card">
+                        </div>
+                        <div class="flip-card-back">
+                            <p class="card-text">[Main description about character]</p>
+                            <p>[some more description about character]</p>
+                        </div>
                     </div>
-                  </div>
                 </div>
                 <!--[character name] card end-->
+NOTE: add image to the Images folder if not present already and then provide the src in img tag.
 
 Copy this code and paste it in the index.html file to make your changes. Try and test it on your own system and then create a Pull request. You can adjust height of image of character so that it will fit in card.
 
@@ -66,3 +65,10 @@ Copy this code and paste it in the index.html file to make your changes. Try and
 # Congratulations!
 
 Congratulation! You just made your first pull request and if it gets merged, you can view it using the Link provided above!
+
+# Our Amazing Contributors ⭐
+
+<a href="https://github.com/vikhyatsingh123/Naruto-Shippuden/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=vikhyatsingh123/Naruto-Shippuden" />
+</a>
+
