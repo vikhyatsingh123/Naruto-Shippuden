@@ -401,7 +401,6 @@ text-decoration: none;
   transform: scale(1.1);
   transition: all 0.3s ease-out;
 }
-
 @media only screen and (max-width: 600px) {
   .display-3 {
     font-size: 4rem;
@@ -440,6 +439,15 @@ text-decoration: none;
 } */
 .dark-mode {
   background-image: linear-gradient(to right,#414141,#000000);
+}
+.dark-mode *{
+  color: white !important;
+}
+.dark-mode .flip-card-back{
+  background-color: #000000;
+}
+.flip-card-back{
+  overflow: scroll;
 }
 .dark-cover{
   background-color: #0000007e;
