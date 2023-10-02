@@ -70,3 +70,25 @@ main{
     
     }
   } 
+
+
+  .link{
+    border-radius: 30px;
+    transform: scale(1);
+    transition: transform ease-in-out 0.5s,background-color ease-in-out 0.4s;
+    transition-property: scale background-color;
+  }
+
+  .link:hover{
+    transform: scale(1.07);
+    transition: transform ease-in-out 0.,background-color ease-in-out 0.4s;
+  }
+
+  .darkmodebutton{
+    transition: all ease-in-out 0.7s;
+  }
+  .darkmodebutton:hover{
+    box-shadow: white  0 0 20px;
+    transition: all ease-in-out 0.7s;
+
+  }
