@@ -823,3 +823,6 @@ ul.navbar-nav.mr-auto {
   color: #fff;
   background: #4649FF;
 }
+.footer span{
+  text-decoration: underline;
+}

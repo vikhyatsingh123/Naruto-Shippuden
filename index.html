@@ -3506,7 +3506,7 @@
         <audio src="./sound/naruto.mp3"></audio>
 
         <footer class="footer">
-            Developed and Designed By <span>Vikhyat Singh</span> | ©
+            Developed and Designed By <span id="idblink" onclick="tap()"><u>Vikhyat Singh</u></span> | ©
             All Rights Reserved
             <h5>Follow Me on : </h5>
             <div class="icon">
@@ -3517,6 +3517,12 @@
                 <a href="#" class="fa fa-instagram"></a>
             </div>
         </footer>
+        <script>
+            function tap(){
+                const link = document.getElementById('idblink')
+                window.location.href="https://github.com/vikhyatsingh123"
+            }
+        </script>
         <!-- <footer>
             <nav class="navbar navbar-expand-lg navbar-light nav1">
                 <p class="mx-auto text-light font-weight-lighter">&copy Developed By - <a
