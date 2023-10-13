@@ -185,7 +185,17 @@ body {
   display: flex;
   align-items: center;
 }
+.card-text{
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #000;
+  text-align: justify;
+  line-height: 1.5rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: 'Pixelify Sans', sans-serif;
 
+}
 .clear::before {
   position: absolute;
   content: " ";
