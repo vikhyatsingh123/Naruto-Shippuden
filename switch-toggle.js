@@ -43,9 +43,9 @@ function showCharacters(characters) {
 }
 
 evilCharactersArray.forEach(character => {
-    console.log(`${character} is evil`);
+    console.log(character);
 })
 goodCharactersArray.forEach(character => {
-    console.log(`${character} is good`);
+    console.log(character);
 })
 
