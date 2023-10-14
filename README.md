@@ -43,8 +43,8 @@ Not everyone is aware of every tool present in the world no matter how easy or c
 
 <b>Code -</b> 
 
-                <!-- [character name] card start-->
-                <div class="flip-card">
+                <!-- Hero [character name] card start-->
+                <div class="flip-card good">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">[name of character]</h2>
@@ -56,7 +56,23 @@ Not everyone is aware of every tool present in the world no matter how easy or c
                         </div>
                     </div>
                 </div>
-                <!--[character name] card end-->
+                <!-- Good [character name] card end-->
+
+                  <!-- Villian [character name] card start-->
+                <div class="flip-card good">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">[name of character]</h2>
+                            <img data-src=[image-link] alt=[name of character] height="300px" width="300px" class="img_card">
+                        </div>
+                        <div class="flip-card-back">
+                            <p class="card-text">[Main description about character]</p>
+                            <p>[some more description about character]</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Villian [character name] card end-->
+
 NOTE: add image to the Images folder if not present already and then provide the src in img tag.
 
 Copy this code and paste it in the index.html file to make your changes. Try and test it on your own system and then create a Pull request. You can adjust height of image of character so that it will fit in card.
