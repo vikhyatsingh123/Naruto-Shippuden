@@ -59,7 +59,7 @@ Not everyone is aware of every tool present in the world no matter how easy or c
                 <!-- Hero [character name] card end-->
 
                   <!-- Villian [character name] card start-->
-                <div class="flip-card good">
+                <div class="flip-card evil">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">[name of character]</h2>
