@@ -4,6 +4,49 @@
     box-sizing: border-box;
 } */
 
+/* Toggle Switch Start */
+.toggle-switch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggle-label {
+    margin: 0 0.5% 0 0.5%;
+}
+
+.toggle-button {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.toggle-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #3498db;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+.toggle-input {
+    display: none;
+}
+
+.toggle-input:checked + .toggle-button .toggle-slider {
+    left: 50%;
+}
+
+.hide {
+    display: none;
+}
+/* Toggle Switch End */
 .to-top {
     color: #fff;
     position: fixed;
