@@ -20,26 +20,58 @@
     <header>
 
         <nav class="navbar navbar-expand-lg navbar-light nav1">
-            <a class="navbar-brand" href="/" style="color: beige;">Naruto</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="/">Naruto</a>
+            <!-- Hamburger Icon for Mobile -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto" style="margin-left: 78%;">
+                <ul class="navbar-nav ml-auto" style="margin-left: 78%;">
                     <li class="nav-item active mx-4">
-                        <a class="nav-link" href="./index.html" style="color: beige;">Home</a>
+                        <a class="nav-link" href="./index.html" >Home</a>
                     </li>
-                    <li class="nav-item mx-4">
-                        <a class="nav-link" href="./about.html" style="color: beige;">About</a>
+                    <li class="nav-item  mx-4">
+                        <a class="nav-link" href="./about.html" >About</a>
                     </li>
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                </ul>
             </div>
         </nav>
+
+        <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Naruto</a>
+            
+            Hamburger Icon for Mobile
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                </ul>
+            </div>
+        </nav> -->
+        
     </header>
 
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto" style="margin-left: 78%;">
             <li class="nav-item active mx-4">
                 <a class="nav-link" href="./index.html" style="color: beige;">Home</a>
@@ -50,68 +82,49 @@
             <li class="nav-item mx-4">
                 <button id="darkmode-button">dark mode</button>
             </li>
-    </div>
+    </div> -->
     </nav>
-    <!--start-->
+    <!-- start -->
     <main>
         <div class="container">
             <h1 class="about-title">
-                This Project Is Developed by Vikhyat Singh
+                Vikhyat Singh
             </h1>
             <div class="about-content">
                 <p>
                     Hey! I am a Final Year Student. I'm currently pursuing B.Tech degree in Electronics and
-                    Communication Engineering from National Institute of Technology Patna.I love to learn and do code. I
-                    also like Web development and full MERN Stack Web Developer and a Competitive Programmer that's the
+                    Communication Engineering from <span class="about-highlight"> National Institute of Technology Patna </span>.I love to learn and do code. I
+                    am really into <span class="about-highlight"> Full-Stack (MERN) Web development and Competitive programming </span> that's the
                     reason, I created this project as a starter Repository for Hacktoberfest2020 for the first-time
                     participants who can learn how to make their first pull request through this project.
                 </p>
             </div>
-            <div class="row row1 inner-container">
-                <div class="col-lg-4 col-sm-8 about_card">
-                    <div class="text-white">
-                        <div id="one" class="card-body about-card">
-                            <h5 class="card-title">
-                                <i class="fab fa-linkedin"></i> LinkedIn
-                            </h5>
-                            <p class="card-text font-weight-lighter">Let's Connect!</p>
-                            <a href="https://www.linkedin.com/in/vikhyat-singh-337777197/"
-                                class="btn btn-outline-light btn-sm">LinkedIn</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-8 about_card">
-                    <div class="text-white">
-                        <div id="two" class="card-body about-card">
-                            <h5 class="card-title"><i class="fab fa-github"></i> Github</h5>
-                            <p class="card-text font-weight-lighter">Check out my Github Profile!</p>
-                            <a href="https://github.com/vikhyatsingh123/"
-                                class="btn btn-outline-light btn-sm">Github</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-8 about_card">
-                    <div class="text-white">
-                        <div id="three" class="card-body about-card">
-                            <h5 class="card-title">
-                                <i class="fab fa-instagram"></i> Instagram
-                            </h5>
-                            <p class="card-text font-weight-lighter">Let's follow each other!</p>
-                            <a href="https://www.instagram.com/vikhyat552?r=nametag/"
-                                class="btn btn-outline-light btn-sm">Instagram</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-8 about_card">
-                    <div class="text-white">
-                        <div id="four" class="card-body about-card">
-                            <h5 class="card-title"><i class="fab fa-facebook"></i> Facebook</h5>
-                            <p class="card-text font-weight-lighter">Check out my Facebook Profile!</p>
-                            <a href="https://facebook.com/vikhyatsingh123/"
-                                class="btn btn-outline-light btn-sm">Facebook</a>
-                        </div>
-                    </div>
-                </div>
+            <div class="contact-info text-white">
+                    <a id="one" class="about-card" href="https://www.linkedin.com/in/vikhyat-singh-337777197/">
+                        <span class="text-white">
+                            <i class="fab fa-linkedin"></i>
+                            Linkedn
+                        </span>
+                    </a>
+                    <a id="two" class="about-card" href="https://github.com/vikhyatsingh123/">
+                        <span class="text-white">
+                            <i class="fab fa-github"></i>
+                            GitHub
+                        </span>
+                    </a>
+                    <a id="three" class="about-card" href="https://www.instagram.com/vikhyat552?r=nametag/">
+                        <span class="text-white">
+                            <i class="fab fa-instagram"></i>
+                            Instagram
+                        </span>
+                    </a>
+                    <a id="four" class="about-card" href="https://facebook.com/vikhyatsingh123">
+                        <span class="text-white">
+                            <i class="fab fa-facebook"></i>
+                            FaceBook
+                        </span>
+                    </a>
+            </div>
             </div>
         </div>
     </main>

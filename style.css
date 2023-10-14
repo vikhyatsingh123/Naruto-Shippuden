@@ -211,9 +211,11 @@ body {
 }
 
 
-/* .nav1 {
-  background-color: black;
-} */
+.nav1 {
+  background-color:beige ;
+  color:black;
+  box-shadow: 0px 10px 2px beige;
+}
 
 /* Character text animation  */
 .chars{
@@ -371,8 +373,13 @@ h1 {
   padding-top: 2%;
   color: white;
   font-weight: bold;
-  font-style: italic;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size:4rem;
   line-height: 2.5rem;
+}
+
+.card-title{
+margin:0;
 }
 
 .card {
@@ -467,7 +474,8 @@ h2 {
 /*about*/
 .about-content {
   text-align: justify;
-  font-size: 20px;
+  font-size: 25px;
+  font-family: 'Patrick Hand', cursive;
   color: black;
   border-radius: 2rem;
   background: beige;
@@ -476,7 +484,6 @@ h2 {
   z-index: 1;
   padding: 30px;
   box-shadow: -10px 25px 50px rgba(0,0,0,0.3);
-  min-height: 50vh;
   -webkit-font-smoothing:antialised;
   -moz-osx-font-smoothing:grayscale;
 }
@@ -487,7 +494,10 @@ h2 {
   background: -webkit-linear-gradient(-45deg,#e2a9e5 15%,#2b94e5 100%);
   background: linear-gradient(135deg,#e2a9e5 15%,#2b94e5 100%);
 }
-
+.about-highlight{
+  background-color: lightgrey;
+  color:red
+}
 /* body {
   background-color: white;
   font-family: "Righteous", cursive;
@@ -519,6 +529,8 @@ h1 {
 
 .about-card{
   border-radius: 8px;
+  padding:1rem;
+  min-width:200px;
 }
 
 
@@ -825,4 +837,28 @@ ul.navbar-nav.mr-auto {
 }
 .footer span{
   text-decoration: underline;
+}
+
+.contact-info{
+  display:flex;
+  width:100%;
+  justify-content:space-around;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:2rem;
+  padding:2rem;
+  font-size:20px
+}
+
+/* .contact-info div{
+  display:flex;
+  flex-direction:column;
+  width:50%;
+  justify-content:space-arround;
+  align-items:center;
+} */
+
+.contact-info a{
+  display:block;
+  text-align:center
 }
