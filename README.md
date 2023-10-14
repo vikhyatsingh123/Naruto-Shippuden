@@ -56,7 +56,7 @@ Not everyone is aware of every tool present in the world no matter how easy or c
                         </div>
                     </div>
                 </div>
-                <!-- Good [character name] card end-->
+                <!-- Hero [character name] card end-->
 
                   <!-- Villian [character name] card start-->
                 <div class="flip-card good">
