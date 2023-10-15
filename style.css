@@ -674,9 +674,6 @@ h2.card-title {
     margin-right: auto;
   }
 
-  .nav-link {
-    margin-left: 45%;
-  }
 
   .search {
     left: 200px;
@@ -797,6 +794,11 @@ ul.navbar-nav.mr-auto {
     margin-top: 80px;
     padding: 1rem;
     background-color: #141a46;
+  }
+  .nav-link {
+    margin-left: 45%;
+    width:fit-content;
+    padding:0.5rem;
   }
 } 
 
