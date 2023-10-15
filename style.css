@@ -1,5 +1,123 @@
+#title {
+  color: #fff;
+ height: 950px;
+ background-color:#32081f ;
+}
+.navbar-brand{
+  font-size:30px ;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #fff;
+  padding-left: 30px;
+}
+.navbar{
+ padding: 0;
+ 
+}
+.image-naruto{
+  padding: 0;
+  margin-top: 50px;
+  height: 60%;
+}
+/* .back{
+  background-color:#32081f;
+  color: #fff;
+} */
+.head{
+  color: #fff;
+  font-size: 400%;
+  padding:50px 0 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.navbar-toggler{
+  margin-right: 20px;
+}
 html {
   scroll-behavior: smooth;
+}
+.about{
+  margin:50px;
+  line-height: 2;
+  text-align:left;
+  font-size: 1.5rem;
+  height: 300px;
+  padding-bottom: 100px;
+}
+/* .page{
+  height: 700px;
+} */
+
+@media(1245px>=width>993px){
+  #title{
+    height: 800px;
+  }
+  .about{
+    position: relative;
+    bottom: 90px;
+    text-align: justify;
+    font-size: 1.2rem;
+    margin: 20px;
+  }
+  .head{
+    position: relative;
+    bottom: 50px;
+    font-size: 3rem;
+  }
+}
+@media ( 992px>=width>=680px) {
+  #title{
+    height: 1200px;
+  }
+  .about{
+    position: relative;
+    bottom: 150px;
+    font-size: 1.3rem;
+
+  }
+  .image-naruto{
+    height: 600px;
+  }
+  .head{
+    position: relative;
+   bottom: 100px;
+  }
+}
+@media(680px>width>450px){
+  .image-naruto{
+    height: 400px;
+  }
+  #title{
+    height: 1100px;
+  }
+  .about{
+    position: relative;
+    bottom: 190px;
+    font-size: 1.2rem;
+    text-align: justify;
+  }
+  .head{
+    position: relative;
+    bottom: 130px;
+    font-size: 2.5rem;
+  }
+}
+@media(max-width: 450px){
+  .image-naruto{
+    height: 400px;
+  }
+  #title{
+    height: 1400px;
+  }
+  .about{
+    position: relative;
+    bottom: 200px;
+    font-size: 1.2rem;
+    text-align: justify;
+  }
+  .head{
+    position: relative;
+    bottom: 150px;
+    font-size: 2.5rem;
+  }
 }
 
 html, body {
@@ -806,6 +924,10 @@ ul.navbar-nav.mr-auto {
   justify-content: center;
   align-items: center;
 }
+.footer{
+  text-align: center;
+  padding-top: 20px
+}
 .footer .icon .fa{
     padding: 8px;
     margin: 5px;
@@ -824,5 +946,6 @@ ul.navbar-nav.mr-auto {
   background: #4649FF;
 }
 .footer span{
+  
   text-decoration: underline;
 }
