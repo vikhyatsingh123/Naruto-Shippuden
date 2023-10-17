@@ -18,10 +18,7 @@
   margin-top: 50px;
   height: 60%;
 }
-/* .back{
-  background-color:#32081f;
-  color: #fff;
-} */
+
 .head{
   color: #fff;
   font-size: 400%;
@@ -199,12 +196,7 @@ body {
   transform: translateX(40px);
 }
 
-.search {
-  position: relative;
-  left: 200px;
-  height: 60px;
-  width: 60px;
-}
+
 
 .loader {
 
@@ -224,6 +216,7 @@ body {
 .search {
   /* position: fixed; */
   position: absolute;
+  left: 220px;
   height: 48px;
   width: 48px;
   background: #fff;
@@ -785,7 +778,8 @@ h2.card-title {
   }
 
   .search {
-    left: 200px;
+    /* left: 220px; */
+    
   }
 }
 
