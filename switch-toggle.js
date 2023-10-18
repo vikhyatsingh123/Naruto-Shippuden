@@ -20,7 +20,7 @@ if (isToggled) {
 
 toggleInput.addEventListener("change", () => {
     toggleSlider.style.left = toggleInput.checked ? "50%" : "0";
-    
+
     if (!toggleInput.checked) {
         showCharacters(goodCharactersArray);
         hideCharacters(evilCharactersArray);
