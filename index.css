@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 } */
+.card-title{
+    font-family: 'Ninja Naruto', sans-serif;
+    
+}
 
 /* Toggle Switch Start */
 .toggle-switch {
