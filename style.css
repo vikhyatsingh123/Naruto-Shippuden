@@ -724,7 +724,8 @@ h2.card-title {
   font-weight: 900;
   color: #141a46;
   text-align: center;
-  padding-top: 20px;  
+  padding-top: 20px; 
+  font-family: 'Ninja Naruto', sans-serif;
 }
 
 .topic {
