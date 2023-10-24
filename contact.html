@@ -1,42 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="contact.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="contact.css" />
     <title>Contact Form</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Naruto Friends, Get In Touch with us</h1>
-   
-   
+
     <div class="wpcf7" id="wpcf7-f156-p143-o1 formwrap">
-        <form action="" method="post" class="wpcf7-form" novalidate="novalidate">
-            <div style="display: none;">
-                <input type="hidden" name="_wpcf7" value="156">
-                <input type="hidden" name="_wpcf7_version" value="3.7.2">
-                <input type="hidden" name="_wpcf7_locale" value="en_US">
-                <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f156-p143-o1">
-                <input type="hidden" name="_wpnonce" value="d1da331d93">
-            </div>
-            <p>
-               <span class="wpcf7-form-control-wrap Name">
-                 <input type="text" name="Name" value="" size="40" class="nameinput wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Name">
-              </span>
-              <span class="wpcf7-form-control-wrap Email">
-                <input type="email" name="Email"  size="40" class="emailinput wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email">
-              </span>
-             
-              <span class="wpcf7-form-control-wrap Message">
-                <textarea name="Message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Message"></textarea>
-              </span>
-              <input type="submit" value="Send" class="wpcf7-form-control wpcf7-submit btn">
-              
-          </p>
-          <div class="wpcf7-response-output wpcf7-display-none">
-          </div>
+      <form
+        action="https://formsubmit.co/vikhyatsingh628@gmail.com"
+        method="POST"
+        class="contact__form wpcf7-form"
+        novalidate="novalidate"
+      >
+        <input type="hidden" name="_captcha" value="false" />
+        <input
+          type="hidden"
+          name="_subject"
+          value="New submission!"
+          class="subject"
+        />
+        <input type="hidden" name="_template" value="table" />
+        <div class="msg__status"></div>
+        <div style="display: none">
+          <input type="hidden" name="_wpcf7" value="156" />
+          <input type="hidden" name="_wpcf7_version" value="3.7.2" />
+          <input type="hidden" name="_wpcf7_locale" value="en_US" />
+          <input
+            type="hidden"
+            name="_wpcf7_unit_tag"
+            value="wpcf7-f156-p143-o1"
+          />
+          <input type="hidden" name="_wpnonce" value="d1da331d93" />
+        </div>
+        <p>
+          <span class="wpcf7-form-control-wrap Name">
+            <input
+              type="text"
+              name="Name"
+              size="40"
+              class="nameinput wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+              aria-required="true"
+              aria-invalid="false"
+              placeholder="Name"
+            />
+          </span>
+          <span class="wpcf7-form-control-wrap Email">
+            <input
+              type="email"
+              name="Email"
+              size="40"
+              class="emailinput wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
+              aria-required="true"
+              aria-invalid="false"
+              placeholder="Email"
+            />
+          </span>
+
+          <span class="wpcf7-form-control-wrap Message">
+            <textarea
+              name="Message"
+              cols="40"
+              rows="10"
+              class="wpcf7-form-control wpcf7-textarea"
+              aria-invalid="false"
+              placeholder="Message"
+            ></textarea>
+          </span>
+          <input
+            type="submit"
+            value="Send"
+            class="wpcf7-form-control wpcf7-submit btn"
+          />
+        </p>
+        <div class="wpcf7-response-output wpcf7-display-none"></div>
       </form>
     </div>
-</body>
+    <script src="./contact.js"></script>
+  </body>
 </html>
