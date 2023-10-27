@@ -19,6 +19,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
+    <link href="translate.css" rel="stylesheet" type="text/css" media="all" />
     <title>Naruto</title>
 </head>
 
@@ -66,7 +67,22 @@
                                 <button onclick="darkmode()" class="toggle-mode darkmodebutton" id="toggler">🌙
                                     Dark</button>
                             </div>
-                        </li>
+                        </li> <li class="nav-item mx-4">
+                          <div id="google_translate_element"></div>
+            <script src="translate.js"></script>
+
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement(
+                    {pageLanguage: 'en'},
+                    'google_translate_element'
+                );
+            }
+        </script>
+
+        <script type="text/javascript" src= "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+        </script>
+          </li>
                     </ul>
 
                 </div>
