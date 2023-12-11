@@ -126,7 +126,9 @@ body {
 
   background-image: linear-gradient(to right,#2193b0,#6dd5ed);
   width: 100vw;
-  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
+  font-family: 'Roboto Condensed', sans-serif;
+  /* font-family: 'Oswald', sans-serif; */
 }
 
 /* Custom Scroll Bar */
@@ -921,7 +923,7 @@ ul.navbar-nav.mr-auto {
 }
 .footer{
   text-align: center;
-  padding-top: 20px
+  padding-top: 20px;
 }
 .footer .icon .fa{
     padding: 8px;
@@ -944,3 +946,6 @@ ul.navbar-nav.mr-auto {
   
   text-decoration: underline;
 }
+
+
+
