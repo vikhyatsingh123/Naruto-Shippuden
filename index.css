@@ -97,11 +97,11 @@
     }
 }
 .to-top.active {
-    bottom: 32px;
+    bottom: 150px;
     pointer-events: auto;
     opacity: 1;
     z-index: 1000;
-    right: 5%;
+    right: 2%;
 }
 
 .to-top:hover {
@@ -179,6 +179,8 @@ main{
     padding: 0;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .contributor-card {
