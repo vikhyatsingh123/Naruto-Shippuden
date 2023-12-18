@@ -25,13 +25,21 @@ async function handleFormSubmit(event) {
     };
 
     await fetch(url, fetchOptions);
-
-    msgStatus.innerHTML = "Your message has been sent.";
-    msgStatus.style.display = "block";
-    msgStatus.style.textAlign = "center";
-    setTimeout(() => {
-      msgStatus.style.display = "none";
-    }, 4000);
+    console.log(url);
+    if (url=="https://formsubmit.co/vikhytsingh628@gmail.com"){
+        await Swal.fire({
+            title: "Success!",
+            text: "Message Sent Successfully!",
+            icon: "success"
+        });
+    }
+    else{
+        await Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Something went wrong!"
+        });
+  }
     form.reset();
   } catch (err) {
     msgStatus.innerHTML =
