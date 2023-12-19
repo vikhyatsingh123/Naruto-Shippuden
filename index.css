@@ -1,8 +1,14 @@
-/* body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} */
+.lightmode{
+    z-index: 9724790009779558!important;
+    background-color: #f7f8fc;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
 .card-title{
     font-family: 'Ninja Naruto', sans-serif;
     
@@ -68,6 +74,21 @@
 .hide {
     display: none;
 }
+.dark_lang{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width:992px){
+    .dark_lang{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        left:-40px;
+    }
+}   
 /* Toggle Switch End */
 .to-top {
     color: #fff;
@@ -200,3 +221,27 @@ main{
 .contributor-card:nth-child(4n+3) {
     margin-top: -30px;
 }
+
+/* .VIpgJd-ZVi9od-ORHb-OEVmcd{
+    display: none!important;
+    height: 0;
+    max-height: 0;
+  } */
+  
+
+/* .goog-te-gadget .goog-te-combo{
+    background:#F5F5DC;
+    color:black;
+    border: none;
+    border-radius:3px;
+    padding:10px 8px;
+    font-size:1rem;
+} */
+/* #google_translate_element select {
+    background: yellow!important;
+    color: black;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    margin-top: 5px;
+} */

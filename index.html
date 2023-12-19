@@ -62,29 +62,27 @@
                         <li class="nav-item mx-4">
                             <a class="link nav-link " href="./contact.html" style="color: beige;">Contact</a>
                         </li>
-                        <li>
-                            <div>
-                                <button onclick="darkmode()" class="toggle-mode darkmodebutton" id="toggler">🌙
-                                    Dark</button>
-                            </div>
-                        </li>
-                        <li class="nav-item mx-4">
+                        <div class="dark_lang">
+                            <li>
+                                <div>
+                                    <button onclick="darkmode()" class="toggle-mode darkmodebutton" id="toggler">🌙
+                                        Dark</button>
+                                </div>
+                            </li>
+                            <li class="nav-item mx-4">
                             <div id="google_translate_element"></div>
-                            <script src="translate.js"></script>
-
-                            <script type="text/javascript">
+                            <script>
                                 function googleTranslateElementInit() {
-                                    new google.translate.TranslateElement(
-                                        { pageLanguage: 'en' },
-                                        'google_translate_element'
-                                    );
+                                new google.translate.TranslateElement({
+                                pageLanguage: 'en',
+                                autoDisplay: 'true',
+                                layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
+                                }, 'google_translate_element');
                                 }
                             </script>
-
-                            <script type="text/javascript"
-                                src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
-                                </script>
-                        </li>
+                            <script src='//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'></script>
+                            </li>
+                        </div>
                     </ul>
 
                 </div>
