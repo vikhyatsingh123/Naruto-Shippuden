@@ -1,12 +1,19 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
 
-body {
+.contact_body {
   background: url("adi image/677425.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   padding-top: 0px;
+  z-index: 97247900097799!important;
+  position: fixed;
+  top: 0!important;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
 }
 
 h1 {
@@ -257,4 +264,8 @@ textarea:focus::placeholder{
   .btn {
     width: 110px;
   }
+}
+.VIpgJd-ZVi9od-ORHb-OEVmcd{
+  display: none;
+  z-index: -10;
 }
