@@ -82,7 +82,15 @@
                             </script>
                             <script src='//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'></script>
                             </li>
-                        </div>
+                        </div>                        
+                        <li>
+                            <audio id="nyan" src="./sound/naruto.mp3" preload="metadata" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                             </audio>
+                             <a class="btn" id="nyan-btn">play / pause <img src="./adi image/sound.png" class="soundicon">
+                                <script src="./audio.js"></script>
+                             </a>
+                        </li>
                     </ul>
 
                 </div>
@@ -3440,9 +3448,6 @@
             <div id="contributor"></div>
         </div>
         <script src="contributors.js"></script>
-
-
-        <audio src="./sound/naruto.mp3"></audio>
 
         <footer class="footer">
             Developed and Designed By <span id="idblink" onclick="tap()" style="cursor: pointer;"><u>Vikhyat
