@@ -36,15 +36,11 @@
 
                 <a class="navbar-brand brand1 ml-4" href="#" style="color: beige;">Naruto</a>
 
-
-                <div class="search">
-                    <div class="icon"></div>
-                    <div class="input">
-                        <input type="text" placeholder="search" id="mysearch">
-                    </div>
-
-                    <span class="clear" onclick="document.getElementById('mysearch').value = ' '"></span>
+                <div class="sm-search">
+                    <input type="text" class="sm-input" placeholder="small-letter & first-name" style="border-radius: 10px; padding: 5px;">
+                    <button class="sm-get" style="border-radius: 10px; padding: 5px;">Search</button>
                 </div>
+               
                 <button class="navbar-toggler" class="menu-btn" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -82,15 +78,7 @@
                             </script>
                             <script src='//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'></script>
                             </li>
-                        </div>                        
-                        <li>
-                            <audio id="nyan" src="./sound/naruto.mp3" preload="metadata" type="audio/mpeg">
-                                Your browser does not support the audio element.
-                             </audio>
-                             <a class="btn" id="nyan-btn">play / pause <img src="./adi image/sound.png" class="soundicon">
-                                <script src="./audio.js"></script>
-                             </a>
-                        </li>
+                        </div>
                     </ul>
 
                 </div>
@@ -144,7 +132,7 @@
             <!--Card section start-->
             <div class="container" id="cont">
                 <!--[Shinki] card Start-->
-                <div class="flip-card good">
+                <div class="flip-card good" id="shinki">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title ">Shinki</h2>
@@ -162,7 +150,7 @@
                     </div>
                 </div>
                 <!--[Hinata Hyuga] card Start-->
-                <div class="flip-card good">
+                <div class="flip-card good" id="hinata">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title ">Hinata Hyuga</h2>
@@ -178,10 +166,11 @@
                         </div>
                     </div>
                 </div>
-                <!--[Hinata Hyuga] card ends-->
+                <!--[Hinata Hyuga] card Start-->
 
+                <!--[Gojo Satoru] card Start-->
 
-                <div class="flip-card good">
+                <div class="flip-card good" id="himawari">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title ">Himawari Uzumaki</h2>
@@ -197,10 +186,10 @@
                 </div>
                 <!--[Naruto] card start -->
 
-                <div class="flip-card good">
+                <div class="flip-card good" id="naruto">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <h2 class="card-title ">Naruto Uzumaki</h2>
+                            <h2 class="card-title">Naruto Uzumaki</h2>
                             <img data-src="./Images/naruto.png" alt="Naruto" height="260px" width="300px">
                         </div>
                         <div class="flip-card-back">
@@ -218,7 +207,7 @@
                 </div>
                 <!--[Naruto] card end -->
                 <!-- Hero [character name] card start-->
-                <div class="flip-card good">
+                <div class="flip-card good" id="konohamaru">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Konohamaru Sarutobi</h2>
@@ -243,7 +232,7 @@
 
                 <!--[Jiraiya] card start -->
 
-                <div class="flip-card good">
+                <div class="flip-card good" id="jiraiya">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title ">Jiraiya Sensei</h2>
@@ -274,7 +263,7 @@
                 <!--[Jiraiya] card end -->
                 <!--[Kawaki] card start -->
 
-                <div class="flip-card good">
+                <div class="flip-card good" id="kawaki">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title ">Kawaki Uzumaki</h2>
@@ -295,7 +284,7 @@
 
                 <!--[Sasuke Uchiha] card start-->
 
-                <div class="flip-card good">
+                <div class="flip-card good" id="sasuke">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Sasuke Uchiha</h2>
@@ -315,7 +304,7 @@
 
 
                 <!-- [Sarada Uchiha] card start-->
-                <div class="flip-card good">
+                <div class="flip-card good" id="sarada">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Sarada Uchiha</h2>
@@ -352,7 +341,7 @@
                 <!--[Sarada Uchiha] card end-->
 
                 <!-- Villian [Toneri Ōtsutsuki] card start-->
-            <div class="flip-card evil">
+            <div class="flip-card evil" id="toneri">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <h2 class="card-title">Toneri Ōtsutsuki</h2>
@@ -371,7 +360,7 @@
             <!-- Villian [Toneri Ōtsutsuki] card end-->
 
                 <!-- [Sumire kakei] card start-->
-                <div class="flip-card good">
+                <div class="flip-card good" id="sumire">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Sumire Kakei</h2>
@@ -401,7 +390,7 @@
 
                 <!--[SAKUMO HATAKE] card start-->
 
-                <div class="flip-card good">
+                <div class="flip-card good" id="sakumo">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Sakumo Hatake</h2>
@@ -424,7 +413,7 @@
 
 
                 <!-- [Suigetsu] card start-->
-                <div class="flip-card">
+                <div class="flip-card" id="suigetsu">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Suigetsu</h2>
@@ -452,7 +441,7 @@
                 <!--[Suigetsu] card end-->
 
                 <!-- [black zetsu] card start-->
-                <div class="flip-card evil">
+                <div class="flip-card evil" id="zetsu">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">black zetsu</h2>
@@ -472,7 +461,7 @@
                 </div>
 
 
-                <div class="flip-card evil">
+                <div class="flip-card evil" id="code">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Code</h2>
@@ -487,7 +476,7 @@
                 </div>
 
                  <!-- [Anko Mitarashi] card start-->
-                <div class="flip-card good">
+                <div class="flip-card good" id="anko">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Anko Mitarashi</h2>
@@ -511,7 +500,7 @@
 
 
                 <!-- [Karin] card start-->
-                <div class="flip-card good">
+                <div class="flip-card good" id="karin">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Karin</h2>
@@ -532,7 +521,7 @@
                 <!--[Karin] card end-->
 
                 <!--[Princess Kasumi] card start-->
-                <div class="flip-card good">
+                <div class="flip-card good" id="kasumi">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Princess Kasumi</h2>
@@ -550,7 +539,7 @@
 
 
                 <!-- [Sai] card start-->
-                <div class="flip-card good">
+                <div class="flip-card good" id="sai">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Sai Yamanaka</h2>
@@ -575,7 +564,7 @@
 
 
                 <!-- [Chiriku] card start-->
-                <div class="flip-card good">
+                <div class="flip-card good" id="chiriku">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Chiriku</h2>
@@ -598,7 +587,7 @@
                 </div>
                 <!--[Chiriku] card end-->
                 <!-- [Fukusaku] card start-->
-                <div class="flip-card good">
+                <div class="flip-card good" id="fukusaku">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Fukusaku</h2>
@@ -625,7 +614,7 @@
                 </div>
                 <!--[Fukusaku] card end-->
                 <!-- [ten tails] card start-->
-                <div class="flip-card evil">
+                <div class="flip-card evil" id="juubi">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Ten Tails - Juubi</h2>
@@ -647,7 +636,7 @@
                 <!--[ten tails] card end-->
 
                 <!-- [Eight Tails] card start -->
-                <div class="flip-card good">
+                <div class="flip-card good" id="gyuki">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Eight Tails - Gyuki</h2>
@@ -670,7 +659,7 @@
                 <!-- [Eight Tails] card end -->
 
                 <!-- [Seven Tails] card start -->
-                <div class="flip-card good">
+                <div class="flip-card good" id="chomei">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Seven-Tails - Chomei</h2>
@@ -693,7 +682,7 @@
                 <!-- [Seven Tails] card end -->
 
                 <!-- [Asura] card start-->
-                <div class="flip-card good">
+                <div class="flip-card good" id="asura">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Asura</h2>
@@ -715,7 +704,7 @@
                 <!--[Asura] card end-->
 
                 <!-- Hero Yoshino Nara card start-->
-                <div class="flip-card good">
+                <div class="flip-card good" id="yoshino">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Yoshino Nara</h2>
@@ -744,7 +733,7 @@
                 <!-- Hero Yoshino Nara card end-->
 
                 <!-- [Inuzuka Hana] card start-->
-                <div class="flip-card good">
+                <div class="flip-card good" id="inuzuka">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Inuzuka Hana</h2>
@@ -760,7 +749,7 @@
                 </div>
 
                 <!-- Izumi Uchiha card start -->
-                <div class="flip-card good">
+                <div class="flip-card good" id="izumi">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title"> Izumi Uchiha </h2>
@@ -785,7 +774,7 @@
                 <!-- Izumi Uchiha card end -->
 
                 <!--Fūka card start-->
-                <div class="flip-card evil">
+                <div class="flip-card evil" id="fuka">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Fūka</h2>
@@ -807,7 +796,7 @@
                 <!--Fūka card end-->
 
                 <!-- [Neji Hyuga] card start-->
-                <div class="flip-card good">
+                <div class="flip-card good" id="neji">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Neji Hyuga </h2>
@@ -829,7 +818,7 @@
 
 
                 <!-- Rôshi Card start -->
-                <div class="flip-card good">
+                <div class="flip-card good" id="roshi">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Rôshi</h2>
@@ -848,7 +837,7 @@
 
 
                 <!-- [Boruto] card start -->
-                <div class="flip-card good">
+                <div class="flip-card good" id="boruto">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title"> Boruto Uzumaki</h2>
@@ -869,7 +858,7 @@
                 <!-- [Boruto] card end-->
 
                 <!-- [Madara] card start -->
-                <div class="flip-card evil">
+                <div class="flip-card evil" id="madara">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Uchiha Madara</h2>
@@ -895,7 +884,7 @@
                 <!-- [Madara] card end-->
 
                 <!-- [Ebisu] card start-->
-                <div class="flip-card good">
+                <div class="flip-card good" id="ebisu">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Ebisu</h2>
@@ -911,7 +900,7 @@
                 <!--[Ebisu] card end-->
 
                 <!-- Yukimaru card start -->
-                <div class="flip-card good">
+                <div class="flip-card good" id="yukimaru">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title"> Yukimaru </h2>
@@ -930,7 +919,7 @@
 
 
                 <!-- Yamato card start-->
-                <div class="flip-card good">
+                <div class="flip-card good" id="yamato">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Yamato</h2>
@@ -951,7 +940,7 @@
                 </div>
 
                 <!-- [Hanabi Hyuga] card start-->
-                <div class="flip-card good">
+                <div class="flip-card good" id="hanabi">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Hanabi Hyuga</h2>
@@ -968,7 +957,7 @@
                 <!--[Hanabi hyuga] card end-->
 
                 <!-- [Tsunade] card start-->
-                <div class="flip-card good">
+                <div class="flip-card good" id="tsunade">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Tsunade</h2>
@@ -1004,7 +993,7 @@
                 <!--[Tsunade] card end-->
 
                 <!-- [Jirobo] card start-->
-                <div class="flip-card evil">
+                <div class="flip-card evil" id="jirobo">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Jirobo</h2>
@@ -1023,7 +1012,7 @@
                 <!-- [Jirobo] card end-->
 
                 <!-- [Hanare] card start-->
-                <div class="flip-card good">
+                <div class="flip-card good" id="hanare">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Hanare</h2>
@@ -1057,7 +1046,7 @@
                 <!--[Hanare]  card end-->
 
                 <!-- Mizuki card start-->
-                <div class="flip-card evil">
+                <div class="flip-card evil" id="mizuki">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Mizuki</h2>
@@ -1081,7 +1070,7 @@
                 <!--Mizuki card end-->
 
                 <!-- The Demon Brothers card start-->
-                <div class="flip-card evil">
+                <div class="flip-card evil" id="demon">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">The Demon Brothers</h2>
@@ -1109,7 +1098,7 @@
                 <!--The Demon Brothers card end-->
 
                 <!-- Tayuya Card start -->
-                <div class="flip-card evil">
+                <div class="flip-card evil" id="tayuya">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Tayuya</h2>
@@ -1128,7 +1117,7 @@
                 <!-- Tayuya Card End -->
 
                 <!-- Kagura card start-->
-                <div class="flip-card good">
+                <div class="flip-card good" id="kagura">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Kagura</h2>
@@ -1146,7 +1135,7 @@
                 <!-- Kagura card end-->
 
                 <!-- Tenten card start-->
-                <div class="flip-card good">
+                <div class="flip-card good" id="tenten">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Tenten</h2>
@@ -1163,7 +1152,7 @@
                 </div>
                 <!-- Tenten card end-->
                 <!-- Itachi Uchiha card start-->
-                <div class="flip-card">
+                <div class="flip-card" id="itachi">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Itachi Uchiha</h2>
@@ -1184,7 +1173,7 @@
                 </div>
                 <!--Itachi Uchiha card end-->
                 <!-- Isaribi card start-->
-                <div class="flip-card">
+                <div class="flip-card" id="isaribi">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Isaribi</h2>
@@ -1204,7 +1193,7 @@
 
 
                 <!-- Kurama card start-->
-                <div class="flip-card good">
+                <div class="flip-card good" id="kurama">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Kurama</h2>
@@ -1231,7 +1220,7 @@
 
 
                 <!-- Hiashi Hyūga card start-->
-                <div class="flip-card good">
+                <div class="flip-card good" id="hiashi">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Hiashi Hyūga</h2>
@@ -1253,7 +1242,7 @@
                 <!-- Hiashi Hyūga card end-->
 
                 <!-- Bansai Card start -->
-                <div class="flip-card">
+                <div class="flip-card" id="bansai">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Bansai</h2>
@@ -1271,7 +1260,7 @@
 
                 <!-- Minato card start -->
 
-                <div class="flip-card good">
+                <div class="flip-card good" id="minato">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Minato Namikaze</h2>
@@ -1289,7 +1278,7 @@
                 </div>
 
                 <!-- [Kushina Uzumaki] card start-->
-                <div class="flip-card good">
+                <div class="flip-card good" id="kushina">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Kushina Uzumaki</h2>
@@ -1323,7 +1312,7 @@
                 <!--[Kushina Uzumaki] card end-->
 
                 <!-- Eida Card start -->
-                <div class="flip-card">
+                <div class="flip-card" id="eida">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Eida</h2>
@@ -1349,7 +1338,7 @@
                 <!-- Eida Card End -->
 
                 <!-- Daemon Card start -->
-                <div class="flip-card">
+                <div class="flip-card" id="daemon">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Daemon</h2>
@@ -1368,7 +1357,7 @@
                 <!-- Eida Card End -->
 
                 <!-- card start -->
-                <div class="flip-card">
+                <div class="flip-card" id="nagato">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Nagato Uzumaki</h2>
@@ -1391,7 +1380,7 @@
                 </div>
 
                 <!-- Hashirama Senju card start-->
-                <div class="flip-card">
+                <div class="flip-card good" id="hashirama">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Hashirama Senju </h2>
@@ -1416,7 +1405,7 @@
 
 
                 <!-- card start -->
-                <div class="flip-card">
+                <div class="flip-card" id="yahiko">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title"> Yahiko </h2>
@@ -1436,7 +1425,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="flip-card">
+                <div class="flip-card" id="deidara">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Deidara</h2>
@@ -1457,7 +1446,7 @@
 
                 <!--card end-->
                 <!-- card start -->
-                <div class="flip-card">
+                <div class="flip-card" id="mei">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title"> Mei Terumī </h2>
@@ -1477,7 +1466,7 @@
                 <!--card end-->
 
                 <!--card start-->
-                <div class="flip-card">
+                <div class="flip-card" id="kimimaro">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">KIMIMARO</h2>
@@ -1496,7 +1485,7 @@
                 <!--card end-->
                 <!-- card start -->
                 <!-- [character name] card start-->
-                <div class="flip-card">
+                <div class="flip-card" id="zabuza">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Zabuza</h2>
@@ -1517,7 +1506,7 @@
                 </div>
                 <!--[character name] card end-->
                 <!-- Haku card start -->
-                <div class="flip-card">
+                <div class="flip-card" id="haku">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title"> Haku </h2>
@@ -1539,7 +1528,7 @@
                 <!-- Haku card end-->
 
                 <!-- Shizune card start -->
-                <div class="flip-card">
+                <div class="flip-card" id="shizune">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title"> Shizune </h2>
@@ -1562,7 +1551,7 @@
                 <!-- Tonton card end-->
 
                 <!-- Tonton card start -->
-                <div class="flip-card">
+                <div class="flip-card" id="tonton">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title"> Tonton </h2>
@@ -1585,7 +1574,7 @@
 
                 <!-- first card end-->
                 <!-- card start  -->
-                <div class="flip-card">
+                <div class="flip-card" id="sand siblings">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Sand Siblings</h2>
@@ -1612,7 +1601,7 @@
                 <!-- card end -->
 
                 <!-- Hidan card start-->
-                <div class="flip-card">
+                <div class="flip-card" id="hidan">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Hidan</h2>
@@ -1635,7 +1624,7 @@
                 <!-- Hidan card end-->
 
                 <!-- card start  -->
-                <div class="flip-card">
+                <div class="flip-card" id="sakon">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Sakon and Ukon</h2>
@@ -1665,7 +1654,7 @@
               
 
                 <!-- Might Guy card-->
-                <div class="flip-card">
+                <div class="flip-card" id="guy">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Might Guy</h2>
@@ -1686,7 +1675,7 @@
                 </div>
                 <!--Might Guy card end-->
 
-                <div class="flip-card">
+                <div class="flip-card" id="asuma">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Asuma Sarutobi</h2>
@@ -1717,7 +1706,7 @@
                 <!-- card start -->
 
 
-                <div class="flip-card">
+                <div class="flip-card" id="kakashi">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Kakashi Hatake</h2>
@@ -1740,7 +1729,7 @@
                 </div>
 
                 <!-- Fugaku card start-->
-                <div class="flip-card">
+                <div class="flip-card" id="fugaku">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Fugaku</h2>
@@ -1765,7 +1754,7 @@
 
 
                 <!-- Inari card start-->
-                <div class="flip-card">
+                <div class="flip-card" id="inari">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Inari</h2>
@@ -1786,7 +1775,7 @@
                 <!--Inari card end-->
 
                 <!-- Third Raikage card start-->
-                <div class="flip-card">
+                <div class="flip-card" id="third raikage">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Third Raikage</h2>
@@ -1814,7 +1803,7 @@
                 <!--Third Raikage card end-->
 
                 <!-- Shikadai card start-->
-                <div class="flip-card">
+                <div class="flip-card" id="shikadai">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Shikadai Nara</h2>
@@ -1839,7 +1828,7 @@
                 <!--Shikadai card end-->
 
                 <!-- Mikoto card start-->
-                <div class="flip-card">
+                <div class="flip-card" id="mikoto">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Mikoto Uchiha</h2>
@@ -1865,7 +1854,7 @@
                 <!--Mikoto card end-->
 
                 <!-- Mito card start-->
-                <div class="flip-card">
+                <div class="flip-card good" id="mito">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Mito Uzumaki</h2>
@@ -1892,7 +1881,7 @@
                 <!--Mito card end-->
 
                 <!-- Guren card start-->
-                <div class="flip-card">
+                <div class="flip-card" id="guren">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title"> Guren</h2>
@@ -1918,7 +1907,7 @@
                 <!-- Guren card end-->
 
                 <!-- HANZO card start-->
-                <div class="flip-card">
+                <div class="flip-card" id="hanzo">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Hanzō</h2>
@@ -1945,7 +1934,7 @@
                 <!--HANZO card end-->
 
                 <!-- Konan card start-->
-                <div class="flip-card">
+                <div class="flip-card" id="konan">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Konan</h2>
@@ -1976,7 +1965,7 @@
                 <!--Konan card end-->
 
                 <!-- Kidomaru card start-->
-                <div class="flip-card">
+                <div class="flip-card" id="kidomaru">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Kidomaru</h2>
@@ -1994,7 +1983,7 @@
                 <!-- Kidomaru card end-->
                 <!-- Tobirama card start-->
 
-                <div class="flip-card">
+                <div class="flip-card" id="tobirama">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Tobirama Senju</h2>
@@ -2026,7 +2015,7 @@
 
                 <!-- Choza card start-->
 
-                <div class="flip-card">
+                <div class="flip-card" id="choza">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Choza Akimichi</h2>
@@ -2046,7 +2035,7 @@
 
               
                 <!--Izuna Uchiha-->
-                <div class="flip-card">
+                <div class="flip-card" id="izuna">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Izuna Uchiha</h2>
@@ -2061,7 +2050,7 @@
                     </div>
                 </div>
             
-                <div class="flip-card">
+                <div class="flip-card" id="kaguya">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Kaguya Otsutsuki</h2>
@@ -2087,7 +2076,7 @@
                 <!--card end-->
 
                 <!--Killer Bee Card Start  -->
-                <div class="flip-card">
+                <div class="flip-card" id="bee">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Killer Bee</h2>
@@ -2107,7 +2096,7 @@
                 <!--card end-->
 
                 <!--Kisame Hoshigaki Card Start  -->
-                <div class="flip-card">
+                <div class="flip-card" id="kisame">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Kisame Hoshigaki</h2>
@@ -2126,7 +2115,7 @@
 
                 <!-- Card Start For Gamabunta -->
 
-                <div class="flip-card">
+                <div class="flip-card" id="gamabunta">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Gamabunta</h2>
@@ -2145,7 +2134,7 @@
                 <!-- Card End For Gamabunta-->
     
                 <!-- Card start For Matatabi-->
-                <div class="flip-card">
+                <div class="flip-card" id="matatabi">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Matatabi</h2>
@@ -2165,7 +2154,7 @@
                 </div>
                 <!-- Obito Uchiha card start-->
 
-                <div class="flip-card">
+                <div class="flip-card" id="obito">
 
                     <div class="flip-card-inner">
 
@@ -2204,7 +2193,7 @@
 
                 <!-- Rin Nohara card start-->
 
-                <div class="flip-card">
+                <div class="flip-card" id="rin">
 
                     <div class="flip-card-inner">
 
@@ -2234,7 +2223,7 @@
                 <!--[Rin Nohara] card end-->
 
                 <!-- Iruka Umino card start-->
-                <div class="flip-card">
+                <div class="flip-card" id="iruka">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Iruka Umino</h2>
@@ -2257,7 +2246,7 @@
                 <!-- Iruka Umino card end-->
 
                 <!-- Orochimaru card start-->
-                <div class="flip-card">
+                <div class="flip-card" id="orochimaru">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Orochimaru</h2>
@@ -2281,7 +2270,7 @@
                 <!--Orochimaru card end-->
 
                 <!-- Sasori card start-->
-                <div class="flip-card">
+                <div class="flip-card" id="sasori">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Sasori</h2>
@@ -2305,7 +2294,7 @@
 
                 <!-- Kakuzu card start-->
 
-                <div class="flip-card">
+                <div class="flip-card" id="kakuzu">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Kakuzu</h2>
@@ -2326,7 +2315,7 @@
                 </div>
                 <!--Kakuzu card end-->
                 
-                        <div class="flip-card-back">
+                        <div class="flip-card-back" id="teuchi">
                             <h2 class="card-title">Teuchi</h2>
                             <p class="card-text">As a teenager 34 years before the Fourth Shinobi World
                                 War, Teuchi devoted his life to making
@@ -2342,7 +2331,7 @@
                 <!--[Teuchi] card end-->
 
                 <!-- Pain card start-->
-                <div class="flip-card">
+                <div class="flip-card" id="pain">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Pain </h2>
@@ -2366,7 +2355,7 @@
                 <!-- Pain card end-->
 
                 <!-- Ebizo card start-->
-                <div class="flip-card">
+                <div class="flip-card" id="ebizo">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Ebizo</h2>
@@ -2388,7 +2377,7 @@
                 <!-- Ebizo card end-->
 
                 <!-- Nekobaa card start-->
-                <div class="flip-card">
+                <div class="flip-card" id="nekobaa">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Nekobaa</h2>
@@ -2411,7 +2400,7 @@
                 <!-- Nekobaa card end-->
 
                 <!-- Jūzō Biwa card start-->
-                <div class="flip-card">
+                <div class="flip-card" id="juzo biwa">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Jūzō Biwa</h2>
@@ -2434,7 +2423,7 @@
                 <!-- Jūzō Biwa card end-->
 
                 <!-- Shisui card start-->
-                <div class="flip-card">
+                <div class="flip-card" id="shisui">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Shisui Uchiha</h2>
@@ -2457,7 +2446,7 @@
                 <!-- Shisui card end-->
 
                 <!-- Rasa card start-->
-                <div class="flip-card">
+                <div class="flip-card" id="rasa">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Rasa</h2>
@@ -2480,7 +2469,7 @@
                 <!-- Nekobaa card end-->
 
                 <!-- Karui card start-->
-                <div class="flip-card">
+                <div class="flip-card" id="karui">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Karui</h2>
@@ -2501,7 +2490,7 @@
                 <!-- Nekobaa card end-->
 
                 <!-- [Gold and Silver Brothers] card start-->
-                <div class="flip-card">
+                <div class="flip-card" id="gold ans silver brothers">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Gold and Silver Brothers</h2>
@@ -2527,7 +2516,7 @@
                 <!--[Gold and Silver Brothers] card end-->
 
                 <!-- [Shino Aburame] card start-->
-                <div class="flip-card">
+                <div class="flip-card" id="shino">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Shino Aburame</h2>
@@ -2544,7 +2533,7 @@
                 <!--[Shino Aburame] card end-->
 
                 <!-- [Asura Path of Pain] card start-->
-                <div class="flip-card">
+                <div class="flip-card" id="asura path of pain">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Asura Path of Pain</h2>
@@ -2564,7 +2553,7 @@
 
                 <!--[Asura Path of Pain] card end-->
                 <!-- [A (First Raikage)] card start-->
-                <div class="flip-card">
+                <div class="flip-card" id="first raikage">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">A First Raikage</h2>
@@ -2593,7 +2582,7 @@
 
 
                 <!-- [A (Second Raikage)] card start-->
-                <div class="flip-card">
+                <div class="flip-card" id="second raikage">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">A Second Raikage</h2>
@@ -2622,7 +2611,7 @@
                 </div>
                 <!--[A (Second Raikage)] card end-->
    
-                <div class="flip-card">
+                <div class="flip-card" id="tazuna">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Tazuna</h2>
@@ -2641,7 +2630,7 @@
                 </div>
 
                 <!-- [Ichiraku Ramen] card start-->
-                <div class="flip-card">
+                <div class="flip-card" id="ichiraku ramen">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Ichiraku Ramen</h2>
@@ -2660,7 +2649,7 @@
                 </div>
                 <!--[Ichiraku Ramen] card end-->
                 <!-- Kankuro card start-->
-                <div class="flip-card">
+                <div class="flip-card" id="kankuro">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Kankuro</h2>
@@ -2691,7 +2680,7 @@
                 <!--Kankuro card end-->
 
 
-                <div class="flip-card">
+                <div class="flip-card" id="kiba">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Kiba Inuzuka</h2>
@@ -2707,7 +2696,7 @@
                     </div>
                 </div>
 
-                <div class="flip-card">
+                <div class="flip-card" id="ino">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Ino Yamanaka</h2>
@@ -2726,7 +2715,7 @@
 
 
                 <!-- Butsuma Senju card start-->
-                <div class="flip-card">
+                <div class="flip-card" id="butsuma">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Butsuma Senju</h2>
@@ -2744,7 +2733,7 @@
                 </div>
                 <!--Butsuma Senju card end-->
 
-                <div class="flip-card">
+                <div class="flip-card" id="onoki">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Onoki</h2>
@@ -2765,7 +2754,7 @@
 
 
                 <!-- Kae Yukiwari card start-->
-                <div class="flip-card">
+                <div class="flip-card" id="kae">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Kae Yukiwari</h2>
@@ -2788,7 +2777,7 @@
                 <!-- Kae Yukiwari card end-->
 
                 <!-- Kabuto Yakushi card start-->
-                <div class="flip-card">
+                <div class="flip-card" id="kabuto">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Kabuto Yakushi</h2>
@@ -2813,7 +2802,7 @@
                 <!-- Kabuto Yakushi card end-->
 
                 <!-- Jugo card start-->
-                <div class="flip-card">
+                <div class="flip-card" id="jugo">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Jugo</h2>
@@ -2834,7 +2823,7 @@
                 <!--Jugo card end-->
 
                 <!-- Rock Lee card start -->
-                <div class="flip-card">
+                <div class="flip-card" id="rock lee">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Rock Lee </h2>
@@ -2852,7 +2841,7 @@
                 <!-- Rock Lee card end -->
 
                 <!-- Baki card start-->
-                <div class="flip-card">
+                <div class="flip-card" id="baki">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Baki</h2>
@@ -2875,7 +2864,7 @@
                 <!-- Baki card end-->
 
                 <!-- Mitsuki card start  -->
-                <div class="flip-card">
+                <div class="flip-card" id="mitsuki">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Mitsuki</h2>
@@ -2899,7 +2888,7 @@
 
                 <!--[Kurenai] card start-->
 
-                <div class="flip-card">
+                <div class="flip-card" id="kurenai">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Kurenai</h2>
@@ -2922,7 +2911,7 @@
 
                 <!--[Temari] card start-->
 
-                <div class="flip-card">
+                <div class="flip-card" id="temari">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Temari</h2>
@@ -2946,7 +2935,7 @@
 
                 <!-- [Shikamaru] card start -->
 
-                <div class="flip-card">
+                <div class="flip-card" id="shikamaru">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Shikamaru</h2>
@@ -2972,7 +2961,7 @@
 
                 <!-- [Kankurou] card start -->
 
-                <div class="flip-card">
+                <div class="flip-card" id="kankurou">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Kankurou</h2>
@@ -2997,7 +2986,7 @@
 
                 <!-- [Gamatatsu] card start -->
 
-                <div class="flip-card">
+                <div class="flip-card" id="gamatatsu">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Gamatatsu</h2>
@@ -3023,7 +3012,7 @@
 
                 <!-- [Gamakichi] card start -->
 
-                <div class="flip-card">
+                <div class="flip-card" id="gamakichi">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Gamakichi</h2>
@@ -3051,7 +3040,7 @@
 
                 <!-- [Gamakichi] card end-->
                 <!-- Yugito Nii card start-->
-                <div class="flip-card">
+                <div class="flip-card" id="yugito">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Yugito Nii</h2>
@@ -3075,7 +3064,7 @@
                 <!--Yugito Nii card end-->
                 <!-- [Matsuri] card start -->
 
-                <div class="flip-card">
+                <div class="flip-card" id="matsuri">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Matsuri</h2>
@@ -3099,7 +3088,7 @@
                 <!-- [Matsuri] card end-->
                 <!-- [Aoba] card start -->
 
-                <div class="flip-card">
+                <div class="flip-card" id="aoba">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Aoba</h2>
@@ -3124,7 +3113,7 @@
                 <!-- [Aoba] card end-->
                 <!-- [Katsuyu] card start -->
 
-                <div class="flip-card">
+                <div class="flip-card" id="katsuyu">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Katsuyu</h2>
@@ -3151,7 +3140,7 @@
                 <!-- [Enma] card start -->
 
                 <!-- Hero [character name] card start-->
-                <div class="flip-card good">
+                <div class="flip-card good" id="amado">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Amado</h2>
@@ -3192,7 +3181,7 @@
                 <!-- [Katsuyu] card end-->
                 <!-- [Enma] card start -->
 
-                <div class="flip-card">
+                <div class="flip-card" id="enma">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Enma</h2>
@@ -3219,11 +3208,11 @@
 
 
                 <!-- Hero [character name] card start-->
-                <div class="flip-card good">
+                <div class="flip-card good" id="choji">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Choji Akimichi</h2>
-                            <img src="./Images/choji.png" alt="">
+                            <img src="./Images/chijoi_image.jpg" alt="">
                         </div>
                         <div class="flip-card-back">
                             <p class="card-text">A member of the Akimichi clan. His biggest talent is eating and
@@ -3248,7 +3237,7 @@
                 <!-- Hero [character name] card end-->
 
                 <!-- Hero [Hamura-Otsutsuki] card start-->
-                <div class="flip-card good">
+                <div class="flip-card good" id="hamura">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Hamura Otsutsuki</h2>
@@ -3271,7 +3260,7 @@
                 </div>
               
                 <!-- Hero [Hagoromo-Otsutsuki] card start-->
-                <div class="flip-card good">
+                <div class="flip-card good" id="hagoromo">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Hagoromo Otsutsuki</h2>
@@ -3288,7 +3277,7 @@
                 </div>
                 <!-- Hero card end-->
                 <!-- Hero [Hamura-Otsutsuki] card end-->
-                <div class="flip-card good">
+                <div class="flip-card good" id="danzo">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Danzo Shimura</h2>
@@ -3310,7 +3299,7 @@
                 </div>
 
                 <!-- Hero [Hayate Gekkō] card start-->
-                <div class="flip-card good">
+                <div class="flip-card good" id="hayate">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Hayate Gekkō</h2>
@@ -3328,7 +3317,7 @@
                 </div>
                 <!-- Hero [Hayate Gekkō] card end-->
                 <!-- Hero Sakura Haruno card start-->
-                <div class="flip-card good">
+                <div class="flip-card good" id="sakura">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Sakura Haruno</h2>
@@ -3355,7 +3344,7 @@
                 <!-- Hero Sakura Haruno card end-->
 
                 <!-- Villian Gengetsu Hōzuki card start-->
-                <div class="flip-card evil">
+                <div class="flip-card evil" id="hozuki">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Gengetsu Hōzuki</h2>
@@ -3375,7 +3364,7 @@
                 </div>
                 <!-- Villian Gengetsu Hōzuki card end-->
                 <!-- Villian Menma card start-->
-                <div class="flip-card evil">
+                <div class="flip-card evil" id="menma">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Menma</h2>
@@ -3390,7 +3379,7 @@
                 </div>
                 <!-- Villian Menma card end-->
                 <!-- Villian Indra Otsutsuki card start-->
-                <div class="flip-card evil">
+                <div class="flip-card evil" id="indra">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Indra Otsutsuki</h2>
@@ -3405,7 +3394,7 @@
                 </div>
                 <!-- Villian Indra Otsutsuki card end-->
                 <!-- Villian Tobi card start-->
-                <div class="flip-card evil">
+                <div class="flip-card evil" id="tobi">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Tobi</h2>
@@ -3420,7 +3409,7 @@
                 </div>
                 <!-- Villian Tobi card end-->
                 <!-- Hero Son Goku card start-->
-                <div class="flip-card good">
+                <div class="flip-card good" id="son goku">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2 class="card-title">Four-Tails:Son Goku</h2>
@@ -3447,6 +3436,9 @@
             <div id="contributor"></div>
         </div>
         <script src="contributors.js"></script>
+
+
+        <audio src="./sound/naruto.mp3"></audio>
 
         <footer class="footer">
             Developed and Designed By <span id="idblink" onclick="tap()" style="cursor: pointer;"><u>Vikhyat
@@ -3486,7 +3478,7 @@
 
             </script>
 
-        <script src="searchbar.js"></script>
+        <script src="Search.js"></script>
         <script src="./scrollEffect.js"></script>
         <script src="./lazyload.js"></script>
 
