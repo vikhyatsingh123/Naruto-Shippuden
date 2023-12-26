@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
     <link href="https://fonts.cdnfonts.com/css/ninja-naruto" rel="stylesheet">
 
     <link
@@ -17,17 +17,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
-    <link href="translate.css" rel="stylesheet" type="text/css" media="all" />
-    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="css/index.css">
+    <link href="css/translate.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/contact.css" />
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>Contact Form</title>
   </head>
-  <body class="contact_body">
+  <body class="contact_body light-mode">
      <header>
-            <nav class="navbar fixed-top navbar-expand-lg navbar-light">
-
-                <a class="navbar-brand brand1 ml-4" href="#" style="color: beige;">Naruto</a>
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="height: 60px; padding:5px 5px 5px 30px;">
+              <img src="adi image/naruto-advenimiento-los-animes-cortos-2.png"  style="max-height: 100%; width: auto;">
+                <!-- <a class="navbar-brand brand1 ml-4" href="#" style="color: beige;">Naruto</a> -->
 
 
                 <div class="search">
@@ -46,14 +46,14 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
+                        <li class="nav-item  mx-4">
+                            <a class="nav-link link" href="./index.html" >Home</a>
+                        </li>
+                        <li class="nav-item mx-4">
+                            <a class="link nav-link " href="./about.html" >About</a>
+                        </li>
                         <li class="nav-item active mx-4">
-                            <a class="nav-link link" href="./index.html" style="color: beige;">Home</a>
-                        </li>
-                        <li class="nav-item mx-4">
-                            <a class="link nav-link " href="./about.html" style="color: beige;">About</a>
-                        </li>
-                        <li class="nav-item mx-4">
-                            <a class="link nav-link " href="./contact.html" style="color: beige;">Contact</a>
+                            <a class="link nav-link " href="./contact.html" >Contact</a>
                         </li>
                         <li>
                             <div>
@@ -151,6 +151,25 @@
         <div class="wpcf7-response-output wpcf7-display-none"></div>
       </form>
     </div>
+    <script>
+      function darkmode() {
+          // console.log("hello");
+      
+          var element2 = document.querySelector("body");
+          const body = document.body;
+          body.classList.toggle("light-mode");
+           body.classList.toggle("dark-mode");
+   
+          if (element2.classList.contains("light-mode")) {
+       
+              document.querySelector("#toggler").innerHTML = "🌞 Light"
+          }
+          else {
+ 
+              document.querySelector("#toggler").innerHTML = "🌙 Dark";
+          }
+      }
+  </script>
     <script src="./contact.js"></script>
   </body>
 </html>
