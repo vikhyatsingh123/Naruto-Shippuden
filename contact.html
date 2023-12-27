@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
     <link href="https://fonts.cdnfonts.com/css/ninja-naruto" rel="stylesheet">
 
     <link
@@ -17,27 +17,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
-    <link href="translate.css" rel="stylesheet" type="text/css" media="all" />
-    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="css/index.css">
+    <link href="css/translate.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/contact.css" />
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <title>Contact Form</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <title>Naruto-Contact</title>
   </head>
-  <body class="contact_body">
+  <body class="contact_body light-mode" style="position: relative; overflow-y: hidden;">
      <header>
-            <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+      <nav class=" animate__animated animate__fadeInDown navbar fixed-top navbar-expand-lg navbar-light" style="height: 60px; padding:5px 5px 5px 30px;">
+              <img src="adi image/naruto-advenimiento-los-animes-cortos-2.png"  style="max-height: 100%; width: auto;">
+                <!-- <a class="navbar-brand brand1 ml-4" href="#" style="color: beige;">Naruto</a> -->
 
-                <a class="navbar-brand brand1 ml-4" href="#" style="color: beige;">Naruto</a>
 
-
-                <div class="search">
-                    <div class="icon"></div>
-                    <div class="input">
-                        <input type="text" placeholder="search" id="mysearch">
-                    </div>
-
-                    <span class="clear" onclick="document.getElementById('mysearch').value = ' '"></span>
-                </div>
+              
+             
                 <button class="navbar-toggler" class="menu-btn" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -46,14 +44,14 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
+                        <li class="nav-item  mx-4">
+                            <a class="nav-link link" href="./index.html" >Home</a>
+                        </li>
+                        <li class="nav-item mx-4">
+                            <a class="link nav-link " href="./about.html" >About</a>
+                        </li>
                         <li class="nav-item active mx-4">
-                            <a class="nav-link link" href="./index.html" style="color: beige;">Home</a>
-                        </li>
-                        <li class="nav-item mx-4">
-                            <a class="link nav-link " href="./about.html" style="color: beige;">About</a>
-                        </li>
-                        <li class="nav-item mx-4">
-                            <a class="link nav-link " href="./contact.html" style="color: beige;">Contact</a>
+                            <a class="link nav-link " href="./contact.html" >Contact</a>
                         </li>
                         <li>
                             <div>
@@ -79,13 +77,15 @@
             </nav>
 
         </header>
-    <h1>Naruto Friends, Get In Touch with us</h1>
-
-    <div class="wpcf7" id="wpcf7-f156-p143-o1 formwrap">
+    <h1 class=" animate__animated animate__fadeInUp animate__slow">Naruto Friends, Get In Touch with us</h1>
+    <img class="img1 animate__animated animate__fadeInLeft" src="adi image/kakashi.png" alt="">
+      <img class="img2 animate__animated animate__fadeInRight" src="adi image/contact_naruto.png " alt="">
+    <div class="wpcf7 container  animate__animated animate__fadeInUp animate__slow" id="wpcf7-f156-p143-o1 formwrap" >
+  
       <form
         action="https://formsubmit.co/vikhyatsingh628@gmail.com"
         method="POST"
-        class="contact__form wpcf7-form"
+        class="contact__form wpcf7-form "
         novalidate="novalidate"
       >
         <input type="hidden" name="_captcha" value="false" />
@@ -145,12 +145,43 @@
           <input
             type="submit"
             value="Send"
-            class="wpcf7-form-control wpcf7-submit btn"
+            class="wpcf7-form-control wpcf7-submit btn" 
+            style="float: none; margin-left: 165px;"
           />
         </p>
         <div class="wpcf7-response-output wpcf7-display-none"></div>
       </form>
     </div>
+    <footer class="footer" style="padding: 20px;">
+      <marquee> Developed and Designed By <span id="idblink" onclick="tap()" style="cursor: pointer;"><u>Vikhyat
+           Singh</u></span> | © All
+       Rights Reserved</marquee>
+   </footer>    
+     <script>
+    function tap() {
+        const link = document.getElementById('idblink')
+        window.location.href = "https://github.com/vikhyatsingh123"
+    }
+</script>
+    <script>
+      function darkmode() {
+          // console.log("hello");
+      
+          var element2 = document.querySelector("body");
+          const body = document.body;
+          body.classList.toggle("light-mode");
+           body.classList.toggle("dark-mode");
+   
+          if (element2.classList.contains("light-mode")) {
+       
+              document.querySelector("#toggler").innerHTML = "🌞 Light"
+          }
+          else {
+ 
+              document.querySelector("#toggler").innerHTML = "🌙 Dark";
+          }
+      }
+  </script>
     <script src="./contact.js"></script>
   </body>
 </html>
