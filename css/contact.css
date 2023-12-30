@@ -135,6 +135,7 @@ input:focus::placeholder,
 textarea:focus::placeholder{
   color:transparent;
 }
+
 .light-mode .btn {
   border: none;
   font-family: 'Source Sans Pro', sans-serif;
@@ -153,6 +154,7 @@ textarea:focus::placeholder{
   float: right;
   margin-right: 6px;
 }
+
 .dark-mode .btn {
   border: none;
   font-family: 'Source Sans Pro', sans-serif;
@@ -184,6 +186,7 @@ textarea:focus::placeholder{
   background: #000000;
   outline: none;
   color:#ffffff;
+
   box-shadow: 0 4px #cecece;
   top: 2px;
 }

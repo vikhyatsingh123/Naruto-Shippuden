@@ -207,16 +207,14 @@ main{
 .contributors {
     margin: 0;
     padding: 0;
-
 }
 
 .contributors h1 {
-   
     text-align: center;
     color: white;
     font-size: 2.5rem;
     margin-bottom: 4%;
-   
+
 }
 
 .contributors h1:hover {
@@ -241,7 +239,6 @@ main{
 }
 .contributor-card :hover {
  transform: scale(1.2);
-
 }
 
 .contributor-card img {
@@ -249,6 +246,7 @@ main{
     height: 100%;
     object-fit: cover;
 }
+
 
 
 /* .VIpgJd-ZVi9od-ORHb-OEVmcd{

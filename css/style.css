@@ -535,6 +535,7 @@ h1 {
   line-height: 14pt;
 }
 
+
 .light-mode #one {
   background-color: #2867b2;
 }
@@ -550,6 +551,7 @@ h1 {
 
 #three {
  background: radial-gradient(circle at 0% 180%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+
 }
 
 #buttons {
@@ -738,6 +740,7 @@ h2 {
 }
 
 /*about*/
+
 .light-mode .about-content {
   text-align: justify;
   font-size: 20px;
@@ -745,6 +748,7 @@ h2 {
   border-radius: 2rem;
   background: beige;
   overflow: hidden;
+
   transition: all 0.3s ease-in-out;
   padding: 30px;
   margin: 20px;
@@ -780,7 +784,8 @@ h2 {
   color: white;
 
   background: linear-gradient(135deg, #a950ad 15%, #2271ad 100%);
-}ur
+}
+
 
 
 /* body {
@@ -798,12 +803,14 @@ h1 {
 }
 
 
+
 .light-mode #four {
   background-color: #1877f2;
 }
 .dark-mode #four {
   background-color: #07499f;
 }
+
 
 
 .about-card {
@@ -1124,6 +1131,7 @@ ul.navbar-nav.mr-auto {
 .about_card {
   width: 300px;
   margin: 10px 60px;
+
 }
 /* social icons */
 .footer h5 {
