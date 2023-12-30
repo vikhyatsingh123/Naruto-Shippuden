@@ -1,7 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
 
 .contact_body {
+
   /* background: url("/adi image/677425.jpg"); */
+
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -14,6 +16,7 @@
   right: 0;
   bottom: 0;
   overflow-y: auto;
+
   height: 100vh;
 }
 .container{
@@ -42,11 +45,11 @@ h1 {
   margin: 10px;
 }
 
+
 .light-mode form {
   margin-left: auto;
   margin-right: auto;
   width: 600px;
- 
   height: auto;
   padding: 30px;
   -moz-border-radius: 10px;
@@ -80,6 +83,7 @@ h1 {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
 
+
   backdrop-filter: blur( 5.5px );
   -webkit-backdrop-filter: blur( 5.5px );
   border-radius: 10px;
@@ -96,7 +100,6 @@ h1 {
   height: 40px;
   padding: 20px 20px;
   min-height: 122px;
-
   background-color: rgba(255, 255, 255, 0.536);
   border: 2px solid rgba(70, 70, 70, 0.873);
   transition: 0.3s ease-in;
@@ -116,9 +119,11 @@ width: 100%;
     background-color: rgb(255, 255, 255);
     border: 3px solid rgb(146, 56, 255);
     transition: 0.3s ease-in;
+
   margin-bottom: 20px;
   overflow: hidden;
 }
+
 
 
 
@@ -157,17 +162,19 @@ width: 100%;
 }
 
 
+
 input[type=submit] {
   cursor: pointer;
 }
 
 input.nameinput {
 
+
+
   padding-left: 45px;
 }
 
 input.emailinput {
-
   padding-left: 45px;
 }
 
@@ -194,6 +201,7 @@ input.message {
   color: #fff;
 }
 
+
 .light-mode input:focus,
 .light-mode textarea:focus {
   background-color: rgb(255, 255, 255);
@@ -213,6 +221,7 @@ input:focus::placeholder,
 textarea:focus::placeholder{
   color:transparent;
 }
+
 .light-mode .btn {
   border: none;
   font-family: 'Source Sans Pro', sans-serif;
@@ -231,6 +240,7 @@ textarea:focus::placeholder{
   float: right;
   margin-right: 6px;
 }
+
 .dark-mode .btn {
   border: none;
   font-family: 'Source Sans Pro', sans-serif;
@@ -353,7 +363,6 @@ textarea:focus::placeholder{
 
   form {
     width: 295px !important;
-
   }
 
   #wpcf7-f156-p143-o1\20 formwrap>form>p>span.wpcf7-form-control-wrap.Subject.flat>select,
@@ -368,7 +377,6 @@ textarea:focus::placeholder{
   }
 
 
-
   .btn {
     width: 110px;
   }
@@ -376,6 +384,7 @@ textarea:focus::placeholder{
 .VIpgJd-ZVi9od-ORHb-OEVmcd{
   display: none;
   z-index: -10;
+
 }
 
 .img1{
@@ -389,4 +398,5 @@ textarea:focus::placeholder{
  right: -100px;
   bottom: 50px;
   width: 500px;
+
 }
