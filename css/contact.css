@@ -135,7 +135,8 @@ input:focus::placeholder,
 textarea:focus::placeholder{
   color:transparent;
 }
-.btn {
+
+.light-mode .btn {
   border: none;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 18px;
@@ -154,9 +155,38 @@ textarea:focus::placeholder{
   margin-right: 6px;
 }
 
-.btn:hover {
+.dark-mode .btn {
+  border: none;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  width: 200px;
+  height: 48px;
+  color: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 700;
+  position: relative;
+  outline: none;
+  box-shadow: 0 6px rgb(120, 118, 118);
+  border-radius: 5px;
+  float: right;
+  margin-right: 6px;
+}
+
+.light-mode .btn:hover {
   background: #fff;
   outline: none;
+  color:#000000;
+  box-shadow: 0 4px #cecece;
+  top: 2px;
+}
+
+.dark-mode .btn:hover {
+  background: #000000;
+  outline: none;
+  color:#ffffff;
+
   box-shadow: 0 4px #cecece;
   top: 2px;
 }

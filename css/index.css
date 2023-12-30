@@ -210,11 +210,11 @@ main{
 }
 
 .contributors h1 {
-    font: 5.5vw/1 Permanent Marker;
     text-align: center;
     color: white;
     font-size: 2.5rem;
     margin-bottom: 4%;
+
 }
 
 .contributors h1:hover {
@@ -235,6 +235,10 @@ main{
     height: auto;
     clip-path: polygon(50% 0%, 91% 25%, 91% 75%, 50% 100%, 9% 75%, 9% 25%);
     margin: 5px;
+    transition: all 0.5s ease-in;
+}
+.contributor-card :hover {
+ transform: scale(1.2);
 }
 
 .contributor-card img {
@@ -243,10 +247,7 @@ main{
     object-fit: cover;
 }
 
-.contributor-card:nth-child(4n+1),
-.contributor-card:nth-child(4n+3) {
-    margin-top: -30px;
-}
+
 
 /* .VIpgJd-ZVi9od-ORHb-OEVmcd{
     display: none!important;

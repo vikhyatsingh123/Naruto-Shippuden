@@ -15,21 +15,34 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/contact.css">
     <link href="css/translate.css" rel="stylesheet" type="text/css" media="all" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 
-
+<style>
+    .img1{
+        position: absolute;
+        left: 0;
+        bottom:0;
+    }
+    .img2{
+        position: absolute;
+        right: 0;
+        bottom:0;
+    }
+</style>
 <body class="light-mode">
     <header>
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="height: 60px; padding:5px 5px 5px 30px;">
+        <nav class=" animate__animated animate__fadeInDown navbar fixed-top navbar-expand-lg navbar-light" style="height: 60px; padding:5px 5px 5px 30px;">
+
             <img src="adi image/naruto-advenimiento-los-animes-cortos-2.png"  style="max-height: 100%; width: auto;">
             <!-- <a class="navbar-brand brand1 ml-4" href="#" style="color: beige;">Naruto</a> -->
 
 
-            <div class="search">
-                <div class="icon"></div>
-                <div class="input">
-                    <input type="text" placeholder="search" id="mysearch">
-                </div>
+
+           
 
                 <span class="clear" onclick="document.getElementById('mysearch').value = ' '"></span>
             </div>
@@ -43,15 +56,14 @@
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item  mx-4">
                         <a class="nav-link link" href="./index.html" >Home</a>
+
                     </li>
                     <li class="nav-item active mx-4">
                         <a class="link nav-link " href="./about.html">About</a>
                     </li>
                     <li class="nav-item mx-4">
                         <a class="link nav-link " href="./contact.html" >Contact</a>
-                    </li>
-                    <li class="nav-item mx-4">
-                        <a class="link nav-link " href="./Game.html" >Game</a>
+
                     </li>
                     <div class="dark_lang">
                         <li>
@@ -97,10 +109,10 @@
     <!--start-->
     <main>
         <div class="container">
-            <h1 class="about-title">
+            <h1 class="about-title animate__animated animate__fadeInUp animate__slow">
                 This Project Is Developed by Vikhyat Singh
             </h1>
-            <div class="about-content">
+            <div class="about-content animate__animated  animate__fadeInUp animate__slow" style="position: relative;">
                 <p>
                     Hey! I am a Final Year Student. I'm currently pursuing B.Tech degree in Electronics and
                     Communication Engineering from National Institute of Technology Patna.I love to learn and do code. I
@@ -108,12 +120,14 @@
                     reason, I created this project as a starter Repository for Hacktoberfest2020 for the first-time
                     participants who can learn how to make their first pull request through this project.
                 </p>
+                <img class="img1" src="adi image/7cf0fd9c161fe42a044c2eac43c44f6d.gif" alt="">
+                <img class="img2" src="adi image/narutogif.gif" alt="">
             </div>
             <div class="row row1 inner-container">
-                <div class="col-lg-4 col-sm-8 about_card">
+                <div class="col-lg-4 col-sm-8 about_card animate__animated animate__backInLeft animate__delay-1s">
                     <div class="text-white">
                         <div id="one" class="card-body about-card">
-                            <h5 class="card-title">
+                            <h5 class="card-title1">
                                 <i class="fab fa-linkedin"></i> LinkedIn
                             </h5>
                             <p class="card-text font-weight-lighter">Let's Connect!</p>
@@ -122,20 +136,20 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-8 about_card">
+                <div class="col-lg-4 col-sm-8 about_card animate__animated animate__backInRight animate__delay-1s">
                     <div class="text-white">
                         <div id="two" class="card-body about-card">
-                            <h5 class="card-title"><i class="fab fa-github"></i> Github</h5>
+                            <h5 class="card-title1"><i class="fab fa-github"></i> Github</h5>
                             <p class="card-text font-weight-lighter">Check out my Github Profile!</p>
                             <a href="https://github.com/vikhyatsingh123/"
                                 class="btn btn-outline-light btn-sm">Github</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-8 about_card">
+                <div class="col-lg-4 col-sm-8 about_card animate__animated animate__backInLeft animate__delay-1s">
                     <div class="text-white">
                         <div id="three" class="card-body about-card">
-                            <h5 class="card-title">
+                            <h5 class="card-title1">
                                 <i class="fab fa-instagram"></i> Instagram
                             </h5>
                             <p class="card-text font-weight-lighter">Let's follow each other!</p>
@@ -144,10 +158,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-8 about_card">
+                <div class="col-lg-4 col-sm-8 about_card animate__animated animate__backInRight animate__delay-1s">
                     <div class="text-white">
                         <div id="four" class="card-body about-card">
-                            <h5 class="card-title"><i class="fab fa-facebook"></i> Facebook</h5>
+                            <h5 class="card-title1"><i class="fab fa-facebook"></i> Facebook</h5>
                             <p class="card-text font-weight-lighter">Check out my Facebook Profile!</p>
                             <a href="https://facebook.com/vikhyatsingh123/"
                                 class="btn btn-outline-light btn-sm">Facebook</a>
@@ -168,9 +182,10 @@
             <p class="mx-auto text-light font-weight-lighter">&copyright Developed By- Vikhyat Singh</p>
         </nav>
     </footer> -->
-    <footer class="footer">
-        Developed and Designed By <a href="https://github.com/vikhyatsingh123/"><span>Vikhyat Singh</span> </a> | © All
-        Rights Reserved
+    <footer class="footer" style="padding: 20px;">
+       <marquee> Developed and Designed By <span id="idblink" onclick="tap()" style="cursor: pointer;"><u>Vikhyat
+            Singh</u></span> | © All
+        Rights Reserved</marquee>
     </footer>
     <script>
         function darkmode() {
@@ -191,6 +206,14 @@
             }
         }
     </script>
+
+         <script>
+            function tap() {
+                const link = document.getElementById('idblink')
+                window.location.href = "https://github.com/vikhyatsingh123"
+            }
+        </script>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>

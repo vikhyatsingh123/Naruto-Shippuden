@@ -535,16 +535,23 @@ h1 {
   line-height: 14pt;
 }
 
-#one {
+
+.light-mode #one {
   background-color: #2867b2;
 }
-
-#two {
+.dark-mode #one {
+  background-color: #0e3361;
+}
+.light-mode #two {
   background-color: rgb(33, 31, 31);
+}
+.dark-mode #two {
+  background-color: rgba(40, 40, 40, 0.877);
 }
 
 #three {
-  background-color: rgb(225, 48, 108);
+ background: radial-gradient(circle at 0% 180%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+
 }
 
 #buttons {
@@ -634,7 +641,7 @@ h1 {
   padding-top: 2%;
   color: white;
   font-weight: bold;
-  font-style: italic;
+
   line-height: 2.5rem;
 }
 
@@ -733,28 +740,53 @@ h2 {
 }
 
 /*about*/
-.about-content {
+
+.light-mode .about-content {
   text-align: justify;
   font-size: 20px;
   color: black;
   border-radius: 2rem;
   background: beige;
   overflow: hidden;
-  transition: all 0.5s ease-in;
-  z-index: 1;
+
+  transition: all 0.3s ease-in-out;
   padding: 30px;
-  box-shadow: -10px 25px 50px rgba(0, 0, 0, 0.3);
+  margin: 20px;
   min-height: 50vh;
-  -webkit-font-smoothing: antialised;
-  -moz-osx-font-smoothing: grayscale;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
-.about-content:hover {
-  opacity: 1;
+
+.dark-mode .about-content {
+  text-align: justify;
+  font-size: 20px;
+  color: rgb(172, 83, 245);
+  border-radius: 2rem;
+  background-color: #1a1919c4;
+  border: 3px rgb(130, 60, 188) solid;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  padding: 30px;
+  margin: 20px;
+  min-height: 50vh;
+  box-shadow: rgba(132, 0, 255, 0.4) 0px 2px 40px, rgba(140, 0, 255, 0.3) 0px 7px 13px -3px, rgba(140, 0, 255, 0.2) 0px -3px 0px inset;
+}
+.light-mode .about-content:hover {
+
   background: #e2a9e5;
-  background: -moz-linear-gradient(-45deg, #e2a9e5 15%, #2b94e5 100%);
-  background: -webkit-linear-gradient(-45deg, #e2a9e5 15%, #2b94e5 100%);
+  color: white;
+
   background: linear-gradient(135deg, #e2a9e5 15%, #2b94e5 100%);
 }
+
+.dark-mode .about-content:hover {
+
+  background: #e2a9e5;
+  color: white;
+
+  background: linear-gradient(135deg, #a950ad 15%, #2271ad 100%);
+}
+
+
 
 /* body {
   background-color: white;
@@ -770,20 +802,16 @@ h1 {
   line-height: 14pt;
 }
 
-#one {
-  background-color: #0a66c2;
-}
 
-#two {
-  background-color: #333;
-}
 
-#three {
-  background-color: #c32aa3;
-}
-#four {
+.light-mode #four {
   background-color: #1877f2;
 }
+.dark-mode #four {
+  background-color: #07499f;
+}
+
+
 
 .about-card {
   border-radius: 8px;
@@ -1102,7 +1130,8 @@ ul.navbar-nav.mr-auto {
 }
 .about_card {
   width: 300px;
-  margin: 6px;
+  margin: 10px 60px;
+
 }
 /* social icons */
 .footer h5 {
