@@ -551,7 +551,6 @@ h1 {
 
 #three {
  background: radial-gradient(circle at 0% 180%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
-
 }
 
 #buttons {
@@ -740,7 +739,6 @@ h2 {
 }
 
 /*about*/
-
 .light-mode .about-content {
   text-align: justify;
   font-size: 20px;
@@ -748,7 +746,6 @@ h2 {
   border-radius: 2rem;
   background: beige;
   overflow: hidden;
-
   transition: all 0.3s ease-in-out;
   padding: 30px;
   margin: 20px;
@@ -762,13 +759,13 @@ h2 {
   color: rgb(172, 83, 245);
   border-radius: 2rem;
   background-color: #1a1919c4;
-  border: 3px rgb(130, 60, 188) solid;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
   padding: 30px;
   margin: 20px;
   min-height: 50vh;
-  box-shadow: rgba(132, 0, 255, 0.4) 0px 2px 40px, rgba(140, 0, 255, 0.3) 0px 7px 13px -3px, rgba(140, 0, 255, 0.2) 0px -3px 0px inset;
+  box-shadow: rgba(145, 56, 255, 0.35) 0px 30px 100px 0px;
+  border: 2px solid rgba(146, 56, 255, 0.711);
 }
 .light-mode .about-content:hover {
 
@@ -803,15 +800,12 @@ h1 {
 }
 
 
-
 .light-mode #four {
   background-color: #1877f2;
 }
 .dark-mode #four {
   background-color: #07499f;
 }
-
-
 
 .about-card {
   border-radius: 8px;
@@ -1131,7 +1125,6 @@ ul.navbar-nav.mr-auto {
 .about_card {
   width: 300px;
   margin: 10px 60px;
-
 }
 /* social icons */
 .footer h5 {

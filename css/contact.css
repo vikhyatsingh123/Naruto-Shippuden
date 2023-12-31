@@ -1,7 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
 
 .contact_body {
-  background: url("/adi image/677425.jpg");
+
+  /* background: url("/adi image/677425.jpg"); */
+
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -14,10 +16,15 @@
   right: 0;
   bottom: 0;
   overflow-y: auto;
-}
 
+  height: 100vh;
+}
+.container{
+  margin-top: 50px;
+  margin-bottom: 95px;
+}
 h1 {
-  color:aqua;
+  color:rgb(255, 255, 255);
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
   padding-top: 30px;
   font-size: 50px;
@@ -27,11 +34,23 @@ h1 {
   margin: 10px;
 }
 
-form {
+.dark-mode h1{
+  color:#c0a5ff;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
+  padding-top: 30px;
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 10px;
+}
+
+
+.light-mode form {
   margin-left: auto;
   margin-right: auto;
-  width: 965px;
-  height: 450px;
+  width: 600px;
+  height: auto;
   padding: 30px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -39,64 +58,123 @@ form {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
+  background: rgba( 255, 255, 255, 0.2 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 5.5px );
+  -webkit-backdrop-filter: blur( 5.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
   overflow: hidden;
 }
 
-textarea {
-  background: white;
-  width: 894px;
-  height: 110px;
-  border: none;
+
+
+.dark-mode form {
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+ 
+  height: auto;
+  padding: 30px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  display: block;
-  font-family: 'Source Sans Pro', sans-serif;
+
+
+  backdrop-filter: blur( 5.5px );
+  -webkit-backdrop-filter: blur( 5.5px );
+  border-radius: 10px;
+  background: rgba(83, 83, 83, 0.25);
+  box-shadow: rgba(145, 56, 255, 0.35) 0px 30px 100px 0px;
+  border: 2px solid rgba(146, 56, 255, 0.711);
+  overflow: hidden;
+}
+.light-mode textarea {
   font-size: 18px;
-  color: black;
-  padding-left: 45px;
-  padding-right: 20px;
-  padding-top: 12px;
+  color: rgb(82, 82, 82);
+  width: 100%;
+  border-radius: 20px;
+  height: 40px;
+  padding: 20px 20px;
+  min-height: 122px;
+  background-color: rgba(255, 255, 255, 0.536);
+  border: 2px solid rgba(70, 70, 70, 0.873);
+  transition: 0.3s ease-in;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.dark-mode textarea {
+  font-size: 18px;
+  color: rgb(27, 27, 27);
+width: 100%;
+    border-radius: 20px;
+    height: 40px;
+    padding: 20px 20px;
+    min-height: 122px;
+
+    background-color: rgb(255, 255, 255);
+    border: 3px solid rgb(146, 56, 255);
+    transition: 0.3s ease-in;
+
   margin-bottom: 20px;
   overflow: hidden;
 }
 
 
 
-.nameinput,
-.emailinput {
+
+.light-mode .nameinput,
+.light-mode .emailinput {
   width: 894px;
   height: 48px;
-  border: none;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  display: block;
-  font-family: 'Source Sans Pro', sans-serif;
+  width: 100%;
+  border-radius: 20px;
+  height: 40px;
+  padding: 20px 20px;
+  background-color: rgba(255, 255, 255, 0.536);
+  border: 2px solid rgba(70, 70, 70, 0.873);
+  transition: 0.3s ease-in;
   font-size: 18px;
-  color: black;
-  padding-left: 20px;
-  padding-right: 20px;
+  color: rgb(82, 82, 82);
   margin-bottom: 20px;
 }
+
+
+.dark-mode .nameinput,
+.dark-mode .emailinput {
+  width: 894px;
+  height: 48px;
+  width: 100%;
+  border-radius: 20px;
+  height: 40px;
+  padding: 20px 20px;
+  border-style: none;
+  background-color: rgb(255, 255, 255);
+  border: 3px solid rgb(146, 56, 255);
+  transition: 0.3s ease-in;
+  font-size: 18px;
+  color: rgb(4, 4, 4);
+  margin-bottom: 20px;
+}
+
+
 
 input[type=submit] {
   cursor: pointer;
 }
 
 input.nameinput {
-  background: white;
+
+
+
   padding-left: 45px;
 }
 
 input.emailinput {
-  background: white;
   padding-left: 45px;
 }
 
@@ -123,11 +201,19 @@ input.message {
   color: #fff;
 }
 
-input:focus,
-textarea:focus {
-  -moz-box-shadow: 0 0 10px 10px rgb(3, 213, 245);
-  -webkit-box-shadow: 0 0 10px 10px rgb(3, 213, 245);
-  box-shadow: 0 0 10px 10px rgb(3, 213, 245);
+
+.light-mode input:focus,
+.light-mode textarea:focus {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 2px 5px rgb(132, 222, 236);
+  overflow: hidden;
+  border:none;
+}
+
+.dark-mode input:focus,
+.dark-mode textarea:focus {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 2px 5px rgb(160, 132, 236);
   overflow: hidden;
   border:none;
 }
@@ -186,7 +272,6 @@ textarea:focus::placeholder{
   background: #000000;
   outline: none;
   color:#ffffff;
-
   box-shadow: 0 4px #cecece;
   top: 2px;
 }
@@ -291,6 +376,7 @@ textarea:focus::placeholder{
     width: 225px !important;
   }
 
+
   .btn {
     width: 110px;
   }
@@ -298,4 +384,19 @@ textarea:focus::placeholder{
 .VIpgJd-ZVi9od-ORHb-OEVmcd{
   display: none;
   z-index: -10;
+
+}
+
+.img1{
+  position: absolute;
+  left: -30px;
+  bottom: -50px;
+  width: 500px;
+}
+.img2{
+  position: absolute;
+ right: -100px;
+  bottom: 50px;
+  width: 500px;
+
 }
