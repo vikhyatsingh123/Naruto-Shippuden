@@ -21,38 +21,34 @@
     <link rel="stylesheet" href="css/index.css">
     <link href="css/translate.css" rel="stylesheet" type="text/css" media="all" />
 
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Naruto-Home</title>
 </head>
 <style>
-.vid {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background:rgba(0, 0, 0 , 0.5);
-    color: white;
-    font-size: 30px;
-    position: relative;
-    overflow: hidden;
-    min-height: 50vh;
-    }
-    .videosrc{
-    position: absolute;
-    z-index: -1;    
-    top:50%;
-    left:50%;
-    transform: translate(-50%, -50%);
-    min-width: 100%;
-    min-height: 100%;
+    .vid {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        font-size: 30px;
+        position: relative;
+        overflow: hidden;
+        min-height: 50vh;
     }
 
+    .videosrc {
+        position: absolute;
+        z-index: -1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 100%;
+        min-height: 100%;
+    }
+</style>
 
-
-   </style>
 <body class="light-mode">
 
     <a href="#" class="to-top">
@@ -63,9 +59,10 @@
 
         <header>
 
-            <nav class=" animate__animated animate__fadeInDown sticky navbar  navbar-expand-lg navbar-light" style="height: 60px; padding:5px 5px 5px 30px;">
+            <nav class=" animate__animated animate__fadeInDown sticky navbar  navbar-expand-lg navbar-light"
+                style="height: 60px; padding:5px 5px 5px 30px;">
 
-                <img src="adi image/naruto-advenimiento-los-animes-cortos-2.png"  style="max-height: 100%; width: auto;">
+                <img src="adi image/naruto-advenimiento-los-animes-cortos-2.png" style="max-height: 100%; width: auto;">
                 <!-- <a class="navbar-brand brand1 ml-4" href="#" style="color: beige;">Naruto</a> -->
 
 
@@ -86,16 +83,16 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active mx-4">
-                            <a class="nav-link link" href="./index.html" >Home</a>
+                            <a class="nav-link link" href="./index.html">Home</a>
                         </li>
                         <li class="nav-item mx-4">
-                            <a class="link nav-link " href="./about.html" >About</a>
+                            <a class="link nav-link " href="./about.html">About</a>
                         </li>
                         <li class="nav-item mx-4">
-                            <a class="link nav-link " href="./contact.html" >Contact</a>
+                            <a class="link nav-link " href="./contact.html">Contact</a>
                         </li>
                         <li class="nav-item mx-4">
-                            <a class="link nav-link " href="./Game.html" >Game</a>
+                            <a class="link nav-link " href="./Game.html">Game</a>
                         </li>
                         <div class="dark_lang">
                             <li>
@@ -105,26 +102,28 @@
                                 </div>
                             </li>
                             <li class="nav-item mx-4">
-                            <div id="google_translate_element"></div>
-                            <script>
-                                function googleTranslateElementInit() {
-                                new google.translate.TranslateElement({
-                                pageLanguage: 'en',
-                                autoDisplay: 'true',
-                                layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
-                                }, 'google_translate_element');
-                                }
-                            </script>
-                            <script src='//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'></script>
+                                <div id="google_translate_element"></div>
+                                <script>
+                                    function googleTranslateElementInit() {
+                                        new google.translate.TranslateElement({
+                                            pageLanguage: 'en',
+                                            autoDisplay: 'true',
+                                            layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
+                                        }, 'google_translate_element');
+                                    }
+                                </script>
+                                <script
+                                    src='//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'></script>
                             </li>
                         </div>
                         <li class="nav-item mx-4">
                             <audio id="nyan" src="./sound/naruto.mp3" preload="metadata" type="audio/mpeg">
                                 Your browser does not support the audio element.
-                             </audio>
-                             <a class="btn" id="nyan-btn">play / pause <img src="./adi image/sound.png" class="soundicon">
+                            </audio>
+                            <a class="btn" id="nyan-btn">play / pause <img src="./adi image/sound.png"
+                                    class="soundicon">
                                 <script src="./audio.js"></script>
-                             </a>
+                            </a>
                         </li>
                     </ul>
 
@@ -133,21 +132,21 @@
 
         </header>
 
-    <!-- header video -->
+        <!-- header video -->
 
-    <div class="vid animate__animated animate__fadeIn" >
-      
+        <div class="vid animate__animated animate__fadeIn">
+
             <a href="#"><img src="adi image/naruto-shippuden.png" style="width: 600px;" class="logo"></a>
-        
-            <video autoplay loop muted class="videosrc" >
+
+            <video autoplay loop muted class="videosrc">
                 <source src="adi image/naruto - Made with Clipchamp.mp4" type="video/mp4">
             </video>
         </div>
 
-       
-   <!-- header video end -->
+
+        <!-- header video end -->
         <main>
-<!-- 
+            <!-- 
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -178,20 +177,23 @@
                 </a>
             </div> -->
             <div class="chardiv ">
-                <img class="heroimg good animate__animated animate__fadeInRight " src="adi image/Naruto-Uzumaki-No-Background.png" alt="" >
-                <img class="heroimg2 good animate__animated animate__fadeInLeft " src="adi image/png-image.png" alt="" >
-                <img class="vilimg evil animate__animated animate__fadeInLeft" src="adi image/uchiha_madara___png___by_anvmadara_dewr6zj-pre.png" alt="" >
-                <img class="vilimg2 evil animate__animated animate__fadeInRight  " src="adi image/d383ajh-c063f3bf-1787-4484-a75e-5bd8a8892a86.png" alt="" >
-            <h1 class="chars">CHARACTERS</h1>
-            <!-- Toggle Button Start -->
-            <div class="toggle-switch">
-                <span class="toggle-label hero">Heroes</span>
-                <label class="toggle-button" for="toggle-input">
-                    <input type="checkbox" class="toggle-input" id="toggle-input">
-                    <div class="toggle-slider" id="toggle-slider"></div>
-                </label>
-                <span class="toggle-label villian">Villains</span>
-            </div>
+                <img class="heroimg good animate__animated animate__fadeInRight "
+                    src="adi image/Naruto-Uzumaki-No-Background.png" alt="">
+                <img class="heroimg2 good animate__animated animate__fadeInLeft " src="adi image/png-image.png" alt="">
+                <img class="vilimg evil animate__animated animate__fadeInLeft"
+                    src="adi image/uchiha_madara___png___by_anvmadara_dewr6zj-pre.png" alt="">
+                <img class="vilimg2 evil animate__animated animate__fadeInRight  "
+                    src="adi image/d383ajh-c063f3bf-1787-4484-a75e-5bd8a8892a86.png" alt="">
+                <h1 class="chars">CHARACTERS</h1>
+                <!-- Toggle Button Start -->
+                <div class="toggle-switch">
+                    <span class="toggle-label hero">Heroes</span>
+                    <label class="toggle-button" for="toggle-input">
+                        <input type="checkbox" class="toggle-input" id="toggle-input">
+                        <div class="toggle-slider" id="toggle-slider"></div>
+                    </label>
+                    <span class="toggle-label villian">Villains</span>
+                </div>
             </div>
             <!--Card section start-->
             <div class="container " id="cont">
@@ -199,18 +201,21 @@
                 <div class="flip-card animate__animated animate__flipInX good ">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                                   <div class="card-content">
+                            <div class="card-content">
                                 <h2 class="card-title ">Shinki</h2>
-                                </div>
-                            <img data-src="./Images/Shinki.webp" alt="Shinki" >
+                            </div>
+                            <img data-src="./Images/Shinki.webp" alt="Shinki">
                         </div>
                         <div class="flip-card-back">
                             <p class="card-text">
-                                In the anime, as a young boy, Shinki was unable to control his power prompting Gaara to 
-                                approach him. Fearful, he attacked the Kazekage, who surprised him by hugging him despite 
-                                Shinki injuring him. Offering to teach Shinki how to use his power, he told Gaara his name 
-                                before accepting his offer. Following the encounter, Gaara adopted him, and soon after 
-                                began teaching Shinki proper control of his power and how to effectively use it in battle.
+                                In the anime, as a young boy, Shinki was unable to control his power prompting Gaara to
+                                approach him. Fearful, he attacked the Kazekage, who surprised him by hugging him
+                                despite
+                                Shinki injuring him. Offering to teach Shinki how to use his power, he told Gaara his
+                                name
+                                before accepting his offer. Following the encounter, Gaara adopted him, and soon after
+                                began teaching Shinki proper control of his power and how to effectively use it in
+                                battle.
                             </p>
                         </div>
                     </div>
@@ -219,9 +224,9 @@
                 <div class="flip-card animate__animated animate__flipInX good">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            
-                               <div class="card-content">
-                            <h2 class="card-title ">Hinata Hyuga</h2>
+
+                            <div class="card-content">
+                                <h2 class="card-title ">Hinata Hyuga</h2>
                             </div>
                             <img data-src="./Images/hinata_hyuga.jpg" alt="Hinata Hyuga">
                         </div>
@@ -237,14 +242,14 @@
                 </div>
                 <!--[Hinata Hyuga] card Start-->
 
-              
+
 
                 <div class="flip-card animate__animated animate__flipInX good">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            
-                               <div class="card-content">
-                            <h2 class="card-title ">Himawari Uzumaki</h2>
+
+                            <div class="card-content">
+                                <h2 class="card-title ">Himawari Uzumaki</h2>
                             </div>
                             <img data-src="./Images/Himawari Uzumaki.jpg" alt="Himawari Uzumaki" height="330px"
                                 width="300px">
@@ -261,8 +266,8 @@
 
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Jiraiya</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Jiraiya</h2>
                             </div>
                             <img data-src="data:image/jpeg;base64,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"
                                 alt="Jiraiya" height="300px" width="300px" class="img_card">
@@ -282,8 +287,8 @@
 
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Orochimaru</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Orochimaru</h2>
                             </div>
                             <img data-src="data:image/jpeg;base64,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"
                                 alt="Orochimaru" height="300px" width="300px" class="img_card">
@@ -304,9 +309,9 @@
                 <div class="flip-card animate__animated animate__flipInX good">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            
-                               <div class="card-content">
-                            <h2 class="card-title ">Naruto Uzumaki</h2>
+
+                            <div class="card-content">
+                                <h2 class="card-title ">Naruto Uzumaki</h2>
                             </div>
                             <img data-src="./Images/naruto.png" alt="Naruto" height="260px" width="300px">
                         </div>
@@ -328,8 +333,8 @@
                 <div class="flip-card animate__animated animate__flipInX good">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Konohamaru Sarutobi</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Konohamaru Sarutobi</h2>
                             </div>
                             <img data-src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2019/11/Konohamaru-FactS.jpg?q=50&fit=contain&w=1140&h=&dpr=1.5"
                                 of character] height="300px" width="300px" class="img_card">
@@ -355,9 +360,9 @@
                 <div class="flip-card animate__animated animate__flipInX good">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            
-                               <div class="card-content">
-                            <h2 class="card-title ">Jiraiya Sensei</h2>
+
+                            <div class="card-content">
+                                <h2 class="card-title ">Jiraiya Sensei</h2>
                             </div>
                             <img data-src="data:image/jpeg;base64,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"
                                 alt="Jiraiya" height="260px" width="300px">
@@ -389,9 +394,9 @@
                 <div class="flip-card animate__animated animate__flipInX good">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            
-                               <div class="card-content">
-                            <h2 class="card-title ">Kawaki Uzumaki</h2>
+
+                            <div class="card-content">
+                                <h2 class="card-title ">Kawaki Uzumaki</h2>
                             </div>
                             <img data-src="./Images/kawaki_img2.jpg" alt="Kawaki" height="260px" width="300px">
                         </div>
@@ -413,8 +418,8 @@
                 <div class="flip-card animate__animated animate__flipInX good">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Sasuke Uchiha</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Sasuke Uchiha</h2>
                             </div>
                             <img data-src="./Images/Sasuke.png" alt="Sasuke Uchiha" height="350px" width="250px">
                         </div>
@@ -435,8 +440,8 @@
                 <div class="flip-card animate__animated animate__flipInX good">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Sarada Uchiha</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Sarada Uchiha</h2>
                             </div>
                             <img data-src="./Images/Sarada_Infobox.webp" alt=Sarada height="300px" width="300px"
                                 class="img_card">
@@ -471,32 +476,36 @@
                 <!--[Sarada Uchiha] card end-->
 
                 <!-- Villian [Toneri Ōtsutsuki] card start-->
-            <div class="flip-card animate__animated animate__flipInX evil">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                           <div class="card-content">
-                        <h2 class="card-title">Toneri Ōtsutsuki</h2>
+                <div class="flip-card animate__animated animate__flipInX evil">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="card-content">
+                                <h2 class="card-title">Toneri Ōtsutsuki</h2>
+                            </div>
+                            <img data-src="./Images/Toneri Ōtsutsuki.jpg" alt="Toneri Ōtsutsuki" height="250px"
+                                width="300px" class="img_card">
                         </div>
-                        <img data-src="./Images/Toneri Ōtsutsuki.jpg" alt="Toneri Ōtsutsuki" height="250px" width="300px" class="img_card">
-                    </div>
-                    <div class="flip-card-back">
-                        <p class="card-text"></p>
-                        <p>Toneri Ōtsutsuki is a descendant of Hamura Ōtsutsuki and the sole survivor of the Ōtsutsuki Clan's branch family on the Moon.
-                            Toneri carries hatred towards mankind for weaponising chakra and once plotted to destroy humanity as punishment, 
-                            a goal which he states that the branch family of his clan desired for a thousand years. 
-                            He usually displays a calm and cool demeanour driven to completing the Thousand Year Plan to wipe out the shinobi world.
-                        </p>
+                        <div class="flip-card-back">
+                            <p class="card-text"></p>
+                            <p>Toneri Ōtsutsuki is a descendant of Hamura Ōtsutsuki and the sole survivor of the
+                                Ōtsutsuki Clan's branch family on the Moon.
+                                Toneri carries hatred towards mankind for weaponising chakra and once plotted to destroy
+                                humanity as punishment,
+                                a goal which he states that the branch family of his clan desired for a thousand years.
+                                He usually displays a calm and cool demeanour driven to completing the Thousand Year
+                                Plan to wipe out the shinobi world.
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- Villian [Toneri Ōtsutsuki] card end-->
+                <!-- Villian [Toneri Ōtsutsuki] card end-->
 
                 <!-- [Sumire kakei] card start-->
                 <div class="flip-card animate__animated animate__flipInX good">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Sumire Kakei</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Sumire Kakei</h2>
                             </div>
                             <img src="./Images/sumire.jpg" alt="Sumire Kakei" height="393px" width="737px"
                                 class="img_card">
@@ -527,8 +536,8 @@
                 <div class="flip-card animate__animated animate__flipInX good">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Sakumo Hatake</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Sakumo Hatake</h2>
                             </div>
                             <img data-src="./Images/Sakumo_Hatake_pic.jpg" alt="Sakumo Hatake" height="350px"
                                 width="250px">
@@ -552,8 +561,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Suigetsu</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Suigetsu</h2>
                             </div>
                             <img data-src="./Images/Suigetsu.jpeg" alt="Suigetsu" height="300px" width="300px"
                                 class="img_card">
@@ -582,8 +591,8 @@
                 <div class="flip-card animate__animated animate__flipInX evil">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">black zetsu</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">black zetsu</h2>
                             </div>
                             <img data-src="./Images/black zetsu.png" alt="Black Zetsu" height="300px" width="300px">
                         </div>
@@ -607,8 +616,8 @@
 
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Itachi Uchiha</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Itachi Uchiha</h2>
                             </div>
                             <img data-src="./Images/Itachi_Uchiha.jpg" alt="Could not load image" height="300px"
                                 width="300px">
@@ -628,8 +637,8 @@
 
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Naruto Uzumaki</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Naruto Uzumaki</h2>
                             </div>
 
                             <img data-src="https://comicvine.gamespot.com/a/uploads/square_small/11117/111178336/5603895-dcc2d502-6c35-49c9-c93c-6eae7f44d551.jpg"
@@ -652,8 +661,8 @@
 
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Code</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Code</h2>
                             </div>
                             <img data-src="https://comicvine.gamespot.com/a/uploads/square_small/11112/111121983/7944995-6688316931-latest.png"
                                 alt="Black Zetsu" height="300px" width="300px">
@@ -670,8 +679,8 @@
 
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Itachi Uchiha 1</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Itachi Uchiha 1</h2>
                             </div>
                             <img data-src="./Images/itachi-uchiha-naruto.jpg" alt="Could not load image" height="300px"
                                 width="300px">
@@ -688,12 +697,12 @@
 
                 <!--[Itachi Uchiha] card end-->
 
-                 <!-- [Anko Mitarashi] card start-->
+                <!-- [Anko Mitarashi] card start-->
                 <div class="flip-card animate__animated animate__flipInX good">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Anko Mitarashi</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Anko Mitarashi</h2>
                             </div>
                             <img data-src="./Images/anko.jpg" alt="Anko Mitarashi" height="300px" width="300px"
                                 class="img_card">
@@ -712,26 +721,29 @@
                 </div>
                 <!--[Anko Mitarashi] card end-->
 
-                 <!-- [Hayate Gekko] card start-->
+                <!-- [Hayate Gekko] card start-->
                 <div class="flip-card animate__animated animate__flipInX good">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Hayate Gekko</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Hayate Gekko</h2>
                             </div>
                             <img data-src="./Images/Hayate_Gekk%3F.jpg" alt="Hayate Gekko" height="300px" width="300px"
                                 class="img_card">
 
                         </div>
                         <div class="flip-card-back">
-                            <p class="card-text">Hayate was a tokubetsu jounin from the Hidden village of Konoha. He served as the
-                                proctor for the final round of the chunnin exams. He died fighting Baki from the Hidden village of 
-                                Sand and was replaced by Genma Shiranui as the proctor for the chunnin exams. He was later reanimated 
+                            <p class="card-text">Hayate was a tokubetsu jounin from the Hidden village of Konoha. He
+                                served as the
+                                proctor for the final round of the chunnin exams. He died fighting Baki from the Hidden
+                                village of
+                                Sand and was replaced by Genma Shiranui as the proctor for the chunnin exams. He was
+                                later reanimated
                                 by Kabuto during the fourth great ninja war.</p>
                         </div>
                     </div>
                 </div>
-                <!--[Hayate Gekko] card end-->                
+                <!--[Hayate Gekko] card end-->
 
 
 
@@ -739,8 +751,8 @@
                 <div class="flip-card animate__animated animate__flipInX good">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Karin</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Karin</h2>
                             </div>
                             <img data-src="./Images/Karin.png" alt="Karin" height="300px" width="300px"
                                 class="img_card">
@@ -762,8 +774,8 @@
                 <div class="flip-card animate__animated animate__flipInX good">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Princess Kasumi</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Princess Kasumi</h2>
                             </div>
                             <img data-src="./Images/Princess_kasumi.jpg" alt="Princess Kasumi" height="250px"
                                 width="250px">
@@ -782,8 +794,8 @@
                 <div class="flip-card animate__animated animate__flipInX good">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Sai Yamanaka</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Sai Yamanaka</h2>
                             </div>
                             <img data-src="./Images/Sai_Infobox.png" alt="Sai Yamanaka" height="300px" width="300px">
                         </div>
@@ -809,8 +821,8 @@
 
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Anko Mitarashi</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Anko Mitarashi</h2>
                             </div>
                             <img data-src="./Images/anko.jpg" alt="Anko Mitarashi" height="300px" width="300px">
                         </div>
@@ -834,8 +846,8 @@
                 <div class="flip-card animate__animated animate__flipInX good">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Chiriku</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Chiriku</h2>
                             </div>
                             <img data-src="./Images/chiriku.jpg" alt="Chiriku" height="300px" width="300px">
                         </div>
@@ -859,8 +871,8 @@
                 <div class="flip-card animate__animated animate__flipInX good">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Fukusaku</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Fukusaku</h2>
                             </div>
                             <img src="./Images/Fukusaku.jpg" alt="Fukusaku" height="225px" width="300px"
                                 class="img_card">
@@ -888,8 +900,8 @@
                 <div class="flip-card animate__animated animate__flipInX evil">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Ten Tails - Juubi</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Ten Tails - Juubi</h2>
                             </div>
                             <img data-src="./Images/ten tails.jpeg" alt="Ten Tails - Juubi" height="270px"
                                 width="300px">
@@ -912,8 +924,8 @@
                 <div class="flip-card animate__animated animate__flipInX good">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Eight Tails - Gyuki</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Eight Tails - Gyuki</h2>
                             </div>
                             <img data-src="./Images/Gyuki-Eight-Tails-in-Naruto.webp" alt="Eight Tails - Gyuki"
                                 height="300px" width="300px">
@@ -937,8 +949,8 @@
                 <div class="flip-card animate__animated animate__flipInX good">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Seven-Tails - Chomei</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Seven-Tails - Chomei</h2>
                             </div>
                             <img data-src="./Images/Chomei-Seven-Tails-in-Naruto.webp" alt="Seven Tails - Chomei"
                                 height="300px" width="300px">
@@ -962,8 +974,8 @@
                 <div class="flip-card animate__animated animate__flipInX good">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Asura</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Asura</h2>
                             </div>
                             <img data-src="./Images/Asura.png" alt="Asura" height="300px" width="300px">
                         </div>
@@ -986,8 +998,8 @@
                 <div class="flip-card animate__animated animate__flipInX good">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Yoshino Nara</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Yoshino Nara</h2>
                             </div>
                             <img data-src="./Images/YoshinoNara.jfif" alt="Yoshino Nara" height="300px" width="300px"
                                 class="img_card">
@@ -1017,8 +1029,8 @@
                 <div class="flip-card animate__animated animate__flipInX good">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Inuzuka Hana</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Inuzuka Hana</h2>
                             </div>
                             <img data-src="./Images/inuzuka_hana.jpg" alt="Inuzuka Hana" height="300px" width="300px">
                         </div>
@@ -1035,8 +1047,8 @@
                 <div class="flip-card animate__animated animate__flipInX good">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title"> Izumi Uchiha </h2>
+                            <div class="card-content">
+                                <h2 class="card-title"> Izumi Uchiha </h2>
                             </div>
                             <img data-src="./Images/Izumi_Uchiha.jpg" alt="Izumi Uchiha" height="350px" width="380px">
                         </div>
@@ -1062,8 +1074,8 @@
                 <div class="flip-card animate__animated animate__flipInX evil">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Fūka</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Fūka</h2>
                             </div>
                             <img data-src="./Images/fuka.jpg" alt="Fūka" height="300px" width="300px">
                         </div>
@@ -1086,8 +1098,8 @@
                 <div class="flip-card animate__animated animate__flipInX good">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Neji Hyuga </h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Neji Hyuga </h2>
                             </div>
                             <img data-src="./Images/neji-hyuga.jpg" alt="Neji Hyuga" height="300px" width="300px">
                         </div>
@@ -1110,8 +1122,8 @@
                 <div class="flip-card animate__animated animate__flipInX good">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Rôshi</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Rôshi</h2>
                             </div>
                             <img data-src="./Images/roshi.jpg" alt="Rôshi" height="300px" width="300px">
                         </div>
@@ -1132,8 +1144,8 @@
 
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Suigetsu</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Suigetsu</h2>
                             </div>
 
                             <img data-src="./Images/Suigetsu.jpeg" alt="Suigetsu" height="300px" width="300px">
@@ -1157,8 +1169,8 @@
                 <div class="flip-card animate__animated animate__flipInX good">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title"> Boruto Uzumaki</h2>
+                            <div class="card-content">
+                                <h2 class="card-title"> Boruto Uzumaki</h2>
                             </div>
 
                             <img data-src="./Images/boruto.jpg" alt="Boruto Uzumaki" height="350px" width="380px">
@@ -1180,8 +1192,8 @@
                 <div class="flip-card animate__animated animate__flipInX evil">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Uchiha Madara</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Uchiha Madara</h2>
                             </div>
                             <img data-src="./Images/madara.jpg" alt="Uchiha Madara" height="350px" width="380px">
                         </div>
@@ -1208,8 +1220,8 @@
                 <div class="flip-card animate__animated animate__flipInX good">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Ebisu</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Ebisu</h2>
                             </div>
                             <img data-src="./Images/Ebisu.png" alt="Ebisu" height="300px" width="300px">
                         </div>
@@ -1226,8 +1238,8 @@
                 <div class="flip-card animate__animated animate__flipInX good">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title"> Yukimaru </h2>
+                            <div class="card-content">
+                                <h2 class="card-title"> Yukimaru </h2>
                             </div>
 
                             <img data-src="./Images/yukimaru.png" alt="Yukimaru" height="350px" width="380px">
@@ -1247,8 +1259,8 @@
                 <div class="flip-card animate__animated animate__flipInX good">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Yamato</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Yamato</h2>
                             </div>
                             <img data-src="./Images/Yamato.png" alt="Yamato" height="300px" width="300px">
 
@@ -1270,8 +1282,8 @@
                 <div class="flip-card animate__animated animate__flipInX good">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Hanabi Hyuga</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Hanabi Hyuga</h2>
                             </div>
                             <img data-src="Images/download.jfif" alt="Hanabi Hyuga" height="350px" width="380px">
                         </div>
@@ -1289,8 +1301,8 @@
                 <div class="flip-card animate__animated animate__flipInX good">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Tsunade</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Tsunade</h2>
                             </div>
                             <img data-src="Images/Tsunade.jpg" alt="Tsunade" height="300px" width="300px">
                         </div>
@@ -1327,8 +1339,8 @@
                 <div class="flip-card animate__animated animate__flipInX evil">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Jirobo</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Jirobo</h2>
                             </div>
                             <img data-src="https://www.giantbomb.com/a/uploads/scale_small/0/5756/330799-jirobo.jpg"
                                 alt="Jirobo" height="300px" width="300px">
@@ -1348,8 +1360,8 @@
                 <div class="flip-card animate__animated animate__flipInX good">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Hanare</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Hanare</h2>
                             </div>
                             <img data-src="https://qph.fs.quoracdn.net/main-qimg-85fae3ac8ec01ad91d4a5304cf3a2b1a"
                                 alt="Hanare" height="300px" width="300px">
@@ -1384,8 +1396,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Fūka</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Fūka</h2>
                             </div>
                             <img data-src="./Images/fuka.jpg" alt="Fūka" height="300px" width="300px">
                         </div>
@@ -1408,8 +1420,8 @@
                 <div class="flip-card animate__animated animate__flipInX evil">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Mizuki</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Mizuki</h2>
                             </div>
                             <img data-src="Images/Mizuki.png" alt="Mizuki" height="300px" width="300px">
                         </div>
@@ -1434,8 +1446,8 @@
                 <div class="flip-card animate__animated animate__flipInX evil">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">The Demon Brothers</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">The Demon Brothers</h2>
                             </div>
                             <img data-src="Images/Naruto-Demon-Brothers.jpg" alt="The Demon Brothers" height="300px"
                                 width="300px">
@@ -1467,8 +1479,8 @@
 
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Madara Uchiha</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Madara Uchiha</h2>
                             </div>
                             <img data-src="Images/madara-uchiha.jpeg" alt="Madara Uchiha" height="270px" width="300px">
                         </div>
@@ -1493,8 +1505,8 @@
                 <div class="flip-card animate__animated animate__flipInX evil">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Tayuya</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Tayuya</h2>
                             </div>
                             <img data-src="./Images/tayuya.jpg" alt="Tayuya" height="300px" width="300px">
                         </div>
@@ -1514,8 +1526,8 @@
                 <div class="flip-card animate__animated animate__flipInX good">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Kagura</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Kagura</h2>
                             </div>
                             <img data-src="https://www.giantbomb.com/a/uploads/scale_small/16/164924/2399930-kagura.png"
                                 alt="Kagura" height="300px" width="300px">
@@ -1534,8 +1546,8 @@
                 <div class="flip-card animate__animated animate__flipInX good">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Tenten</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Tenten</h2>
                             </div>
                             <img data-src="Images/Tenten.jpg" alt="Tenten" height="300px" width="300px">
                         </div>
@@ -1553,8 +1565,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Itachi Uchiha</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Itachi Uchiha</h2>
                             </div>
                             <img data-src="images/Itachi.png" alt="Itachi Uchiha" height="300px" width="300px">
                         </div>
@@ -1576,8 +1588,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Isaribi</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Isaribi</h2>
                             </div>
                             <img data-src="Images/Isaribi.jpg" alt="Isaribi" height="280px" width="400px">
                         </div>
@@ -1598,8 +1610,8 @@
                 <div class="flip-card animate__animated animate__flipInX good">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Kurama</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Kurama</h2>
                             </div>
                             <img src="https://www.giantbomb.com/a/uploads/original/13/135472/2264772-narutoninjastorm3battle016.jpg"
                                 alt="Kurama" height="300px" width="300px">
@@ -1627,8 +1639,8 @@
                 <div class="flip-card animate__animated animate__flipInX good">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Hiashi Hyūga</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Hiashi Hyūga</h2>
                             </div>
                             <img data-src="images/Hiashi_Hyuga.png" alt="Hiashi Hyuga" height="300px" width="300px">
                         </div>
@@ -1651,8 +1663,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Bansai</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Bansai</h2>
                             </div>
 
                             <img data-src="./Images/bansai.png" alt="Bansai" height="300px" width="300px">
@@ -1671,8 +1683,8 @@
                 <div class="flip-card animate__animated animate__flipInX good">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Minato Namikaze</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Minato Namikaze</h2>
                             </div>
 
                             <img data-src="Images/minatoNew.jpg" alt="Minato" height="300px" width="300px">
@@ -1691,8 +1703,8 @@
                 <div class="flip-card animate__animated animate__flipInX good">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Kushina Uzumaki</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Kushina Uzumaki</h2>
                             </div>
                             <img src="./Images/kushina_uzumaki.jpg" alt="Kushina Uzumaki" height="250px" width="300px"
                                 class="img_card">
@@ -1728,8 +1740,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Kawaki</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Kawaki</h2>
                             </div>
 
                             <img data-src="./Images/kawaki2.jpg" alt="Kawaki" height="300px" width="300px">
@@ -1755,8 +1767,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Eida</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Eida</h2>
                             </div>
 
                             <img data-src="./Images/eida.png" alt="Eida" height="350px" width="350px">
@@ -1783,8 +1795,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Daemon</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Daemon</h2>
                             </div>
 
                             <img data-src="./Images/Daemon.webp" alt="Daemon" height="350px" width="350px">
@@ -1804,8 +1816,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Nagato Uzumaki</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Nagato Uzumaki</h2>
                             </div>
 
                             <img data-src="./Images/nagato.png" alt="Nagato Uzumaki" height="320px" width="380px">
@@ -1829,8 +1841,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">YAMATO</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">YAMATO</h2>
                             </div>
 
                             <img data-src="./Images/yamato.png" alt="Yamato" height="350px" width="380px">
@@ -1856,8 +1868,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Hashirama Senju </h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Hashirama Senju </h2>
                             </div>
 
                             <img data-src="https://www.giantbomb.com/a/uploads/scale_small/3/33873/1727699-first_hokage.jpg"
@@ -1883,8 +1895,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title"> Yahiko </h2>
+                            <div class="card-content">
+                                <h2 class="card-title"> Yahiko </h2>
                             </div>
 
                             <img data-src="./Images/Yahiko.png" alt="Yahiko" height="350px" width="380px">
@@ -1905,8 +1917,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Deidara</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Deidara</h2>
                             </div>
 
                             <img data-src="./Images/deidara69.jpg" alt="Deidara" height="300px" width="300px">
@@ -1928,8 +1940,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title"> Tsuande </h2>
+                            <div class="card-content">
+                                <h2 class="card-title"> Tsuande </h2>
                             </div>
 
                             <img data-src="./Images/Tsunadexx.png" alt="Tsuande" height="350px" width="380px">
@@ -1952,17 +1964,19 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title"> Mei Terumī </h2>
+                            <div class="card-content">
+                                <h2 class="card-title"> Mei Terumī </h2>
                             </div>
 
                             <img data-src="./Images/mei.png" alt="Mei" height="350px" width="380px">
                         </div>
                         <div class="flip-card-back">
-                            <p class="card-text">Mei Terumī is one of the supporting characters of the Naruto franchise. 
-                                She is the Fifth Mizukage of Kirigakure. She became Mizukage in recent years, after the 
-                                dreadful reign of Yagura ended, and has worked tirelessly to recreate diplomatic relations 
-                                with other villages, as well as reform internal policies. Twelve years after the war, she 
+                            <p class="card-text">Mei Terumī is one of the supporting characters of the Naruto franchise.
+                                She is the Fifth Mizukage of Kirigakure. She became Mizukage in recent years, after the
+                                dreadful reign of Yagura ended, and has worked tirelessly to recreate diplomatic
+                                relations
+                                with other villages, as well as reform internal policies. Twelve years after the war,
+                                she
                                 remained single, complaining about the scarcity of nice men in her life.
                         </div>
                     </div>
@@ -1974,8 +1988,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">KIMIMARO</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">KIMIMARO</h2>
                             </div>
 
                             <img data-src="./Images/kimimaro.png" alt="Kimimaro" height="350px" width="380px">
@@ -1995,8 +2009,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Zabuza</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Zabuza</h2>
                             </div>
                             <img data-src="https://www.giantbomb.com/a/uploads/scale_small/3/34651/3376238-zabuza.png"
                                 alt="Zabuza" height="300px" width="300px">
@@ -2018,8 +2032,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title"> Haku </h2>
+                            <div class="card-content">
+                                <h2 class="card-title"> Haku </h2>
                             </div>
 
                             <img data-src="./Images/Casual_Haku.png" alt="Haku" height="350px" width="380px">
@@ -2042,8 +2056,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title"> Shizune </h2>
+                            <div class="card-content">
+                                <h2 class="card-title"> Shizune </h2>
                             </div>
 
                             <img data-src="./Images/Shizune.png" alt="Shizune" height="350px" width="380px">
@@ -2067,8 +2081,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title"> Tonton </h2>
+                            <div class="card-content">
+                                <h2 class="card-title"> Tonton </h2>
                             </div>
 
                             <img data-src="./Images/Tonton.png" alt="Tonton" height="350px" width="380px">
@@ -2092,8 +2106,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Sand Siblings</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Sand Siblings</h2>
                             </div>
 
                             <img data-src="./Images/sand siblings.jpeg" alt="Sand-Siblings" height="350px"
@@ -2121,8 +2135,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Hidan</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Hidan</h2>
                             </div>
 
                             <img data-src="./Images/Hidan.png" alt="Hidan" height="300px" width="300px">
@@ -2146,8 +2160,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Sakon and Ukon</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Sakon and Ukon</h2>
                             </div>
 
                             <img data-src="./Images/sakon_ukon.jpg" alt="Sakon and Ukon" height="280px" width="250px">
@@ -2178,8 +2192,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Zabuza</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Zabuza</h2>
                             </div>
 
                             <img data-src="https://www.giantbomb.com/a/uploads/square_small/0/534/178998-zabuza.jpg"
@@ -2202,8 +2216,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Tenten</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Tenten</h2>
                             </div>
 
                             <img data-src="./Images/Tenten.jpg" alt="Tenten" height="300px" width="300px">
@@ -2227,9 +2241,9 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
+                            <div class="card-content">
 
-                            <h2 class="card-title">Might Guy</h2>
+                                <h2 class="card-title">Might Guy</h2>
                             </div>
 
                             <img data-src="./Images/GuyGawd.png" alt="Might Guy" height="300px" width="300px">
@@ -2251,8 +2265,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Asuma Sarutobi</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Asuma Sarutobi</h2>
                             </div>
 
                             <img data-src="./Images/322897-asuma_sarutobi.jpg" alt="Asuma Sarutobi" height="280px"
@@ -2280,8 +2294,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Hidan</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Hidan</h2>
                             </div>
 
                             <img data-src="./Images/Hidan.jpg" alt="Hidan" height="300px" width="300px">
@@ -2309,8 +2323,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Kakashi Hatake</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Kakashi Hatake</h2>
                             </div>
 
                             <img data-src="./Images/kakashi.jpg" alt="Kakashi Hatake" height="280px" width="300px">
@@ -2334,8 +2348,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Fugaku</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Fugaku</h2>
                             </div>
 
                             <img data-src="./Images/fugaku.jpeg" alt="Fugaku" height="300px" width="300px">
@@ -2361,8 +2375,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Inari</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Inari</h2>
                             </div>
 
                             <img data-src="./Images/inari.png" alt="Inari" height="300px" width="300px">
@@ -2384,8 +2398,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Third Raikage</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Third Raikage</h2>
                             </div>
 
                             <img data-src="Images/Raikage3.png" alt="Third Raikage" height="300px" width="300px">
@@ -2414,8 +2428,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Shikadai Nara</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Shikadai Nara</h2>
                             </div>
 
                             <img data-src="./Images/Shikadai_Nara.webp" alt="Shikadai Nara" height="300px"
@@ -2441,8 +2455,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Mikoto Uchiha</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Mikoto Uchiha</h2>
                             </div>
 
                             <img data-src="https://wallpapercave.com/wp/wp4126361.png" alt="Mikoto Uchiha"
@@ -2469,8 +2483,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Black Zetsu</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Black Zetsu</h2>
                             </div>
 
                             <img data-src="https://wallpapercave.com/wp/wp8345725.jpg" alt="Black Zetsu" height="300px"
@@ -2504,8 +2518,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Mito Uzumaki</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Mito Uzumaki</h2>
                             </div>
 
                             <img data-src="./Images/MitoUzumaki.jpg" alt="Mito Uzumaki" height="300px" width="300px">
@@ -2533,8 +2547,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title"> Guren</h2>
+                            <div class="card-content">
+                                <h2 class="card-title"> Guren</h2>
                             </div>
 
                             <img data-src="./Images/Guren.png" alt="Guren" height="300px" width="300px">
@@ -2561,8 +2575,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Hanzō</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Hanzō</h2>
                             </div>
 
                             <img data-src="./Images/Hanzo-the-Salamander.jpg" alt="Hanzō" height="300px" width="300px">
@@ -2590,8 +2604,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Konan</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Konan</h2>
                             </div>
 
                             <img data-src="https://cdnb.artstation.com/p/assets/images/images/029/881/599/medium/lilimonada-lilimon-konan.jpg?1598920736"
@@ -2623,8 +2637,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Kidomaru</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Kidomaru</h2>
                             </div>
 
                             <img data-src="https://www.giantbomb.com/a/uploads/scale_small/0/5756/330403-kidomaru.jpg"
@@ -2644,8 +2658,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Karin</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Karin</h2>
                             </div>
 
                             <img data-src="./Images/Karin.png" alt="Karin" height="300px" width="300px"
@@ -2675,8 +2689,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Ebisu Sensei</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Ebisu Sensei</h2>
                             </div>
 
                             <img data-src="./Images/Ebisu.png" alt="Ebisu Sensei" height="300px" width="300px">
@@ -2705,8 +2719,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Tobirama Senju</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Tobirama Senju</h2>
                             </div>
 
                             <img data-src="./Images/tobirama senju.png" alt="Tobirama Senju" height="280px"
@@ -2735,8 +2749,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Hinata Hyuga</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Hinata Hyuga</h2>
                             </div>
 
                             <img data-src="./Images/hinata.jpeg" alt="Hinata Hyuga" height="300px" width="300px">
@@ -2760,8 +2774,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Hiashi Hyuga</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Hiashi Hyuga</h2>
                             </div>
 
                             <img data-src="./Images/hiashi.jpeg" alt="Hiashi Hyuga" height="300px" width="300px">
@@ -2786,8 +2800,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Asuma Sarutobi</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Asuma Sarutobi</h2>
                             </div>
 
                             <img data-src="./Images/322897-asuma_sarutobi.jpg" alt="Asuma Sarutobi" height="280px"
@@ -2818,8 +2832,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Choza Akimichi</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Choza Akimichi</h2>
                             </div>
 
                             <img data-src="./Images/choza_akimichi.png" alt="Choza Akimichi" height="300px"
@@ -2838,8 +2852,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Madara Uchiha</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Madara Uchiha</h2>
                             </div>
 
                             <img data-src="./Images/madara-uchiha.jpeg" alt="Madara Uchiha" height="300px"
@@ -2862,8 +2876,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Izuna Uchiha</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Izuna Uchiha</h2>
                             </div>
 
                             <img data-src="./Images/Izuna_Uchiha.png" alt="Izuna Uchiha" height="300px" width="300px">
@@ -2878,8 +2892,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Hashirama Senju</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Hashirama Senju</h2>
                             </div>
 
                             <img data-src="./Images/hashirama.jpg" alt="Hashirama Senju" height="280px" width="300px">
@@ -2899,8 +2913,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Kaguya Otsutsuki</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Kaguya Otsutsuki</h2>
                             </div>
 
                             <img data-src="./Images/Kaguya_Ōtsutsuki.png" alt="Kaguya Otsutsuki" height="270px"
@@ -2927,8 +2941,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Killer Bee</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Killer Bee</h2>
                             </div>
                             <img data-src="./Images/KillerBee.png" alt="Killer Bee" height="300px" width="300px">
                         </div>
@@ -2949,8 +2963,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Kisame Hoshigaki</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Kisame Hoshigaki</h2>
                             </div>
                             <img src="./Images/kisame.jpg" alt="Kisame Hoshigaki" height="270px" width="300px">
                         </div>
@@ -2970,8 +2984,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Gamabunta</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Gamabunta</h2>
                             </div>
 
                             <img data-src="./Images/Gamabunta.png" alt="Gamabunta" height="300px" width="300px">
@@ -2990,8 +3004,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Juubi</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Juubi</h2>
                             </div>
 
 
@@ -3015,8 +3029,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Matatabi</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Matatabi</h2>
                             </div>
 
                             <img data-src="./Images/matatabi.png" alt="Matatabi" height="300px" width="300px">
@@ -3040,8 +3054,8 @@
 
                         <div class="flip-card-front">
 
-                               <div class="card-content">
-                            <h2 class="card-title">Obito Uchiha </h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Obito Uchiha </h2>
                             </div>
 
                             <img data-src="https://wallpaperaccess.com/full/5536097.jpg" alt="Obito Uchiha"
@@ -3051,8 +3065,8 @@
 
                         <div class="flip-card-back">
 
-                               <div class="card-content">
-                            <h2 class="card-title">Obito Uchiha</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Obito Uchiha</h2>
                             </div>
 
                             <p class="card-text">
@@ -3083,8 +3097,8 @@
 
                         <div class="flip-card-front">
 
-                               <div class="card-content">
-                            <h2 class="card-title">Rin Nohara </h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Rin Nohara </h2>
                             </div>
 
                             <img data-src="Images/Rin_Nohara.jpg" alt="Rin Nohara" height="300px" width="300px">
@@ -3093,8 +3107,8 @@
 
                         <div class="flip-card-back">
 
-                               <div class="card-content">
-                            <h2 class="card-title">Rin Nohara</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Rin Nohara</h2>
                             </div>
 
                             <p class="card-text">
@@ -3114,16 +3128,16 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Jiraiya</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Jiraiya</h2>
                             </div>
 
                             <img data-src="https://www.giantbomb.com/a/uploads/scale_super/9/95613/2225257-jiraiya.jpg"
                                 alt="Jiraiya" height="300px" width="300px">
                         </div>
                         <div class="flip-card-back">
-                               <div class="card-content">
-                            <h2 class="card-title">Jiraiya</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Jiraiya</h2>
                             </div>
                             <p class="card-text">
                                 Jiraiya is one of the "Three Legendary Sannin" that is known through out the ninja
@@ -3146,8 +3160,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Iruka Umino</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Iruka Umino</h2>
                             </div>
 
                             <img data-src="https://www.giantbomb.com/a/uploads/square_small/1/17433/595228-iruka.jpg"
@@ -3155,8 +3169,8 @@
                         </div>
                         <div class="flip-card-back">
                             <div class="card-body">
-                                   <div class="card-content">
-                                <h2 class="card-title">Iruka Umino</h2>
+                                <div class="card-content">
+                                    <h2 class="card-title">Iruka Umino</h2>
                                 </div>
 
                                 <p class="card-text">The main teacher in the ninja acedemy he grow up like Naruto as
@@ -3173,16 +3187,16 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Orochimaru</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Orochimaru</h2>
                             </div>
                             <img data-src="https://www.giantbomb.com/a/uploads/square_medium/0/5892/482861-naruto_orochi0244.jpg"
                                 alt="Orochimaru" height="300px" width="300px">
                         </div>
                         <div class="flip-card-back">
                             <div class="card-body">
-                                   <div class="card-content">
-                                <h2 class="card-title">Orochimaru</h2>
+                                <div class="card-content">
+                                    <h2 class="card-title">Orochimaru</h2>
                                 </div>
                                 <p class="card-text">With a life-ambition to learn all of the world's secrets,
                                     Orochimaru seeks immortality so that he might live all of the lives necessary to
@@ -3201,16 +3215,16 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Sasori</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Sasori</h2>
                             </div>
                             <img data-src=https://www.giantbomb.com/a/uploads/original/3/33873/1724192-sasori.jpg
                                 alt=Sasori height="300px" width="300px">
                         </div>
                         <div class="flip-card-back">
                             <div class="card-body">
-                                   <div class="card-content">
-                                <h2 class="card-title">Sasori</h2>
+                                <div class="card-content">
+                                    <h2 class="card-title">Sasori</h2>
                                 </div>
                                 <p class="card-text">Sasori is a member of Akatsuki and partner to Deidara, he was once
                                     the partner of Orochimaru. Sasori is a modified human/puppet. Sasori had a rough
@@ -3229,16 +3243,16 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Kakuzu</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Kakuzu</h2>
                             </div>
                             <img data-src="https://www.giantbomb.com/a/uploads/scale_small/1/14242/826300-300px_kakuzu.png"
                                 alt="Kakuzu" height="300px" width="300px">
                         </div>
                         <div class="flip-card-back">
                             <div class="card-body">
-                                   <div class="card-content">
-                                <h2 class="card-title">Kakuzu</h2>
+                                <div class="card-content">
+                                    <h2 class="card-title">Kakuzu</h2>
                                 </div>
                                 <p class="card-text">Kakuzu is a member of the criminal organization known as
                                     Akatsuki. He is the accountant for the Akatsuki which makes him obsessed
@@ -3255,15 +3269,15 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Kurama</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Kurama</h2>
                             </div>
                             <img data-src="Images/Kurama-2.png" alt="Kurama" height="300px" width="300px">
                         </div>
                         <div class="flip-card-back">
                             <div class="card-body">
-                                   <div class="card-content">
-                                <h2 class="card-title">Kurama</h2>
+                                <div class="card-content">
+                                    <h2 class="card-title">Kurama</h2>
                                 </div>
 
                                 <p class="card-text">Kurama (九喇嘛, Kurama), more commonly known as the
@@ -3285,16 +3299,16 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
+                            <div class="card-content">
 
-                            <h2 class="card-title">Teuchi</h2>
+                                <h2 class="card-title">Teuchi</h2>
                             </div>
                             <img data-src="https://static.wikia.nocookie.net/naruto/images/d/d6/Teuchi_Infobox.png"
                                 alt="Teuchi" height="300px" width="300px">
                         </div>
                         <div class="flip-card-back">
-                               <div class="card-content">
-                            <h2 class="card-title">Teuchi</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Teuchi</h2>
                             </div>
                             <p class="card-text">As a teenager 34 years before the Fourth Shinobi World
                                 War, Teuchi devoted his life to making
@@ -3313,15 +3327,15 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Pain </h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Pain </h2>
                             </div>
                             <img data-src="https://fictionhorizon.com/wp-content/uploads/2021/09/pain-quotes.jpg"
                                 alt="Pain" height="300px" width="300px">
                         </div>
                         <div class="flip-card-back">
-                               <div class="card-content">
-                            <h2 class="card-title">Pain </h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Pain </h2>
                             </div>
                             <p class="card-text">
 
@@ -3341,15 +3355,15 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Ebizo</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Ebizo</h2>
                             </div>
                             <img data-src="./Images/ebiZoo.jpg" alt="Ebizo" height="300px" width="300px">
                         </div>
                         <div class="flip-card-back">
                             <div class="card-body">
-                                   <div class="card-content">
-                                <h2 class="card-title">Ebizo</h2>
+                                <div class="card-content">
+                                    <h2 class="card-title">Ebizo</h2>
                                 </div>
                                 <p class="card-text">
                                     Ebizō (エビゾウ, Ebizō), called Honoured Grandfather Ebizō (エビゾウジイ様,
@@ -3367,16 +3381,16 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Nekobaa</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Nekobaa</h2>
                             </div>
 
                             <img data-src="./Images/Nekobaa.jpg" alt="Nekobaa" height="300px" width="300px">
                         </div>
                         <div class="flip-card-back">
                             <div class="card-body">
-                                   <div class="card-content">
-                                <h2 class="card-title">Nekobaa</h2>
+                                <div class="card-content">
+                                    <h2 class="card-title">Nekobaa</h2>
                                 </div>
 
                                 <p class="card-text">Nekobaa (猫バア, Nekobaa, English TV: Granny Cat,
@@ -3394,16 +3408,16 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Jūzō Biwa</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Jūzō Biwa</h2>
                             </div>
 
                             <img data-src="./Images/J3F_Biwa.png" alt="Jūzō Biwa" height="300px" width="300px">
                         </div>
                         <div class="flip-card-back">
                             <div class="card-body">
-                                   <div class="card-content">
-                                <h2 class="card-title">Jūzō Biwa</h2>
+                                <div class="card-content">
+                                    <h2 class="card-title">Jūzō Biwa</h2>
                                 </div>
 
                                 <p class="card-text">Jūzō Biwa (枇杷十蔵, Biwa Jūzō) was a jōnin
@@ -3421,16 +3435,16 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Shisui Uchiha</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Shisui Uchiha</h2>
                             </div>
 
                             <img data-src="Images/Shisui Uchiha.png" alt="Shisui" height="300px" width="300px">
                         </div>
                         <div class="flip-card-back">
                             <div class="card-body">
-                                   <div class="card-content">
-                                <h2 class="card-title">Shisui Uchiha</h2>
+                                <div class="card-content">
+                                    <h2 class="card-title">Shisui Uchiha</h2>
                                 </div>
                                 <p class="card-text">
                                     Shisui Uchiha (うちはシスイ, Uchiha Shisui), renowned as "Shisui of the Body Flicker"
@@ -3447,8 +3461,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Kisame Hoshigaki</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Kisame Hoshigaki</h2>
                             </div>
                             <img data-src="./Images/kisame.jpg" alt="Kisame Hoshigaki" height="270px" width="300px"
                                 class="img_card">
@@ -3472,8 +3486,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Rasa</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Rasa</h2>
                             </div>
                             <img data-src="Images\Rasa.jpg" alt="Rasa" height="300px" width="300px">
                         </div>
@@ -3497,8 +3511,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Karui</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Karui</h2>
                             </div>
                             <img data-src="Images\Karui.webp" alt="Rasa" height="300px" width="300px">
                         </div>
@@ -3520,15 +3534,15 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Shizune</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Shizune</h2>
                             </div>
                             <img src="https://www.giantbomb.com/a/uploads/scale_small/16/164924/2349039-shizune_nar_765.png"
                                 alt="Shizune" height="300px" width="300px" class="img_card">
                         </div>
                         <div class="flip-card-back">
-                               <div class="card-content">
-                            <h2 class="card-title">Shizune</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Shizune</h2>
                             </div>
                             <p>Shizune is the niece of Dan, the lover of Tsunade. Sometime after Dan died, Tsunade left
                                 Konoha and Shizune went with her as her attendant. The bond between Tsunade and Shizune
@@ -3544,8 +3558,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title"> Shizune</h2>
+                            <div class="card-content">
+                                <h2 class="card-title"> Shizune</h2>
                             </div>
 
                             <img data-src="./Images/Shizune.jpeg" alt="anko" height="350px" width="380px">
@@ -3563,8 +3577,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title"> Tsuande </h2>
+                            <div class="card-content">
+                                <h2 class="card-title"> Tsuande </h2>
                             </div>
 
                             <img data-src="./Images/Tsunadexx.png" alt="anko" height="350px" width="380px">
@@ -3586,8 +3600,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Gold and Silver Brothers</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Gold and Silver Brothers</h2>
                             </div>
                             <img data-src="Images/gold_silver_bros.png" alt="Gold and Silver Brothers" height="250px"
                                 width="300px" class="img_card">
@@ -3614,8 +3628,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Shino Aburame</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Shino Aburame</h2>
                             </div>
                             <img data-src="" alt="shino" height="300px" width="300px" class="img_card">
                         </div>
@@ -3633,8 +3647,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Asura Path of Pain</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Asura Path of Pain</h2>
                             </div>
                             <img data-src="Images/asura-path-pain.jpg" alt="Asura Path of Pain" height="300px"
                                 width="300px" class="img_card">
@@ -3655,8 +3669,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">A First Raikage</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">A First Raikage</h2>
                             </div>
                             <img data-src="Images/1stRaikage.webp" alt="A (First Raikage)" height="300px" width="300px"
                                 class="img_card" />
@@ -3686,8 +3700,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">A Second Raikage</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">A Second Raikage</h2>
                             </div>
                             <img data-src="Images/2nd_Raikage.webp" alt="A (Second Raikage)" height="270px"
                                 width="300px" class="img_card">
@@ -3719,9 +3733,9 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
+                            <div class="card-content">
 
-                            <h2 class="card-title">A Third Raikage</h2>
+                                <h2 class="card-title">A Third Raikage</h2>
                             </div>
                             <img data-src="Images/Raikage3.webp" alt="A (Third Raikage)" height="270px" width="300px"
                                 class="img_card">
@@ -3761,9 +3775,9 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
+                            <div class="card-content">
 
-                            <h2 class="card-title">Tazuna</h2>
+                                <h2 class="card-title">Tazuna</h2>
                             </div>
                             <img data-src="Images/Tazuna.jfif" alt="Tazuna" height="300px" width="300px"
                                 class="img_card">
@@ -3783,15 +3797,15 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Ichiraku Ramen</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Ichiraku Ramen</h2>
                             </div>
                             <img data-src="Images/ichiraku-ramen.jpeg" alt="Ichiraku Ramen" height="270px" width="300px"
                                 class="img_card">
                         </div>
                         <div class="flip-card-back">
-                               <div class="card-content">
-                            <h2 class="card-title">Ichiraku Ramen</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Ichiraku Ramen</h2>
                             </div>
                             <p class="card-text">Ramen Ichiraku is Naruto Uzumaki's favourite dining establishment. He
                                 eats there regularly usually stopping by between missions and he is often joined by
@@ -3806,8 +3820,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Kankuro</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Kankuro</h2>
                             </div>
                             <img src="Images\kankuro.webp" alt="Kankuro" height="300px" width="300px" class="img_card">
                         </div>
@@ -3838,8 +3852,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Kushina Uzumaki</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Kushina Uzumaki</h2>
                             </div>
                             <img src="Images\Kushina_Uzumaki.png" alt="Kushina" height="300px" width="300px"
                                 class="img_card">
@@ -3863,8 +3877,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Mito Uzumaki</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Mito Uzumaki</h2>
                             </div>
                             <img src="Images\Mito.jpeg" alt="Mito" height="300px" width="300px" class="img_card">
                         </div>
@@ -3895,8 +3909,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Kushina Uzumaki</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Kushina Uzumaki</h2>
                             </div>
                             <img src="Images\Kushina_Uzumaki.png" alt="Kushina" height="300px" width="300px"
                                 class="img_card">
@@ -3920,8 +3934,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Mito Uzumaki</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Mito Uzumaki</h2>
                             </div>
                             <img src="Images\Mito.jpeg" alt="Mito" height="300px" width="300px" class="img_card">
                         </div>
@@ -3951,14 +3965,14 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Kiba Inuzuka</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Kiba Inuzuka</h2>
                             </div>
                             <img data-src="Images/Kiba.jpeg" alt="Kiba" height="300px" width="300px" class="img_card">
                         </div>
                         <div class="flip-card-back">
-                               <div class="card-content">
-                            <h2 class="card-title">Kiba Inuzuka</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Kiba Inuzuka</h2>
                             </div>
                             <p class="card-text">Kiba is a character from the manga/anime Naruto. He is a member of team
                                 8 along with Hinata and Shino and their teacher is Kurenai. He is always seen with his
@@ -3971,15 +3985,15 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Ino Yamanaka</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Ino Yamanaka</h2>
                             </div>
                             <img data-src="Images/ino.jpg" alt="Ino Yamanaka" height="300px" width="300px"
                                 class="img_card">
                         </div>
                         <div class="flip-card-back">
-                               <div class="card-content">
-                            <h2 class="card-title">Ino Yamanaka</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Ino Yamanaka</h2>
                             </div>
                             <p class="card-text">Ino Yamanaka is a headstrong ninja of the Hidden Leaf Village and a
                                 member of Team 10 as their medic, Ino is a member of the Yamanaka-Clan of Konoha. She
@@ -3993,15 +4007,15 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Shizune</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Shizune</h2>
                             </div>
                             <img data-src="Images/Shizune.png" alt="Shizune" height="300px" width="300px"
                                 class="img_card">
                         </div>
                         <div class="flip-card-back">
-                               <div class="card-content">
-                            <h2 class="card-title">Shizune</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Shizune</h2>
                             </div>
                             <p class="card-text">She is a Jonin from the Hidden Leaf Village and is Lady Tsunade's
                                 Personal Assistant. She is a highly-skilled Medical Ninja who is usually taking care of
@@ -4015,8 +4029,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Butsuma Senju</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Butsuma Senju</h2>
                             </div>
                             <img src="Images/Butsuma_Senju.jpg" alt="Butsuma Senju" height="300px" width="300px"
                                 class="img_card">
@@ -4035,8 +4049,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Onoki</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Onoki</h2>
                             </div>
                             <img data-src="Images/onoki.png" alt="Gold and Silver Brothers" height="300px" width="300px"
                                 class="img_card">
@@ -4056,8 +4070,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Shisui Uchiha</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Shisui Uchiha</h2>
                             </div>
                             <img data-src="Images/Shisui Uchiha.png" alt="Shisui Uchiha" height="300px" width="300px"
                                 class="img_card">
@@ -4075,8 +4089,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Kae Yukiwari</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Kae Yukiwari</h2>
                             </div>
 
                             <img src="./Images/Kae_Yukiwari.png" alt="Kae Yukiwari" height="300px" width="300px">
@@ -4100,8 +4114,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Kabuto Yakushi</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Kabuto Yakushi</h2>
                             </div>
 
                             <img src="./Images/Kabuto_Yakushi.png" alt="Kabuto Yakushi" height="270px" width="300px">
@@ -4127,8 +4141,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Jugo</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Jugo</h2>
                             </div>
                             <img data-src="Images/Jugo.png" alt="jugo" height="300px" width="300px" class="img_card" />
                         </div>
@@ -4150,8 +4164,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Rock Lee </h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Rock Lee </h2>
                             </div>
                             <img data-src="Images/rocklee.jpg" alt="Rock Lee" height="300px" width="400px"
                                 class="img_card" />
@@ -4170,15 +4184,15 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Baki</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Baki</h2>
                             </div>
                             <img src="Images/Baki_Infobox.png" alt="Baki_Infobox" height="300px" width="300px"
                                 class="img_card">
                         </div>
                         <div class="flip-card-back">
-                               <div class="card-content">
-                            <h2 class="card-title">Baki</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Baki</h2>
                             </div>
                             <p class="card-text">Baki is a very tall man. He has two distinctive, red markings on the
                                 right side of his
@@ -4197,15 +4211,15 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Mitsuki</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Mitsuki</h2>
                             </div>
                             <img data-src="https://th.bing.com/th/id/OIP.z2fj6G6eisgTh-vSZGMoMwHaFr?w=272&h=209&c=7&r=0&o=5&pid=1.7"
                                 alt="Mitsuki" height="300px" width="300px" class="img_card">
                         </div>
                         <div class="flip-card-back">
-                               <div class="card-content">
-                            <h2 class="card-title">Mitsuki</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Mitsuki</h2>
                             </div>
                             <p class="card-text">Mitsuki (ミツキ) is a synthetic human that was created as a partial
                                 clone of Orochimaru.Immigrating to Konohagakure to confirm whether or not Boruto Uzumaki
@@ -4225,15 +4239,15 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Orochimaru</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Orochimaru</h2>
                             </div>
                             <img data-src="https://th.bing.com/th/id/OIP.ZVeiapXuyO1IhR4Q25aiSAHaFm?w=267&h=202&c=7&r=0&o=5&pid=1.7"
                                 alt="orochimaru" height="350px" width="250px">
                         </div>
                         <div class="flip-card-back">
-                               <div class="card-content">
-                            <h2 class="card-title">Orochimaru</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Orochimaru</h2>
                             </div>
                             <p class="card-text">Orochimaru is a main villain in the Naruto series and plays a pivotal
                                 role for many of the characters.
@@ -4256,15 +4270,15 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Kurenai</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Kurenai</h2>
                             </div>
                             <img data-src="https://i.pinimg.com/originals/56/58/5c/56585cee0ace0b959df37ca3739214e1.jpg"
                                 alt="Kurenai" height="350px" width="250px">
                         </div>
                         <div class="flip-card-back">
-                               <div class="card-content">
-                            <h2 class="card-title">Kurenai</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Kurenai</h2>
                             </div>
                             <p class="card-text">Kurenai is a character in the anime Naruto who is the overseer of
                                 Hinata Hyuuga, Shino Aburame,
@@ -4282,18 +4296,20 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Mirai</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Mirai</h2>
                             </div>
                             <img data-src="https://static.wikia.nocookie.net/naruto/images/7/7a/Mirai_Sarutobi.png/revision/latest/scale-to-width-down/300?cb=20190616124826"
                                 alt="Mirai" height="350px" width="250px">
                         </div>
                         <div class="flip-card-back">
-                               <div class="card-content">
-                            <h2 class="card-title">Mirai Sarutobi</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Mirai Sarutobi</h2>
                             </div>
-                            <p class="card-text">Mirai is the child of Kurenai Yūhi and Asuma Sarutobi, born in the depths of Autumn.
-                                Her name was chosen by Asuma in belief of protecting the future well-being of the children of the world.
+                            <p class="card-text">Mirai is the child of Kurenai Yūhi and Asuma Sarutobi, born in the
+                                depths of Autumn.
+                                Her name was chosen by Asuma in belief of protecting the future well-being of the
+                                children of the world.
                             </p>
                         </div>
                     </div>
@@ -4305,15 +4321,15 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Temari</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Temari</h2>
                             </div>
                             <img data-src="https://th.bing.com/th/id/OIP.VLNfQJX3TxPnAYDDV8v9_QHaGV?pid=ImgDet&rs=1"
                                 alt="Temari" height="350px" width="250px">
                         </div>
                         <div class="flip-card-back">
-                               <div class="card-content">
-                            <h2 class="card-title">Temari</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Temari</h2>
                             </div>
                             <p class="card-text">Temari Nara is a Hidden Sand Village Ninja that is most known for her
                                 affiliation with Three Sand
@@ -4332,15 +4348,15 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Temari</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Temari</h2>
                             </div>
                             <img data-src="https://th.bing.com/th/id/OIP.VLNfQJX3TxPnAYDDV8v9_QHaGV?pid=ImgDet&rs=1"
                                 alt="Temari" height="350px" width="250px">
                         </div>
                         <div class="flip-card-back">
-                               <div class="card-content">
-                            <h2 class="card-title">Temari</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Temari</h2>
                             </div>
                             <p class="card-text">Temari Nara is a Hidden Sand Village Ninja that is most known for her
                                 affiliation with Three Sand
@@ -4360,15 +4376,15 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Shikamaru</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Shikamaru</h2>
                             </div>
                             <img data-src="https://i.pinimg.com/originals/e6/24/64/e624640aac22e9fdf5b00036e6bf29fb.jpg"
                                 alt="Shikamaru" height="350px" width="250px">
                         </div>
                         <div class="flip-card-back">
-                               <div class="card-content">
-                            <h2 class="card-title">Shikamaru</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Shikamaru</h2>
                             </div>
                             <p class="card-text">Shikamaru Nara is a fictional character in the manga and anime
                                 franchise, Naruto1.
@@ -4390,15 +4406,15 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Kankurou</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Kankurou</h2>
                             </div>
                             <img data-src="https://i.pinimg.com/originals/85/c7/0e/85c70e5dafe647715bfe11241228ef62.jpg"
                                 alt="Kankurou" height="350px" width="250px">
                         </div>
                         <div class="flip-card-back">
-                               <div class="card-content">
-                            <h2 class="card-title">Kankurou</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Kankurou</h2>
                             </div>
                             <p class="card-text">Kankuro is a puppet master Shinobi from Sunogakure (The Village Hidden
                                 in Sand) and the elder brother
@@ -4419,15 +4435,15 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Gamatatsu</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Gamatatsu</h2>
                             </div>
                             <img data-src="https://i.pinimg.com/originals/f2/db/5e/f2db5e6fa948ae6040047efe7eab3c7e.png"
                                 alt="Gamatatsu" height="350px" width="250px">
                         </div>
                         <div class="flip-card-back">
-                               <div class="card-content">
-                            <h2 class="card-title">Gamatatsu</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Gamatatsu</h2>
                             </div>
                             <p class="card-text">Gamatatsu is a minor character from the anime series Naruto and Naruto
                                 Shippuden.
@@ -4449,15 +4465,15 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Gamakichi</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Gamakichi</h2>
                             </div>
                             <img data-src="https://i.pinimg.com/originals/26/13/06/26130661c8195fe788e68a44169d2df1.png"
                                 alt="Gamakichi" height="350px" width="250px">
                         </div>
                         <div class="flip-card-back">
-                               <div class="card-content">
-                            <h2 class="card-title">Gamakichi</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Gamakichi</h2>
                             </div>
                             <p class="card-text">Gamakichi is a toad from Mount Myōboku and the personal summon of
                                 Naruto Uzumaki.
@@ -4481,8 +4497,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Yugito Nii</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Yugito Nii</h2>
                             </div>
                             <img data-src="./Images/YugitoNii.jpg" alt="Yugito Nii" height="300px" width="300px"
                                 class="img_card">
@@ -4507,15 +4523,15 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Matsuri</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Matsuri</h2>
                             </div>
                             <img data-src="https://i.pinimg.com/originals/f3/ff/6a/f3ff6a450df8f3741fc694dc6fc77078.jpg"
                                 alt="Matsuri" height="350px" width="250px">
                         </div>
                         <div class="flip-card-back">
-                               <div class="card-content">
-                            <h2 class="card-title">Matsuri</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Matsuri</h2>
                             </div>
                             <p class="card-text">Matsuri is a genin from Sunagakure,
                                 who appears in the Naruto anime and manga series 1. She is part of a team
@@ -4535,15 +4551,15 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Aoba</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Aoba</h2>
                             </div>
                             <img data-src="https://i.pinimg.com/originals/a1/26/44/a12644b942ba4b755b6631488013d479.jpg"
                                 alt="Aoba" height="350px" width="250px">
                         </div>
                         <div class="flip-card-back">
-                               <div class="card-content">
-                            <h2 class="card-title">Aoba</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Aoba</h2>
                             </div>
                             <p class="card-text">Aoba is a soft-spoken and introverted character with a
                                 penchant for art and literature. They possess a unique ability to empathize with others,
@@ -4564,15 +4580,15 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Katsuyu</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Katsuyu</h2>
                             </div>
                             <img data-src="https://i.pinimg.com/originals/9c/3e/d8/9c3ed87b5a1a3037162fdb63c68d12da.png"
                                 alt="Katsuyu" height="350px" width="250px">
                         </div>
                         <div class="flip-card-back">
-                               <div class="card-content">
-                            <h2 class="card-title">Katsuyu</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Katsuyu</h2>
                             </div>
                             <p class="card-text">Katsuyu is a gentle and nurturing character with a deep love for nature
                                 and animals. They
@@ -4595,15 +4611,15 @@
                 <div class="flip-card animate__animated animate__flipInX good">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Amado</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Amado</h2>
                             </div>
                             <img data-src="./Images/Amado.webp" alt="amado" height="300px" width="300px"
                                 class="img_card">
                         </div>
                         <div class="flip-card-back">
-                               <div class="card-content">
-                            <h2 class="card-title">Amado</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Amado</h2>
                             </div>
                             <p class="card-text">Amado's daughter Akebi died of an unknown disease twelve years prior to
                                 Isshiki Ōtsutsuki's assault on Konoha. Despite this, Amado wasn't discouraged, believing
@@ -4637,8 +4653,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Yugito Nii</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Yugito Nii</h2>
                             </div>
                             <img data-src="./Images/YugitoNii.jpg" alt="Yugito Nii" height="300px" width="300px"
                                 class="img_card">
@@ -4665,8 +4681,8 @@
 
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Sakumo Hatake 2.0</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Sakumo Hatake 2.0</h2>
                             </div>
                             <img data-src="./Images/Sakumo_Hatake_pic.jpg" alt="Sakumo Hatake" height="350px"
                                 width="250px">
@@ -4692,15 +4708,15 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Enma</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Enma</h2>
                             </div>
                             <img data-src="https://i.pinimg.com/originals/4c/d9/c4/4cd9c4d5bd9a01877bdf430720ab3efc.png"
                                 alt="Enma" height="350px" width="250px">
                         </div>
                         <div class="flip-card-back">
-                               <div class="card-content">
-                            <h2 class="card-title">Enma</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Enma</h2>
                             </div>
                             <p class="card-text">Enma is a dynamic character, known for their assertive and fearless
                                 personality.
@@ -4723,8 +4739,8 @@
                 <div class="flip-card animate__animated animate__flipInX good">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Choji Akimichi</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Choji Akimichi</h2>
                             </div>
                             <img src="./Images/chijoi_image.jpg" alt="">
                         </div>
@@ -4754,8 +4770,8 @@
                 <div class="flip-card animate__animated animate__flipInX good">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Hamura Otsutsuki</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Hamura Otsutsuki</h2>
                             </div>
                             <img data-src="./Images/Hamura-otsutsuki.jpeg" alt="Hamura-otsutsuki" height="300px"
                                 width="300px" class="img_card">
@@ -4780,8 +4796,8 @@
 
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Hamura Otsutsuki</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Hamura Otsutsuki</h2>
                             </div>
                             <img data-src="./Images/Hamura-otsutsuki.jpeg" alt="Hamura-otsutsuki" height="300px"
                                 width="300px" class="img_card">
@@ -4809,8 +4825,8 @@
 
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Hamura Otsutsuki</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Hamura Otsutsuki</h2>
                             </div>
                             <img data-src="./Images/Hamura-otsutsuki.jpeg" alt="Hamura-otsutsuki" height="300px"
                                 width="300px" class="img_card">
@@ -4832,17 +4848,22 @@
                 <div class="flip-card animate__animated animate__flipInX good">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Hagoromo Otsutsuki</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Hagoromo Otsutsuki</h2>
                             </div>
-                            <img data-src="https://qph.cf2.quoracdn.net/main-qimg-565fc9c933cb267db9c0d1ba5d385417-lq" alt="Hagoromo-otsutsuki" height="300px"
-                                width="300px" class="img_card">
+                            <img data-src="https://qph.cf2.quoracdn.net/main-qimg-565fc9c933cb267db9c0d1ba5d385417-lq"
+                                alt="Hagoromo-otsutsuki" height="300px" width="300px" class="img_card">
                         </div>
                         <div class="flip-card-back">
-                               <div class="card-content">
-                            <h2 class="card-title">Hagoromo Otsutsuki</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Hagoromo Otsutsuki</h2>
                             </div>
-                            <p class="card-text">Hagoromo Ōtsutsuki (大筒木ハゴロモ, Ōtsutsuki Hagoromo), known to Earth's population at large as the Sage of Six Paths (六道仙人, Rikudō Sennin, English TV: The Sage of the Six Paths), was a legendary godlike figure who is regarded as the ancestor of shinobi,[4] for his act of founding ninshū which led to the creation of the ninja world. He was the son of Princess Kaguya and alongside his fraternal twin brother, Hamura, were the first to be born with the same powerful chakra as their mother.</p>
+                            <p class="card-text">Hagoromo Ōtsutsuki (大筒木ハゴロモ, Ōtsutsuki Hagoromo), known to Earth's
+                                population at large as the Sage of Six Paths (六道仙人, Rikudō Sennin, English TV: The Sage
+                                of the Six Paths), was a legendary godlike figure who is regarded as the ancestor of
+                                shinobi,[4] for his act of founding ninshū which led to the creation of the ninja world.
+                                He was the son of Princess Kaguya and alongside his fraternal twin brother, Hamura, were
+                                the first to be born with the same powerful chakra as their mother.</p>
 
 
                         </div>
@@ -4853,8 +4874,8 @@
                 <div class="flip-card animate__animated animate__flipInX good">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Danzo Shimura</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Danzo Shimura</h2>
                             </div>
                             <img data-src="./Images/danzo.jpg" alt="Hamura-otsutsuki" height="300px" width="300px"
                                 class="img_card">
@@ -4876,8 +4897,8 @@
                 <div class="flip-card animate__animated animate__flipInX good">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Sakura Haruno</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Sakura Haruno</h2>
                             </div>
                             <img data-src=https://i.pinimg.com/736x/e1/f0/de/e1f0de7c07b30e7cd8e30b0ac1960175.jpg
                                 alt=Sakura Haruno height="300px" width="300px" class="img_card">
@@ -4905,8 +4926,8 @@
                 <div class="flip-card animate__animated animate__flipInX evil">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Gengetsu Hōzuki</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Gengetsu Hōzuki</h2>
                             </div>
                             <img data-src=https://i.pinimg.com/474x/06/a8/d0/06a8d0591033aa5c49b1181fdd93f013.jpg
                                 alt=Gengetsu Hōzuki height="300px" width="300px" class="img_card">
@@ -4927,17 +4948,20 @@
                 <div class="flip-card animate__animated animate__flipInX evil">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Menma</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Menma</h2>
                             </div>
                             <img data-src=https://staticg.sportskeeda.com/editor/2023/01/daac3-16729363394246-1920.jpg
                                 alt="Menma" height="300px" width="300px" class="img_card">
                         </div>
                         <div class="flip-card-back">
-                               <div class="card-content">
-                            <h2 class="card-title">Menma</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Menma</h2>
                             </div>
-                            <p class="card-text">Menma Uzumaki is a character that appears in Road to Ninja: Naruto the Movie as the main antagonist. He is the son of Kushina Uzumaki and Minato Namikaze in the alternate universe of Konohagakure, thus making him the "Naruto Uzumaki" of that world. He is also the jinchūriki of Kurama's counterpart: the Black Nine-Tails.</p>
+                            <p class="card-text">Menma Uzumaki is a character that appears in Road to Ninja: Naruto the
+                                Movie as the main antagonist. He is the son of Kushina Uzumaki and Minato Namikaze in
+                                the alternate universe of Konohagakure, thus making him the "Naruto Uzumaki" of that
+                                world. He is also the jinchūriki of Kurama's counterpart: the Black Nine-Tails.</p>
                         </div>
                     </div>
                 </div>
@@ -4946,17 +4970,21 @@
                 <div class="flip-card animate__animated animate__flipInX evil">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Indra Otsutsuki</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Indra Otsutsuki</h2>
                             </div>
                             <img data-src=https://i0.wp.com/www.gyaniboys.com/wp-content/uploads/2023/06/Untitled-design-23.png?fit=1920%2C1080&ssl=1
                                 alt="Indra Otsutsuki" height="300px" width="300px" class="img_card">
                         </div>
                         <div class="flip-card-back">
-                               <div class="card-content">
-                            <h2 class="card-title">Indra Otsutsuki</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Indra Otsutsuki</h2>
                             </div>
-                            <p class="card-text">Indra Ōtsutsuki was the first born son of Hagoromo Ōtsutsuki. He was initially thought to be the most suitable successor of his father's teachings, however, it was his younger brother Asura that ended up inheriting this mantle — a decision that would lead the two brothers to fight against each other. Indra is also credited with being the creator of ninjutsu, and the progenitor of the Uchiha clan.</p>
+                            <p class="card-text">Indra Ōtsutsuki was the first born son of Hagoromo Ōtsutsuki. He was
+                                initially thought to be the most suitable successor of his father's teachings, however,
+                                it was his younger brother Asura that ended up inheriting this mantle — a decision that
+                                would lead the two brothers to fight against each other. Indra is also credited with
+                                being the creator of ninjutsu, and the progenitor of the Uchiha clan.</p>
                         </div>
                     </div>
                 </div>
@@ -4965,17 +4993,19 @@
                 <div class="flip-card animate__animated animate__flipInX evil">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Tobi</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Tobi</h2>
                             </div>
                             <img data-src=https://i.pinimg.com/originals/0a/eb/a0/0aeba04f772c9bbada1d671978642909.jpg
                                 alt="Tobi" height="300px" width="300px" class="img_card">
                         </div>
                         <div class="flip-card-back">
-                               <div class="card-content">
-                            <h2 class="card-title">Tobi</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Tobi</h2>
                             </div>
-                            <p class="card-text">Tobi (トビ, Tobi), nicknamed Guruguru by Obito Uchiha for the swirl pattern of his face, was one of the first victims of the Infinite Tsukuyomi, and eventually was pulled from the Demonic Statue of the Outer Path by Black Zetsu</p>
+                            <p class="card-text">Tobi (トビ, Tobi), nicknamed Guruguru by Obito Uchiha for the swirl
+                                pattern of his face, was one of the first victims of the Infinite Tsukuyomi, and
+                                eventually was pulled from the Demonic Statue of the Outer Path by Black Zetsu</p>
                         </div>
                     </div>
                 </div>
@@ -4984,8 +5014,8 @@
                 <div class="flip-card animate__animated animate__flipInX good">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                               <div class="card-content">
-                            <h2 class="card-title">Four-Tails:Son Goku</h2>
+                            <div class="card-content">
+                                <h2 class="card-title">Four-Tails:Son Goku</h2>
                             </div>
                             <img data-src="https://i.pinimg.com/originals/85/c5/4d/85c54d57ba318dd8d94bcc497fd6dbc7.jpg"
                                 of character] height="250px" width="300px" class="img_card">
@@ -4998,53 +5028,74 @@
                             <p>Son Gokū is a red-furred and green-skinned monkey, with a body-build of a gorilla. It has
                                 eyes with yellow irides and white pupils, spike-like protrusions along the length of its
                                 tails, elongated blunt fangs, and two long horns curving upwards on its forehead like a
-                                crown. In its mouth, Son doesn't have atongue, but has an opening that is shaped like a dome volcano.</p>
+                                crown. In its mouth, Son doesn't have atongue, but has an opening that is shaped like a
+                                dome volcano.</p>
                         </div>
                     </div>
                 </div>
                 <!-- Hero Son Goku card end-->
 
                 <!-- Hero Akamaru card start-->
-            <div class="flip-card good">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <h2 class="card-title">Akamaru</h2>
-                        <img data-src="./Images/319922-akamaru.jpg" of character] height="300px" width="300px" class="img_card">
-                    </div>
-                    <div class="flip-card-back">
-                        <p class="card-text">Faithful dog companion to Kiba Inuzuka. His proof of Kiba's kinship with the Inuzuka clan.
-                        </p>
-                        <p>In Part I, Kiba carries Akamaru around on top of his head or inside his jacket. In Part II, Akamaru grows large enough for Kiba to ride on his back, a difference Kiba fails to notice due to the amount of time they spend together. Akamaru's heightened senses, such as smell and hearing, along with Kiba's ability to communicate with him, make him a powerful tool for gathering and sharing information; he can also sense chakra with his nose, so he can judge an enemy's strength and warn Kiba if they are particularly powerful. In combat, Akamaru typically takes Kiba's form (albeit having a much more feral appearance) upon Kiba's use of Beast Human Clone (Jūjin Bunshin; English TV "Man Beast Clone"), or combining with Kiba into a single entity in more desperate situations. Because Akamaru lacks his own chakra reserves Kiba performs many of the jutsu that Akamaru takes part in, though Akamaru is able to contribute when it comes to physical attacks. Akamaru can also use Dynamic Marking (Dainamikku Mākingu) by peeing on a target with great accuracy, allowing either Kiba or Akamaru to easily find the target by scent, particularly when fused together.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Hero Akamaru card end-->
-
-            <!-- Villian Tayuya card start-->
-            <div class="flip-card evil">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <h2 class="card-title">Tayuya</h2>
-                        <img data-src="./Images/tayuya.jpg" of character] height="300px" width="300px" class="img_card">
-                    </div>
-                    <div class="flip-card-back">
-                        <p class="card-text">A kunoichi from The Hidden Sound Village and a member of The Sound Five.</p>
-                        <p>Tayuya is one of Orochimaru's Sound Four Ninja. She is foul mouthed and ill tempered yet very powerful. Her only weapon is a flute which she can use to summon three giant demons known as the Doki. Tayuya is also very intelligent and can think up excellent strategies and tactics.
-
-                            Tayuya first appears in the Konoha Invasion Arc.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Villian Tayuya card end-->
-
-            <!-- Hero Gara card start-->
-            <div class="flip-card animate__animated animate__flipInX good">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <div class="card-content">
-                            <h2 class="card-title">Gaara of the Desert (我愛羅) </h2>
+                <div class="flip-card good">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Akamaru</h2>
+                            <img data-src="./Images/319922-akamaru.jpg" of character] height="300px" width="300px"
+                                class="img_card">
                         </div>
-                        <img data-src="https://th.bing.com/th/id/R.09766f5571734866a2f280004ab9c679?rik=Jl7T0WYFDFigpA&riu=http%3a%2f%2fami.animecharactersdatabase.com%2fuploads%2fchars%2f12602-1611619955.png&ehk=9aU7%2b5MKDrBhdwmdlOGYS8Fb3qbXe2sVrLI2v2PQxDM%3d&risl=&pid=ImgRaw&r=0"
+                        <div class="flip-card-back">
+                            <p class="card-text">Faithful dog companion to Kiba Inuzuka. His proof of Kiba's kinship
+                                with the Inuzuka clan.
+                            </p>
+                            <p>In Part I, Kiba carries Akamaru around on top of his head or inside his jacket. In Part
+                                II, Akamaru grows large enough for Kiba to ride on his back, a difference Kiba fails to
+                                notice due to the amount of time they spend together. Akamaru's heightened senses, such
+                                as smell and hearing, along with Kiba's ability to communicate with him, make him a
+                                powerful tool for gathering and sharing information; he can also sense chakra with his
+                                nose, so he can judge an enemy's strength and warn Kiba if they are particularly
+                                powerful. In combat, Akamaru typically takes Kiba's form (albeit having a much more
+                                feral appearance) upon Kiba's use of Beast Human Clone (Jūjin Bunshin; English TV "Man
+                                Beast Clone"), or combining with Kiba into a single entity in more desperate situations.
+                                Because Akamaru lacks his own chakra reserves Kiba performs many of the jutsu that
+                                Akamaru takes part in, though Akamaru is able to contribute when it comes to physical
+                                attacks. Akamaru can also use Dynamic Marking (Dainamikku Mākingu) by peeing on a target
+                                with great accuracy, allowing either Kiba or Akamaru to easily find the target by scent,
+                                particularly when fused together.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hero Akamaru card end-->
+
+                <!-- Villian Tayuya card start-->
+                <div class="flip-card evil">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2 class="card-title">Tayuya</h2>
+                            <img data-src="./Images/tayuya.jpg" of character] height="300px" width="300px"
+                                class="img_card">
+                        </div>
+                        <div class="flip-card-back">
+                            <p class="card-text">A kunoichi from The Hidden Sound Village and a member of The Sound
+                                Five.</p>
+                            <p>Tayuya is one of Orochimaru's Sound Four Ninja. She is foul mouthed and ill tempered yet
+                                very powerful. Her only weapon is a flute which she can use to summon three giant demons
+                                known as the Doki. Tayuya is also very intelligent and can think up excellent strategies
+                                and tactics.
+
+                                Tayuya first appears in the Konoha Invasion Arc.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Villian Tayuya card end-->
+
+                <!-- Hero Gara card start-->
+                <div class="flip-card animate__animated animate__flipInX good">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="card-content">
+                                <h2 class="card-title">Gaara of the Desert (我愛羅) </h2>
+                            </div>
+                            <img data-src="https://th.bing.com/th/id/R.09766f5571734866a2f280004ab9c679?rik=Jl7T0WYFDFigpA&riu=http%3a%2f%2fami.animecharactersdatabase.com%2fuploads%2fchars%2f12602-1611619955.png&ehk=9aU7%2b5MKDrBhdwmdlOGYS8Fb3qbXe2sVrLI2v2PQxDM%3d&risl=&pid=ImgRaw&r=0"
                                 of character] height="250px" width="300px" class="img_card">
                         </div>
                         <div class="flip-card-back">
@@ -5063,8 +5114,29 @@
                 </div>
                 <!-- Hero Gara card end-->
 
+                <!-- Hero Ibiki Morino card start -->
+                <div class="flip-card good">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="card-content">
+                                <h2 class="card-title">Ibiki Morino</h2>
+                            </div>
+                            <img data-src="./Images/ibiki.png" alt="Ibiki Morino" height="300px" width="300px"
+                                class="img_card">
+                        </div>
+                        <div class="flip-card-back">
+                            <p class="card-text">Ibiki Morino is the head of Konohagakure's Torture and Interrogation
+                                Force, known for his cold and intimidating demeanor.</p>
+                            <p>His skill lies in psychological warfare, as he uses his sharp mind to extract information
+                                from enemies without physical force.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hero Ibiki Morino card end -->
+
+
         </main>
-      
+
 
 
         <audio src="./sound/naruto.mp3"></audio>
@@ -5136,46 +5208,46 @@
         <script>
             function darkmode() {
                 // console.log("hello");
-            
+
                 var element2 = document.querySelector("body");
                 const body = document.body;
                 body.classList.toggle("light-mode");
-                 body.classList.toggle("dark-mode");
-         
+                body.classList.toggle("dark-mode");
+
                 if (element2.classList.contains("light-mode")) {
-             
+
                     document.querySelector("#toggler").innerHTML = "🌞 Light"
                 }
                 else {
-       
+
                     document.querySelector("#toggler").innerHTML = "🌙 Dark";
                 }
             }
         </script>
 
         <script>
-             function filterCards() {
-    var input, filter, cards, card, title, i, txtValue;
-    input = document.getElementById('mysearch');
-    filter = input.value.toUpperCase();
-    cards = document.getElementsByClassName('flip-card');
+            function filterCards() {
+                var input, filter, cards, card, title, i, txtValue;
+                input = document.getElementById('mysearch');
+                filter = input.value.toUpperCase();
+                cards = document.getElementsByClassName('flip-card');
 
-    for (i = 0; i < cards.length; i++) {
-      card = cards[i];
-      title = card.querySelector('.card-title');
-      txtValue = title.textContent || title.innerText;
+                for (i = 0; i < cards.length; i++) {
+                    card = cards[i];
+                    title = card.querySelector('.card-title');
+                    txtValue = title.textContent || title.innerText;
 
-      if (txtValue.toUpperCase().indexOf(filter) > -1) {
-        card.style.display = '';
-      } else {
-        card.style.display = 'none';
-      }
-    }
-  }
-  function clearSearch() {
-    document.getElementById('mysearch').value = '';
-    filterCards(); // Clearing the search should show all cards
-  }
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        card.style.display = '';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                }
+            }
+            function clearSearch() {
+                document.getElementById('mysearch').value = '';
+                filterCards(); // Clearing the search should show all cards
+            }
         </script>
 </body>
 
