@@ -1221,7 +1221,7 @@ figure{
 .btn {
   cursor: pointer;
   position: relative;
-  left: 150px;
+  left: 25vh;
   background: #94a657;
   border-radius: 4px;
   color: #fff;
