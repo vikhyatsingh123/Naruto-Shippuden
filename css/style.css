@@ -245,7 +245,7 @@ body {
 
 
 .activated {
-  width: 360px;
+  width: 280px;
 }
 
 .dark-mode .search .icon {
@@ -668,6 +668,9 @@ h1 {
 
   .navTitle {
     padding-left: 3px;
+  }
+  .activated{
+    width: 180px;
   }
 }
 
