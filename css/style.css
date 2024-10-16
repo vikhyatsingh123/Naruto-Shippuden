@@ -42,6 +42,7 @@
 .navbar-toggler {
   margin-right: 20px;
 }
+
 html {
   scroll-behavior: smooth;
   
@@ -226,7 +227,7 @@ body {
 .search {
   /* position: fixed; */
   position: absolute;
-  left: 220px;
+  left: 190px;
   height: 48px;
   width: 48px;
 
@@ -1224,7 +1225,8 @@ figure{
 .btn {
   cursor: pointer;
   position: relative;
-  left: 25vh;
+  left: 22vh;
+  margin-right:20px;
   background: #94a657;
   border-radius: 4px;
   color: #fff;
