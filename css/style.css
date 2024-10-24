@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Oswald:wght@200..700&display=swap');
+
+
 #title {
   color: #fff;
   height: 950px;
@@ -581,14 +584,16 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
 }
 .nav-link{
   transition:all ease-in-out 0.3s;
 }
 .light-mode .navbar-light .navbar-nav .nav-link{
+  font-family: "Oswald";
   font-size: 1.4rem;
   font-weight: 700;
-  color: rgb(255 237 179);
+  color: rgb(255, 255, 255);
 }
 
 .dark-mode .navbar-light .navbar-nav .nav-link{
