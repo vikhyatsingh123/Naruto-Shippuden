@@ -59,7 +59,9 @@ background: none !important;
 box-shadow: none !important;
 }
 #google_translate_element{
-  width: 0!important;
+  width: auto !important;
+  display: inline-block !important;
 }
 .goog-te-combo{
   margin-left:-15px;
+}
