@@ -21,11 +21,71 @@
 }
 .container{
   margin-top: 50px;
-  margin-bottom: 95px;
+  margin-bottom: 150px;
 }
-.footer{
-  position: relative;
-  bottom:-14vh;
+.light-mode .footer {
+  display: block;
+  background: linear-gradient(323deg, rgb(41 59 147) 0%, rgb(15 137 198) 100%);
+  text-align: center;
+  color: white;
+  padding: 10px 20px;
+  font-weight: 700;
+  font-size: 16px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.dark-mode .footer {
+  display: block;
+  background: linear-gradient(337deg, rgb(60, 26, 108) 40%, rgb(163, 16, 255) 100%);
+  text-align: center;
+  color: white;
+  padding: 10px 20px;
+  font-weight: 700;
+  font-size: 16px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.footer h5 {
+  margin-top: 3px;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.footer .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer .icon .fa {
+  padding: 6px;
+  margin: 3px;
+  color: #f14a16;
+  font-size: 16px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid #f14a16;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer .icon .fa:hover {
+  color: #fff;
+  background: #f14a16;
+}
+
+.footer span {
+  text-decoration: underline;
 }
 h1 {
   color:rgb(255, 255, 255);
