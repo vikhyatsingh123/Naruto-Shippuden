@@ -6,24 +6,78 @@
   height: 950px;
   background-color: #32081f;
 }
+.navbar img {
+  max-height: 50px;
+  width: auto;
+  padding: 5px 0;
+}
+
 .navbar-brand {
-  font-size: 30px;
+  font-size: 24px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #fff;
-  padding-left: 30px;
+  padding-left: 15px;
+  margin-right: 15px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
 }
 .light-mode .navbar {
-  padding: 0;
+  padding: 5px 15px;
   background-color: #FBAB7E;
   background-image: linear-gradient(342deg, #ffa16b 0%, #ffcf59 100%);
- 
+  display: flex;
+  align-items: center;
+  min-height: 70px;
+  flex-wrap: wrap;
 }
 
 .dark-mode .navbar {
-  padding: 0;
+  padding: 0 15px;
   background-color: #FBAB7E;
   background-image: linear-gradient(342deg, #363636 0%, #000000 100%);
+  display: flex;
+  align-items: center;
+  min-height: 60px;
 }
+
+.dark_lang {
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+  position: relative;
+  z-index: 1001;
+  min-width: 200px; /* Ensure minimum width for language selector */
+}
+
+/* Adjust the Google Translate element */
+#google_translate_element {
+  min-width: 160px;
+}
+
+/* Ensure play/pause button has its own space */
+#nyan-btn {
+  margin-left: 25px;
+  padding: 5px 10px;
+  white-space: nowrap;
+  position: relative;
+  z-index: 1000;
+  min-width: 100px;
+}
+
+/* Adjust the language selector dropdown */
+.goog-te-gadget {
+  margin-right: 15px !important;
+}
+
+/* Ensure play/pause button has enough space */
+#nyan-btn {
+  margin-left: 15px;
+  white-space: nowrap;
+  position: relative;
+  z-index: 1000;
+}
+
 .sticky{
   position: -webkit-sticky;
   position: sticky;
@@ -50,6 +104,16 @@ html {
   scroll-behavior: smooth;
   
 }
+.nav-item {
+  margin: 0 5px;
+  white-space: nowrap;
+}
+
+.nav-link {
+  padding: 8px 12px !important;
+  font-size: 0.95rem;
+}
+
 .about {
   margin: 50px;
   line-height: 2;
@@ -227,17 +291,164 @@ body {
   position: sticky;
 }
 
-.search {
-  /* position: fixed; */
-  position: absolute;
-  left: 190px;
-  height: 48px;
-  width: 48px;
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 1000;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
 
-  border-radius: 60px;
-  transition: 0.5s;
-  /* box-shadow: 0 0 0 5px black; */
-  overflow: hidden;
+.search {
+  position: absolute;
+  right: 0px; /* Moved further right */
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  width: 200px;
+  height: 38px;
+  background: #fff;
+  border-radius: 19px;
+  padding: 0 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  z-index: 1000;
+  font-size: 14px;
+}
+
+.search .icon {
+  font-size: 0px;
+  color: #666;
+  margin-right: 8px;
+  flex-shrink: 0;
+  margin-bottom: 3px;
+}
+
+.search input {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  font-size: 14px;
+  padding: 5px 0;
+  color: #333;
+}
+
+.search input::placeholder {
+  color: #999;
+  opacity: 1;
+}
+
+.clear-btn {
+  background: none;
+  border: none;
+  color: #999;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0 5px;
+  line-height: 1;
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+.clear-btn:hover {
+  background: #f0f0f0;
+  color: #666;
+}
+
+/* Dark mode search styles */
+
+.dark-mode .clear-btn {
+  color: #bbb;
+}
+
+.dark-mode .clear-btn:hover {
+  background: #444;
+  color: #fff;
+}
+
+@media (max-width: 1400px) {
+  .search {
+    right: 250px;
+    width: 180px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .search {
+    right: 200px;
+    width: 160px;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    padding: 5px 10px !important;
+  }
+  
+  .search {
+    width: 100%;
+    max-width: 100%;
+    position: static;
+    transform: none;
+    margin: 10px 0;
+    height: 42px;
+    border-radius: 21px;
+  }
+  
+  .search input {
+    font-size: 16px;
+  }
+  
+  .navbar-brand {
+    font-size: 20px;
+    padding-left: 10px;
+  }
+  
+  .navbar-nav {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 0;
+  }
+  
+  .nav-item {
+    margin: 5px 0 !important;
+    width: 100%;
+  }
+  
+  .search {
+    position: static !important;
+    transform: none;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 100%;
+    order: 3;
+  }
+  
+  .dark_lang {
+    order: 4;
+    padding: 10px 0;
+    width: 100%;
+    justify-content: flex-start;
+    margin-left: 0 !important;
+  }
+  
+  .navbar-toggler {
+    margin-left: auto;
+  }
 }
 
 .light-mode .search{
@@ -279,72 +490,6 @@ body {
   align-items: center;
   z-index: 1000;
   cursor: pointer;
-}
-
-.light-mode .search .icon::before {
-  content: " ";
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  border: 3px solid #287dfc;
-  border-radius: 50%;
-  transform: translate(-4px, -4px);
-}
-.dark-mode .search .icon::before {
-  content: " ";
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  border: 3px solid rgb(109, 39, 194);
-  border-radius: 50%;
-  transform: translate(-4px, -4px);
-}
-.light-mode .search .icon::after {
-  content: " ";
-  position: absolute;
-  width: 3px;
-  height: 12px;
-  background: #287dfc;
-  transform: translate(6px, 6px) rotate(315deg);
-}
-.dark-mode .search .icon::after {
-  content: " ";
-  position: absolute;
-  width: 3px;
-  height: 12px;
-  background: rgb(109, 39, 194);
-  transform: translate(6px, 6px) rotate(315deg);
-}
-.search .input {
-  position: relative;
-  width: 300px;
-  height: 48px;
-  left: 48px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.light-mode .search .input input {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-  outline: none;
-  font-size: 18px;
-  background: none;
-}
-.dark-mode .search .input input {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-  outline: none;
-  font-size: 18px;
-  background: none;
-  color: white;
 }
 
 .clear {
@@ -1240,6 +1385,17 @@ figure{
   }
 
 .soundicon {
-  width: 25px;
-  padding: 0px;
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  vertical-align: middle;
+  margin-left: 3px;
+}
+
+#nyan-btn {
+  font-size: 14px;
+  padding: 4px 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }

@@ -63,18 +63,8 @@
                 style="height: 60px; padding:5px 5px 5px 30px;">
 
                 <img src="adi image/naruto-advenimiento-los-animes-cortos-2.png" style="max-height: 100%; width: auto;">
-                <!-- <a class="navbar-brand brand1 ml-4" href="#" style="color: beige;">Naruto</a> -->
-
-
-                <div class="search">
-                    <div class="icon"></div>
-                    <div class="input">
-                        <input type="text" placeholder="search" id="mysearch" oninput="filterCards()">
-                    </div>
-
-                    <span class="clear" onclick="clearSearch()"></span>
-                </div>
-                <button class="navbar-toggler" class="menu-btn" type="button" data-toggle="collapse"
+                <!-- Removed duplicate search bar -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -94,6 +84,11 @@
                         <li class="nav-item mx-4">
                             <a class="link nav-link " href="./Game.html">Game</a>
                         </li>
+                        <div class="search">
+                            <i class="fa fa-search icon"></i>
+                            <input type="text" id="mysearch" onkeyup="filterCards()" placeholder="Search characters...">
+                            <button onclick="clearSearch()" class="clear-btn">×</button>
+                        </div>
                         <div class="dark_lang">
                             <li>
                                 <div>
