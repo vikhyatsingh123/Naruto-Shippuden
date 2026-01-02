@@ -1,0 +1,67 @@
+.light-mode #google_translate_element select{
+  background:#F5F5DC!important;
+  color:black;
+  border: none;
+  border-radius:3px;
+  padding:10px!important;
+  margin-top: 5px;
+  }
+  .dark-mode #google_translate_element select{
+    background: rgb(109, 39, 194);
+    color:#c0a5ff;
+    border: none;
+    border-radius:3px;
+    padding:10px!important;
+    margin-top: 5px;
+    }
+  
+  .VIpgJd-ZVi9od-aZ2wEe-wOHMyf{
+    z-index: 9724790009779!important;
+    top:0;
+    left:unset;
+    right:-5px;
+    display:none!important;
+    border-radius:50%;
+    border:2px solid gold;
+   }
+   .VIpgJd-ZVi9od-aZ2wEe-OiiCO{
+    width:80px;
+    height:80px;
+  }
+  .VIpgJd-ZVi9od-l4eHX-hSRGPd{
+    display:none;
+  }
+  .goog-logo-link{
+    display:none !important;
+   }
+ .goog-te-gadget{
+  color:transparent!important;
+  }
+  .goog-te-banner-frame{
+    display:none !important;
+    }
+.goog-te-gadget {
+  color: transparent!important;
+  font-size:0px;
+}
+
+.goog-text-highlight {
+  background: none !important;
+  box-shadow: none !important;
+}
+#goog-gt-tt, .goog-te-balloon-frame
+{
+display: none !important;
+}
+.goog-text-highlight 
+{ 
+background: none !important;
+box-shadow: none !important;
+}
+#google_translate_element{
+  width: auto !important;
+  display: inline-block !important;
+}
+.goog-te-combo{
+  margin-left:-15px;
+}
