@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <link href="https://allfont.net/allfont.css?fonts=ninja-naruto" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link href="https://fonts.cdnfonts.com/css/ninja-naruto" rel="stylesheet">
+
+    <link
+        href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.6qtY7eooQBTfiSVjtrLrGQHaEj%26pid%3DApi&f=1"
+        rel="icon" type="image/jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="Images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/Game.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link href="css/translate.css" rel="stylesheet" type="text/css" media="all" />
+    <title>Naruto</title>
+</head>
+<style>
+    .vid {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        font-size: 30px;
+        position: relative;
+        overflow: hidden;
+        min-height: 50vh;
+    }
+
+    .videosrc {
+        position: absolute;
+        z-index: -1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 100%;
+        min-height: 100%;
+    }
+</style>
+
+<body class="light-mode">
+
+    <a href="#" class="to-top">
+        <i class="fa fa-arrow-up"></i>
+    </a>
+    <figure class="sky"></figure>
+    <div class="loader ">
+
+        <header>
+            <nav class=" sticky navbar  navbar-expand-lg navbar-light" style="height: 60px; padding:5px 5px 5px 30px;">
+                <img src="adi image/naruto-advenimiento-los-animes-cortos-2.png" style="max-height: 100%; width: auto;">
+                <!-- <a class="navbar-brand brand1 ml-4" href="#" style="color: beige;">Naruto</a> -->
+
+
+                <div class="search">
+                    <div class="icon"></div>
+                    <div class="input">
+                        <input type="text" placeholder="search" id="mysearch" oninput="filterCards()">
+                    </div>
+
+                    <span class="clear" onclick="clearSearch()"></span>
+                </div>
+                <button class="navbar-toggler" class="menu-btn" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active mx-4">
+                            <a class="nav-link link" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item mx-4">
+                            <a class="link nav-link " href="./about.html">About</a>
+                        </li>
+                        <li class="nav-item mx-4">
+                            <a class="link nav-link " href="./contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item mx-4">
+                            <a class="link nav-link " href="./Game.html">Game</a>
+                        </li>
+                        <div class="dark_lang">
+                            <li>
+                                <div>
+                                    <button onclick="darkmode()" class="toggle-mode darkmodebutton" id="toggler">🌙
+                                        Dark</button>
+                                </div>
+                            </li>
+                            <li class="nav-item mx-4">
+                                <div id="google_translate_element"></div>
+                                <script>
+                                    function googleTranslateElementInit() {
+                                        new google.translate.TranslateElement({
+                                            pageLanguage: 'en',
+                                            autoDisplay: 'true',
+                                            layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
+                                        }, 'google_translate_element');
+                                    }
+                                </script>
+                                <script
+                                    src='//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'></script>
+                            </li>
+                        </div>
+                        <li class="nav-item mx-4">
+                            <audio id="nyan" src="./sound/naruto.mp3" preload="metadata" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                            <a class="btn" id="nyan-btn">play / pause <img src="./adi image/sound.png"
+                                    class="soundicon">
+                                <script src="./audio.js"></script>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+
+        </header>
+
+        <!-- header video -->
+        <div class="vid">
+
+            <a href="#"><img src="adi image/naruto-shippuden.png" style="width: 600px;" class="logo"></a>
+
+            <video autoplay loop muted class="videosrc">
+                <source src="adi image/naruto - Made with Clipchamp.mp4" type="video/mp4">
+            </video>
+        </div>
+
+
+        <!-- header video end -->
+        <main>
+
+            <div class="chardiv ">
+                <img class="heroimg good" src="adi image/Naruto-Uzumaki-No-Background.png" alt="">
+                <img class="heroimg2 good" src="adi image/png-image.png" alt="">
+                <img class="vilimg evil" src="adi image/uchiha_madara___png___by_anvmadara_dewr6zj-pre.png" alt="">
+                <img class="vilimg2 evil" src="adi image/d383ajh-c063f3bf-1787-4484-a75e-5bd8a8892a86.png" alt="">
+                <h1 class="chars">Game Section</h1>
+            </div>
+            <!DOCTYPE html>
+            <div class="game-body">
+            <h1 class="game-h1">Naruto Character Guessing Game</h1>
+            <p class="game-p">Guess the Naruto character by answering hints!</p>
+            <h2 class="game-h2" id="high-score">Highest Score : 0</h2>
+            <h3  class="game-h3" id="score">Score : 0</h3>
+            <button  class="game-button" id="start" onclick="startGame()">Start Game</button>
+            <p  class="game-p" id="hint"></p>
+            <input  class="game-input"  type="text" id="guessInput">
+            <button class="game-button" id="stop" onclick="checkAnswer()">Submit Guess</button>
+            <div  class="game-div" id="imageContainer"></div>
+            <p class="game-p" id="message"></p>
+        </div>
+
+        </main>
+
+
+
+        <audio src="./sound/naruto.mp3"></audio>
+
+        <footer class="footer">
+            Developed and Designed By <span id="idblink" onclick="tap()" style="cursor: pointer;"><u>Vikhyat
+                    Singh</u></span> | ©
+            All Rights Reserved
+            <h5>Follow Me on : </h5>
+            <div class="icon">
+                <a href="https://facebook.com/vikhyatsingh123/" class="fa fa-facebook" target="_blank"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="https://github.com/vikhyatsingh123/" class="fa fa-github" target="_blank"></a>
+                <a href="https://www.linkedin.com/in/vikhyat-singh-337777197/" class="fa fa-linkedin"
+                    target="_blank"></a>
+                <a href="https://www.instagram.com/vikhyat552/" class="fa fa-instagram" target="_blank"></a>
+            </div>
+        </footer>
+        <script src="Game.js"></script>
+        <script>
+            function tap() {
+                const link = document.getElementById('idblink')
+                window.location.href = "https://github.com/vikhyatsingh123"
+            }
+        </script>
+        <!-- <footer>
+            <nav class="navbar navbar-expand-lg navbar-light nav1">
+                <p class="mx-auto text-light font-weight-lighter">&copy Developed By - <a
+                        href="https://github.com/vikhyatsingh123">Vikhyat Singh</a></p>
+            </nav>
+        </footer> -->
+
+
+
+        <script src="js/sound.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+            </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+
+            </script>
+
+        <script src="js/searchbar.js"></script>
+        <script src="js/scrollEffect.js"></script>
+        <script src="js/lazyload.js"></script>
+
+        <script src="js/scrolltotop.js"></script>
+
+        <script src="js/switch-toggle.js"></script>
+
+        <script>
+
+            /* ------- Scroll To Top Button -------*/
+
+            const toTop = document.querySelector(".to-top");
+            window.addEventListener("scroll", () => {
+
+                if (window.pageYOffset > 400) {
+                    toTop.classList.add("active");
+                } else {
+                    toTop.classList.remove("active");
+                }
+
+            });
+
+        </script>
+
+
+        <script>
+            function darkmode() {
+                // console.log("hello");
+
+                var element2 = document.querySelector("body");
+                const body = document.body;
+                body.classList.toggle("light-mode");
+                body.classList.toggle("dark-mode");
+
+                if (element2.classList.contains("light-mode")) {
+
+                    document.querySelector("#toggler").innerHTML = "🌞 Light"
+                }
+                else {
+
+                    document.querySelector("#toggler").innerHTML = "🌙 Dark";
+                }
+            }
+        </script>
+
+        <script>
+            function filterCards() {
+                var input, filter, cards, card, title, i, txtValue;
+                input = document.getElementById('mysearch');
+                filter = input.value.toUpperCase();
+                cards = document.getElementsByClassName('flip-card');
+
+                for (i = 0; i < cards.length; i++) {
+                    card = cards[i];
+                    title = card.querySelector('.card-title');
+                    txtValue = title.textContent || title.innerText;
+
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        card.style.display = '';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                }
+            }
+            function clearSearch() {
+                document.getElementById('mysearch').value = '';
+                filterCards(); // Clearing the search should show all cards
+            }
+        </script>
+</body>
+
+</html>
