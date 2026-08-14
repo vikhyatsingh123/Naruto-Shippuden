@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en-US">
 
 <head>
@@ -47,6 +47,66 @@
         min-width: 100%;
         min-height: 100%;
     }
+
+    /* ===== Responsive Header Fix (Issue #1219) ===== */
+    .nav-responsive {
+        padding: 8px 15px;
+        flex-wrap: wrap;
+    }
+
+    .nav-responsive .nav-logo {
+        max-height: 45px;
+        width: auto;
+    }
+
+    @media (max-width: 991px) {
+        .navbar-collapse {
+            width: 100%;
+            padding-bottom: 15px;
+        }
+
+        .navbar-nav {
+            width: 100%;
+        }
+
+        .navbar-nav .nav-item {
+            margin: 6px 0 !important;
+        }
+
+        .search {
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        .dark_lang {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+            gap: 10px;
+            margin: 10px 0;
+        }
+
+        .dark_lang li {
+            margin: 0 !important;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .nav-responsive .nav-logo {
+            max-height: 35px;
+        }
+
+        .search input {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        #google_translate_element {
+            transform: scale(0.9);
+            transform-origin: left;
+        }
+    }
 </style>
 
 <body class="light-mode">
@@ -59,71 +119,79 @@
 
         <header>
 
-            <nav class=" animate__animated animate__fadeInDown sticky navbar  navbar-expand-lg navbar-light"
-                style="height: 60px; padding:5px 5px 5px 30px;">
+         <nav class="navbar navbar-expand-lg navbar-light sticky nav-responsive">
 
-                <img src="adi image/naruto-advenimiento-los-animes-cortos-2.png" style="max-height: 100%; width: auto;">
-                <!-- Removed duplicate search bar -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+    <a class="navbar-brand" href="./index.html">
+        <img src="adi image/naruto-advenimiento-los-animes-cortos-2.png"
+            class="nav-logo"
+            alt="Naruto Logo">
+    </a>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active mx-4">
-                            <a class="nav-link link" style="text-decoration: none;" href="./index.html">Home</a>
-                        </li>
-                        <li class="nav-item mx-4">
-                            <a class="link nav-link "  href="./about.html">About</a>
-                        </li>
-                        <li class="nav-item mx-4">
-                            <a class="link nav-link " href="./contact.html">Contact</a>
-                        </li>
-                        <li class="nav-item mx-4">
-                            <a class="link nav-link " href="./Game.html">Game</a>
-                        </li>
-                        <div class="search">
-                            <i class="fa fa-search icon"></i>
-                            <input type="text" id="mysearch" onkeyup="filterCards()" placeholder="Search characters...">
-                            <button onclick="clearSearch()" class="clear-btn">×</button>
-                        </div>
-                        <div class="dark_lang">
-                            <li>
-                                <div>
-                                    <button onclick="darkmode()" class="toggle-mode darkmodebutton" id="toggler">🌙
-                                        Dark</button>
-                                </div>
-                            </li>
-                            <li class="nav-item mx-4">
-                                <div id="google_translate_element"></div>
-                                <script>
-                                    function googleTranslateElementInit() {
-                                        new google.translate.TranslateElement({
-                                            pageLanguage: 'en',
-                                            autoDisplay: 'true',
-                                            layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
-                                        }, 'google_translate_element');
-                                    }
-                                </script>
-                                <script
-                                    src='//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'></script>
-                            </li>
-                        </div>
-                        <li class="nav-item mx-4">
-                            <audio id="nyan" src="./sound/naruto.mp3" preload="metadata" type="audio/mpeg">
-                                Your browser does not support the audio element.
-                            </audio>
-                            <a class="btn" id="nyan-btn">play / pause <img src="./adi image/sound.png"
-                                    class="soundicon">
-                                <script src="./audio.js"></script>
-                            </a>
-                        </li>
-                    </ul>
+    <button class="navbar-toggler" type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-                </div>
-            </nav>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <!-- Left Side -->
+        <ul class="navbar-nav mx-auto">
+
+            <li class="nav-item active">
+                <a class="nav-link link" href="./index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link link" href="./about.html">About</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link link" href="./contact.html">Contact</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link link" href="./Game.html">Game</a>
+            </li>
+
+        </ul>
+
+        <!-- Right Side -->
+        <div class="d-flex align-items-center flex-wrap">
+
+            <div class="search mr-3">
+                <i class="fa fa-search icon"></i>
+                <input type="text"
+                    id="mysearch"
+                    onkeyup="filterCards()"
+                    placeholder="Search characters...">
+
+                <button onclick="clearSearch()" class="clear-btn">×</button>
+            </div>
+
+            <button onclick="darkmode()"
+                class="toggle-mode darkmodebutton mr-3"
+                id="toggler">
+                🌙 Dark
+            </button>
+
+            <div id="google_translate_element" class="mr-3"></div>
+
+            <audio id="nyan"
+                src="./sound/naruto.mp3"
+                preload="metadata"></audio>
+
+            <a class="btn" id="nyan-btn">
+                Play / Pause
+                <img src="./adi image/sound.png"
+                    class="soundicon">
+            </a>
+
+        </div>
+
+    </div>
+
+</nav>
 
         </header>
 
@@ -444,7 +512,7 @@
                                 Sumire Kakei is a former member of Team 15 and a kunoichi of Konohagakure's Scientific
                                 Ninja Weapons Team.
                                 She served as the Ninja Academy's Class Representative for Boruto's class. After
-                                Danzo Shimura passed away and the village learned of Root's existence and its deeds, all
+                                Danzo Shimura passed away and the village learned of Root's existence and its deeds, all
                                 of its members, including Sumire's family, were shunned.
                                 This led to Sumire's mother's illness and eventual death.
                                 Sumire was profoundly affected by the loss because one of her few delights was brushing
@@ -3660,8 +3728,8 @@
                                 Gamakichi is rather comedic, and has the mannerisms of a smart aleck.
                                 He is also often very condescending as well as light-hearted in most situations,
                                 preferring the levity of talk to the seriousness of battle .
-                                In Part I, he was small enough to fit on top of Naruto’s head like Akamaru could fit on
-                                top of Kiba’s head and wore a blue jacket 1. In Part II, during Pain’s assault on
+                                In Part I, he was small enough to fit on top of Naruto's head like Akamaru could fit on
+                                top of Kiba's head and wore a blue jacket 1. In Part II, during Pain's assault on
                                 Konoha, Gamakichi had grown big enough so that Naruto could stand on his head, but was
                                 still small enough that he stand on Gamabunta 1.
                                 He has formed a bond with Naruto because he saved him from Gaara in his miniature
@@ -3691,7 +3759,7 @@
                             <p class="card-text">Matsuri is a genin from Sunagakure,
                                 who appears in the Naruto anime and manga series 1. She is part of a team
                                 alongside Yukata and Mikoshi 1.
-                                Matsuri witnessed her parents’ murder in the past, making her adverse to
+                                Matsuri witnessed her parents' murder in the past, making her adverse to
                                 weapons and violence 1. In the anime, she is shown to be a reverent admirer
                                 of Gaara or any other powerful ninja 1. Matsuri has straight chin-length
                                 brown hair, dark eyes, and fair skin. She is 158 cm tall.
@@ -4265,15 +4333,15 @@
                 </div>
                 <div class="flip-card-back">
                     <p class="card-text">
-                                        Rion Kurokaze, often called the *Storm’s Last Sentinel*, is the sole survivor of the ancient floating city of Aetherion — 
+                                        Rion Kurokaze, often called the *Storm's Last Sentinel*, is the sole survivor of the ancient floating city of Aetherion — 
                 a civilization that soared above the clouds and harnessed the endless power of the wind. When the city fell during 
-                the Great Celestial War, Rion was struck by lightning at the heart of the Tempest Core — the mythical source of Aetherion’s strength. 
+                the Great Celestial War, Rion was struck by lightning at the heart of the Tempest Core — the mythical source of Aetherion's strength. 
                 Instead of perishing, his body merged with the core, transforming him into a living embodiment of the storm itself. <br><br>
                 
                 With hair streaked by silver wind and eyes glowing with teal lightning, Rion wanders the mortal lands below, searching for traces 
                 of the lost skies. The air bends at his command; storms rise when his emotions flare. Yet beneath his calm exterior lies 
                 an eternal loneliness — the silence of a man who once heard the voice of the sky itself. His power is both a blessing and a curse: 
-                to protect the balance between heaven and earth, even if it means standing forever in the storm’s eye. <br><br>
+                to protect the balance between heaven and earth, even if it means standing forever in the storm's eye. <br><br>
                     </p>
                 </div>
                          </div>
@@ -4309,7 +4377,7 @@
         </script>
         <!-- <footer>
             <nav class="navbar navbar-expand-lg navbar-light nav1">
-                <p class="mx-auto text-light font-weight-lighter">&copy Developed By - <a
+                <p class="mx-auto text-light font-weight-lighter">&copy Developed By - 
                         href="https://github.com/vikhyatsingh123">Vikhyat Singh</a></p>
             </nav>
         </footer> -->
