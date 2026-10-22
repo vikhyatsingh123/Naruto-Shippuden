@@ -1,0 +1,66 @@
+/* Naruto-themed CSS styles */
+.game-body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; */
+    text-align: center;
+  }
+  
+  .game-h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #FF6700;
+  }
+  
+  .game-p {
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  .game-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #FF6700;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .game-button:hover {
+    background-color: #FF8000;
+  }
+  
+  .game-input[type="text"] {
+    padding: 8px;
+    font-size: 1em;
+    margin: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  #imageContainer {
+    margin-top: 20px;
+  }
+  
+  #message {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #FF6700;
+  }
+  
+  /* Styling for images */
+  .game-img {
+    max-width: 300px;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
